@@ -1,0 +1,175 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.LOTPACKINGDATAGENERATION"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div *ngIf="mg.isImageExists(mgc.Image1)">
+                <img
+                    [magic]="mgc.Image1"
+                    [src]="mg.getImage(mgc.Image1)"
+                />
+            </div>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2) }}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+            </label>
+            <div
+                [magic]="mgc.Option_v"
+                (change)="task.mgOnRadioSelectionChanged(mgc.Option_v)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.Option_v);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.Option_v"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                P/C No.
+            </label>
+            <label
+                [magic]="mgc.Label13"
+                [style.visibility]="mg.getVisible(mgc.Label13)"
+                class="lable_overflow"
+            >
+                Dist
+            </label>
+            <label
+                [magic]="mgc.Label16"
+                [style.visibility]="mg.getVisible(mgc.Label16)"
+                class="lable_overflow"
+            >
+                Model
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.PC_No_v"
+                    [magic]="mgc.PC_No_v"
+                    [mask]="mg.getAlphaMask(mgc.PC_No_v)"
+                    [showMaskTyped]='true'
+                />
+                <mgError [magic]=mgc.PC_No_v> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.PC_No_v"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.KDPCHED_PH_DSCD"
+                    [magic]="mgc.KDPCHED_PH_DSCD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.KDPCHED_PH_DSCD> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PKD_LTID_PKD_MDCD"
+                    [magic]="mgc.PKD_LTID_PKD_MDCD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PKD_LTID_PKD_MDCD> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.DSTBMST_DS_DSENAM"
+                    [magic]="mgc.DSTBMST_DS_DSENAM"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.DSTBMST_DS_DSENAM> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label11"
+                [style.visibility]="mg.getVisible(mgc.Label11)"
+                class="lable_overflow"
+            >
+                Lot No.
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.MTOCMST_MTMDN1"
+                    [magic]="mgc.MTOCMST_MTMDN1"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.MTOCMST_MTMDN1> </mgError>
+            </div>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.Lot_No_v"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.Lot_No_v))"
+                    [magic]="mgc.Lot_No_v"
+                    [style.visibility]="mg.getVisible(mgc.Lot_No_v)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.Lot_No_v> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.Lot_No_v"
+                    [style.visibility]="mg.getVisible(mgc.Lot_No_v)"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PKD_LTID_PKD_MDTY"
+                    [magic]="mgc.PKD_LTID_PKD_MDTY"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PKD_LTID_PKD_MDTY> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PKD_LTID_PKD_MDOP"
+                    [magic]="mgc.PKD_LTID_PKD_MDOP"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PKD_LTID_PKD_MDOP> </mgError>
+            </div>
+            <button [magic]="mgc.Ok_Button_V">
+                {{mg.getValue(mgc.Ok_Button_V)}}
+            </button>
+        </div>
+    </div>
+</div>

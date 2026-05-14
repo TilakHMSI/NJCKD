@@ -1,0 +1,11 @@
+{
+   "protocol": "http",
+   "server": "10.116.92.79",
+   "requester": "MagicScripts412/MGrqispi.dll",
+   "appname": "HondaCKD",
+   "LogClientSequenceForActivityMonitor": "N",
+   "InternalLogLevel": "",
+   "InternalLogSync": "Message",
+   "DisplayGenericError": "N",
+   "FirstHTTPRequestTimeout": "5"
+}

@@ -1,0 +1,113 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.NewLotAddition"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                <<
+                    NEW
+                    LOT
+                    ADDITION
+                >>
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                LOT CODE:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.v_Lot_Code"
+                    [magic]="mgc.v_Lot_Code"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_Lot_Code> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                MODEL CODE:
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.v_Model_Code"
+                    [magic]="mgc.v_Model_Code"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_Model_Code> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.v_Model_Code"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PRD001_S1_MTO_NAME"
+                    [magic]="mgc.PRD001_S1_MTO_NAME"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PRD001_S1_MTO_NAME> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                LOT NAME:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.v_Lot_Name"
+                    [magic]="mgc.v_Lot_Name"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_Lot_Name> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                LOT QUANTITY:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.v_Lot_Qty"
+                    type='number'
+                    [magic]="mgc.v_Lot_Qty"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_Lot_Qty> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label11"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_Ok">
+                \UPD\ATE
+            </button>
+        </div>
+    </div>
+</div>

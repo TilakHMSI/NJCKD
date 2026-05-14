@@ -1,0 +1,171 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.CONTAINERDETAILS"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                Lot:
+            </label>
+            <label [magic]="mgc.V_Lot_Id_v">
+                {{mg.getValue(mgc.V_Lot_Id_v) }}
+            </label>
+            <label [magic]="mgc.Edit1">
+                {{mg.getValue(mgc.Edit1) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicDate : mgc.Edit4}}
+            </label>
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5)
+| magicTime : mgc.Edit5}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit6">
+                {{mg.getValue(mgc.Edit6) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table8TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="container_border"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        [magic]="mgc.Column9"
+                        [matColumnDef]="mgc.Column9"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            Code
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.WRK_CONT_CNCD"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            currencyMask
+                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_CONT_CNCD))"
+                                            [magic]="mgc.WRK_CONT_CNCD"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.WRK_CONT_CNCD
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.WRK_CONT_CNCD"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getFormattedValue(mgc.WRK_CONT_CNCD, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column10"
+                        [matColumnDef]="mgc.Column10"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            Type
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            style="width: 70%"
+                                            [formControlName]="mgc.WRK_CONT_CNTY"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.WRK_CONT_CNTY"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.WRK_CONT_CNTY
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.WRK_CONT_CNTY"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.WRK_CONT_CNTY, row.rowId)
+}}
+                                        </label>
+                                        <button
+                                            style="min-width: auto; margin: auto"
+                                            [magic]="mgc.WRK_CONT_CNTY"
+                                            [rowId]="row.rowId"
+                                        >...</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+            </label>
+            <button [magic]="mgc.SaveCtrl">
+                {{mg.getValue(mgc.SaveCtrl)}}
+            </button>
+            <button [magic]="mgc.CancelCtrl">
+                {{mg.getValue(mgc.CancelCtrl)}}
+            </button>
+        </div>
+    </div>
+</div>

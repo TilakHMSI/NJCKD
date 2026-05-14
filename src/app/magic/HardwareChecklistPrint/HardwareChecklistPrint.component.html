@@ -1,0 +1,54 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.HardwareChecklistPrint"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                <<
+                    HARDWARE
+                    CHECKLIST
+                    PRINTING
+                >>
+            </label>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PURCHASE CONTRACT NO.:
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.v_PCNo"
+                    [magic]="mgc.v_PCNo"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_PCNo> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.v_PCNo"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_Exec">
+                \LIST
+            </button>
+            <button [magic]="mgc.v_LblPrn">
+                \L\AB\LE PRINT
+            </button>
+        </div>
+    </div>
+</div>

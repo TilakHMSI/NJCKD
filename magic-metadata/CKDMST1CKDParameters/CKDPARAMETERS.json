@@ -1,0 +1,595 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKDPARAMETERS",
+		"window_type":	12,
+		"component_path":	"CKDMST1CKDParameters/",
+		"module_name":	"",
+		"component_uniquename":	"CKDMST1CKDParameters_CKDPARAMETERS"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Image1",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	3,
+				"width":	94,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"I",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	458,
+				"y":	20,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	481,
+				"y":	5,
+				"width":	75,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	513,
+				"y":	20,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit5",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	383,
+				"y":	36,
+				"width":	174,
+				"height":	8
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	99,
+				"y":	52,
+				"width":	364,
+				"height":	410
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"INCLUDE ENGINE PARTS IN PARTS PACKING MASTER",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	129,
+				"y":	93,
+				"width":	225,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"AUTO-GENERATION OF CONTAINER/CASE/CARTON NO",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	134,
+				"y":	65,
+				"width":	220,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label21",
+				"text":	"MAXIMUM PARTS FOR CARTON LABEL PRINTING",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	154,
+				"y":	314,
+				"width":	200,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label17",
+				"text":	"CASE PACKING SCHEDULE ENTRY METHOD",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	179,
+				"y":	231,
+				"width":	175,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label19",
+				"text":	"MAXIMUM PARTS ALLOWED IN A CARTON",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	184,
+				"y":	286,
+				"width":	170,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label23",
+				"text":	"COPIES OF CASE LABEL / PARTS LIST",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	184,
+				"y":	341,
+				"width":	170,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label25",
+				"text":	"PART LOCATION FOR PACKING MASTER",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	189,
+				"y":	369,
+				"width":	165,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label18",
+				"text":	"LOT WISE PACKING DATA CREATION",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	199,
+				"y":	258,
+				"width":	155,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"text":	"CONTANER NO. DISPLAY FORMAT",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	214,
+				"y":	148,
+				"width":	140,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label15",
+				"text":	"CARTON NO. DISPLAY FORMAT",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	224,
+				"y":	203,
+				"width":	130,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label13",
+				"text":	"CASE NO. DISPLAY FORMAT",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	234,
+				"y":	176,
+				"width":	120,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"LOT NO. DISPALY FORMAT",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	239,
+				"y":	120,
+				"width":	115,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label27",
+				"text":	"WEIGHING MACHINE USE",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	249,
+				"y":	395,
+				"width":	105,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_CENT",
+				"items_list":	"Yes,No",
+				"attribute":	"B",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	65,
+				"width":	35,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_ENPT",
+				"items_list":	"Yes,No",
+				"attribute":	"B",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	93,
+				"width":	35,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_LTFR",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	120,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_CNFR",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	148,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_CSFR",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	176,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_CRFR",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	203,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_CSSC",
+				"items_list":	"All, One by One",
+				"attribute":	"A",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	231,
+				"width":	70,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_LTCR",
+				"items_list":	"Yes,No",
+				"attribute":	"B",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	258,
+				"width":	35,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_CRMX",
+				"mgformat":	"mgFormat",
+				"format":	"##",
+				"attribute":	"N",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	286,
+				"width":	16,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_CRLM",
+				"mgformat":	"mgFormat",
+				"format":	"##",
+				"attribute":	"N",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	314,
+				"width":	16,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_CSLC",
+				"mgformat":	"mgFormat",
+				"format":	"##",
+				"attribute":	"N",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	341,
+				"width":	16,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_PTL1",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	369,
+				"width":	36,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CKD_WGUS",
+				"items_list":	"Yes,No",
+				"attribute":	"B",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	361,
+				"y":	395,
+				"width":	35,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		}
+	]
+}

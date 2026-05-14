@@ -1,0 +1,339 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKD_CaseTransferModuleView",
+		"window_type":	12,
+		"component_path":	"CKD_CaseTransferModuleView/",
+		"module_name":	"",
+		"component_uniquename":	"CKD_CaseTransferModuleView_CKD_CaseTransferModuleView"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	711,
+		"height":	299
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	22,
+				"table_title_height":	18,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	40,
+				"y":	13,
+				"width":	658,
+				"height":	228
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"TransferChallanNo",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	111
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"TransferChallanNo",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	45,
+								"y":	34,
+								"width":	101,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"TransferChallanDate",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	113
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"TransferChallanDate",
+								"formatter":	"magicDate",
+								"mgformat":	"mgFormat",
+								"format":	"DD/MM/YYYY",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	156,
+								"y":	34,
+								"width":	77,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"TransferChallanTime",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	113
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"TransferChallanTime",
+								"formatter":	"magicTime",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	269,
+								"y":	34,
+								"width":	59,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"TransferMode",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	175
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"TransferMode",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	381,
+								"y":	34,
+								"width":	165,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"PC_No",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	80
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CKD_CASE_TransferDTL_PC_No",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	556,
+								"y":	34,
+								"width":	72,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column8",
+						"column_title":	"LOT_ID",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	45
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CKD_CASE_TransferDTL_LOT_ID",
+								"mgformat":	"mgFormat",
+								"format":	"####",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	635,
+								"y":	34,
+								"width":	37,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"**UnSupported Control**",
+				"common_line_id":	"line250"
+			},
+			"coordinates":	{
+				"x":	43,
+				"y":	250,
+				"width":	650,
+				"height":	0
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Details",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"Details",
+				"attribute":	"A",
+				"common_line_id":	"line262"
+			},
+			"coordinates":	{
+				"x":	475,
+				"y":	262,
+				"width":	70,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Print_Challan",
+				"format":	"Print MGP",
+				"attribute":	"A",
+				"common_line_id":	"line262"
+			},
+			"coordinates":	{
+				"x":	545,
+				"y":	262,
+				"width":	70,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Exit",
+				"common_line_id":	"line262"
+			},
+			"coordinates":	{
+				"x":	620,
+				"y":	262,
+				"width":	70,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

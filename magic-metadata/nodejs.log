@@ -1,0 +1,56 @@
+Generation output:
+
+ Generate Modules
+
+C:\MagicXPA412\Projects\HondaCKD\output\HondaCKD>echo off 
+copying files
+
+
+
+C:\MagicXPA412\Projects\HondaCKD\output\HondaCKD>echo off 
+generating modules
+[V-CLI] cmd.exe /c ng g @magic-xpa/cli:modules
+   Number of modules to be check for generate: 1
+Nothing to be done.
+
+Generate Components
+
+C:\MagicXPA412\Projects\HondaCKD\output\HondaCKD>echo off 
+copying files
+
+
+
+C:\MagicXPA412\Projects\HondaCKD\output\HondaCKD>echo off 
+generating components
+[V-CLI] cmd.exe /c ng g @magic-xpa/cli:magic
+[>]  ********************************* START    GENERATE *********************************
+   Number of modules to be check for generate: 1
+[>]           ******    Start Web Module name : []    *******
+*** Step 1: Loading JSON files ***
+[>] Loading JSON file .//magic-metadata/PACKINGTYPEMASTERView/PACKINGTYPEMASTERView.json
+[>] Loading JSON file .//magic-metadata/PACKINGTYPEMASTERView/PACKINGTYPEMASTERList/PACKINGTYPEMASTERList.json
+[>] Loading JSON file .//magic-metadata/PACKINGTYPEMASTERView/PACKINGTYPEMASTERList/PACKING TYPE MASTER CM/PACKING_TYPE_MASTER_CM.json
+*** Step 2: Processing JSON files -  (3 components) ***
+[>] Processing JSON file for component PACKINGTYPEMASTERView
+[>] Processing JSON file for component PACKINGTYPEMASTERList
+[>] Processing JSON file for component PACKING_TYPE_MASTER_CM
+*** Step 3: generate components. (3 components) ***
+[>] generate component PACKINGTYPEMASTERView
+[>] generate component PACKINGTYPEMASTERList
+[>] generate component PACKING_TYPE_MASTER_CM
+[>] Step 4: components-list.
+ Total old components: 20, added components: 3. 
+[>]  ********************************* E N D    GENERATE *********************************
+[32mCREATE[39m src/app/magic/PACKINGTYPEMASTERView/PACKINGTYPEMASTERView.mg.controls.g.ts (1222 bytes)
+[32mCREATE[39m src/app/magic/PACKINGTYPEMASTERView/PACKINGTYPEMASTERView.component.ts (2209 bytes)
+[32mCREATE[39m src/app/magic/PACKINGTYPEMASTERView/PACKINGTYPEMASTERView.component.html (1756 bytes)
+[32mCREATE[39m src/app/magic/PACKINGTYPEMASTERView/PACKINGTYPEMASTERList/PACKINGTYPEMASTERList.mg.controls.g.ts (1193 bytes)
+[32mCREATE[39m src/app/magic/PACKINGTYPEMASTERView/PACKINGTYPEMASTERList/PACKINGTYPEMASTERList.component.ts (2409 bytes)
+[32mCREATE[39m src/app/magic/PACKINGTYPEMASTERView/PACKINGTYPEMASTERList/PACKINGTYPEMASTERList.component.html (7435 bytes)
+[32mCREATE[39m src/app/magic/PACKINGTYPEMASTERView/PACKINGTYPEMASTERList/PACKING TYPE MASTER CM/PACKING_TYPE_MASTER_CM.mg.controls.g.ts (1503 bytes)
+[32mCREATE[39m src/app/magic/PACKINGTYPEMASTERView/PACKINGTYPEMASTERList/PACKING TYPE MASTER CM/PACKING_TYPE_MASTER_CM.component.ts (2269 bytes)
+[32mCREATE[39m src/app/magic/PACKINGTYPEMASTERView/PACKINGTYPEMASTERList/PACKING TYPE MASTER CM/PACKING_TYPE_MASTER_CM.component.html (1931 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (6713 bytes)
+
+
+

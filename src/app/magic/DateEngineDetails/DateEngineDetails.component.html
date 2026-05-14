@@ -1,0 +1,56 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.DateEngineDetails"
+    >
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                From Date:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.F_Date"
+                [magic]="mgc.F_Date"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                TO Date:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.T_Date"
+                [magic]="mgc.T_Date"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.Ok">
+                {{mg.getValue(mgc.Ok)}}
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                Report Path= C:\MAGIC\TEMP\ENGINE-DETAIL.TXT
+            </label>
+        </div>
+    </div>
+</div>

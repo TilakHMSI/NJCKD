@@ -1,0 +1,280 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PACKINGDATAMENU",
+		"window_type":	12,
+		"component_path":	"CKDMN103PackingDataMenu/",
+		"module_name":	"",
+		"component_uniquename":	"CKDMN103PackingDataMenu_PACKINGDATAMENU"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Image1",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	3,
+				"width":	94,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"I",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	458,
+				"y":	20,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	481,
+				"y":	5,
+				"width":	75,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	513,
+				"y":	20,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit5",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	383,
+				"y":	36,
+				"width":	174,
+				"height":	8
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line61"
+			},
+			"coordinates":	{
+				"x":	475,
+				"y":	61,
+				"width":	82,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	148,
+				"y":	93,
+				"width":	268,
+				"height":	379
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_1_PC_Lot_Generation_v",
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	156,
+				"y":	104,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_2_Packing_Data_Generation_v",
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	156,
+				"y":	140,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_3_Packing_Data_Inquriy_v",
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	156,
+				"y":	176,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_4_Case_Packing_Schedule_Entrv",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	156,
+				"y":	211,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_5_Case_Packing_Approval_v",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	156,
+				"y":	247,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_6_DCN_Updation_v",
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	156,
+				"y":	283,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_7_Bangladesh_Lot_Scanning_v",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	156,
+				"y":	320,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

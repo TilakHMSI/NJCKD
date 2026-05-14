@@ -1,0 +1,134 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"FRAMEMODELLIST",
+		"window_type":	12,
+		"component_path":	"CKDZ006BrowseFrameModelCod/",
+		"module_name":	"",
+		"component_uniquename":	"CKDZ006BrowseFrameModelCod_FRAMEMODELLIST"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	230,
+		"height":	310
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit1",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	149,
+				"y":	3,
+				"width":	75,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	20,
+				"table_title_height":	20,
+				"common_line_id":	"line21"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	21,
+				"width":	221,
+				"height":	280
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"Frame Model Code",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	110
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_Frame_Model_Code_v",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line44"
+							},
+							"coordinates":	{
+								"x":	6,
+								"y":	44,
+								"width":	104,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"Model Name",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	94
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_Model_Name_v",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line44"
+							},
+							"coordinates":	{
+								"x":	116,
+								"y":	44,
+								"width":	95,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,237 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKDR0010PMRequiredRepor2",
+		"window_type":	12,
+		"component_path":	"CKDR0010PMRequiredRepor/",
+		"module_name":	"",
+		"component_uniquename":	"CKDR0010PMRequiredRepor_CKDR0010PMRequiredRepor2"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	561,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Image1",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	3,
+				"width":	94,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"I",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	458,
+				"y":	20,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	481,
+				"y":	5,
+				"width":	75,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	513,
+				"y":	20,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit5",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	383,
+				"y":	36,
+				"width":	174,
+				"height":	8
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line58"
+			},
+			"coordinates":	{
+				"x":	452,
+				"y":	58,
+				"width":	61,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	68,
+				"width":	185,
+				"height":	36
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"Date :",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	25,
+				"y":	80,
+				"width":	35,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Date_From_v",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	65,
+				"y":	80,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label10",
+				"text":	"-",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	126,
+				"y":	80,
+				"width":	6,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Date_To_v",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	135,
+				"y":	80,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CartonTypes",
+				"common_line_id":	"line123"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	123,
+				"width":	549,
+				"height":	348
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

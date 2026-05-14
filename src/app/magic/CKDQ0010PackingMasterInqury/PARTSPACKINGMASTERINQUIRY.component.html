@@ -1,0 +1,102 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.PARTSPACKINGMASTERINQUIRY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div *ngIf="mg.isImageExists(mgc.Image1)">
+                <img
+                    [magic]="mgc.Image1"
+                    [src]="mg.getImage(mgc.Image1)"
+                />
+            </div>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2) }}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                Lot Id
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.Lot_Type_v"
+                    [magic]="mgc.Lot_Type_v"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.Lot_Type_v> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.Lot_Type_v"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                Date
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.Date_v"
+                [magic]="mgc.Date_v"
+                dateInput
+            />
+            <div
+                [magic]="mgc.Option_v"
+                (change)="task.mgOnRadioSelectionChanged(mgc.Option_v)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.Option_v);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.Option_v"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.LOT_MAST_LOT_DESC"
+                    [magic]="mgc.LOT_MAST_LOT_DESC"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.LOT_MAST_LOT_DESC> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Edit12"
+                [style.visibility]="mg.getVisible(mgc.Edit12)"
+            >
+                {{mg.getValue(mgc.Edit12) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.Display_Packing_Master">
+            </magic-subform>
+        </div>
+    </div>
+</div>

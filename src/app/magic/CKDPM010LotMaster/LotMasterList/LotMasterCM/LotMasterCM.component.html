@@ -1,0 +1,105 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.LotMasterCM"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div *ngIf="mg.isImageExists(mgc.Image1)">
+                <img
+                    [magic]="mgc.Image1"
+                    [src]="mg.getImage(mgc.Image1)"
+                />
+            </div>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2) }}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.LOT_CODE"
+                    [magic]="mgc.LOT_CODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.LOT_CODE> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.LOT_DESC"
+                    [magic]="mgc.LOT_DESC"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.LOT_DESC> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.LOT_MDCD"
+                    [magic]="mgc.LOT_MDCD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.LOT_MDCD> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.LOT_MDCD"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.S1_MTONAME"
+                    [magic]="mgc.S1_MTONAME"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S1_MTONAME> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.LOT_MQTY"
+                    type='number'
+                    [magic]="mgc.LOT_MQTY"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.LOT_MQTY> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnSave">
+                Save
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+            </label>
+        </div>
+    </div>
+</div>

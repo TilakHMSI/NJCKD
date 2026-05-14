@@ -1,0 +1,122 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.LOTGENERATIONFORPURCHASECO"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div *ngIf="mg.isImageExists(mgc.Image1)">
+                <img
+                    [magic]="mgc.Image1"
+                    [src]="mg.getImage(mgc.Image1)"
+                />
+            </div>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2) }}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Option_v"
+                (change)="task.mgOnRadioSelectionChanged(mgc.Option_v)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.Option_v);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.Option_v"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                P/C No. :
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.PC_No_v"
+                    [magic]="mgc.PC_No_v"
+                    [mask]="mg.getAlphaMask(mgc.PC_No_v)"
+                    [showMaskTyped]='true'
+                />
+                <mgError [magic]=mgc.PC_No_v> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.PC_No_v"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label9"
+                [style.visibility]="mg.getVisible(mgc.Label9)"
+                class="lable_overflow"
+            >
+                Dist:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.DSTBMST_DS_DSENAM"
+                    [magic]="mgc.DSTBMST_DS_DSENAM"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.DSTBMST_DS_DSENAM> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.KDPCHED_PH_DSCD"
+                    [magic]="mgc.KDPCHED_PH_DSCD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.KDPCHED_PH_DSCD> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label11"
+                [style.visibility]="mg.getVisible(mgc.Label11)"
+                class="lable_overflow"
+            >
+                Check PC:
+            </label>
+            <div>
+                <input
+                    type="checkbox"
+                    id="Check_PC_Mark"
+                    [formControlName]="mgc.Check_PC_Mark"
+                    [magic]="mgc.Check_PC_Mark"
+                    [style.visibility]="mg.getVisible(mgc.Check_PC_Mark)"
+                />
+            </div>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.Lot_Type_Entry">
+            </magic-subform>
+        </div>
+    </div>
+</div>

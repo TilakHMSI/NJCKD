@@ -1,0 +1,71 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.REORGANIZEPACKINGMASTER"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div *ngIf="mg.isImageExists(mgc.Image1)">
+                <img
+                    [magic]="mgc.Image1"
+                    [src]="mg.getImage(mgc.Image1)"
+                />
+            </div>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2) }}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                Lot Id
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.Lot_Id_v"
+                    [magic]="mgc.Lot_Id_v"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.Lot_Id_v> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.Lot_Id_v"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.LOT_MAST_LOT_DESC"
+                    [magic]="mgc.LOT_MAST_LOT_DESC"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.LOT_MAST_LOT_DESC> </mgError>
+            </div>
+            <button [magic]="mgc.OK_Button_v">
+                {{mg.getValue(mgc.OK_Button_v)}}
+            </button>
+        </div>
+    </div>
+</div>

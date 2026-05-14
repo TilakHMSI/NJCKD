@@ -1,0 +1,99 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.MASTERMAINTENANCEMENU">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getValue(mgc.Edit2) }}
+                        </label></h3>
+
+                    <div class="d-flex align-items-center">
+                        <!-- <label [magic]="mgc.Edit6" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit6)
+                            | magicDate : mgc.Edit6}}
+                        </label>
+                        <label [magic]="mgc.Edit7" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit7)
+                            | magicTime : mgc.Edit7}}
+                        </label> -->
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <div class="form-group">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                *ngIf="mg.getVisible(mgc.btn_1_Container_Master_v)==='visible'"
+                                [magic]="mgc.btn_1_Container_Master_v">
+                                {{mg.getValue(mgc.btn_1_Container_Master_v)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_2_Case_Master_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_2_Case_Master_v">
+                                {{mg.getValue(mgc.btn_2_Case_Master_v)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_3_PM_Type_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_3_PM_Type_v">
+                                {{mg.getValue(mgc.btn_3_PM_Type_v)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_4_PM_Master_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_4_PM_Master_v">
+                                {{mg.getValue(mgc.btn_4_PM_Master_v)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_5_Packing_Station_Master_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_5_Packing_Station_Master_v">
+                                {{mg.getValue(mgc.btn_5_Packing_Station_Master_v)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_6_CKD_PartsMaster_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_6_CKD_PartsMaster_v">
+                                {{mg.getValue(mgc.btn_6_CKD_PartsMaster_v)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_6_CKD_Sectioin_Master_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_6_CKD_Sectioin_Master_v">
+                                {{mg.getValue(mgc.btn_6_CKD_Sectioin_Master_v)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_8_CKD_Mapping_Master)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_8_CKD_Mapping_Master">
+                                {{mg.getValue(mgc.btn_8_CKD_Mapping_Master)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_8_CKD_COLOUR_MASTER_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_8_CKD_COLOUR_MASTER_0001">
+                                {{mg.getValue(mgc.btn_8_CKD_COLOUR_MASTER_0001)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_8_CKD_Parameters_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_8_CKD_Parameters_v">
+                                {{mg.getValue(mgc.btn_8_CKD_Parameters_v)}}
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

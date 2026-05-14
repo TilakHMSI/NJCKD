@@ -1,0 +1,235 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PARTSPACKINGMASTERMENU",
+		"window_type":	12,
+		"component_path":	"CKDMNBangladeshScanningMenu/",
+		"module_name":	"",
+		"component_uniquename":	"CKDMNBangladeshScanningMenu_PARTSPACKINGMASTERMENU"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Image1",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	3,
+				"width":	94,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"I",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	458,
+				"y":	20,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	513,
+				"y":	20,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	383,
+				"y":	36,
+				"width":	174,
+				"height":	8
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line56"
+			},
+			"coordinates":	{
+				"x":	485,
+				"y":	56,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	146,
+				"y":	93,
+				"width":	268,
+				"height":	379
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_5_Cancel_All_FramesEnginesv",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	153,
+				"y":	254,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_1_Compare_FramesEngines_v",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	155,
+				"y":	104,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_2_Cancel_Scanned_FrameEnginev",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	155,
+				"y":	141,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_3_Report_Scanned_FrameEnginev",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	155,
+				"y":	179,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_4_Cancel_Scanned_FrameEnginev",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	155,
+				"y":	216,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

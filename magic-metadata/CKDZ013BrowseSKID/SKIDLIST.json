@@ -1,0 +1,285 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"SKIDLIST",
+		"window_type":	12,
+		"component_path":	"CKDZ013BrowseSKID/",
+		"module_name":	"",
+		"component_uniquename":	"CKDZ013BrowseSKID_SKIDLIST"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	340,
+		"height":	323
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	136,
+				"y":	5,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit1",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	258,
+				"y":	7,
+				"width":	75,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	21,
+				"table_title_height":	20,
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	28,
+				"width":	329,
+				"height":	288
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"SKID No.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	110
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SKD_MAST_SKID_CONTROL_NO",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mask":	"mask",
+								"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line50"
+							},
+							"coordinates":	{
+								"x":	8,
+								"y":	50,
+								"width":	105,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"PC No.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	65
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SKD_MAST_SKID_PC_NO",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mask":	"mask",
+								"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line50"
+							},
+							"coordinates":	{
+								"x":	118,
+								"y":	50,
+								"width":	60,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"Lot No.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	50
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SKD_MAST_SKID_LOT_NO",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"currency":	"currency",
+								"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line50"
+							},
+							"coordinates":	{
+								"x":	183,
+								"y":	50,
+								"width":	25,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"Container",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	50
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SKD_MAST_SKID_CONTAINER_NO",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"currency":	"currency",
+								"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line50"
+							},
+							"coordinates":	{
+								"x":	233,
+								"y":	50,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"Case",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	38
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SKD_MAST_SKID_CASE_NO",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"currency":	"currency",
+								"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line50"
+							},
+							"coordinates":	{
+								"x":	283,
+								"y":	50,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

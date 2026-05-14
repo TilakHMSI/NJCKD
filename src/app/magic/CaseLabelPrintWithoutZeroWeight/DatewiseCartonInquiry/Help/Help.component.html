@@ -1,0 +1,31 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.Help"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group1"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label2"
+                        class="lable_overflow"
+                    >
+                        Remove Lot No and add Gross weight Developed by 'minerva' date :11\08\10
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                {{mg.getValue(mgc.btnexit)}}
+            </button>
+        </div>
+    </div>
+</div>

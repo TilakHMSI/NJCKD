@@ -1,0 +1,306 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.CARTONWEIGHTLIMITSMODIFY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div *ngIf="mg.isImageExists(mgc.Image1)">
+                <img
+                    [magic]="mgc.Image1"
+                    [src]="mg.getImage(mgc.Image1)"
+                />
+            </div>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2) }}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                P/C No. :
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.PC_No_v"
+                    [magic]="mgc.PC_No_v"
+                    [mask]="mg.getAlphaMask(mgc.PC_No_v)"
+                    [showMaskTyped]='true'
+                />
+                <mgError [magic]=mgc.PC_No_v> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.PC_No_v"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label9"
+                [style.visibility]="mg.getVisible(mgc.Label9)"
+                class="lable_overflow"
+            >
+                Dist
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.KDPCHED_PH_DSCD"
+                    [magic]="mgc.KDPCHED_PH_DSCD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.KDPCHED_PH_DSCD> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.DSTBMST_DS_DSENAM"
+                    [magic]="mgc.DSTBMST_DS_DSENAM"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.DSTBMST_DS_DSENAM> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                Lot :
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.Lot_No_v"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.Lot_No_v))"
+                    [magic]="mgc.Lot_No_v"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.Lot_No_v> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.Lot_No_v"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label14"
+                [style.visibility]="mg.getVisible(mgc.Label14)"
+                class="lable_overflow"
+            >
+                Model
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.PKD_LTID_PKD_MDCD"
+                    [magic]="mgc.PKD_LTID_PKD_MDCD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PKD_LTID_PKD_MDCD> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.MTOCMST_MTMDN1"
+                    [magic]="mgc.MTOCMST_MTMDN1"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.MTOCMST_MTMDN1> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PKD_LTID_PKD_MDTY"
+                    [magic]="mgc.PKD_LTID_PKD_MDTY"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PKD_LTID_PKD_MDTY> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PKD_LTID_PKD_MDOP"
+                    [magic]="mgc.PKD_LTID_PKD_MDOP"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PKD_LTID_PKD_MDOP> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label19"
+                class="lable_overflow"
+            >
+                Container :
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.Container_No_v"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.Container_No_v))"
+                    [magic]="mgc.Container_No_v"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.Container_No_v> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.Container_No_v"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label21"
+                class="lable_overflow"
+            >
+                Case :
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.Case_No_v"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.Case_No_v))"
+                    [magic]="mgc.Case_No_v"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.Case_No_v> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.Case_No_v"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label23"
+                class="lable_overflow"
+            >
+                Carton :
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.Carton_No_v"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.Carton_No_v))"
+                    [magic]="mgc.Carton_No_v"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.Carton_No_v> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.Carton_No_v"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group26"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label30"
+                        class="lable_overflow"
+                    >
+                        Lower :
+                    </label>
+                    <div>
+                        <input
+                            [formControlName]="mgc.Lower_Limit_v"
+                            currencyMask
+                            [options]="mg.getNumericPicture(mg.getPicture(mgc.Lower_Limit_v))"
+                            [magic]="mgc.Lower_Limit_v"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.Lower_Limit_v> </mgError>
+                    </div>
+                    <label
+                        [magic]="mgc.Label28"
+                        class="lable_overflow"
+                    >
+                        Upper :
+                    </label>
+                    <div>
+                        <input
+                            [formControlName]="mgc.Upper_Linit_v"
+                            currencyMask
+                            [options]="mg.getNumericPicture(mg.getPicture(mgc.Upper_Linit_v))"
+                            [magic]="mgc.Upper_Linit_v"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.Upper_Linit_v> </mgError>
+                    </div>
+                </div>
+            </div>
+            <div
+                [magic]="mgc.Group31"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label32"
+                        class="lable_overflow"
+                    >
+                        Weight :
+                    </label>
+                    <div>
+                        <input
+                            [formControlName]="mgc.PCR_DATA_PCR_CRGW"
+                            currencyMask
+                            [options]="mg.getNumericPicture(mg.getPicture(mgc.PCR_DATA_PCR_CRGW))"
+                            [magic]="mgc.PCR_DATA_PCR_CRGW"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.PCR_DATA_PCR_CRGW> </mgError>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <div [style.visibility]="mg.getVisible(mgc.Special_Approval_v)">
+                    <input
+                        type="checkbox"
+                        [formControlName]="mgc.Special_Approval_v"
+                        [magic]="mgc.Special_Approval_v"
+                        id="Special_Approval_v"
+                    />
+                    <label for="Special_Approval_v">
+                        Special Approval
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label25"
+                class="lable_overflow"
+            >
+            </label>
+            <button [magic]="mgc.Save_v">
+                {{mg.getValue(mgc.Save_v)}}
+            </button>
+        </div>
+    </div>
+</div>

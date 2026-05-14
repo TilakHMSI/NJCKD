@@ -1,0 +1,296 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKDPARTSMASTERAdd4",
+		"window_type":	12,
+		"component_path":	"CKDPartsMappingMaintenance/PartsMappingMaintList/CKDPARTSMASTERCM/",
+		"module_name":	"",
+		"component_uniquename":	"CKDPartsMappingMaintenance_PartsMappingMaintList_CKDPARTSMASTERCM_CKDPARTSMASTERAdd4"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	568,
+		"height":	297
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"\u003c\u003c   C.K.D. PART ADDITION   \u003e\u003e",
+				"common_line_id":	"line18"
+			},
+			"coordinates":	{
+				"x":	74,
+				"y":	26,
+				"width":	420,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line18"
+			},
+			"coordinates":	{
+				"x":	461,
+				"y":	18,
+				"width":	89,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PART NO.:",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	114,
+				"y":	75,
+				"width":	70,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PART_NO",
+				"modifiable":	false,
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	195,
+				"y":	75,
+				"width":	219,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"BASE PART",
+				"common_line_id":	"line98"
+			},
+			"coordinates":	{
+				"x":	115,
+				"y":	98,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BASE_PART_NO",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line98"
+			},
+			"coordinates":	{
+				"x":	195,
+				"y":	98,
+				"width":	219,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"Color",
+				"common_line_id":	"line128"
+			},
+			"coordinates":	{
+				"x":	115,
+				"y":	128,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PART_COLOR_0001",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"modifiable":	false,
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line128"
+			},
+			"coordinates":	{
+				"x":	195,
+				"y":	128,
+				"width":	219,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"Lot Code",
+				"common_line_id":	"line156"
+			},
+			"coordinates":	{
+				"x":	118,
+				"y":	156,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PART_LTCD",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line156"
+			},
+			"coordinates":	{
+				"x":	195,
+				"y":	156,
+				"width":	219,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label10",
+				"text":	"Is Select",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	115,
+				"y":	182,
+				"width":	65,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"STATUS",
+				"mgformat":	"mgFormat",
+				"format":	"X",
+				"attribute":	"A",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	195,
+				"y":	182,
+				"width":	25,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label12",
+				"text":	"Is Required",
+				"common_line_id":	"line210"
+			},
+			"coordinates":	{
+				"x":	118,
+				"y":	210,
+				"width":	65,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"IS_REQUIRED_0001",
+				"mgformat":	"mgFormat",
+				"format":	"X",
+				"attribute":	"A",
+				"common_line_id":	"line210"
+			},
+			"coordinates":	{
+				"x":	195,
+				"y":	210,
+				"width":	25,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSave",
+				"format":	"Save",
+				"common_line_id":	"line247"
+			},
+			"coordinates":	{
+				"x":	86,
+				"y":	247,
+				"width":	195,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

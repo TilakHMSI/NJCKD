@@ -1,0 +1,32 @@
+[
+	{
+		"module_name":	"",
+		"routesArray":	[
+			{
+				"RouteName":	"Login",
+				"ModuleName":	"",
+				"OutletName":	"",
+				"children":	null
+			},
+			{
+				"RouteName":	"Home",
+				"ModuleName":	"",
+				"OutletName":	"",
+				"children":	[
+					{
+						"RouteName":	"CKDMN100MainMenu",
+						"ModuleName":	"",
+						"OutletName":	"",
+						"children":	null
+					},
+					{
+						"RouteName":	"ChangeUserPassword",
+						"ModuleName":	"",
+						"OutletName":	"",
+						"children":	null
+					}
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,33 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.StatusMessage"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group1"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <div>
+                        <input
+                            [formControlName]="mgc.V_v_MRN_Number"
+                            [magic]="mgc.V_v_MRN_Number"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.V_v_MRN_Number> </mgError>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Exit">
+                OK
+            </button>
+        </div>
+    </div>
+</div>

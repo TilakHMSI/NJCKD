@@ -1,0 +1,192 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"SECTIONMASTERCM",
+		"window_type":	12,
+		"component_path":	"CDKSECTIONMASTER/SECTIONMASTERList/SECTIONMASTERCM/",
+		"module_name":	"",
+		"component_uniquename":	"CDKSECTIONMASTER_SECTIONMASTERList_SECTIONMASTERCM_SECTIONMASTERCM"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	480,
+		"height":	218
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	418,
+				"y":	12,
+				"width":	51,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"SECTION CODE:",
+				"common_line_id":	"line70"
+			},
+			"coordinates":	{
+				"x":	120,
+				"y":	70,
+				"width":	98,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SEC_CD",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"#####",
+				"attribute":	"N",
+				"common_line_id":	"line70"
+			},
+			"coordinates":	{
+				"x":	219,
+				"y":	70,
+				"width":	44,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"DESCRIPTION:",
+				"common_line_id":	"line96"
+			},
+			"coordinates":	{
+				"x":	126,
+				"y":	96,
+				"width":	91,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SEC_DESC",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line96"
+			},
+			"coordinates":	{
+				"x":	219,
+				"y":	96,
+				"width":	219,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"PARTS REQUIREMENT PRINT:",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	43,
+				"y":	117,
+				"width":	175,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Reqprn",
+				"items_list":	"Yes,No",
+				"mgformat":	"mgFormat",
+				"validator":	"rangevalidator",
+				"format":	"XXX",
+				"attribute":	"B",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	219,
+				"y":	117,
+				"width":	30,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Desc",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	221,
+				"y":	140,
+				"width":	216,
+				"height":	29
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_SaveExit",
+				"format":	"Save \\And Exit",
+				"attribute":	"A",
+				"common_line_id":	"line175"
+			},
+			"coordinates":	{
+				"x":	155,
+				"y":	175,
+				"width":	170,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

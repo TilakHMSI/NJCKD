@@ -1,0 +1,258 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKDPARTSMASTERDELETE",
+		"window_type":	12,
+		"component_path":	"CKDPartsMappingMaintenance/PartsMappingMaintList/CKDPARTSMASTERDELETE/",
+		"module_name":	"",
+		"component_uniquename":	"CKDPartsMappingMaintenance_PartsMappingMaintList_CKDPARTSMASTERDELETE_CKDPARTSMASTERDELETE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	816,
+		"height":	577
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"\u003c\u003c   C.K.D. PART MAPPING MASTER DELETE  \u003e\u003e",
+				"common_line_id":	"line10"
+			},
+			"coordinates":	{
+				"x":	30,
+				"y":	10,
+				"width":	695,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	21,
+				"table_title_height":	20,
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	25,
+				"y":	65,
+				"width":	744,
+				"height":	455
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"PART_NO",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	139
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PART_NO",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line89"
+							},
+							"coordinates":	{
+								"x":	30,
+								"y":	89,
+								"width":	130,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"PART_NAME",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	268
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PART_NAME",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line89"
+							},
+							"coordinates":	{
+								"x":	169,
+								"y":	89,
+								"width":	265,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"BASE_PART_NO",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	139
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"BASE_PART_NO",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line89"
+							},
+							"coordinates":	{
+								"x":	436,
+								"y":	89,
+								"width":	130,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"PART_COLOR",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	90
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PART_COLOR",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line89"
+							},
+							"coordinates":	{
+								"x":	575,
+								"y":	89,
+								"width":	81,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"PART_LTCD",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	90
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PART_LTCD",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line89"
+							},
+							"coordinates":	{
+								"x":	665,
+								"y":	89,
+								"width":	81,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Exit",
+				"format":	"Exit",
+				"common_line_id":	"line533"
+			},
+			"coordinates":	{
+				"x":	455,
+				"y":	533,
+				"width":	49,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

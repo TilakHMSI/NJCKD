@@ -1,0 +1,306 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"ScannedFrameEngineView",
+		"window_type":	1,
+		"component_path":	"CancelScannedFrameEngine/ScannedFrameEngineView/",
+		"module_name":	"",
+		"component_uniquename":	"CancelScannedFrameEngine_ScannedFrameEngineView_ScannedFrameEngineView"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	733,
+		"height":	275
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	23,
+				"table_title_height":	20,
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	26,
+				"y":	7,
+				"width":	680,
+				"height":	260
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"STATUS",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	69
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"FRAME_ENGINE_CHECK_C_STATUS",
+								"items_list":	"A,D",
+								"mgformat":	"mgFormat",
+								"validator":	"rangevalidator",
+								"format":	"XU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	30,
+								"y":	29,
+								"width":	23,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"PC NUMBER",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	94
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"FRAME_ENGINE_CHECK_C_PC_NUMBER",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	99,
+								"y":	29,
+								"width":	86,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"ENG/FRM TYPE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	111
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"C_ENG_FRM_TYPE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	193,
+								"y":	29,
+								"width":	93,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"CHASSIS NO",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	94
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"C_CHASSIS_NO",
+								"mgformat":	"mgFormat",
+								"format":	"-#######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	304,
+								"y":	29,
+								"width":	65,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"EFM",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	48
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"FRAME_ENGINE_CHECK_C_EFM",
+								"items_list":	"E,F",
+								"mgformat":	"mgFormat",
+								"validator":	"rangevalidator",
+								"format":	"XU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	398,
+								"y":	29,
+								"width":	23,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"ENTRY DATE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	125
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"C_REC_ENTRY_DATE",
+								"formatter":	"magicDate",
+								"mgformat":	"mgFormat",
+								"format":	"DD-MM-YYYY",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	445,
+								"y":	29,
+								"width":	79,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column8",
+						"column_title":	"ENTRY TIME",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	118
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"C_REC_ENTRY_TIME",
+								"formatter":	"magicTime",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	570,
+								"y":	29,
+								"width":	65,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

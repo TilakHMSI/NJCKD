@@ -1,0 +1,285 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"UpdateLotDCNUpdation",
+		"window_type":	12,
+		"component_path":	"UpdateLotDCNUpdation/",
+		"module_name":	"",
+		"component_uniquename":	"UpdateLotDCNUpdation_UpdateLotDCNUpdation"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	783,
+		"height":	553
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit1",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	620,
+				"y":	13,
+				"width":	85,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	710,
+				"y":	13,
+				"width":	71,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line39"
+			},
+			"coordinates":	{
+				"x":	595,
+				"y":	39,
+				"width":	184,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"\u003c\u003c LOT MODIFICATION AFTER DCN UPDATION  \u003e\u003e",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	84,
+				"y":	65,
+				"width":	625,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"DCN NO.:",
+				"common_line_id":	"line190"
+			},
+			"coordinates":	{
+				"x":	133,
+				"y":	190,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_DC_No",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line190"
+			},
+			"coordinates":	{
+				"x":	195,
+				"y":	190,
+				"width":	95,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"NEW PART NO.:",
+				"common_line_id":	"line229"
+			},
+			"coordinates":	{
+				"x":	98,
+				"y":	229,
+				"width":	98,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_New_Part_No",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line229"
+			},
+			"coordinates":	{
+				"x":	195,
+				"y":	229,
+				"width":	138,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"OLD PART NO.:",
+				"common_line_id":	"line229"
+			},
+			"coordinates":	{
+				"x":	358,
+				"y":	229,
+				"width":	98,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Old_Part_No",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line229"
+			},
+			"coordinates":	{
+				"x":	455,
+				"y":	229,
+				"width":	138,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"text":	"REMARKS:",
+				"common_line_id":	"line267"
+			},
+			"coordinates":	{
+				"x":	133,
+				"y":	267,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Remarks",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line267"
+			},
+			"coordinates":	{
+				"x":	195,
+				"y":	267,
+				"width":	490,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Update",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"\\UPD\\ATE",
+				"attribute":	"A",
+				"common_line_id":	"line348"
+			},
+			"coordinates":	{
+				"x":	264,
+				"y":	348,
+				"width":	125,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Exit",
+				"format":	"E\\XIT",
+				"attribute":	"A",
+				"common_line_id":	"line348"
+			},
+			"coordinates":	{
+				"x":	394,
+				"y":	348,
+				"width":	125,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

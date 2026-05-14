@@ -1,0 +1,376 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKDPARTSMASTERView",
+		"window_type":	12,
+		"component_path":	"CKDPARTSMASTERView/CKDPARTSMASTERList/",
+		"module_name":	"",
+		"component_uniquename":	"CKDPARTSMASTERView_CKDPARTSMASTERList_CKDPARTSMASTERView"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	909,
+		"height":	278
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnAdd",
+				"format":	"Add",
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	23,
+				"width":	105,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table9",
+				"table_row_height":	64,
+				"table_title_height":	20,
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	65,
+				"width":	894,
+				"height":	201
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column10",
+						"column_title":	"PART NO.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	92
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PART_NO",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	9,
+								"y":	88,
+								"width":	83,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column11",
+						"column_title":	"WEIGHT",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	90
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRT_WGT",
+								"mgformat":	"mgFormat",
+								"currency":	"currency",
+								"format":	"#####.#####",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	101,
+								"y":	88,
+								"width":	84,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column12",
+						"column_title":	"HARDWARE PART (Y/N)",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	99
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"HW_YN",
+								"items_list":	"Yes,No",
+								"mgformat":	"mgFormat",
+								"validator":	"rangevalidator",
+								"format":	"XXX",
+								"attribute":	"B",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	236,
+								"y":	88,
+								"width":	28,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column13",
+						"column_title":	"PACKING MATERIAL TYPE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	143
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PK_TYPE_MAST_PK_TYPE_DESC",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	290,
+								"y":	88,
+								"width":	139,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column14",
+						"column_title":	"PACKING MATERIAL DESCRIPTION",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	152
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PK_MAST_DESC",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	432,
+								"y":	88,
+								"width":	142,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column24",
+						"column_title":	"PART NAME",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	100
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PT_NAM",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line89"
+							},
+							"coordinates":	{
+								"x":	585,
+								"y":	89,
+								"width":	98,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column25",
+						"column_title":	"SECTION DESCRIPTION",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	135
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SEC_DESC",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line89"
+							},
+							"coordinates":	{
+								"x":	685,
+								"y":	89,
+								"width":	128,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column26",
+						"column_title":	"Action",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	58
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnEdit",
+								"format":	"Edit",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line89"
+							},
+							"coordinates":	{
+								"x":	820,
+								"y":	89,
+								"width":	49,
+								"height":	28
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnDelete",
+								"format":	"Delete",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line121"
+							},
+							"coordinates":	{
+								"x":	820,
+								"y":	121,
+								"width":	50,
+								"height":	28
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

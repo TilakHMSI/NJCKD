@@ -1,0 +1,92 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.CaseCM">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            Case : CM
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>CNT Code</label>
+                                    <input [formControlName]="mgc.CAS_CODE" [magic]="mgc.CAS_CODE"
+                                        class="form-control-ed" mgFormat />
+                                    <mgError [magic]="mgc.CAS_CODE"> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>Description</label>
+                                    <input [formControlName]="mgc.CAS_DESC" [magic]="mgc.CAS_DESC"
+                                        class="form-control-ed" mgFormat />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-3">
+                                <div class="form-group-sm">
+                                    <label>Length </label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CAS_LENG" type='number' [magic]="mgc.CAS_LENG"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.CAS_LENG> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group-sm">
+                                    <label>Height </label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CAS_HEIG" type='number' [magic]="mgc.CAS_HEIG"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.CAS_HEIG> </mgError>
+                                </div>
+                            </div>
+                             <div class="col-lg-3">
+                                <div class="form-group-sm">
+                                    <label>Width </label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CAS_WIDT" type='number' [magic]="mgc.CAS_WIDT"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.CAS_WIDT> </mgError>
+                                </div>
+                            </div>
+                             <div class="col-lg-3">
+                                <div class="form-group-sm">
+                                    <label>Weight </label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CAS_WEIG" type='number' [magic]="mgc.CAS_WEIG"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.CAS_WEIG> </mgError>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-12 text-center">
+                                <div class="form-group d-flex justify-content-center">
+                                    <button type="button" [magic]="mgc.btnSave"
+                                        class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                        SAVE
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

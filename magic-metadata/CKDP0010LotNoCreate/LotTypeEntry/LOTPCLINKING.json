@@ -1,0 +1,298 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"LOTPCLINKING",
+		"window_type":	12,
+		"component_path":	"CKDP0010LotNoCreate/LotTypeEntry/",
+		"module_name":	"",
+		"component_uniquename":	"CKDP0010LotNoCreate_LotTypeEntry_LOTPCLINKING"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	416,
+		"height":	293
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	20,
+				"table_title_height":	20,
+				"common_line_id":	"line8"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	8,
+				"width":	406,
+				"height":	241
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"Lot Type",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	65
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"KDPM_LOT_ID",
+								"show_zoom_button":	true,
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line31"
+							},
+							"coordinates":	{
+								"x":	8,
+								"y":	31,
+								"width":	55,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"Model Code",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	65
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"KDPCMODLOT_KDPM_MODEL",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line31"
+							},
+							"coordinates":	{
+								"x":	73,
+								"y":	31,
+								"width":	60,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"Model Name",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	110
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"MTOCMST_MTMDN1",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line31"
+							},
+							"coordinates":	{
+								"x":	138,
+								"y":	31,
+								"width":	105,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"Model Type",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	55
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"KDPCMODLOT_KDPM_TYPE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line31"
+							},
+							"coordinates":	{
+								"x":	248,
+								"y":	31,
+								"width":	25,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"Option",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	50
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"KDPCMODLOT_KDPM_OPT",
+								"mgformat":	"mgFormat",
+								"format":	"XXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line31"
+							},
+							"coordinates":	{
+								"x":	303,
+								"y":	31,
+								"width":	20,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column8",
+						"column_title":	"Quantity",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	45
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"KDPCMODLOT_KDPM_QTY",
+								"mgformat":	"mgFormat",
+								"format":	"-####",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line31"
+							},
+							"coordinates":	{
+								"x":	353,
+								"y":	31,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Create_Button_v1",
+				"attribute":	"A",
+				"common_line_id":	"line263"
+			},
+			"coordinates":	{
+				"x":	283,
+				"y":	263,
+				"width":	61,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Cancel_Button_v1",
+				"attribute":	"A",
+				"common_line_id":	"line263"
+			},
+			"coordinates":	{
+				"x":	349,
+				"y":	263,
+				"width":	61,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

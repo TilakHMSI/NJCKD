@@ -1,0 +1,704 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PARTSDETAILS",
+		"window_type":	12,
+		"component_path":	"CKDPM020PartsPackingMaster/ContainerDetails/CaseDetails/CartonDetails/PartDetails/",
+		"module_name":	"",
+		"component_uniquename":	"CKDPM020PartsPackingMaster_ContainerDetails_CaseDetails_CartonDetails_PartDetails_PARTSDETAILS"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	633,
+		"height":	476
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"Lot:",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	11,
+				"width":	25,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Lot_Id_v",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	48,
+				"y":	11,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"Container:",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	116,
+				"y":	11,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"WRK_CONT_WRK_CONT_CNCD",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"modifiable":	false,
+				"attribute":	"N",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	180,
+				"y":	11,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"Case:",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	221,
+				"y":	11,
+				"width":	30,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"WRK_CASE_WRK_CASE_CSCD",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"modifiable":	false,
+				"attribute":	"N",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	259,
+				"y":	11,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"Carton:",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	308,
+				"y":	11,
+				"width":	40,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"WRK_CART_WRK_CART_CRCD",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"modifiable":	false,
+				"attribute":	"N",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	356,
+				"y":	11,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit1",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	481,
+				"y":	5,
+				"width":	75,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit10",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	458,
+				"y":	20,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit11",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	513,
+				"y":	20,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit12",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	383,
+				"y":	36,
+				"width":	174,
+				"height":	8
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label13",
+				"text":	"E/F",
+				"common_line_id":	"line46"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	46,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit14",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line46"
+			},
+			"coordinates":	{
+				"x":	31,
+				"y":	46,
+				"width":	80,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label15",
+				"text":	"Effective Date.",
+				"common_line_id":	"line46"
+			},
+			"coordinates":	{
+				"x":	265,
+				"y":	54,
+				"width":	125,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table16",
+				"table_row_height":	21,
+				"table_title_height":	20,
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	65,
+				"width":	644,
+				"height":	364
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column17",
+						"column_title":	"Part No.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	78
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_PART_PART",
+								"modifiable":	{
+									"value":	false,
+									"has_exp":	true
+								},
+								"show_zoom_button":	true,
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	6,
+								"y":	88,
+								"width":	73,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column18",
+						"column_title":	"Part Name",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	123
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PT_NAM",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	84,
+								"y":	88,
+								"width":	118,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column19",
+						"column_title":	"Model Code",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	59
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_PART_WRK_PART_PMCD",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	206,
+								"y":	88,
+								"width":	53,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column20",
+						"column_title":	"From",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	61
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"VEF_DAT",
+								"formatter":	"magicDate",
+								"mgformat":	"mgFormat",
+								"format":	"DD/MM/YYYY",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	268,
+								"y":	88,
+								"width":	55,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column21",
+						"column_title":	"To",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	62
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"VED_DAT",
+								"formatter":	"magicDate",
+								"mgformat":	"mgFormat",
+								"format":	"DD/MM/YYYY",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	328,
+								"y":	88,
+								"width":	55,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column22",
+						"column_title":	"Weight",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	66
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CKD_PART_MAST_PRT_WGT",
+								"mgformat":	"mgFormat",
+								"currency":	"currency",
+								"format":	"#####.#####",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	389,
+								"y":	88,
+								"width":	60,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column23",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	55
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_PART_PQTY",
+								"mgformat":	"mgFormat",
+								"format":	"########",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	455,
+								"y":	88,
+								"width":	45,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column24",
+						"column_title":	"EXTRA PCS.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	61
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_PART_EXPCS",
+								"mgformat":	"mgFormat",
+								"format":	"##########",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	511,
+								"y":	88,
+								"width":	55,
+								"height":	11
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column25",
+						"column_title":	"Color",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	31
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_PART_COLOR",
+								"text":	"WRK_PART_COLOR",
+								"attribute":	"B",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line89"
+							},
+							"coordinates":	{
+								"x":	573,
+								"y":	89,
+								"width":	16,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"C",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column26",
+						"column_title":	"Frame",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	30
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_PART_FRAME_FLAG",
+								"text":	"WRK_PART_FRAME_FLAG",
+								"attribute":	"B",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line88"
+							},
+							"coordinates":	{
+								"x":	608,
+								"y":	88,
+								"width":	16,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"C",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

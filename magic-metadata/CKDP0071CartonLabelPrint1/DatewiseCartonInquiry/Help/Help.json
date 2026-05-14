@@ -1,0 +1,71 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"Help",
+		"window_type":	12,
+		"component_path":	"CKDP0071CartonLabelPrint1/DatewiseCartonInquiry/Help/",
+		"module_name":	"",
+		"component_uniquename":	"CKDP0071CartonLabelPrint1_DatewiseCartonInquiry_Help_Help"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	443,
+		"height":	179
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Group1",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	13,
+				"width":	425,
+				"height":	117
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label2",
+						"text":	"Add Carton Type : Devloped  by  \u0027minerva\u0027  date 11\\08\\10",
+						"common_line_id":	"line39"
+					},
+					"coordinates":	{
+						"x":	30,
+						"y":	39,
+						"width":	375,
+						"height":	78
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Exit",
+				"attribute":	"A",
+				"common_line_id":	"line143"
+			},
+			"coordinates":	{
+				"x":	340,
+				"y":	143,
+				"width":	96,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

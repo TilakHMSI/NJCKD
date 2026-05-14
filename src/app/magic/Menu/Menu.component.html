@@ -1,0 +1,40 @@
+<div>
+  <UL class="menu-nav">
+    <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover" *ngFor="let item of _source">
+    
+<a href="javascript:;" class="menu-link menu-toggle">
+<span [className]="item.icon"></span>
+<span class="menu-text" *ngIf="!item.children" [routerLink]=item.url>{{item.name}}</span>
+<span class="menu-text" *ngIf="item.children">{{item.name}}</span>
+<i *ngIf="item.children" class="menu-arrow"></i>
+</a>
+         
+ <div *ngIf="item.children" class="menu-submenu">
+     <Menu [source]="item.children" class="menujsonsub"></Menu>
+ </div>
+ </li>
+  </UL>
+</div>
+
+
+
+<!--   <div>
+    <UL class="menu-nav">
+        <LI *ngFor="let item of _source" [ngClass]="{'myRed':route.url==item.url}" (click)="aClick($event)"
+          [routerLink]=item.url>
+          <span *ngIf="item.children" (click)="liToggle(item,$event)">
+            <i *ngIf="item.isOpen" [class.arrow-on]="!item.isOpen" style="float: left; font-size: 0.700rem;"
+              class="fas fa-chevron-down pt-1"></i>
+            <i *ngIf="!item.isOpen" [class.arrow-on]="!item.isOpen" style="float: left; font-size: 0.700rem;"
+              class="fas fa-chevron-up pt-1"></i>
+            <i [className]="'fa fa-fw '+ item.icon"></i>
+            <span [class.parent-menu-on]="!item.isOpen">{{item.name}}</span>
+            <Menu [source]="item.children" [class.onOff]="item.isOpen"></Menu>
+          </span>
+          <div>
+            <a *ngIf="!item.children" [routerLink]=item.url (click)="aClick($event)" class="child-menu">
+              {{item.name}}</a>xxx
+          </div>
+        </LI>
+      </UL>
+    </div> -->

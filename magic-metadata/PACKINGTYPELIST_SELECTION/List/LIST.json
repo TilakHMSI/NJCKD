@@ -1,0 +1,116 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"LIST",
+		"window_type":	12,
+		"component_path":	"PACKINGTYPELIST_SELECTION/List/",
+		"module_name":	"",
+		"component_uniquename":	"PACKINGTYPELIST_SELECTION_List_LIST"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	361,
+		"height":	362
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	24,
+				"table_title_height":	18,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	13,
+				"width":	327,
+				"height":	320
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"CODE",
+						"sortable":	true,
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	73
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line35"
+							},
+							"coordinates":	{
+								"x":	9,
+								"y":	35,
+								"width":	56,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"DESC",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	224
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"DESC",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	83,
+								"y":	34,
+								"width":	218,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

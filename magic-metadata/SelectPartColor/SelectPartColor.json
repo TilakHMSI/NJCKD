@@ -1,0 +1,76 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"SelectPartColor",
+		"window_type":	12,
+		"component_path":	"SelectPartColor/",
+		"module_name":	"",
+		"component_uniquename":	"SelectPartColor_SelectPartColor"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	150,
+		"height":	317
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	21,
+				"table_title_height":	20,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	13,
+				"width":	104,
+				"height":	296
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"CECLC1",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	83
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CECLC1",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line37"
+							},
+							"coordinates":	{
+								"x":	15,
+								"y":	37,
+								"width":	74,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

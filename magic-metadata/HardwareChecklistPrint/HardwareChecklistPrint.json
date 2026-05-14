@@ -1,0 +1,127 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"HardwareChecklistPrint",
+		"window_type":	12,
+		"component_path":	"HardwareChecklistPrint/",
+		"module_name":	"",
+		"component_uniquename":	"HardwareChecklistPrint_HardwareChecklistPrint"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	478,
+		"height":	265
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"\u003c\u003c  HARDWARE CHECKLIST PRINTING  \u003e\u003e",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	13,
+				"width":	465,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	423,
+				"y":	13,
+				"width":	48,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PURCHASE CONTRACT NO.:",
+				"common_line_id":	"line109"
+			},
+			"coordinates":	{
+				"x":	80,
+				"y":	109,
+				"width":	184,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_PCNo",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line109"
+			},
+			"coordinates":	{
+				"x":	265,
+				"y":	109,
+				"width":	84,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Exec",
+				"format":	"\\LIST",
+				"attribute":	"A",
+				"common_line_id":	"line211"
+			},
+			"coordinates":	{
+				"x":	62,
+				"y":	211,
+				"width":	115,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_LblPrn",
+				"format":	"\\L\\AB\\LE PRINT",
+				"attribute":	"A",
+				"common_line_id":	"line211"
+			},
+			"coordinates":	{
+				"x":	183,
+				"y":	211,
+				"width":	115,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

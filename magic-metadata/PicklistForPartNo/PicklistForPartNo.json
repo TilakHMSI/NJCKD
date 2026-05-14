@@ -1,0 +1,76 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PicklistForPartNo",
+		"window_type":	12,
+		"component_path":	"PicklistForPartNo/",
+		"module_name":	"",
+		"component_uniquename":	"PicklistForPartNo_PicklistForPartNo"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	133,
+		"height":	275
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	18,
+				"table_title_height":	16,
+				"common_line_id":	"line11"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	11,
+				"width":	114,
+				"height":	257
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"PT_NO",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	99
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PT_NO",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line33"
+							},
+							"coordinates":	{
+								"x":	11,
+								"y":	33,
+								"width":	93,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

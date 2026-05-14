@@ -1,0 +1,122 @@
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.PARTSPACKINGMASTERMENU">
+        <div style="display: flex; flex-direction: row">
+            <div *ngIf="mg.isImageExists(mgc.Image1)">
+                <img [magic]="mgc.Image1" [src]="mg.getImage(mgc.Image1)" />
+            </div>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+                | magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2) }}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+                | magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label6" class="lable_overflow">
+            </label>
+            <button [magic]="mgc.btn_1_Lot_Master_v">
+                {{mg.getValue(mgc.btn_1_Lot_Master_v)}}
+            </button>
+            <button [magic]="mgc.btn_2_Parts_Packing_Master_Ent_v"
+                [style.visibility]="mg.getVisible(mgc.btn_2_Parts_Packing_Master_Ent_v)">
+                {{mg.getValue(mgc.btn_2_Parts_Packing_Master_Ent_v)}}
+            </button>
+            <button [magic]="mgc.btn_3_Packing_Master_Reorganize_v"
+                [style.visibility]="mg.getVisible(mgc.btn_3_Packing_Master_Reorganize_v)">
+                {{mg.getValue(mgc.btn_3_Packing_Master_Reorganize_v)}}
+            </button>
+            <button [magic]="mgc.btn_4_Parts_Packing_Master_Inq_v">
+                {{mg.getValue(mgc.btn_4_Parts_Packing_Master_Inq_v)}}
+            </button>
+            <button [magic]="mgc.btn_5_Packing_BOM_Check_v"
+                [style.visibility]="mg.getVisible(mgc.btn_5_Packing_BOM_Check_v)">
+                {{mg.getValue(mgc.btn_5_Packing_BOM_Check_v)}}
+            </button>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.PARTSPACKINGMASTERMENU">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getValue(mgc.Edit2) }}
+                        </label></h3>
+
+                    <div class="d-flex align-items-center">
+                        <!-- <label [magic]="mgc.Edit6" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit6)
+                            | magicDate : mgc.Edit6}}
+                        </label>
+                        <label [magic]="mgc.Edit7" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit7)
+                            | magicTime : mgc.Edit7}}
+                        </label> -->
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <div class="form-group">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                *ngIf="mg.getVisible(mgc.btn_1_Lot_Master_v)==='visible'"
+                                [magic]="mgc.btn_1_Lot_Master_v">
+                                {{mg.getValue(mgc.btn_1_Lot_Master_v)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_2_Parts_Packing_Master_Ent_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_2_Parts_Packing_Master_Ent_v">
+                                {{mg.getValue(mgc.btn_2_Parts_Packing_Master_Ent_v)}}
+                            </button>
+                        </div>
+                         <div class="form-group" *ngIf="mg.getVisible(mgc.btn_3_Packing_Master_Reorganize_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_3_Packing_Master_Reorganize_v">
+                                {{mg.getValue(mgc.btn_3_Packing_Master_Reorganize_v)}}
+                            </button>
+                        </div>
+                         <div class="form-group" *ngIf="mg.getVisible(mgc.btn_4_Parts_Packing_Master_Inq_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_4_Parts_Packing_Master_Inq_v">
+                                {{mg.getValue(mgc.btn_4_Parts_Packing_Master_Inq_v)}}
+                            </button>
+                        </div>
+                         <div class="form-group" *ngIf="mg.getVisible(mgc.btn_5_Packing_BOM_Check_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_5_Packing_BOM_Check_v">
+                                {{mg.getValue(mgc.btn_5_Packing_BOM_Check_v)}}
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.SECTIONMASTERCM"
+    >
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                SECTION CODE:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.SEC_CD"
+                    type='number'
+                    [magic]="mgc.SEC_CD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SEC_CD> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                DESCRIPTION:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.SEC_DESC"
+                    [magic]="mgc.SEC_DESC"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SEC_DESC> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                PARTS REQUIREMENT PRINT:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.Reqprn"
+                    [magic]="mgc.Reqprn"
+                    mgFormat
+                    rangevalidator
+                />
+                <mgError [magic]=mgc.Reqprn> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.Desc"
+                    [magic]="mgc.Desc"
+                    [style.visibility]="mg.getVisible(mgc.Desc)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.Desc> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_SaveExit">
+                Save \And Exit
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,190 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.CKDPARTSMASTER_CM"
+    >
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                <<
+                    C.K.D.
+                    PART
+                    ADDITION
+                >>
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PART NO.:
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.PART_NO"
+                    [magic]="mgc.PART_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PART_NO> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.PART_NO"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.BOMAB44_PT_NAM"
+                    [magic]="mgc.BOMAB44_PT_NAM"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.BOMAB44_PT_NAM> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                SECTION:
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.SEC_CD"
+                    type='number'
+                    [magic]="mgc.SEC_CD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SEC_CD> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.SEC_CD"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SECTION_MASTER_SEC_DESC"
+                    [magic]="mgc.SECTION_MASTER_SEC_DESC"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SECTION_MASTER_SEC_DESC> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                WEIGHT:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.PRT_WGT"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.PRT_WGT))"
+                    [magic]="mgc.PRT_WGT"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PRT_WGT> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                HARDWARE PART (Y/N):
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.HW_YN"
+                    [magic]="mgc.HW_YN"
+                    mgFormat
+                    rangevalidator
+                />
+                <mgError [magic]=mgc.HW_YN> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label12"
+                [style.visibility]="mg.getVisible(mgc.Label12)"
+                class="lable_overflow"
+            >
+                PACKING MATERIAL TYPE:
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.PK_MAT_TYPE"
+                    [magic]="mgc.PK_MAT_TYPE"
+                    [style.visibility]="mg.getVisible(mgc.PK_MAT_TYPE)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PK_MAT_TYPE> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.PK_MAT_TYPE"
+                    [style.visibility]="mg.getVisible(mgc.PK_MAT_TYPE)"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PK_TYPE_MAST_PK_TYPE_DESC"
+                    [magic]="mgc.PK_TYPE_MAST_PK_TYPE_DESC"
+                    [style.visibility]="mg.getVisible(mgc.PK_TYPE_MAST_PK_TYPE_DESC)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PK_TYPE_MAST_PK_TYPE_DESC> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label15"
+                [style.visibility]="mg.getVisible(mgc.Label15)"
+                class="lable_overflow"
+            >
+                PACKING MATERIAL CODE:
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.PK_MAT_CODE"
+                    [magic]="mgc.PK_MAT_CODE"
+                    [style.visibility]="mg.getVisible(mgc.PK_MAT_CODE)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PK_MAT_CODE> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.PK_MAT_CODE"
+                    [style.visibility]="mg.getVisible(mgc.PK_MAT_CODE)"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PK_MAST_DESC"
+                    [magic]="mgc.PK_MAST_DESC"
+                    [style.visibility]="mg.getVisible(mgc.PK_MAST_DESC)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PK_MAST_DESC> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnSave">
+                Save
+            </button>
+        </div>
+    </div>
+</div>

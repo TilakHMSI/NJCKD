@@ -1,0 +1,302 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKDInHousePartTransfer",
+		"window_type":	1,
+		"component_path":	"CKDCaseTransferModule/MainLoop/StockTransferMain/StockTransferDetails/",
+		"module_name":	"",
+		"component_uniquename":	"CKDCaseTransferModule_MainLoop_StockTransferMain_StockTransferDetails_CKDInHousePartTransfer"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	765,
+		"height":	316
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	23,
+				"table_title_height":	18,
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	14,
+				"y":	0,
+				"width":	735,
+				"height":	310
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"PC Number",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	175
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CKD_CASE_TransferTEMP_PC_No",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line22"
+							},
+							"coordinates":	{
+								"x":	24,
+								"y":	22,
+								"width":	149,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"Lot ID",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	48
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CKD_CASE_TransferTEMP_LOT_ID",
+								"mgformat":	"mgFormat",
+								"format":	"####",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line22"
+							},
+							"coordinates":	{
+								"x":	196,
+								"y":	22,
+								"width":	33,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"ContainerID",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	85
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"ContainerID",
+								"mgformat":	"mgFormat",
+								"format":	"#####",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line21"
+							},
+							"coordinates":	{
+								"x":	241,
+								"y":	21,
+								"width":	44,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"CaseID",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	61
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CKD_CASE_TransferTEMP_CaseID",
+								"mgformat":	"mgFormat",
+								"format":	"#####",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line21"
+							},
+							"coordinates":	{
+								"x":	326,
+								"y":	21,
+								"width":	44,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"Create Date",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	105
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"TransferCreateDate",
+								"formatter":	"magicDate",
+								"mgformat":	"mgFormat",
+								"format":	"DD/MM/YYYY",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line21"
+							},
+							"coordinates":	{
+								"x":	387,
+								"y":	21,
+								"width":	79,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"Create Time",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	105
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"TransferCreateTime",
+								"formatter":	"magicTime",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line21"
+							},
+							"coordinates":	{
+								"x":	492,
+								"y":	21,
+								"width":	65,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column8",
+						"column_title":	"Created By",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	135
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"TransferCreateBy",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line21"
+							},
+							"coordinates":	{
+								"x":	598,
+								"y":	21,
+								"width":	134,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

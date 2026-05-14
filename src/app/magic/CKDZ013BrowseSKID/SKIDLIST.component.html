@@ -1,0 +1,270 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.SKIDLIST"
+    >
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+            <label [magic]="mgc.Edit1">
+                {{mg.getValue(mgc.Edit1) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table2TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="container_border"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        [magic]="mgc.Column3"
+                        [matColumnDef]="mgc.Column3"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            SKID No.
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.SKD_MAST_SKID_CONTROL_NO"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SKD_MAST_SKID_CONTROL_NO"
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.SKD_MAST_SKID_CONTROL_NO, row.rowId)"
+                                            [mask]="mg.getAlphaMask(mgc.SKD_MAST_SKID_CONTROL_NO)"
+                                            [showMaskTyped]='true'
+                                        />
+                                        <mgError
+                                            [magic]=mgc.SKD_MAST_SKID_CONTROL_NO
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SKD_MAST_SKID_CONTROL_NO"
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.SKD_MAST_SKID_CONTROL_NO, row.rowId)"
+                                        >
+                                            {{mg.getValue(mgc.SKD_MAST_SKID_CONTROL_NO, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column4"
+                        [matColumnDef]="mgc.Column4"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            PC No.
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.SKD_MAST_SKID_PC_NO"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SKD_MAST_SKID_PC_NO"
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.SKD_MAST_SKID_PC_NO, row.rowId)"
+                                            [mask]="mg.getAlphaMask(mgc.SKD_MAST_SKID_PC_NO)"
+                                            [showMaskTyped]='true'
+                                        />
+                                        <mgError
+                                            [magic]=mgc.SKD_MAST_SKID_PC_NO
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SKD_MAST_SKID_PC_NO"
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.SKD_MAST_SKID_PC_NO, row.rowId)"
+                                        >
+                                            {{mg.getValue(mgc.SKD_MAST_SKID_PC_NO, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column5"
+                        [matColumnDef]="mgc.Column5"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            Lot No.
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.SKD_MAST_SKID_LOT_NO"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            currencyMask
+                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.SKD_MAST_SKID_LOT_NO))"
+                                            [magic]="mgc.SKD_MAST_SKID_LOT_NO"
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.SKD_MAST_SKID_LOT_NO, row.rowId)"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.SKD_MAST_SKID_LOT_NO
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SKD_MAST_SKID_LOT_NO"
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.SKD_MAST_SKID_LOT_NO, row.rowId)"
+                                        >
+                                            {{mg.getFormattedValue(mgc.SKD_MAST_SKID_LOT_NO, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column6"
+                        [matColumnDef]="mgc.Column6"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            Container
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.SKD_MAST_SKID_CONTAINER_NO"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            currencyMask
+                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.SKD_MAST_SKID_CONTAINER_NO))"
+                                            [magic]="mgc.SKD_MAST_SKID_CONTAINER_NO"
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.SKD_MAST_SKID_CONTAINER_NO, row.rowId)"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.SKD_MAST_SKID_CONTAINER_NO
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SKD_MAST_SKID_CONTAINER_NO"
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.SKD_MAST_SKID_CONTAINER_NO, row.rowId)"
+                                        >
+                                            {{mg.getFormattedValue(mgc.SKD_MAST_SKID_CONTAINER_NO, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column7"
+                        [matColumnDef]="mgc.Column7"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            Case
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.SKD_MAST_SKID_CASE_NO"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            currencyMask
+                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.SKD_MAST_SKID_CASE_NO))"
+                                            [magic]="mgc.SKD_MAST_SKID_CASE_NO"
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.SKD_MAST_SKID_CASE_NO, row.rowId)"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.SKD_MAST_SKID_CASE_NO
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SKD_MAST_SKID_CASE_NO"
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.SKD_MAST_SKID_CASE_NO, row.rowId)"
+                                        >
+                                            {{mg.getFormattedValue(mgc.SKD_MAST_SKID_CASE_NO, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div>
+        </div>
+    </div>
+</div>

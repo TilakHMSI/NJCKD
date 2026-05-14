@@ -1,0 +1,18 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.Default"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div *ngIf="mg.isImageExists(mgc.Back)">
+                <img
+                    [magic]="mgc.Back"
+                    [src]="mg.getImage(mgc.Back)"
+                />
+            </div>
+        </div>
+    </div>
+</div>

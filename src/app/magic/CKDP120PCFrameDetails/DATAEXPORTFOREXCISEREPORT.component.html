@@ -1,0 +1,105 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.DATAEXPORTFOREXCISEREPORT"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div *ngIf="mg.isImageExists(mgc.Image1)">
+                <img
+                    [magic]="mgc.Image1"
+                    [src]="mg.getImage(mgc.Image1)"
+                />
+            </div>
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                DATA EXPORT FOR EXCISE REPORT FRAME WISE
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicDate : mgc.Edit4}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2) }}
+            </label>
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5)
+| magicTime : mgc.Edit5}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit6">
+                {{mg.getValue(mgc.Edit6) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                P/C No.
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.PC_No_v"
+                    [magic]="mgc.PC_No_v"
+                    [mask]="mg.getAlphaMask(mgc.PC_No_v)"
+                    [showMaskTyped]='true'
+                />
+                <mgError [magic]=mgc.PC_No_v> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.PC_No_v"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label11"
+                [style.visibility]="mg.getVisible(mgc.Label11)"
+                class="lable_overflow"
+            >
+                Dist
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.KDPCHED_PH_DSCD"
+                    [magic]="mgc.KDPCHED_PH_DSCD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.KDPCHED_PH_DSCD> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.DSTBMST_DS_DSENAM"
+                    [magic]="mgc.DSTBMST_DS_DSENAM"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.DSTBMST_DS_DSENAM> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit14">
+                {{mg.getValue(mgc.Edit14) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.Help">
+                {{mg.getValue(mgc.Help)}}
+            </button>
+        </div>
+    </div>
+</div>

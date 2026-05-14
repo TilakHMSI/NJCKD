@@ -1,0 +1,154 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.ReportScannedFrameEngine"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit1">
+                {{mg.getValue(mgc.Edit1)
+| magicDate : mgc.Edit1}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicTime : mgc.Edit2}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label17"
+                class="lable_overflow"
+            >
+                Scanned Frame Qty. :
+            </label>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                P/C No. :
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.V_PCNO"
+                    [magic]="mgc.V_PCNO"
+                    [mask]="mg.getAlphaMask(mgc.V_PCNO)"
+                    [showMaskTyped]='true'
+                />
+                <mgError [magic]=mgc.V_PCNO> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.V_PCNO"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_V_COUNT_1"
+                    type='number'
+                    [magic]="mgc.V_V_COUNT_1"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_V_COUNT_1> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.KDPCHED_PH_DSCD"
+                    [magic]="mgc.KDPCHED_PH_DSCD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.KDPCHED_PH_DSCD> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.CHECK_PC_MARK_CHK_MDCD"
+                    [magic]="mgc.CHECK_PC_MARK_CHK_MDCD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.CHECK_PC_MARK_CHK_MDCD> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label18"
+                class="lable_overflow"
+            >
+                Scanned Engine Qty. :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.DSTBMST_DS_DSENAM"
+                    [magic]="mgc.DSTBMST_DS_DSENAM"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.DSTBMST_DS_DSENAM> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.CHECK_PC_MARK_CHK_MDTY"
+                    [magic]="mgc.CHECK_PC_MARK_CHK_MDTY"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.CHECK_PC_MARK_CHK_MDTY> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.CHECK_PC_MARK_CHK_MDOP"
+                    [magic]="mgc.CHECK_PC_MARK_CHK_MDOP"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.CHECK_PC_MARK_CHK_MDOP> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label14"
+                class="lable_overflow"
+            >
+                Lot Qty. :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_V_COUNT_2"
+                    type='number'
+                    [magic]="mgc.V_V_COUNT_2"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_V_COUNT_2> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.KDPCHED_PH_TLQY"
+                    [magic]="mgc.KDPCHED_PH_TLQY"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.KDPCHED_PH_TLQY> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label19"
+                class="lable_overflow"
+            >
+            </label>
+            <button [magic]="mgc.V_OK">
+                OK
+            </button>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+    </div>
+</div>

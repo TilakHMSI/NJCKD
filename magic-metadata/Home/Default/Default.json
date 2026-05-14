@@ -1,0 +1,35 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"Default",
+		"component_path":	"Home/Default/",
+		"module_name":	"",
+		"component_uniquename":	"Home_Default_Default"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	639,
+		"height":	401
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Back",
+				"common_line_id":	"line32"
+			},
+			"coordinates":	{
+				"x":	32,
+				"y":	32,
+				"width":	306,
+				"height":	194
+			},
+			"hint":	null,
+			"controlType":	"I",
+			"children":	null
+		}
+	]
+}

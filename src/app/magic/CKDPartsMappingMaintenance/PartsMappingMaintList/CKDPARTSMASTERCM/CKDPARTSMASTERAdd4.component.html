@@ -1,0 +1,130 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.CKDPARTSMASTERAdd4"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                <<
+                    C.K.D.
+                    PART
+                    ADDITION
+                >>
+            </label>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PART NO.:
+            </label>
+            <label [magic]="mgc.PART_NO">
+                {{mg.getValue(mgc.PART_NO) }}
+            </label>
+            <button
+                style="min-width: auto; margin: auto"
+                [magic]="mgc.PART_NO"
+            >...</button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                BASE PART
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.BASE_PART_NO"
+                    [magic]="mgc.BASE_PART_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.BASE_PART_NO> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                Color
+            </label>
+            <label [magic]="mgc.PART_COLOR_0001">
+                {{mg.getValue(mgc.PART_COLOR_0001) }}
+            </label>
+            <button
+                style="min-width: auto; margin: auto"
+                [magic]="mgc.PART_COLOR_0001"
+                [disabled]="mg.isDisabled(mgc.PART_COLOR_0001)"
+            >...</button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                Lot Code
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.PART_LTCD"
+                    [magic]="mgc.PART_LTCD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PART_LTCD> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.PART_LTCD"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                Is Select
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.STATUS"
+                    [magic]="mgc.STATUS"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.STATUS> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                Is Required
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.IS_REQUIRED_0001"
+                    [magic]="mgc.IS_REQUIRED_0001"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.IS_REQUIRED_0001> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnSave">
+                Save
+            </button>
+        </div>
+    </div>
+</div>

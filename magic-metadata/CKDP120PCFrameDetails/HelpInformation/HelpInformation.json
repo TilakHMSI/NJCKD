@@ -1,0 +1,122 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"HelpInformation",
+		"window_type":	12,
+		"component_path":	"CKDP120PCFrameDetails/HelpInformation/",
+		"module_name":	"",
+		"component_uniquename":	"CKDP120PCFrameDetails_HelpInformation_HelpInformation"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	0,
+		"height":	250
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Group1",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	13,
+				"width":	385,
+				"height":	182
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label2",
+						"text":	"For this module Data extract for Exice Report Frame wise",
+						"common_line_id":	"line39"
+					},
+					"coordinates":	{
+						"x":	20,
+						"y":	39,
+						"width":	360,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label3",
+						"text":	"Data Formate :S.NO. ,MODEL CODE, MODEL NAME,FRAME Type .,Frame  NO.",
+						"common_line_id":	"line52"
+					},
+					"coordinates":	{
+						"x":	20,
+						"y":	52,
+						"width":	360,
+						"height":	52
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label4",
+						"text":	"Report Path-\u003eQUERY \u0026 REPORTS-\u003e EXCISE FRAME REPORT:",
+						"common_line_id":	"line104"
+					},
+					"coordinates":	{
+						"x":	20,
+						"y":	104,
+						"width":	360,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label5",
+						"text":	"Report Output Path: C:\\Magic\\Temp\\FRAME-DETAIL.TXT",
+						"common_line_id":	"line117"
+					},
+					"coordinates":	{
+						"x":	20,
+						"y":	117,
+						"width":	360,
+						"height":	26
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Exit",
+				"attribute":	"A",
+				"common_line_id":	"line221"
+			},
+			"coordinates":	{
+				"x":	145,
+				"y":	221,
+				"width":	96,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

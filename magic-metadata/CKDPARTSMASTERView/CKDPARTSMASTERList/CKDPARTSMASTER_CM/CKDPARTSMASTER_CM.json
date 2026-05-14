@@ -1,0 +1,394 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKDPARTSMASTER_CM",
+		"window_type":	12,
+		"component_path":	"CKDPARTSMASTERView/CKDPARTSMASTERList/CKDPARTSMASTER_CM/",
+		"module_name":	"",
+		"component_uniquename":	"CKDPARTSMASTERView_CKDPARTSMASTERList_CKDPARTSMASTER_CM_CKDPARTSMASTER_CM"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	568,
+		"height":	267
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	476,
+				"y":	12,
+				"width":	76,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"\u003c\u003c   C.K.D. PART ADDITION   \u003e\u003e",
+				"common_line_id":	"line26"
+			},
+			"coordinates":	{
+				"x":	74,
+				"y":	26,
+				"width":	420,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PART NO.:",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	114,
+				"y":	75,
+				"width":	70,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PART_NO",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	186,
+				"y":	75,
+				"width":	135,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BOMAB44_PT_NAM",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	326,
+				"y":	75,
+				"width":	219,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"SECTION:",
+				"common_line_id":	"line98"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	98,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SEC_CD",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"#####",
+				"attribute":	"N",
+				"common_line_id":	"line98"
+			},
+			"coordinates":	{
+				"x":	186,
+				"y":	98,
+				"width":	44,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SECTION_MASTER_SEC_DESC",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line98"
+			},
+			"coordinates":	{
+				"x":	236,
+				"y":	98,
+				"width":	219,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"WEIGHT:",
+				"common_line_id":	"line123"
+			},
+			"coordinates":	{
+				"x":	128,
+				"y":	123,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRT_WGT",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"#####.#####",
+				"attribute":	"N",
+				"common_line_id":	"line123"
+			},
+			"coordinates":	{
+				"x":	186,
+				"y":	123,
+				"width":	86,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label10",
+				"text":	"HARDWARE PART (Y/N):",
+				"common_line_id":	"line123"
+			},
+			"coordinates":	{
+				"x":	326,
+				"y":	123,
+				"width":	148,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"HW_YN",
+				"items_list":	"Yes,No",
+				"mgformat":	"mgFormat",
+				"validator":	"rangevalidator",
+				"format":	"XXX",
+				"attribute":	"B",
+				"common_line_id":	"line123"
+			},
+			"coordinates":	{
+				"x":	476,
+				"y":	123,
+				"width":	30,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label12",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"PACKING MATERIAL TYPE:",
+				"common_line_id":	"line150"
+			},
+			"coordinates":	{
+				"x":	23,
+				"y":	150,
+				"width":	161,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PK_MAT_TYPE",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line150"
+			},
+			"coordinates":	{
+				"x":	186,
+				"y":	150,
+				"width":	51,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PK_TYPE_MAST_PK_TYPE_DESC",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line150"
+			},
+			"coordinates":	{
+				"x":	241,
+				"y":	150,
+				"width":	219,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label15",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"PACKING MATERIAL CODE:",
+				"common_line_id":	"line176"
+			},
+			"coordinates":	{
+				"x":	23,
+				"y":	176,
+				"width":	161,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PK_MAT_CODE",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line176"
+			},
+			"coordinates":	{
+				"x":	185,
+				"y":	176,
+				"width":	79,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PK_MAST_DESC",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line176"
+			},
+			"coordinates":	{
+				"x":	266,
+				"y":	176,
+				"width":	219,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSave",
+				"format":	"Save",
+				"common_line_id":	"line221"
+			},
+			"coordinates":	{
+				"x":	236,
+				"y":	221,
+				"width":	195,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

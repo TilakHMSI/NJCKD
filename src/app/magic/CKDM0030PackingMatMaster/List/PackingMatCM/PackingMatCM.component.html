@@ -1,0 +1,216 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.PackingMatCM"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                <<
+                    ADD
+                    NEW
+                    PACKING
+                    MATERIAL
+                >>
+            </label>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PACKING MATERIAL TYPE:
+            </label>
+            <div>
+                <select
+                    multiple
+                    [magic]="mgc.TYPE"
+                    [formControlName]="mgc.TYPE"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.TYPE);"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                MATERIAL CODE:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.CODE"
+                    [magic]="mgc.CODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.CODE> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                DESCRIPTIOIN:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.DESC"
+                    [magic]="mgc.DESC"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.DESC> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                LENGTH:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.LENG"
+                    type='number'
+                    [magic]="mgc.LENG"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.LENG> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                MM
+            </label>
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                HEIGHT:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.HEIG"
+                    type='number'
+                    [magic]="mgc.HEIG"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.HEIG> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                MM
+            </label>
+            <label
+                [magic]="mgc.Label13"
+                class="lable_overflow"
+            >
+                WIDTH:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.WIDT"
+                    type='number'
+                    [magic]="mgc.WIDT"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.WIDT> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label15"
+                class="lable_overflow"
+            >
+                MM
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label16"
+                class="lable_overflow"
+            >
+                WEIGHT:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.WEIG"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.WEIG))"
+                    [magic]="mgc.WEIG"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.WEIG> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label18"
+                class="lable_overflow"
+            >
+                GM
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label19"
+                class="lable_overflow"
+            >
+                EFFECTIVE DT:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.EF_DT"
+                [magic]="mgc.EF_DT"
+                dateInput
+            />
+            <label
+                [magic]="mgc.Label21"
+                class="lable_overflow"
+            >
+                END DT:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.ED_DT"
+                [magic]="mgc.ED_DT"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label23"
+                class="lable_overflow"
+            >
+                VARIENCE:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.VARNC"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.VARNC))"
+                    [magic]="mgc.VARNC"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.VARNC> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnSave">
+                Save
+            </button>
+        </div>
+    </div>
+</div>

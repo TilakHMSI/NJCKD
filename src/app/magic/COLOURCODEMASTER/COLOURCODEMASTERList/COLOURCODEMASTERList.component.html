@@ -1,0 +1,164 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.COLOURCODEMASTERList"
+    >
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnAdd">
+                Add
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table7TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="container_border"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        [magic]="mgc.Column8"
+                        [matColumnDef]="mgc.Column8"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            CEATFG
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.CEATFG"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.CEATFG"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                            rangevalidator
+                                        />
+                                        <mgError
+                                            [magic]=mgc.CEATFG
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.CEATFG"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.CEATFG, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column9"
+                        [matColumnDef]="mgc.Column9"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            COLOR CODE
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.CECLC1"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.CECLC1"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.CECLC1
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.CECLC1"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.CECLC1, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column22"
+                        [matColumnDef]="mgc.Column22"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            Action
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    [magic]="mgc.btnEdit"
+                                    [rowId]="row.rowId"
+                                    [style.visibility]="mg.getVisible(mgc.btnEdit, row.rowId)"
+                                >
+                                    Edit
+                                </button>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    [magic]="mgc.btnDelete"
+                                    [rowId]="row.rowId"
+                                    [style.visibility]="mg.getVisible(mgc.btnDelete, row.rowId)"
+                                >
+                                    Delete
+                                </button>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div>
+        </div>
+    </div>
+</div>

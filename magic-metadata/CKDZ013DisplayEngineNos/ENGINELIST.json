@@ -1,0 +1,97 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"ENGINELIST",
+		"window_type":	12,
+		"component_path":	"CKDZ013DisplayEngineNos/",
+		"module_name":	"",
+		"component_uniquename":	"CKDZ013DisplayEngineNos_ENGINELIST"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	120,
+		"height":	307
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit1",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	39,
+				"y":	3,
+				"width":	75,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	21,
+				"table_title_height":	20,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	20,
+				"width":	111,
+				"height":	283
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"Engine Nos.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	96
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PEG_DATA_PEG_EGNO",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line42"
+							},
+							"coordinates":	{
+								"x":	6,
+								"y":	42,
+								"width":	95,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

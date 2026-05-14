@@ -1,0 +1,83 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.Description"
+    >
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                Sl. Description Date Changed by
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                1
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_V_DESC1"
+                    [magic]="mgc.V_V_DESC1"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_V_DESC1> </mgError>
+            </div>
+            <input
+                type="date"
+                [formControlName]="mgc.V_V_DATE1"
+                [magic]="mgc.V_V_DATE1"
+                dateInput
+            />
+            <div>
+                <input
+                    [formControlName]="mgc.V_V_CHANGED_BY1"
+                    [magic]="mgc.V_V_CHANGED_BY1"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_V_CHANGED_BY1> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                2
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_V_DESC2"
+                    [magic]="mgc.V_V_DESC2"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_V_DESC2> </mgError>
+            </div>
+            <input
+                type="date"
+                [formControlName]="mgc.V_V_DATE2"
+                [magic]="mgc.V_V_DATE2"
+                dateInput
+            />
+            <div>
+                <input
+                    [formControlName]="mgc.V_V_CHANGED_BY2"
+                    [magic]="mgc.V_V_CHANGED_BY2"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_V_CHANGED_BY2> </mgError>
+            </div>
+        </div>
+    </div>
+</div>

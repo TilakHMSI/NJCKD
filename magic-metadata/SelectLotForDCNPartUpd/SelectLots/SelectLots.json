@@ -1,0 +1,172 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"SelectLots",
+		"window_type":	12,
+		"component_path":	"SelectLotForDCNPartUpd/SelectLots/",
+		"module_name":	"",
+		"component_uniquename":	"SelectLotForDCNPartUpd_SelectLots_SelectLots"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	434,
+		"height":	197
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	20,
+				"table_title_height":	18,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	13,
+				"width":	425,
+				"height":	182
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"PC NO.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	78
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_PCSEL_PCNO",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	8,
+								"y":	34,
+								"width":	73,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"LOT NO.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	85
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_PCSEL_LTNO",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	86,
+								"y":	34,
+								"width":	79,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"DESCRIPTION",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	243
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"LOT_MAST_LOT_DESC",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	173,
+								"y":	34,
+								"width":	219,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_PCSEL_FLAG",
+								"text":	"",
+								"attribute":	"B",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	395,
+								"y":	34,
+								"width":	15,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"C",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

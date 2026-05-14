@@ -1,0 +1,55 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.HelpInformation"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group1"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label2"
+                        class="lable_overflow"
+                    >
+                        For this module Data extract for Exice Report Frame wise
+                    </label>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label3"
+                        class="lable_overflow"
+                    >
+                        Data Formate :S.NO. ,MODEL CODE, MODEL NAME,FRAME Type .,Frame NO.
+                    </label>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label4"
+                        class="lable_overflow"
+                    >
+                        Report Path->QUERY & REPORTS-> EXCISE FRAME REPORT:
+                    </label>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label5"
+                        class="lable_overflow"
+                    >
+                        Report Output Path: C:\Magic\Temp\FRAME-DETAIL.TXT
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Exit">
+                {{mg.getValue(mgc.btn_Exit)}}
+            </button>
+        </div>
+    </div>
+</div>

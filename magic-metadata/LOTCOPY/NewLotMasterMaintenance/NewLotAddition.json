@@ -1,0 +1,236 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"NewLotAddition",
+		"window_type":	12,
+		"component_path":	"LOTCOPY/NewLotMasterMaintenance/",
+		"module_name":	"",
+		"component_uniquename":	"LOTCOPY_NewLotMasterMaintenance_NewLotAddition"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	418,
+		"height":	213
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"\u003c\u003c  NEW LOT ADDITION  \u003e\u003e",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	13,
+				"width":	410,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"LOT CODE:",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	73,
+				"y":	65,
+				"width":	70,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Lot_Code",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	145,
+				"y":	65,
+				"width":	81,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"MODEL CODE:",
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	59,
+				"y":	91,
+				"width":	84,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Model_Code",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	145,
+				"y":	91,
+				"width":	88,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRD001_S1_MTO_NAME",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	235,
+				"y":	91,
+				"width":	138,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"LOT NAME:",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	73,
+				"y":	117,
+				"width":	70,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Lot_Name",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	145,
+				"y":	117,
+				"width":	221,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"LOT QUANTITY:",
+				"common_line_id":	"line143"
+			},
+			"coordinates":	{
+				"x":	45,
+				"y":	143,
+				"width":	98,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Lot_Qty",
+				"mgformat":	"mgFormat",
+				"format":	"#######",
+				"attribute":	"N",
+				"common_line_id":	"line143"
+			},
+			"coordinates":	{
+				"x":	145,
+				"y":	143,
+				"width":	60,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"text":	"**UnSupported Control**",
+				"common_line_id":	"line169"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	169,
+				"width":	410,
+				"height":	0
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Ok",
+				"format":	"\\UPD\\ATE",
+				"attribute":	"A",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	178,
+				"y":	182,
+				"width":	62,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

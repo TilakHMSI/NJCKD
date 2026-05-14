@@ -1,0 +1,92 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKDPM023CaseCartonToCopy",
+		"window_type":	12,
+		"component_path":	"CKDPM023CaseCartonToCopy/",
+		"module_name":	"",
+		"component_uniquename":	"CKDPM023CaseCartonToCopy_CKDPM023CaseCartonToCopy"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	170,
+		"height":	109
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit1",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line18"
+			},
+			"coordinates":	{
+				"x":	35,
+				"y":	18,
+				"width":	65,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Case__Carton_No_v",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"attribute":	"N",
+				"common_line_id":	"line18"
+			},
+			"coordinates":	{
+				"x":	104,
+				"y":	18,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"common_line_id":	"line73"
+			},
+			"coordinates":	{
+				"x":	99,
+				"y":	73,
+				"width":	66,
+				"height":	29
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"OK_Button_v",
+				"attribute":	"A",
+				"common_line_id":	"line73"
+			},
+			"coordinates":	{
+				"x":	101,
+				"y":	76,
+				"width":	61,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

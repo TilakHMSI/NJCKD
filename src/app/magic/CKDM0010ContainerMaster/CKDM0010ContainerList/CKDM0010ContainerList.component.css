@@ -1,0 +1,45 @@
+.mat-header-row {
+    background: none;
+    background-color: #008080 ! important;
+    color: #ffffff;
+}
+
+.mat-mdc-cell:first-child {
+    flex: 0 0 12%;
+    padding-left: 2px;
+}
+
+.mat-mdc-header-cell:first-child {
+    flex: 0 0 12%;
+    padding-left: 2px;
+}
+
+.mat-mdc-cell:nth-child(2) {
+    flex: 0 0 40%;
+}
+
+.mat-mdc-header-cell:nth-child(2) {
+    flex: 0 0 40%;
+}
+
+/* .mat-mdc-cell:nth-child(3){
+  flex: 0 0 10%;
+}
+.mat-mdc-header-cell:nth-child(3){
+  flex: 0 0 10%;
+}
+.mat-mdc-cell:nth-child(4){
+  flex: 0 0 16%;
+}
+.mat-mdc-header-cell:nth-child(4){
+  flex: 0 0 16%;
+} */
+.mat-mdc-cell:nth-child(7) {
+    justify-content: flex-end;
+    flex: 0 0 8%;
+}
+
+.mat-mdc-header-cell:nth-child(7) {
+    justify-content: flex-end;
+    flex: 0 0 8%;
+}

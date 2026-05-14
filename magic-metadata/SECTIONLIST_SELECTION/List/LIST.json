@@ -1,0 +1,78 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"LIST",
+		"window_type":	12,
+		"component_path":	"SECTIONLIST_SELECTION/List/",
+		"module_name":	"",
+		"component_uniquename":	"SECTIONLIST_SELECTION_List_LIST"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	253,
+		"height":	340
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	20,
+				"table_title_height":	18,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	13,
+				"width":	244,
+				"height":	320
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"SECTION DESCRIPTION",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	224
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SECTION_MASTER_SEC_DESC",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	10,
+								"y":	34,
+								"width":	218,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

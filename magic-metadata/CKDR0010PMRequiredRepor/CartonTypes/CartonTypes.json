@@ -1,0 +1,391 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CartonTypes",
+		"window_type":	1,
+		"component_path":	"CKDR0010PMRequiredRepor/CartonTypes/",
+		"module_name":	"",
+		"component_uniquename":	"CKDR0010PMRequiredRepor_CartonTypes_CartonTypes"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	544,
+		"height":	359
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	16,
+				"table_title_height":	20,
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	0,
+				"width":	544,
+				"height":	312
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"STATION CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	110
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_CRTY_STAN",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	3,
+								"y":	23,
+								"width":	105,
+								"height":	11
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"TYPE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	30
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_CRTYPE",
+								"mgformat":	"mgFormat",
+								"format":	"XXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	114,
+								"y":	23,
+								"width":	20,
+								"height":	11
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	60
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_CRTY_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	143,
+								"y":	23,
+								"width":	55,
+								"height":	11
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"DESC",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	149
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PK_MAST_DESC",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	203,
+								"y":	23,
+								"width":	144,
+								"height":	11
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"LENG",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	46
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PK_MAST_LENG",
+								"mgformat":	"mgFormat",
+								"format":	"#######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	351,
+								"y":	23,
+								"width":	40,
+								"height":	11
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column8",
+						"column_title":	"HEIG",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	46
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PK_MAST_HEIG",
+								"mgformat":	"mgFormat",
+								"format":	"#######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	398,
+								"y":	23,
+								"width":	40,
+								"height":	11
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column9",
+						"column_title":	"WIDT",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	46
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PK_MAST_WIDT",
+								"mgformat":	"mgFormat",
+								"format":	"#######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	444,
+								"y":	23,
+								"width":	40,
+								"height":	11
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column10",
+						"column_title":	"QUANTITY",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	41
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"WRK_CRTY_WRK_CRTY_CQTY",
+								"mgformat":	"mgFormat",
+								"format":	"#######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	490,
+								"y":	23,
+								"width":	40,
+								"height":	11
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line312"
+			},
+			"coordinates":	{
+				"x":	185,
+				"y":	312,
+				"width":	175,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Print_Button_v1",
+				"attribute":	"A",
+				"common_line_id":	"line312"
+			},
+			"coordinates":	{
+				"x":	189,
+				"y":	322,
+				"width":	80,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Exit_Button_v1",
+				"attribute":	"A",
+				"common_line_id":	"line312"
+			},
+			"coordinates":	{
+				"x":	274,
+				"y":	322,
+				"width":	80,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

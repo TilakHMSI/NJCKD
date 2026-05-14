@@ -1,0 +1,278 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"LOTCOPY",
+		"window_type":	12,
+		"component_path":	"LOTCOPY/",
+		"module_name":	"",
+		"component_uniquename":	"LOTCOPY_LOTCOPY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	433,
+		"height":	249
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	3,
+				"width":	62,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	310,
+				"y":	3,
+				"width":	62,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	375,
+				"y":	3,
+				"width":	53,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"\u003c\u003c  ENTER NEW LOT DETAILS  \u003e\u003e",
+				"common_line_id":	"line24"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	24,
+				"width":	330,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Exit",
+				"common_line_id":	"line24"
+			},
+			"coordinates":	{
+				"x":	375,
+				"y":	24,
+				"width":	53,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"LOT TO BE COPIED:",
+				"common_line_id":	"line81"
+			},
+			"coordinates":	{
+				"x":	19,
+				"y":	81,
+				"width":	126,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Lot_No_Copy_From",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line81"
+			},
+			"coordinates":	{
+				"x":	143,
+				"y":	81,
+				"width":	81,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"MODEL CODE:",
+				"common_line_id":	"line81"
+			},
+			"coordinates":	{
+				"x":	246,
+				"y":	81,
+				"width":	84,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"LOT_MAST_LOT_MDCD",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line81"
+			},
+			"coordinates":	{
+				"x":	328,
+				"y":	81,
+				"width":	86,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"NEW LOT CODE:",
+				"common_line_id":	"line120"
+			},
+			"coordinates":	{
+				"x":	48,
+				"y":	120,
+				"width":	98,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Lot_No_Copy_To",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line120"
+			},
+			"coordinates":	{
+				"x":	143,
+				"y":	120,
+				"width":	81,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"text":	"MODEL CODE:",
+				"common_line_id":	"line120"
+			},
+			"coordinates":	{
+				"x":	246,
+				"y":	120,
+				"width":	84,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_v_Model_To_Copy",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line120"
+			},
+			"coordinates":	{
+				"x":	328,
+				"y":	120,
+				"width":	86,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSave",
+				"format":	"Copy",
+				"common_line_id":	"line202"
+			},
+			"coordinates":	{
+				"x":	110,
+				"y":	202,
+				"width":	104,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

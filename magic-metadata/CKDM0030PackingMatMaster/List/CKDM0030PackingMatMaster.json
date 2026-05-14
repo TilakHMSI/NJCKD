@@ -1,0 +1,565 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKDM0030PackingMatMaster",
+		"window_type":	12,
+		"component_path":	"CKDM0030PackingMatMaster/List/",
+		"module_name":	"",
+		"component_uniquename":	"CKDM0030PackingMatMaster_List_CKDM0030PackingMatMaster"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	820,
+		"height":	359
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnAdd",
+				"format":	"Add",
+				"common_line_id":	"line72"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	72,
+				"width":	81,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table23",
+				"table_row_height":	64,
+				"table_title_height":	18,
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	117,
+				"width":	349,
+				"height":	231
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column24",
+						"column_title":	"CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	84
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line138"
+							},
+							"coordinates":	{
+								"x":	15,
+								"y":	138,
+								"width":	79,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column25",
+						"column_title":	"DESC",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	189
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"DESC",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line139"
+							},
+							"coordinates":	{
+								"x":	96,
+								"y":	139,
+								"width":	182,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column32",
+						"column_title":	"Action",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	64
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnEdit",
+								"format":	"Edit",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line139"
+							},
+							"coordinates":	{
+								"x":	289,
+								"y":	139,
+								"width":	56,
+								"height":	28
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnDelete",
+								"format":	"Delete",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line171"
+							},
+							"coordinates":	{
+								"x":	289,
+								"y":	171,
+								"width":	56,
+								"height":	28
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label17",
+				"text":	"EFFECTIVE DATE:",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	390,
+				"y":	273,
+				"width":	113,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PACKING TYPE:",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	405,
+				"y":	143,
+				"width":	98,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label21",
+				"text":	"VARIENCE:",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	433,
+				"y":	299,
+				"width":	70,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"LENGTH:",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	446,
+				"y":	169,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"HEIGHT:",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	446,
+				"y":	195,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label14",
+				"text":	"WEIGHT:",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	446,
+				"y":	247,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"text":	"WIDTH:",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	454,
+				"y":	221,
+				"width":	49,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PK_TYPE_MAST_PK_TYP_CD",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	503,
+				"y":	143,
+				"width":	30,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"LENG",
+				"mgformat":	"mgFormat",
+				"format":	"#######",
+				"attribute":	"N",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	503,
+				"y":	169,
+				"width":	58,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"HEIG",
+				"mgformat":	"mgFormat",
+				"format":	"#######",
+				"attribute":	"N",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	503,
+				"y":	195,
+				"width":	58,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"WIDT",
+				"mgformat":	"mgFormat",
+				"format":	"#######",
+				"attribute":	"N",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	503,
+				"y":	221,
+				"width":	58,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"WEIG",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"#######.###",
+				"attribute":	"N",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	503,
+				"y":	247,
+				"width":	86,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"EF_DT",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	503,
+				"y":	273,
+				"width":	79,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VARNC",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"##.##",
+				"attribute":	"N",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	503,
+				"y":	299,
+				"width":	44,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PK_TYPE_MAST_PK_TYPE_DESC",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	535,
+				"y":	143,
+				"width":	219,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"MM",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	565,
+				"y":	169,
+				"width":	21,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label10",
+				"text":	"MM",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	565,
+				"y":	195,
+				"width":	21,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label13",
+				"text":	"MM",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	565,
+				"y":	221,
+				"width":	21,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label16",
+				"text":	"GM",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	595,
+				"y":	247,
+				"width":	21,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label19",
+				"text":	"END DATE:",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	605,
+				"y":	273,
+				"width":	70,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ED_DT",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	675,
+				"y":	273,
+				"width":	79,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}

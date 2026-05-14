@@ -1,0 +1,97 @@
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.LoginScreen"
+        [ngStyle]="{'background-image': mg.getStyle(mgc.LoginScreen, magicProperties.Wallpaper)}">
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.DisplayMessage" [style.visibility]="mg.getVisible(mgc.DisplayMessage)"
+                class="lable_overflow">
+                {{mg.getText(mgc.DisplayMessage)}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input [formControlName]="mgc.User" [magic]="mgc.User" mgFormat />
+                <mgError [magic]=mgc.User> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input [formControlName]="mgc.Password" [magic]="mgc.Password" [attr.required]="" type="password"
+                    mgFormat />
+                <mgError [magic]=mgc.Password> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button type="button" [magic]="mgc.Login" class="button_image_background_size"
+                [ngStyle]="{'background-image': mg.getStyle(mgc.Login, magicProperties.ImageFile)}">
+                &amp;Login
+            </button>
+            <button type="button" [magic]="mgc.btn_Exit_System" class="button_image_background_size"
+                [ngStyle]="{'background-image': mg.getStyle(mgc.btn_Exit_System, magicProperties.ImageFile)}">
+                Cancel
+            </button>
+        </div>
+    </div>
+</div> -->
+
+<body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed page-loading">
+
+    <div class="d-flex flex-column flex-root" style="height: 100%;" [formGroup]="screenFormGroup">
+        <!--begin::Login-->
+        <div class="login login-3 d-flex flex-row-fluid login-signin-on" id="kt_login" [magic]="mgc.LoginScreen">
+            <div class="d-flex flex-column flex-lg-row flex-row-fluid text-center bgi-size-contain bgi-no-repeat bgi-position-y-bottom bgi-position-x-right"
+                style="background-image: url(assets/media/bg/bg-1.jpg);background-color: white;">
+
+                <div class="d-flex w-100 flex-center p-2 position-relative overflow-hidden">
+                    <div class="login-wrapper">
+                        <div
+                            class="login-form text-center text-white p-10 position-relative overflow-hidden bg-dark-o-60 rounded-lg01">
+                            <div class="d-flex flex-center mb-8 mt-5 mr-10 ml-10">
+                                <a href="#">
+                                    <img src="assets/media/logos/logo.png" class="max-h-70px" alt="">
+                                </a>
+                            </div>
+                            <div class="login-signin">
+                                <div class="mb-6 test001">
+                                    <p class="opacity-100 h4 font-weight-bold ">HMSI CKD</p>
+                                    <p class="opacity-80 font-weight-bold">Enter your details to login:</p>
+                                </div>
+                                <div class="form-group fv-plugins-icon-container">
+                                    <input
+                                        class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 border-1 py-4 px-8 mb-5 login-name01"
+                                        placeholder="Name" [formControlName]="mgc.User" [magic]="mgc.User" 
+                                        mgFormat />
+                                    <mgError [magic]="mgc.User"> </mgError>
+                                </div>
+                                <div class="form-group fv-plugins-icon-container">
+                                    <input
+                                        class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 border-1 py-4 px-8 mb-5 login-pass01"
+                                        placeholder="Password" [formControlName]="mgc.Password" [magic]="mgc.Password"  
+                                        [attr.required]="" type="password" mgFormat />
+                                    <mgError [magic]="mgc.Password"> </mgError>
+                                </div>
+                                <div class="fv-plugins-message-container" *ngIf="mg.getVisible(mgc.DisplayMessage)==='visible'" >
+                                    <label class="text-danger" [magic]="mgc.DisplayMessage">
+                                        {{mg.getText(mgc.DisplayMessage)}}
+                                    </label>
+                                </div>
+                                <div class="form-group text-center mt-8">
+                                    <button type="button"
+                                        class="btn btn-danger font-weight-bold btn-block px-10 py-3"
+                                        [magic]="mgc.Login">
+                                        Sign in
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex w-100 flex-center p-25 position-relative overflow-hidden">
+                    <div class="login-wrapper">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+

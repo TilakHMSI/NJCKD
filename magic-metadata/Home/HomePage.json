@@ -1,0 +1,60 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"HomePage",
+		"custom_properties":	[
+			"Menu",
+			"User",
+			"Module",
+			"Version"
+		],
+		"component_path":	"Home/",
+		"module_name":	"",
+		"component_uniquename":	"Home_HomePage"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	779,
+		"height":	379
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Req",
+				"format":	"Req",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	12,
+				"width":	62,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MainContaint",
+				"is_router_outlet":	true,
+				"default_outlet":	true,
+				"common_line_id":	"line46"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	46,
+				"width":	718,
+				"height":	311
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

@@ -1,0 +1,308 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.CKDM0030PackingMatMaster"
+    >
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnAdd">
+                Add
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table23TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="container_border"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        [magic]="mgc.Column24"
+                        [matColumnDef]="mgc.Column24"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            CODE
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.CODE"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.CODE"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.CODE
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.CODE"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.CODE, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column25"
+                        [matColumnDef]="mgc.Column25"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            DESC
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.DESC"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.DESC"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.DESC
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.DESC"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.DESC, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column32"
+                        [matColumnDef]="mgc.Column32"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            Action
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    [magic]="mgc.btnEdit"
+                                    [rowId]="row.rowId"
+                                >
+                                    Edit
+                                </button>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    [magic]="mgc.btnDelete"
+                                    [rowId]="row.rowId"
+                                >
+                                    Delete
+                                </button>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div>
+            <label
+                [magic]="mgc.Label17"
+                class="lable_overflow"
+            >
+                EFFECTIVE DATE:
+            </label>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PACKING TYPE:
+            </label>
+            <label
+                [magic]="mgc.Label21"
+                class="lable_overflow"
+            >
+                VARIENCE:
+            </label>
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                LENGTH:
+            </label>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                HEIGHT:
+            </label>
+            <label
+                [magic]="mgc.Label14"
+                class="lable_overflow"
+            >
+                WEIGHT:
+            </label>
+            <label
+                [magic]="mgc.Label11"
+                class="lable_overflow"
+            >
+                WIDTH:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.PK_TYPE_MAST_PK_TYP_CD"
+                    [magic]="mgc.PK_TYPE_MAST_PK_TYP_CD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PK_TYPE_MAST_PK_TYP_CD> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.LENG"
+                    type='number'
+                    [magic]="mgc.LENG"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.LENG> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.HEIG"
+                    type='number'
+                    [magic]="mgc.HEIG"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.HEIG> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.WIDT"
+                    type='number'
+                    [magic]="mgc.WIDT"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.WIDT> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.WEIG"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.WEIG))"
+                    [magic]="mgc.WEIG"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.WEIG> </mgError>
+            </div>
+            <input
+                type="date"
+                [formControlName]="mgc.EF_DT"
+                [magic]="mgc.EF_DT"
+                dateInput
+            />
+            <div>
+                <input
+                    [formControlName]="mgc.VARNC"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.VARNC))"
+                    [magic]="mgc.VARNC"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.VARNC> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PK_TYPE_MAST_PK_TYPE_DESC"
+                    [magic]="mgc.PK_TYPE_MAST_PK_TYPE_DESC"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PK_TYPE_MAST_PK_TYPE_DESC> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                MM
+            </label>
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                MM
+            </label>
+            <label
+                [magic]="mgc.Label13"
+                class="lable_overflow"
+            >
+                MM
+            </label>
+            <label
+                [magic]="mgc.Label16"
+                class="lable_overflow"
+            >
+                GM
+            </label>
+            <label
+                [magic]="mgc.Label19"
+                class="lable_overflow"
+            >
+                END DATE:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.ED_DT"
+                [magic]="mgc.ED_DT"
+                dateInput
+            />
+        </div>
+    </div>
+</div>

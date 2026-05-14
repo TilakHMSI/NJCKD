@@ -1,0 +1,35 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.CKDPM023CaseCartonToCopy"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit1">
+                {{mg.getValue(mgc.Edit1) }}
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.Case__Carton_No_v"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.Case__Carton_No_v))"
+                    [magic]="mgc.Case__Carton_No_v"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.Case__Carton_No_v> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+            </label>
+            <button [magic]="mgc.OK_Button_v">
+                {{mg.getValue(mgc.OK_Button_v)}}
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,127 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.UpdateLotDCNUpdation"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit1">
+                {{mg.getValue(mgc.Edit1)
+| magicDate : mgc.Edit1}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicTime : mgc.Edit2}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                <<
+                    LOT
+                    MODIFICATION
+                    AFTER
+                    DCN
+                    UPDATION
+                >>
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                DCN NO.:
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.v_DC_No"
+                    [magic]="mgc.v_DC_No"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_DC_No> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.v_DC_No"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                NEW PART NO.:
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.v_New_Part_No"
+                    [magic]="mgc.v_New_Part_No"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_New_Part_No> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.v_New_Part_No"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                OLD PART NO.:
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.v_Old_Part_No"
+                    [magic]="mgc.v_Old_Part_No"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_Old_Part_No> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.v_Old_Part_No"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label11"
+                class="lable_overflow"
+            >
+                REMARKS:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.v_Remarks"
+                    [magic]="mgc.v_Remarks"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_Remarks> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                [magic]="mgc.v_Update"
+                [disabled]="mg.isDisabled(mgc.v_Update )"
+            >
+                \UPD\ATE
+            </button>
+            <button [magic]="mgc.v_Exit">
+                E\XIT
+            </button>
+        </div>
+    </div>
+</div>
