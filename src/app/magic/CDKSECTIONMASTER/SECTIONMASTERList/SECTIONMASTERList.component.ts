@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-CDKSECTIONMASTER_SECTIONMASTERList_SECTIONMASTERList',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./SECTIONMASTERList.component.css'],
     templateUrl: './SECTIONMASTERList.component.html'
 })
 export class SECTIONMASTERList extends BaseMatTableMagicComponent implements MagicModalInterface {

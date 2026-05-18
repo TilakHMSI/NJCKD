@@ -19,24 +19,7 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label1",
-				"text":	"\u003c\u003c   SECTION CODE MASTER MAINTENANCE   \u003e\u003e",
-				"common_line_id":	"line39"
-			},
-			"coordinates":	{
-				"x":	95,
-				"y":	39,
-				"width":	590,
-				"height":	39
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"v_AddNew",
+				"id":	"btnAdd",
 				"format":	"\\Add New",
 				"common_line_id":	"line81"
 			},
@@ -56,14 +39,14 @@
 			},
 			"props":	{
 				"id":	"Table3",
-				"table_row_height":	20,
+				"table_row_height":	64,
 				"table_title_height":	20,
 				"common_line_id":	"line120"
 			},
 			"coordinates":	{
-				"x":	214,
+				"x":	140,
 				"y":	120,
-				"width":	354,
+				"width":	510,
 				"height":	372
 			},
 			"hint":	null,
@@ -95,7 +78,7 @@
 								"common_line_id":	"line143"
 							},
 							"coordinates":	{
-								"x":	219,
+								"x":	145,
 								"y":	143,
 								"width":	44,
 								"height":	16
@@ -132,7 +115,7 @@
 								"common_line_id":	"line143"
 							},
 							"coordinates":	{
-								"x":	271,
+								"x":	197,
 								"y":	143,
 								"width":	219,
 								"height":	16
@@ -171,13 +154,69 @@
 								"common_line_id":	"line143"
 							},
 							"coordinates":	{
-								"x":	506,
+								"x":	432,
 								"y":	143,
 								"width":	30,
 								"height":	16
 							},
 							"hint":	null,
 							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column14",
+						"column_title":	"Action",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	113
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnEdit",
+								"format":	"Edit",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line144"
+							},
+							"coordinates":	{
+								"x":	479,
+								"y":	144,
+								"width":	105,
+								"height":	28
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnDelete",
+								"format":	"Delete",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line176"
+							},
+							"coordinates":	{
+								"x":	479,
+								"y":	176,
+								"width":	105,
+								"height":	28
+							},
+							"hint":	null,
+							"controlType":	"B",
 							"children":	null
 						}
 					]
@@ -201,60 +240,6 @@
 			},
 			"hint":	null,
 			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"v_Modify",
-				"format":	"\\Modify",
-				"attribute":	"A",
-				"common_line_id":	"line546"
-			},
-			"coordinates":	{
-				"x":	283,
-				"y":	546,
-				"width":	105,
-				"height":	28
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"v_Delete",
-				"format":	"Delete",
-				"attribute":	"A",
-				"common_line_id":	"line546"
-			},
-			"coordinates":	{
-				"x":	391,
-				"y":	546,
-				"width":	105,
-				"height":	28
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"v_Exit",
-				"format":	"Exit",
-				"attribute":	"A",
-				"common_line_id":	"line546"
-			},
-			"coordinates":	{
-				"x":	501,
-				"y":	546,
-				"width":	105,
-				"height":	28
-			},
-			"hint":	null,
-			"controlType":	"B",
 			"children":	null
 		}
 	]

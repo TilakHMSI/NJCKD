@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-CKDPartsMappingMaintenance_PartsMappingMaintList_PartsMappingMaintList',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./PartsMappingMaintList.component.css'],
     templateUrl: './PartsMappingMaintList.component.html'
 })
 export class PartsMappingMaintList extends BaseMatTableMagicComponent implements MagicModalInterface {

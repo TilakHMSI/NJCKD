@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-CKDPM010LotMaster_LotMasterList_LotMasterList',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./LotMasterList.component.css'],
     templateUrl: './LotMasterList.component.html'
 })
 export class LotMasterList extends BaseMatTableMagicComponent implements MagicModalInterface {

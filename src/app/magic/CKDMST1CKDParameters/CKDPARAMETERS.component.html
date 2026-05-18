@@ -1,28 +1,19 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.CKDPARAMETERS"
-    >
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.CKDPARAMETERS">
         <div style="display: flex; flex-direction: row">
             <div *ngIf="mg.isImageExists(mgc.Image1)">
-                <img
-                    [magic]="mgc.Image1"
-                    [src]="mg.getImage(mgc.Image1)"
-                />
+                <img [magic]="mgc.Image1" [src]="mg.getImage(mgc.Image1)" />
             </div>
             <label [magic]="mgc.Edit3">
                 {{mg.getValue(mgc.Edit3)
-| magicDate : mgc.Edit3}}
+                | magicDate : mgc.Edit3}}
             </label>
             <label [magic]="mgc.Edit2">
                 {{mg.getValue(mgc.Edit2) }}
             </label>
             <label [magic]="mgc.Edit4">
                 {{mg.getValue(mgc.Edit4)
-| magicTime : mgc.Edit4}}
+                | magicTime : mgc.Edit4}}
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
@@ -31,225 +22,316 @@
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label8"
-                class="lable_overflow"
-            >
-                INCLUDE ENGINE PARTS IN PARTS PACKING MASTER
-            </label>
-            <label
-                [magic]="mgc.Label7"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label7" class="lable_overflow">
                 AUTO-GENERATION OF CONTAINER/CASE/CARTON NO
             </label>
-            <label
-                [magic]="mgc.Label21"
-                class="lable_overflow"
-            >
-                MAXIMUM PARTS FOR CARTON LABEL PRINTING
+            <div>
+                <select [magic]="mgc.CKD_CENT" [formControlName]="mgc.CKD_CENT">
+                    <option *ngFor="let o of mg.getItemListValues(mgc.CKD_CENT);"
+                        [selected]="o.index == mg.getValue(mgc.CKD_CENT)" [value]="o.index">
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label8" class="lable_overflow">
+                INCLUDE ENGINE PARTS IN PARTS PACKING MASTER
             </label>
-            <label
-                [magic]="mgc.Label17"
-                class="lable_overflow"
-            >
-                CASE PACKING SCHEDULE ENTRY METHOD
-            </label>
-            <label
-                [magic]="mgc.Label19"
-                class="lable_overflow"
-            >
-                MAXIMUM PARTS ALLOWED IN A CARTON
-            </label>
-            <label
-                [magic]="mgc.Label23"
-                class="lable_overflow"
-            >
-                COPIES OF CASE LABEL / PARTS LIST
-            </label>
-            <label
-                [magic]="mgc.Label25"
-                class="lable_overflow"
-            >
-                PART LOCATION FOR PACKING MASTER
-            </label>
-            <label
-                [magic]="mgc.Label18"
-                class="lable_overflow"
-            >
-                LOT WISE PACKING DATA CREATION
-            </label>
-            <label
-                [magic]="mgc.Label11"
-                class="lable_overflow"
-            >
-                CONTANER NO. DISPLAY FORMAT
-            </label>
-            <label
-                [magic]="mgc.Label15"
-                class="lable_overflow"
-            >
-                CARTON NO. DISPLAY FORMAT
-            </label>
-            <label
-                [magic]="mgc.Label13"
-                class="lable_overflow"
-            >
-                CASE NO. DISPLAY FORMAT
-            </label>
-            <label
-                [magic]="mgc.Label9"
-                class="lable_overflow"
-            >
+            <div>
+                <select [magic]="mgc.CKD_ENPT" [formControlName]="mgc.CKD_ENPT">
+                    <option *ngFor="let o of mg.getItemListValues(mgc.CKD_ENPT);"
+                        [selected]="o.index == mg.getValue(mgc.CKD_ENPT)" [value]="o.index">
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label9" class="lable_overflow">
                 LOT NO. DISPALY FORMAT
             </label>
-            <label
-                [magic]="mgc.Label27"
-                class="lable_overflow"
-            >
+            <div>
+                <input [formControlName]="mgc.CKD_LTFR" [magic]="mgc.CKD_LTFR" mgFormat />
+                <mgError [magic]=mgc.CKD_LTFR> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label11" class="lable_overflow">
+                CONTANER NO. DISPLAY FORMAT
+            </label>
+            <div>
+                <input [formControlName]="mgc.CKD_CNFR" [magic]="mgc.CKD_CNFR" mgFormat />
+                <mgError [magic]=mgc.CKD_CNFR> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label13" class="lable_overflow">
+                CASE NO. DISPLAY FORMAT
+            </label>
+            <div>
+                <input [formControlName]="mgc.CKD_CSFR" [magic]="mgc.CKD_CSFR" mgFormat />
+                <mgError [magic]=mgc.CKD_CSFR> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label15" class="lable_overflow">
+                CARTON NO. DISPLAY FORMAT
+            </label>
+            <div>
+                <input [formControlName]="mgc.CKD_CRFR" [magic]="mgc.CKD_CRFR" mgFormat />
+                <mgError [magic]=mgc.CKD_CRFR> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label17" class="lable_overflow">
+                CASE PACKING SCHEDULE ENTRY METHOD
+            </label>
+            <div>
+                <select [magic]="mgc.CKD_CSSC" [formControlName]="mgc.CKD_CSSC">
+                    <option *ngFor="let o of mg.getItemListValues(mgc.CKD_CSSC);"
+                        [selected]="o.index == mg.getValue(mgc.CKD_CSSC)" [value]="o.index">
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label18" class="lable_overflow">
+                LOT WISE PACKING DATA CREATION
+            </label>
+            <div>
+                <select [magic]="mgc.CKD_LTCR" [formControlName]="mgc.CKD_LTCR">
+                    <option *ngFor="let o of mg.getItemListValues(mgc.CKD_LTCR);"
+                        [selected]="o.index == mg.getValue(mgc.CKD_LTCR)" [value]="o.index">
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label19" class="lable_overflow">
+                MAXIMUM PARTS ALLOWED IN A CARTON
+            </label>
+            <div>
+                <input [formControlName]="mgc.CKD_CRMX" type='number' [magic]="mgc.CKD_CRMX" mgFormat />
+                <mgError [magic]=mgc.CKD_CRMX> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label21" class="lable_overflow">
+                MAXIMUM PARTS FOR CARTON LABEL PRINTING
+            </label>
+            <div>
+                <input [formControlName]="mgc.CKD_CRLM" type='number' [magic]="mgc.CKD_CRLM" mgFormat />
+                <mgError [magic]=mgc.CKD_CRLM> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label23" class="lable_overflow">
+                COPIES OF CASE LABEL / PARTS LIST
+            </label>
+            <div>
+                <input [formControlName]="mgc.CKD_CSLC" type='number' [magic]="mgc.CKD_CSLC" mgFormat />
+                <mgError [magic]=mgc.CKD_CSLC> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label25" class="lable_overflow">
+                PART LOCATION FOR PACKING MASTER
+            </label>
+            <div>
+                <input [formControlName]="mgc.CKD_PTL1" [magic]="mgc.CKD_PTL1" mgFormat />
+                <mgError [magic]=mgc.CKD_PTL1> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label27" class="lable_overflow">
                 WEIGHING MACHINE USE
             </label>
             <div>
-                <select
-                    [magic]="mgc.CKD_CENT"
-                    [formControlName]="mgc.CKD_CENT"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.CKD_CENT);"
-                        [selected]="o.index == mg.getValue(mgc.CKD_CENT)"
-                        [value]="o.index"
-                    >
+                <select [magic]="mgc.CKD_WGUS" [formControlName]="mgc.CKD_WGUS">
+                    <option *ngFor="let o of mg.getItemListValues(mgc.CKD_WGUS);"
+                        [selected]="o.index == mg.getValue(mgc.CKD_WGUS)" [value]="o.index">
                         {{o.displayValue}}
                     </option>
                 </select>
             </div>
-            <div>
-                <select
-                    [magic]="mgc.CKD_ENPT"
-                    [formControlName]="mgc.CKD_ENPT"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.CKD_ENPT);"
-                        [selected]="o.index == mg.getValue(mgc.CKD_ENPT)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnSave">
+                Save
+            </button>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.CKDPARAMETERS">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            CKD PARAMETERS
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <input
-                    [formControlName]="mgc.CKD_LTFR"
-                    [magic]="mgc.CKD_LTFR"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.CKD_LTFR> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.CKD_CNFR"
-                    [magic]="mgc.CKD_CNFR"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.CKD_CNFR> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.CKD_CSFR"
-                    [magic]="mgc.CKD_CSFR"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.CKD_CSFR> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.CKD_CRFR"
-                    [magic]="mgc.CKD_CRFR"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.CKD_CRFR> </mgError>
-            </div>
-            <div>
-                <select
-                    [magic]="mgc.CKD_CSSC"
-                    [formControlName]="mgc.CKD_CSSC"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.CKD_CSSC);"
-                        [selected]="o.index == mg.getValue(mgc.CKD_CSSC)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
-            </div>
-            <div>
-                <select
-                    [magic]="mgc.CKD_LTCR"
-                    [formControlName]="mgc.CKD_LTCR"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.CKD_LTCR);"
-                        [selected]="o.index == mg.getValue(mgc.CKD_LTCR)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.CKD_CRMX"
-                    type='number'
-                    [magic]="mgc.CKD_CRMX"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.CKD_CRMX> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.CKD_CRLM"
-                    type='number'
-                    [magic]="mgc.CKD_CRLM"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.CKD_CRLM> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.CKD_CSLC"
-                    type='number'
-                    [magic]="mgc.CKD_CSLC"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.CKD_CSLC> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.CKD_PTL1"
-                    [magic]="mgc.CKD_PTL1"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.CKD_PTL1> </mgError>
-            </div>
-            <div>
-                <select
-                    [magic]="mgc.CKD_WGUS"
-                    [formControlName]="mgc.CKD_WGUS"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.CKD_WGUS);"
-                        [selected]="o.index == mg.getValue(mgc.CKD_WGUS)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>AUTO-GENERATION OF CONTAINER/CASE/CARTON NO</label>
+                                    <select class="form-control-ed" [magic]="mgc.CKD_CENT"
+                                        [formControlName]="mgc.CKD_CENT">
+                                        <option *ngFor="let o of mg.getItemListValues(mgc.CKD_CENT);"
+                                            [selected]="o.index == mg.getValue(mgc.CKD_CENT)" [value]="o.index">
+                                            {{o.displayValue}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>INCLUDE ENGINE PARTS IN PARTS PACKING MASTER:</label>
+                                    <select class="form-control-ed" [magic]="mgc.CKD_ENPT"
+                                        [formControlName]="mgc.CKD_ENPT">
+                                        <option *ngFor="let o of mg.getItemListValues(mgc.CKD_ENPT);"
+                                            [selected]="o.index == mg.getValue(mgc.CKD_ENPT)" [value]="o.index">
+                                            {{o.displayValue}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm mt-10">
+                                    <label class="mr-5">LOT NO. DISPALY FORMAT :</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CKD_LTFR"
+                                        [magic]="mgc.CKD_LTFR" mgFormat />
+                                    <mgError [magic]=mgc.CKD_LTFR> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>CONTANER NO. DISPLAY FORMAT</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CKD_CNFR"
+                                        [magic]="mgc.CKD_CNFR" mgFormat />
+                                    <mgError [magic]=mgc.CKD_CNFR> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm mt-10">
+                                    <label class="mr-5">CASE NO. DISPLAY FORMAT</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CKD_CSFR"
+                                        [magic]="mgc.CKD_CSFR" mgFormat />
+                                    <mgError [magic]=mgc.CKD_CSFR> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>CARTON NO. DISPLAY FORMAT</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CKD_CRFR"
+                                        [magic]="mgc.CKD_CRFR" mgFormat />
+                                    <mgError [magic]=mgc.CKD_CRFR> </mgError>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>CASE PACKING SCHEDULE ENTRY METHOD</label>
+                                    <select class="form-control-ed" [magic]="mgc.CKD_CSSC"
+                                        [formControlName]="mgc.CKD_CSSC">
+                                        <option *ngFor="let o of mg.getItemListValues(mgc.CKD_CSSC);"
+                                            [selected]="o.index == mg.getValue(mgc.CKD_CSSC)" [value]="o.index">
+                                            {{o.displayValue}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>LOT WISE PACKING DATA CREATION</label>
+                                    <select class="form-control-ed" [magic]="mgc.CKD_LTCR"
+                                        [formControlName]="mgc.CKD_LTCR">
+                                        <option *ngFor="let o of mg.getItemListValues(mgc.CKD_LTCR);"
+                                            [selected]="o.index == mg.getValue(mgc.CKD_LTCR)" [value]="o.index">
+                                            {{o.displayValue}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>MAXIMUM PARTS ALLOWED IN A CARTON</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CKD_CRMX" type='number' [magic]="mgc.CKD_CRMX"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.CKD_CRMX> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>MAXIMUM PARTS FOR CARTON LABEL PRINTING</label>
+                                   <input class="form-control-ed" [formControlName]="mgc.CKD_CRLM" type='number' [magic]="mgc.CKD_CRLM"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.CKD_CRLM> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>COPIES OF CASE LABEL / PARTS LIST</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CKD_CSLC" type='number' [magic]="mgc.CKD_CSLC"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.CKD_CSLC> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>PART LOCATION FOR PACKING MASTER</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CKD_PTL1"
+                                        [magic]="mgc.CKD_PTL1" mgFormat />
+                                    <mgError [magic]=mgc.CKD_PTL1> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>WEIGHING MACHINE USE</label>
+                                    <select class="form-control-ed" [magic]="mgc.CKD_WGUS"
+                                        [formControlName]="mgc.CKD_WGUS">
+                                        <option *ngFor="let o of mg.getItemListValues(mgc.CKD_WGUS);"
+                                            [selected]="o.index == mg.getValue(mgc.CKD_WGUS)" [value]="o.index">
+                                            {{o.displayValue}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-12 text-center">
+                                <div class="form-group d-flex justify-content-center">
+                                    <button type="button" [magic]="mgc.btnSave"
+                                        class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                        SAVE
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

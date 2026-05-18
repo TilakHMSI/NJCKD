@@ -1,81 +1,72 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.SECTIONMASTERCM"
-    >
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.btnexit">
-                Back
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
-                SECTION CODE:
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.SEC_CD"
-                    type='number'
-                    [magic]="mgc.SEC_CD"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.SEC_CD> </mgError>
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.SECTIONMASTERCM">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            SECTION MASTER : CM
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label4"
-                class="lable_overflow"
-            >
-                DESCRIPTION:
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.SEC_DESC"
-                    [magic]="mgc.SEC_DESC"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.SEC_DESC> </mgError>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>SECTION CODE</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.SEC_CD" [magic]="mgc.SEC_CD"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.SEC_CD> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>DESCRIPTION:</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.SEC_DESC" [magic]="mgc.SEC_DESC"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.SEC_DESC> </mgError>
+                                </div>
+                            </div>
+                           <div class="col-lg-6">
+                                <div class="form-group-sm mt-10">
+                                    <label class="mr-5">PARTS REQUIREMENT PRINT:</label>
+                                    <input type="checkbox" id="Reqprn" [formControlName]="mgc.Reqprn"
+                                        [magic]="mgc.Reqprn" />
+                                </div>
+                            </div>
+                             <div class="col-lg-6" *ngIf="mg.getVisible(mgc.Desc)==='visible'">
+                                <div class="form-group-sm">
+                                    <label>.</label>
+                                   <textarea [formControlName]="mgc.Desc"
+                                        [magic]="mgc.Desc" mgFormat class="form-control"
+                                        id="Desc" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-12 text-center">
+                                <div class="form-group d-flex justify-content-center">
+                                    <button type="button" [magic]="mgc.v_SaveExit"
+                                        class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                        SAVE
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
-                PARTS REQUIREMENT PRINT:
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.Reqprn"
-                    [magic]="mgc.Reqprn"
-                    mgFormat
-                    rangevalidator
-                />
-                <mgError [magic]=mgc.Reqprn> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div>
-                <input
-                    [formControlName]="mgc.Desc"
-                    [magic]="mgc.Desc"
-                    [style.visibility]="mg.getVisible(mgc.Desc)"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.Desc> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.v_SaveExit">
-                Save \And Exit
-            </button>
         </div>
     </div>
 </div>

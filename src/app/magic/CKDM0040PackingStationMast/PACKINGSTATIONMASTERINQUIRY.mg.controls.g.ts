@@ -18,6 +18,7 @@ export enum MgControlName {
         PST_STAT = "PST_STAT",
         Column12 = "Column12",
         btnEdit = "btnEdit",
+        btnAdd = "btnAdd",
 }
 export enum MgCustomProperties {}
 export var

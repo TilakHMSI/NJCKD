@@ -115,42 +115,9 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label6",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	99,
-				"y":	52,
-				"width":	364,
-				"height":	410
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label8",
-				"text":	"INCLUDE ENGINE PARTS IN PARTS PACKING MASTER",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	129,
-				"y":	93,
-				"width":	225,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Label7",
 				"text":	"AUTO-GENERATION OF CONTAINER/CASE/CARTON NO",
-				"common_line_id":	"line52"
+				"common_line_id":	"line59"
 			},
 			"coordinates":	{
 				"x":	134,
@@ -165,197 +132,10 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label21",
-				"text":	"MAXIMUM PARTS FOR CARTON LABEL PRINTING",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	154,
-				"y":	314,
-				"width":	200,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label17",
-				"text":	"CASE PACKING SCHEDULE ENTRY METHOD",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	179,
-				"y":	231,
-				"width":	175,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label19",
-				"text":	"MAXIMUM PARTS ALLOWED IN A CARTON",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	184,
-				"y":	286,
-				"width":	170,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label23",
-				"text":	"COPIES OF CASE LABEL / PARTS LIST",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	184,
-				"y":	341,
-				"width":	170,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label25",
-				"text":	"PART LOCATION FOR PACKING MASTER",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	189,
-				"y":	369,
-				"width":	165,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label18",
-				"text":	"LOT WISE PACKING DATA CREATION",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	199,
-				"y":	258,
-				"width":	155,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label11",
-				"text":	"CONTANER NO. DISPLAY FORMAT",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	214,
-				"y":	148,
-				"width":	140,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label15",
-				"text":	"CARTON NO. DISPLAY FORMAT",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	224,
-				"y":	203,
-				"width":	130,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label13",
-				"text":	"CASE NO. DISPLAY FORMAT",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	234,
-				"y":	176,
-				"width":	120,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label9",
-				"text":	"LOT NO. DISPALY FORMAT",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	239,
-				"y":	120,
-				"width":	115,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label27",
-				"text":	"WEIGHING MACHINE USE",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	249,
-				"y":	395,
-				"width":	105,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"CKD_CENT",
 				"items_list":	"Yes,No",
 				"attribute":	"B",
-				"common_line_id":	"line52"
+				"common_line_id":	"line59"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -370,10 +150,44 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	502,
+				"y":	59,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"INCLUDE ENGINE PARTS IN PARTS PACKING MASTER",
+				"common_line_id":	"line93"
+			},
+			"coordinates":	{
+				"x":	129,
+				"y":	93,
+				"width":	225,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_ENPT",
 				"items_list":	"Yes,No",
 				"attribute":	"B",
-				"common_line_id":	"line52"
+				"common_line_id":	"line93"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -388,11 +202,28 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label9",
+				"text":	"LOT NO. DISPALY FORMAT",
+				"common_line_id":	"line120"
+			},
+			"coordinates":	{
+				"x":	239,
+				"y":	120,
+				"width":	115,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_LTFR",
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line52"
+				"common_line_id":	"line120"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -407,11 +238,28 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label11",
+				"text":	"CONTANER NO. DISPLAY FORMAT",
+				"common_line_id":	"line148"
+			},
+			"coordinates":	{
+				"x":	214,
+				"y":	148,
+				"width":	140,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_CNFR",
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line52"
+				"common_line_id":	"line148"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -426,11 +274,28 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label13",
+				"text":	"CASE NO. DISPLAY FORMAT",
+				"common_line_id":	"line176"
+			},
+			"coordinates":	{
+				"x":	234,
+				"y":	176,
+				"width":	120,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_CSFR",
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line52"
+				"common_line_id":	"line176"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -445,11 +310,28 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label15",
+				"text":	"CARTON NO. DISPLAY FORMAT",
+				"common_line_id":	"line203"
+			},
+			"coordinates":	{
+				"x":	224,
+				"y":	203,
+				"width":	130,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_CRFR",
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line52"
+				"common_line_id":	"line203"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -464,10 +346,27 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label17",
+				"text":	"CASE PACKING SCHEDULE ENTRY METHOD",
+				"common_line_id":	"line231"
+			},
+			"coordinates":	{
+				"x":	179,
+				"y":	231,
+				"width":	175,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_CSSC",
 				"items_list":	"All, One by One",
 				"attribute":	"A",
-				"common_line_id":	"line52"
+				"common_line_id":	"line231"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -482,10 +381,27 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label18",
+				"text":	"LOT WISE PACKING DATA CREATION",
+				"common_line_id":	"line258"
+			},
+			"coordinates":	{
+				"x":	199,
+				"y":	258,
+				"width":	155,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_LTCR",
 				"items_list":	"Yes,No",
 				"attribute":	"B",
-				"common_line_id":	"line52"
+				"common_line_id":	"line258"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -500,11 +416,28 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label19",
+				"text":	"MAXIMUM PARTS ALLOWED IN A CARTON",
+				"common_line_id":	"line286"
+			},
+			"coordinates":	{
+				"x":	184,
+				"y":	286,
+				"width":	170,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_CRMX",
 				"mgformat":	"mgFormat",
 				"format":	"##",
 				"attribute":	"N",
-				"common_line_id":	"line52"
+				"common_line_id":	"line286"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -519,11 +452,28 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label21",
+				"text":	"MAXIMUM PARTS FOR CARTON LABEL PRINTING",
+				"common_line_id":	"line314"
+			},
+			"coordinates":	{
+				"x":	154,
+				"y":	314,
+				"width":	200,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_CRLM",
 				"mgformat":	"mgFormat",
 				"format":	"##",
 				"attribute":	"N",
-				"common_line_id":	"line52"
+				"common_line_id":	"line314"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -538,11 +488,28 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label23",
+				"text":	"COPIES OF CASE LABEL / PARTS LIST",
+				"common_line_id":	"line341"
+			},
+			"coordinates":	{
+				"x":	184,
+				"y":	341,
+				"width":	170,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_CSLC",
 				"mgformat":	"mgFormat",
 				"format":	"##",
 				"attribute":	"N",
-				"common_line_id":	"line52"
+				"common_line_id":	"line341"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -557,11 +524,28 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label25",
+				"text":	"PART LOCATION FOR PACKING MASTER",
+				"common_line_id":	"line369"
+			},
+			"coordinates":	{
+				"x":	189,
+				"y":	369,
+				"width":	165,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_PTL1",
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line52"
+				"common_line_id":	"line369"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -576,19 +560,53 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label27",
+				"text":	"WEIGHING MACHINE USE",
+				"common_line_id":	"line395"
+			},
+			"coordinates":	{
+				"x":	249,
+				"y":	395,
+				"width":	105,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"CKD_WGUS",
 				"items_list":	"Yes,No",
 				"attribute":	"B",
-				"common_line_id":	"line52"
+				"common_line_id":	"line395"
 			},
 			"coordinates":	{
 				"x":	361,
 				"y":	395,
-				"width":	35,
+				"width":	56,
 				"height":	20
 			},
 			"hint":	null,
 			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSave",
+				"format":	"Save",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	132,
+				"y":	432,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
 			"children":	null
 		}
 	]

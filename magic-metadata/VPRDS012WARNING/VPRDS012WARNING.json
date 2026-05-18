@@ -1,0 +1,162 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VPRDS012WARNING",
+		"window_type":	12,
+		"component_path":	"VPRDS012WARNING/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDS012WARNING_VPRDS012WARNING"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	568,
+		"height":	494
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line137"
+			},
+			"coordinates":	{
+				"x":	113,
+				"y":	137,
+				"width":	344,
+				"height":	223
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"**UnSupported Control**",
+				"common_line_id":	"line137"
+			},
+			"coordinates":	{
+				"x":	113,
+				"y":	359,
+				"width":	344,
+				"height":	0
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	" WARNING",
+				"common_line_id":	"line137"
+			},
+			"coordinates":	{
+				"x":	114,
+				"y":	140,
+				"width":	341,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_MESSAGE_P",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"must_input":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line137"
+			},
+			"coordinates":	{
+				"x":	114,
+				"y":	189,
+				"width":	340,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"Click or press return key to continue!",
+				"common_line_id":	"line137"
+			},
+			"coordinates":	{
+				"x":	225,
+				"y":	213,
+				"width":	126,
+				"height":	11
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"**UnSupported Control**",
+				"common_line_id":	"line137"
+			},
+			"coordinates":	{
+				"x":	225,
+				"y":	229,
+				"width":	126,
+				"height":	0
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Close",
+				"attribute":	"A",
+				"common_line_id":	"line137"
+			},
+			"coordinates":	{
+				"x":	250,
+				"y":	275,
+				"width":	69,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"**UnSupported Control**",
+				"common_line_id":	"line137"
+			},
+			"coordinates":	{
+				"x":	456,
+				"y":	137,
+				"width":	0,
+				"height":	223
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		}
+	]
+}

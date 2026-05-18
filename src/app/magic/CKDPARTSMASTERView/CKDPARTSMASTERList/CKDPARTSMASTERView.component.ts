@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-CKDPARTSMASTERView_CKDPARTSMASTERList_CKDPARTSMASTERView',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./CKDPARTSMASTERView.component.css'],
     templateUrl: './CKDPARTSMASTERView.component.html'
 })
 export class CKDPARTSMASTERView extends BaseMatTableMagicComponent implements MagicModalInterface {

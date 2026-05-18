@@ -175,10 +175,14 @@ import { Transporter as CKDCaseTransferModule_MainLoop_StockTransferMain_Transpo
 import { PC_HelpList as CKDCaseTransferModule_MainLoop_StockTransferMain_PC_HelpList_PC_HelpList } from './CKDCaseTransferModule/MainLoop/StockTransferMain/PC_HelpList/PC_HelpList.component';
 import { CKD_CaseTransferModuleView as CKD_CaseTransferModuleView_CKD_CaseTransferModuleView } from './CKD_CaseTransferModuleView/CKD_CaseTransferModuleView.component';
 import { Details as CKD_CaseTransferModuleView_CKD_STOCK_TransferDtl_Details } from './CKD_CaseTransferModuleView/CKD_STOCK_TransferDtl/Details.component';
+import { VPRDS005OKNO as VPRDS005OKNO_VPRDS005OKNO } from './VPRDS005OKNO/VPRDS005OKNO.component';
+import { VPRDS012WARNING as VPRDS012WARNING_VPRDS012WARNING } from './VPRDS012WARNING/VPRDS012WARNING.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               CKDP0090CartonCaseScanning_CKDP0090CartonCaseScanning:CKDP0090CartonCaseScanning_CKDP0090CartonCaseScanning,
+export const magicGenCmpsHash = {               VPRDS005OKNO_VPRDS005OKNO:VPRDS005OKNO_VPRDS005OKNO,
+              VPRDS012WARNING_VPRDS012WARNING:VPRDS012WARNING_VPRDS012WARNING,
+                      CKDP0090CartonCaseScanning_CKDP0090CartonCaseScanning:CKDP0090CartonCaseScanning_CKDP0090CartonCaseScanning,
               CKDP0090CartonCaseScanning_EngineDetails_ENGINEDETAILS:CKDP0090CartonCaseScanning_EngineDetails_ENGINEDETAILS,
               CKDP0090CartonCaseScanning_DisplayCartons_DisplayCartons:CKDP0090CartonCaseScanning_DisplayCartons_DisplayCartons,
               CKDP0090CartonCaseScanning_DisplayCases_DisplayCases:CKDP0090CartonCaseScanning_DisplayCases_DisplayCases,
@@ -359,6 +363,8 @@ export const magicGenCmpsHash = {               CKDP0090CartonCaseScanning_CKDP0
 };
 
 export const magicGenComponents = [
+	VPRDS005OKNO_VPRDS005OKNO,
+	VPRDS012WARNING_VPRDS012WARNING,
 	CKDP0090CartonCaseScanning_CKDP0090CartonCaseScanning,
 	CKDP0090CartonCaseScanning_EngineDetails_ENGINEDETAILS,
 	CKDP0090CartonCaseScanning_DisplayCartons_DisplayCartons,

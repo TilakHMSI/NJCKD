@@ -1,0 +1,73 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VPRDS005OKNO",
+		"window_type":	12,
+		"component_path":	"VPRDS005OKNO/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDS005OKNO_VPRDS005OKNO"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	415,
+		"height":	86
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_MESSAGE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line34"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	34,
+				"width":	405,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"OK_BUTTON",
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	106,
+				"y":	60,
+				"width":	66,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CANCEL_BUTTON",
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	244,
+				"y":	60,
+				"width":	66,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

@@ -1,130 +1,149 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.CKDPARTSMASTERAdd4"
-    >
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
-                <<
-                    C.K.D.
-                    PART
-                    ADDITION
-                >>
-            </label>
-            <button [magic]="mgc.btnexit">
-                Back
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
-                PART NO.:
-            </label>
-            <label [magic]="mgc.PART_NO">
-                {{mg.getValue(mgc.PART_NO) }}
-            </label>
-            <button
-                style="min-width: auto; margin: auto"
-                [magic]="mgc.PART_NO"
-            >...</button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label4"
-                class="lable_overflow"
-            >
-                BASE PART
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.BASE_PART_NO"
-                    [magic]="mgc.BASE_PART_NO"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.BASE_PART_NO> </mgError>
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.CKDPARTSMASTERAdd4">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            C.K.D. PART ADDITION  : CM
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
-                Color
-            </label>
-            <label [magic]="mgc.PART_COLOR_0001">
-                {{mg.getValue(mgc.PART_COLOR_0001) }}
-            </label>
-            <button
-                style="min-width: auto; margin: auto"
-                [magic]="mgc.PART_COLOR_0001"
-                [disabled]="mg.isDisabled(mgc.PART_COLOR_0001)"
-            >...</button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label8"
-                class="lable_overflow"
-            >
-                Lot Code
-            </label>
-            <div>
-                <input
-                    style="width: 70%"
-                    [formControlName]="mgc.PART_LTCD"
-                    [magic]="mgc.PART_LTCD"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.PART_LTCD> </mgError>
-                <button
-                    style="min-width: auto; margin: auto"
-                    [magic]="mgc.PART_LTCD"
-                >...</button>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>PART NO</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.PART_NO" [magic]="mgc.PART_NO"
+                                            class="form-control" placeholder="SELECT PART CODE" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.PART_NO">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>BASE PART NO</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.BASE_PART_NO"
+                                        [magic]="mgc.BASE_PART_NO" mgFormat />
+                                    <mgError [magic]=mgc.BASE_PART_NO> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>PART COLOR CODE</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.PART_COLOR_0001" [magic]="mgc.PART_COLOR_0001"
+                                            class="form-control" placeholder="SELECT PART COLOR" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.PART_COLOR_0001">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>PART LOT CODE</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.PART_LTCD" [magic]="mgc.PART_LTCD"
+                                            class="form-control" placeholder="SELECT PART LOT" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.PART_LTCD">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>Is Select</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.STATUS"
+                                        [magic]="mgc.STATUS" mgFormat />
+                                    <mgError [magic]=mgc.STATUS> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>IS REQUIRED</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.IS_REQUIRED_0001"
+                                        [magic]="mgc.IS_REQUIRED_0001" mgFormat />
+                                    <mgError [magic]=mgc.IS_REQUIRED_0001> </mgError>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-12 text-center">
+                                <div class="form-group d-flex justify-content-center">
+                                    <button type="button" [magic]="mgc.btnSave"
+                                        class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                        SAVE
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label10"
-                class="lable_overflow"
-            >
-                Is Select
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.STATUS"
-                    [magic]="mgc.STATUS"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.STATUS> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label12"
-                class="lable_overflow"
-            >
-                Is Required
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.IS_REQUIRED_0001"
-                    [magic]="mgc.IS_REQUIRED_0001"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.IS_REQUIRED_0001> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.btnSave">
-                Save
-            </button>
         </div>
     </div>
 </div>

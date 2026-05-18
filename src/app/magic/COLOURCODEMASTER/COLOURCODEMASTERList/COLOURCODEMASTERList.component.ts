@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-COLOURCODEMASTER_COLOURCODEMASTERList_COLOURCODEMASTERList',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./COLOURCODEMASTERList.component.css'],
     templateUrl: './COLOURCODEMASTERList.component.html'
 })
 export class COLOURCODEMASTERList extends BaseMatTableMagicComponent implements MagicModalInterface {

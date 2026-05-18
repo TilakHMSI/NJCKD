@@ -1,19 +1,16 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"CNT_MAST_CNT_WEIG",
+		"id":	"CKD_CSLC",
 		"mgformat":	"mgFormat",
-		"currency":	"currency",
-		"format":	"#######.###",
-		"attribute":	"N",
-		"is_table_child":	true,
-		"web_style":	2
+		"format":	"##",
+		"attribute":	"N"
 	},
 	"coordinates":	{
-		"x":	384,
-		"y":	34,
-		"width":	60,
-		"height":	13
+		"x":	361,
+		"y":	341,
+		"width":	16,
+		"height":	15
 	},
 	"hint":	null,
 	"controlType":	"T",

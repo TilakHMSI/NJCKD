@@ -33,8 +33,6 @@ export var
         'Column10',
         'Column11',
         'Column12',
-        'Column13',
-        'Column14',
         'Column24',
         'Column25',
         'Column26',

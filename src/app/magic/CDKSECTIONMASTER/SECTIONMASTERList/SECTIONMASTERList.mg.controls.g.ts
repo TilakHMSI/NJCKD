@@ -7,8 +7,7 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     SECTIONMASTERList = "SECTIONMASTERList",
-        Label1 = "Label1",
-        v_AddNew = "v_AddNew",
+        btnAdd = "btnAdd",
         Table3 = "Table3",
         Column4 = "Column4",
         SEC_CD = "SEC_CD",
@@ -16,10 +15,10 @@ export enum MgControlName {
         SEC_DESC = "SEC_DESC",
         Column6 = "Column6",
         Reqprn = "Reqprn",
+        Column14 = "Column14",
+        btnEdit = "btnEdit",
+        btnDelete = "btnDelete",
         Desc = "Desc",
-        v_Modify = "v_Modify",
-        v_Delete = "v_Delete",
-        v_Exit = "v_Exit",
 }
 export enum MgCustomProperties {}
 export var
@@ -27,6 +26,7 @@ export var
         'Column4',
         'Column5',
         'Column6',
+        'Column14',
     ];
 
 export class MgFormControlsAccessor {
