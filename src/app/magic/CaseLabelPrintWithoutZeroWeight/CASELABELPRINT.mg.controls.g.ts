@@ -22,6 +22,7 @@ export enum MgControlName {
         KDPCHED_PH_DSCD = "KDPCHED_PH_DSCD",
         DSTBMST_DS_DSENAM = "DSTBMST_DS_DSENAM",
         Datewise_Carton_Inquiry = "Datewise_Carton_Inquiry",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -26,6 +26,41 @@
             <button [magic]="mgc.btn_Exit">
                 {{mg.getValue(mgc.btn_Exit)}}
             </button>
+        </div>
+    </div>
+</div> -->
+
+
+<div style="background-color: rgb(243, 243, 146);" novalidate [formGroup]="screenFormGroup">
+    <div class="d-flex flex-column flex-column-fluid" [magic]="mgc.Help">
+        
+            <div class="col-lg-12 col-xxl-12">
+                <div class="form-group row">
+                    <div class="col-lg-12">
+                        <label style="background-color: red; text-align: center; width: 100%;"
+                            class="font-weight-bolder font-size-h2 text-white">
+                           Help
+                        </label>
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="lbl_title" [magic]="mgc.Label2">
+                            Remove Lot No and add Gross weight Developed by 'minerva' date :11\08\10
+                        </label>
+                    </div>
+                    <div class="col-lg-12">
+                        <label  class="lbl_title">
+                            Click or press return key to continue!
+                        </label>
+                    </div>
+                    <div class="col-lg-12 mt-8">
+                        <div class="form-group">
+                            <button type="button" [magic]="mgc.btn_Exit"
+                                class="btn btn-danger font-weight-bold mr-3 btn-wdth">RETURN</button>
+                        </div>
+                    </div>
+                
+
+            </div>
         </div>
     </div>
 </div>
