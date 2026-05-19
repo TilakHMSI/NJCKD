@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./LOTMASTERLIST.mg.controls.g";
-import { MgDisplayedColumns } from "./LOTMASTERLIST.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./LotMasterList.mg.controls.g";
+import { MgDisplayedColumns } from "./LotMasterList.mg.controls.g";
 
 
 import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
@@ -11,12 +11,13 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-CKDZ001BrowseLotMaster_List_LOTMASTERLIST',
+    selector: 'mga-CKDZ001BrowseLotMaster_List_LotMasterList',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './LOTMASTERLIST.component.html'
+    styleUrls: ['./List.component.css'],
+    templateUrl: './LotMasterList.component.html'
 })
-export class LOTMASTERLIST extends BaseMatTableMagicComponent implements MagicModalInterface {
+export class LotMasterList extends BaseMatTableMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -25,7 +26,7 @@ export class LOTMASTERLIST extends BaseMatTableMagicComponent implements MagicMo
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "LOTMASTERLIST";
+    private static readonly formName: string = "LotMasterList";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -36,34 +37,34 @@ export class LOTMASTERLIST extends BaseMatTableMagicComponent implements MagicMo
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return LOTMASTERLIST.x;
+        return LotMasterList.x;
     }
     Y() {
-        return LOTMASTERLIST.y;
+        return LotMasterList.y;
     }
     Width(): string {
-        return LOTMASTERLIST.width;
+        return LotMasterList.width;
     }
     Height(): string {
-        return LOTMASTERLIST.height;
+        return LotMasterList.height;
     }
     IsCenteredToWindow() {
-        return LOTMASTERLIST.isCenteredToWindow;
+        return LotMasterList.isCenteredToWindow;
     }
     FormName() {
-        return LOTMASTERLIST.formName;
+        return LotMasterList.formName;
     }
     ShowTitleBar() {
-        return LOTMASTERLIST.showTitleBar;
+        return LotMasterList.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return LOTMASTERLIST.shouldCloseOnBackgroundClick;
+        return LotMasterList.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return LOTMASTERLIST.isResizable;
+        return LotMasterList.isResizable;
     }
     IsMovable() {
-        return LOTMASTERLIST.isMovable;
+        return LotMasterList.isMovable;
     }
     override displayedColumns = this.mgdp;
 }

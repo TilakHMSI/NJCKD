@@ -1,18 +1,16 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"CKD_CSLC",
-		"mgformat":	"mgFormat",
-		"format":	"##",
-		"attribute":	"N"
+		"id":	"btnexit",
+		"format":	"Back"
 	},
 	"coordinates":	{
-		"x":	361,
-		"y":	341,
-		"width":	16,
-		"height":	15
+		"x":	504,
+		"y":	50,
+		"width":	41,
+		"height":	22
 	},
 	"hint":	null,
-	"controlType":	"T",
+	"controlType":	"B",
 	"children":	null
 }

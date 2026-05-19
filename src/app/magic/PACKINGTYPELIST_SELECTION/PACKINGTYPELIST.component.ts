@@ -28,7 +28,7 @@ export class PACKINGTYPELIST extends TaskBaseMagicComponent implements MagicModa
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "500px";
-    private static readonly height: string = "350px";
+    private static readonly height: string = "500px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = false;

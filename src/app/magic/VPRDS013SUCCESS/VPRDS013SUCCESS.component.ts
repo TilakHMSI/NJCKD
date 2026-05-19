@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./CKDZ003CaseType.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./VPRDS013SUCCESS.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,13 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-CKDZ003BrowseCaseType_CKDZ003CaseType',
+    selector: 'mga-VPRDS013SUCCESS_VPRDS013SUCCESS',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './CKDZ003CaseType.component.html'
+    styleUrl: './VPRDS013SUCCESS.component.css',
+    templateUrl: './VPRDS013SUCCESS.component.html'
 })
-export class CKDZ003CaseType extends TaskBaseMagicComponent implements MagicModalInterface {
+export class VPRDS013SUCCESS extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,44 +24,44 @@ export class CKDZ003CaseType extends TaskBaseMagicComponent implements MagicModa
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "CKDZ003CaseType";
+    private static readonly formName: string = "VPRDS013SUCCESS";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "500px";
-    private static readonly height: string = "500px";
+    private static readonly width: string = "600px";
+    private static readonly height: string = "200px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
-    private static readonly isResizable: boolean = false;
+    private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return CKDZ003CaseType.x;
+        return VPRDS013SUCCESS.x;
     }
     Y() {
-        return CKDZ003CaseType.y;
+        return VPRDS013SUCCESS.y;
     }
     Width(): string {
-        return CKDZ003CaseType.width;
+        return VPRDS013SUCCESS.width;
     }
     Height(): string {
-        return CKDZ003CaseType.height;
+        return VPRDS013SUCCESS.height;
     }
     IsCenteredToWindow() {
-        return CKDZ003CaseType.isCenteredToWindow;
+        return VPRDS013SUCCESS.isCenteredToWindow;
     }
     FormName() {
-        return CKDZ003CaseType.formName;
+        return VPRDS013SUCCESS.formName;
     }
     ShowTitleBar() {
-        return CKDZ003CaseType.showTitleBar;
+        return VPRDS013SUCCESS.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return CKDZ003CaseType.shouldCloseOnBackgroundClick;
+        return VPRDS013SUCCESS.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return CKDZ003CaseType.isResizable;
+        return VPRDS013SUCCESS.isResizable;
     }
     IsMovable() {
-        return CKDZ003CaseType.isMovable;
+        return VPRDS013SUCCESS.isMovable;
     }
 }

@@ -6,55 +6,50 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    LOTMASTERLIST = "LOTMASTERLIST",
-        Edit1 = "Edit1",
-        Table2 = "Table2",
-        Column3 = "Column3",
-        V_Lot_Code_v = "V_Lot_Code_v",
-        Column4 = "Column4",
-        V_Lot_Desc_v = "V_Lot_Desc_v",
-        Column5 = "Column5",
-        V_Lot_Model_v = "V_Lot_Model_v",
-        Column6 = "Column6",
-        PRD001_S1_MTO_NAME = "PRD001_S1_MTO_NAME",
-        Column7 = "Column7",
-        V_Lot_Qty_v = "V_Lot_Qty_v",
+    LotMasterList = "LotMasterList",
+        Table7 = "Table7",
+        Column8 = "Column8",
+        LOT_CODE = "LOT_CODE",
+        Column9 = "Column9",
+        LOT_DESC = "LOT_DESC",
+        Column10 = "Column10",
+        LOT_MDCD = "LOT_MDCD",
+        Column11 = "Column11",
+        S1_MTONAME = "S1_MTONAME",
+        Column12 = "Column12",
+        LOT_MQTY = "LOT_MQTY",
 }
 export enum MgCustomProperties {}
 export var
     MgDisplayedColumns = [
-        'Column3',
-        'Column4',
-        'Column5',
-        'Column6',
-        'Column7',
+        'Column8',
+        'Column9',
+        'Column10',
+        'Column11',
+        'Column12',
     ];
 
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get Edit1(): FormControl {
-        return this.fg.controls[MgControlName.Edit1] as FormControl;
+    get LOT_CODE(): FormControl {
+        return this.getTableChildFormControl(MgControlName.LOT_CODE);
     }
 
-    get V_Lot_Code_v(): FormControl {
-        return this.getTableChildFormControl(MgControlName.V_Lot_Code_v);
+    get LOT_DESC(): FormControl {
+        return this.getTableChildFormControl(MgControlName.LOT_DESC);
     }
 
-    get V_Lot_Desc_v(): FormControl {
-        return this.getTableChildFormControl(MgControlName.V_Lot_Desc_v);
+    get LOT_MDCD(): FormControl {
+        return this.getTableChildFormControl(MgControlName.LOT_MDCD);
     }
 
-    get V_Lot_Model_v(): FormControl {
-        return this.getTableChildFormControl(MgControlName.V_Lot_Model_v);
+    get S1_MTONAME(): FormControl {
+        return this.getTableChildFormControl(MgControlName.S1_MTONAME);
     }
 
-    get PRD001_S1_MTO_NAME(): FormControl {
-        return this.getTableChildFormControl(MgControlName.PRD001_S1_MTO_NAME);
-    }
-
-    get V_Lot_Qty_v(): FormControl {
-        return this.getTableChildFormControl(MgControlName.V_Lot_Qty_v);
+    get LOT_MQTY(): FormControl {
+        return this.getTableChildFormControl(MgControlName.LOT_MQTY);
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

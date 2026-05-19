@@ -19,6 +19,7 @@ export enum MgControlName {
         v_Lot_Qty = "v_Lot_Qty",
         Label11 = "Label11",
         v_Ok = "v_Ok",
+        btnexit= "btnexit",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

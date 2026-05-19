@@ -13,6 +13,7 @@ export enum MgControlName {
         V_Frame_Model_Code_v = "V_Frame_Model_Code_v",
         Column4 = "Column4",
         V_Model_Name_v = "V_Model_Name_v",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export var

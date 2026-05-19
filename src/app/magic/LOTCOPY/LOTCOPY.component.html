@@ -1,114 +1,114 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.LOTCOPY"
-    >
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Edit2">
-                {{mg.getValue(mgc.Edit2) }}
-            </label>
-            <label [magic]="mgc.Edit4">
-                {{mg.getValue(mgc.Edit4)
-| magicDate : mgc.Edit4}}
-            </label>
-            <label [magic]="mgc.Edit3">
-                {{mg.getValue(mgc.Edit3)
-| magicTime : mgc.Edit3}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label4"
-                class="lable_overflow"
-            >
-                <<
-                    ENTER
-                    NEW
-                    LOT
-                    DETAILS
-                >>
-            </label>
-            <button [magic]="mgc.btnexit">
-                Exit
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label5"
-                class="lable_overflow"
-            >
-                LOT TO BE COPIED:
-            </label>
-            <div>
-                <input
-                    style="width: 70%"
-                    [formControlName]="mgc.v_Lot_No_Copy_From"
-                    [magic]="mgc.v_Lot_No_Copy_From"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.v_Lot_No_Copy_From> </mgError>
-                <button
-                    style="min-width: auto; margin: auto"
-                    [magic]="mgc.v_Lot_No_Copy_From"
-                >...</button>
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.LOTCOPY">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            LOT COPY
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
             </div>
-            <label
-                [magic]="mgc.Label7"
-                class="lable_overflow"
-            >
-                MODEL CODE:
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.LOT_MAST_LOT_MDCD"
-                    [magic]="mgc.LOT_MAST_LOT_MDCD"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.LOT_MAST_LOT_MDCD> </mgError>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>LOT TO BE COPIED:</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.v_Lot_No_Copy_From" [magic]="mgc.v_Lot_No_Copy_From"
+                                            class="form-control" placeholder="SELECT LOT CODE" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.v_Lot_No_Copy_From">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>MODEL CODE</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.LOT_MAST_LOT_MDCD"
+                                        [magic]="mgc.LOT_MAST_LOT_MDCD" mgFormat />
+                                    <mgError [magic]=mgc.LOT_MAST_LOT_MDCD> </mgError>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>NEW LOT CODE:</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.v_Lot_No_Copy_To" [magic]="mgc.v_Lot_No_Copy_To"
+                                            class="form-control" placeholder="SELECT LOT CODE" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.v_Lot_No_Copy_To">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>MODEL CODE</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.V_v_Model_To_Copy"
+                                        [magic]="mgc.V_v_Model_To_Copy" mgFormat />
+                                    <mgError [magic]=mgc.V_v_Model_To_Copy> </mgError>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-12 text-center">
+                                <div class="form-group d-flex justify-content-center">
+                                    <button type="button" [magic]="mgc.btnSave"
+                                        class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                        COPY
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label9"
-                class="lable_overflow"
-            >
-                NEW LOT CODE:
-            </label>
-            <div>
-                <input
-                    style="width: 70%"
-                    [formControlName]="mgc.v_Lot_No_Copy_To"
-                    [magic]="mgc.v_Lot_No_Copy_To"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.v_Lot_No_Copy_To> </mgError>
-                <button
-                    style="min-width: auto; margin: auto"
-                    [magic]="mgc.v_Lot_No_Copy_To"
-                >...</button>
-            </div>
-            <label
-                [magic]="mgc.Label11"
-                class="lable_overflow"
-            >
-                MODEL CODE:
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.V_v_Model_To_Copy"
-                    [magic]="mgc.V_v_Model_To_Copy"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_v_Model_To_Copy> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.btnSave">
-                Copy
-            </button>
         </div>
     </div>
 </div>

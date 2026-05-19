@@ -1,34 +1,19 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.CARTONDETAILS"
-    >
+<div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.CARTONDETAILS">
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label2" class="lable_overflow">
                 Lot:
             </label>
             <label [magic]="mgc.V_Lot_Id_v">
                 {{mg.getValue(mgc.V_Lot_Id_v) }}
             </label>
-            <label
-                [magic]="mgc.Label4"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label4" class="lable_overflow">
                 Container:
             </label>
             <label [magic]="mgc.WRK_CONT_WRK_CONT_CNCD">
                 {{mg.getValue(mgc.WRK_CONT_WRK_CONT_CNCD) }}
             </label>
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label6" class="lable_overflow">
                 Case:
             </label>
             <label [magic]="mgc.WRK_CASE_WRK_CASE_CSCD">
@@ -41,11 +26,11 @@
         <div style="display: flex; flex-direction: row">
             <label [magic]="mgc.Edit8">
                 {{mg.getValue(mgc.Edit8)
-| magicDate : mgc.Edit8}}
+                | magicDate : mgc.Edit8}}
             </label>
             <label [magic]="mgc.Edit9">
                 {{mg.getValue(mgc.Edit9)
-| magicTime : mgc.Edit9}}
+                | magicTime : mgc.Edit9}}
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
@@ -55,342 +40,180 @@
         </div>
         <div style="display: flex; flex-direction: row">
             <div class="example-container mat-elevation-z8 Table13TableContainerProps">
-                <mat-table
-                    #table
-                    [dataSource]="dataSource"
-                    class="container_border"
-                    matSort
-                    matSortDisableClear
-                    (matSortChange)="tableService.sortData($event)"
-                >
-                    <ng-container
-                        [magic]="mgc.Column14"
-                        [matColumnDef]="mgc.Column14"
-                    >
+                <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)">
+                    <ng-container [magic]="mgc.Column14" [matColumnDef]="mgc.Column14">
                         <mat-header-cell *matHeaderCellDef>
                             Code
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.WRK_CART_CRCD"
-                                            *ngIf="mg.isRowInRowEditing(row)"
+                                        <input [formControlName]="mgc.WRK_CART_CRCD" *ngIf="mg.isRowInRowEditing(row)"
                                             currencyMask
                                             [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_CART_CRCD))"
-                                            [magic]="mgc.WRK_CART_CRCD"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.WRK_CART_CRCD
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.WRK_CART_CRCD"
-                                            [rowId]="row.rowId"
-                                        >
+                                            [magic]="mgc.WRK_CART_CRCD" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.WRK_CART_CRCD [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRCD"
+                                            [rowId]="row.rowId">
                                             {{mg.getFormattedValue(mgc.WRK_CART_CRCD, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column15"
-                        [matColumnDef]="mgc.Column15"
-                    >
+                    <ng-container [magic]="mgc.Column15" [matColumnDef]="mgc.Column15">
                         <mat-header-cell *matHeaderCellDef>
                             Type
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            style="width: 70%"
-                                            [formControlName]="mgc.WRK_CART_CRTY"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.WRK_CART_CRTY"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.WRK_CART_CRTY
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.WRK_CART_CRTY"
-                                            [rowId]="row.rowId"
-                                        >
+                                        <input style="width: 70%" [formControlName]="mgc.WRK_CART_CRTY"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRTY"
+                                            [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.WRK_CART_CRTY [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRTY"
+                                            [rowId]="row.rowId">
                                             {{mg.getValue(mgc.WRK_CART_CRTY, row.rowId)
-}}
+                                            }}
                                         </label>
-                                        <button
-                                            style="min-width: auto; margin: auto"
-                                            [magic]="mgc.WRK_CART_CRTY"
-                                            [rowId]="row.rowId"
-                                        >...</button>
+                                        <button style="min-width: auto; margin: auto" [magic]="mgc.WRK_CART_CRTY"
+                                            [rowId]="row.rowId">...</button>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column16"
-                        [matColumnDef]="mgc.Column16"
-                    >
+                    <ng-container [magic]="mgc.Column16" [matColumnDef]="mgc.Column16">
                         <mat-header-cell *matHeaderCellDef>
                             Lower
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.WRK_CART_CRLW"
-                                            *ngIf="mg.isRowInRowEditing(row)"
+                                        <input [formControlName]="mgc.WRK_CART_CRLW" *ngIf="mg.isRowInRowEditing(row)"
                                             currencyMask
                                             [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_CART_CRLW))"
-                                            [magic]="mgc.WRK_CART_CRLW"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.WRK_CART_CRLW
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.WRK_CART_CRLW"
-                                            [rowId]="row.rowId"
-                                        >
+                                            [magic]="mgc.WRK_CART_CRLW" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.WRK_CART_CRLW [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRLW"
+                                            [rowId]="row.rowId">
                                             {{mg.getFormattedValue(mgc.WRK_CART_CRLW, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column17"
-                        [matColumnDef]="mgc.Column17"
-                    >
+                    <ng-container [magic]="mgc.Column17" [matColumnDef]="mgc.Column17">
                         <mat-header-cell *matHeaderCellDef>
                             Upper
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.WRK_CART_CRUW"
-                                            *ngIf="mg.isRowInRowEditing(row)"
+                                        <input [formControlName]="mgc.WRK_CART_CRUW" *ngIf="mg.isRowInRowEditing(row)"
                                             currencyMask
                                             [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_CART_CRUW))"
-                                            [magic]="mgc.WRK_CART_CRUW"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.WRK_CART_CRUW
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.WRK_CART_CRUW"
-                                            [rowId]="row.rowId"
-                                        >
+                                            [magic]="mgc.WRK_CART_CRUW" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.WRK_CART_CRUW [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRUW"
+                                            [rowId]="row.rowId">
                                             {{mg.getFormattedValue(mgc.WRK_CART_CRUW, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column18"
-                        [matColumnDef]="mgc.Column18"
-                    >
+                    <ng-container [magic]="mgc.Column18" [matColumnDef]="mgc.Column18">
                         <mat-header-cell *matHeaderCellDef>
                             Gross Weight
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.WRK_CART_CRGW"
-                                            *ngIf="mg.isRowInRowEditing(row)"
+                                        <input [formControlName]="mgc.WRK_CART_CRGW" *ngIf="mg.isRowInRowEditing(row)"
                                             currencyMask
                                             [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_CART_CRGW))"
-                                            [magic]="mgc.WRK_CART_CRGW"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.WRK_CART_CRGW
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.WRK_CART_CRGW"
-                                            [rowId]="row.rowId"
-                                        >
+                                            [magic]="mgc.WRK_CART_CRGW" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.WRK_CART_CRGW [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRGW"
+                                            [rowId]="row.rowId">
                                             {{mg.getFormattedValue(mgc.WRK_CART_CRGW, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column19"
-                        [matColumnDef]="mgc.Column19"
-                    >
+                    <ng-container [magic]="mgc.Column19" [matColumnDef]="mgc.Column19">
                         <mat-header-cell *matHeaderCellDef>
                             Packing Station
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            style="width: 70%"
-                                            [formControlName]="mgc.WRK_CART_CRST"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.WRK_CART_CRST"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.WRK_CART_CRST
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.WRK_CART_CRST"
-                                            [rowId]="row.rowId"
-                                        >
+                                        <input style="width: 70%" [formControlName]="mgc.WRK_CART_CRST"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRST"
+                                            [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.WRK_CART_CRST [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRST"
+                                            [rowId]="row.rowId">
                                             {{mg.getValue(mgc.WRK_CART_CRST, row.rowId)
-}}
+                                            }}
                                         </label>
-                                        <button
-                                            style="min-width: auto; margin: auto"
-                                            [magic]="mgc.WRK_CART_CRST"
-                                            [rowId]="row.rowId"
-                                        >...</button>
+                                        <button style="min-width: auto; margin: auto" [magic]="mgc.WRK_CART_CRST"
+                                            [rowId]="row.rowId">...</button>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column20"
-                        [matColumnDef]="mgc.Column20"
-                    >
+                    <ng-container [magic]="mgc.Column20" [matColumnDef]="mgc.Column20">
                         <mat-header-cell *matHeaderCellDef>
                             Engine
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input
-                                        type="checkbox"
-                                        id="WRK_CART_CREG_{{row.rowId}}"
-                                        [formControlName]="mgc.WRK_CART_CREG"
-                                        [magic]="mgc.WRK_CART_CREG"
-                                        [rowId]="row.rowId"
-                                    />
+                                    <input type="checkbox" id="WRK_CART_CREG_{{row.rowId}}"
+                                        [formControlName]="mgc.WRK_CART_CREG" [magic]="mgc.WRK_CART_CREG"
+                                        [rowId]="row.rowId" />
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
                     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-                    <mat-row
-                        *matRowDef="let row; columns: displayedColumns;"
-                        class="table_row"
-                        [ngClass]="{ 'selected': selection.isSelected(row)}"
-                        [magicRow]="row?.rowId"
-                        (click)="row? tableService.selectRow(row.rowId) : null"
-                    >
+                    <mat-row *matRowDef="let row; columns: displayedColumns;" class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}" [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null">
                     </mat-row>
                 </mat-table>
-                <mat-paginator
-                    #paginator
-                    [pageSize]="10"
-                    [pageSizeOptions]="[5, 10, 20]"
-                    (page)="tableService.mgOnPaginateChange($event)"
-                >
+                <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)">
                 </mat-paginator>
             </div>
-            <label
-                [magic]="mgc.Label11"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label11" class="lable_overflow">
                 Weight Limits
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label12"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label12" class="lable_overflow">
             </label>
-            <button
-                [magic]="mgc.CARTONCOPY"
-                [disabled]="mg.isDisabled(mgc.CARTONCOPY )"
-            >
+            <button [magic]="mgc.CARTONCOPY" [disabled]="mg.isDisabled(mgc.CARTONCOPY )">
                 {{mg.getValue(mgc.CARTONCOPY)}}
             </button>
         </div>

@@ -52,7 +52,6 @@ import { List as SelectLotCode_List } from './SelectLotCode/List.component';
 import { SelectdistinctParts as SelectdistinctParts_SelectdistinctParts } from './SelectdistinctParts/SelectdistinctParts.component';
 import { SelectPartColor as SelectPartColor_SelectPartColor } from './SelectPartColor/SelectPartColor.component';
 import { CKDZ001BrowseLotMaster as CKDZ001BrowseLotMaster_CKDZ001BrowseLotMaster } from './CKDZ001BrowseLotMaster/CKDZ001BrowseLotMaster.component';
-import { LOTMASTERLIST as CKDZ001BrowseLotMaster_List_LOTMASTERLIST } from './CKDZ001BrowseLotMaster/List/LOTMASTERLIST.component';
 import { CKDZ002ContainerTypeSelection as CKDZ002BrowseContainerType_CKDZ002ContainerTypeSelection } from './CKDZ002BrowseContainerType/CKDZ002ContainerTypeSelection.component';
 import { List as CKDZ002BrowseContainerType_List_List } from './CKDZ002BrowseContainerType/List/List.component';
 import { CKDZ003CaseType as CKDZ003BrowseCaseType_CKDZ003CaseType } from './CKDZ003BrowseCaseType/CKDZ003CaseType.component';
@@ -177,10 +176,15 @@ import { CKD_CaseTransferModuleView as CKD_CaseTransferModuleView_CKD_CaseTransf
 import { Details as CKD_CaseTransferModuleView_CKD_STOCK_TransferDtl_Details } from './CKD_CaseTransferModuleView/CKD_STOCK_TransferDtl/Details.component';
 import { VPRDS005OKNO as VPRDS005OKNO_VPRDS005OKNO } from './VPRDS005OKNO/VPRDS005OKNO.component';
 import { VPRDS012WARNING as VPRDS012WARNING_VPRDS012WARNING } from './VPRDS012WARNING/VPRDS012WARNING.component';
+import { LotMasterList as CKDZ001BrowseLotMaster_List_LotMasterList } from './CKDZ001BrowseLotMaster/List/LotMasterList.component';
+import { VPRDS013SUCCESS as VPRDS013SUCCESS_VPRDS013SUCCESS } from './VPRDS013SUCCESS/VPRDS013SUCCESS.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               VPRDS005OKNO_VPRDS005OKNO:VPRDS005OKNO_VPRDS005OKNO,
+export const magicGenCmpsHash = {               VPRDS013SUCCESS_VPRDS013SUCCESS:VPRDS013SUCCESS_VPRDS013SUCCESS,
+                      CKDZ001BrowseLotMaster_List_LotMasterList:CKDZ001BrowseLotMaster_List_LotMasterList,
+       
+                      VPRDS005OKNO_VPRDS005OKNO:VPRDS005OKNO_VPRDS005OKNO,
               VPRDS012WARNING_VPRDS012WARNING:VPRDS012WARNING_VPRDS012WARNING,
                       CKDP0090CartonCaseScanning_CKDP0090CartonCaseScanning:CKDP0090CartonCaseScanning_CKDP0090CartonCaseScanning,
               CKDP0090CartonCaseScanning_EngineDetails_ENGINEDETAILS:CKDP0090CartonCaseScanning_EngineDetails_ENGINEDETAILS,
@@ -296,7 +300,6 @@ export const magicGenCmpsHash = {               VPRDS005OKNO_VPRDS005OKNO:VPRDS0
               CKDQ0010PackingMasterInqury_DisplayPackingMaster_DisplayPackingMaster:CKDQ0010PackingMasterInqury_DisplayPackingMaster_DisplayPackingMaster,
               CKDP0130PackingMasterError_PACKINGMASTERVALIDATIONBOM:CKDP0130PackingMasterError_PACKINGMASTERVALIDATIONBOM,
                       CKDZ001BrowseLotMaster_CKDZ001BrowseLotMaster:CKDZ001BrowseLotMaster_CKDZ001BrowseLotMaster,
-              CKDZ001BrowseLotMaster_List_LOTMASTERLIST:CKDZ001BrowseLotMaster_List_LOTMASTERLIST,
               CKDZ002BrowseContainerType_CKDZ002ContainerTypeSelection:CKDZ002BrowseContainerType_CKDZ002ContainerTypeSelection,
               CKDZ002BrowseContainerType_List_List:CKDZ002BrowseContainerType_List_List,
               CKDZ003BrowseCaseType_CKDZ003CaseType:CKDZ003BrowseCaseType_CKDZ003CaseType,
@@ -363,6 +366,8 @@ export const magicGenCmpsHash = {               VPRDS005OKNO_VPRDS005OKNO:VPRDS0
 };
 
 export const magicGenComponents = [
+	VPRDS013SUCCESS_VPRDS013SUCCESS,
+	CKDZ001BrowseLotMaster_List_LotMasterList,
 	VPRDS005OKNO_VPRDS005OKNO,
 	VPRDS012WARNING_VPRDS012WARNING,
 	CKDP0090CartonCaseScanning_CKDP0090CartonCaseScanning,
@@ -479,7 +484,6 @@ export const magicGenComponents = [
 	CKDQ0010PackingMasterInqury_DisplayPackingMaster_DisplayPackingMaster,
 	CKDP0130PackingMasterError_PACKINGMASTERVALIDATIONBOM,
 	CKDZ001BrowseLotMaster_CKDZ001BrowseLotMaster,
-	CKDZ001BrowseLotMaster_List_LOTMASTERLIST,
 	CKDZ002BrowseContainerType_CKDZ002ContainerTypeSelection,
 	CKDZ002BrowseContainerType_List_List,
 	CKDZ003BrowseCaseType_CKDZ003CaseType,

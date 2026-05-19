@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-CKDQ0010PackingMasterInqury_DisplayPackingMaster_DisplayPackingMaster',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./DisplayPackingMaster.component.css'],
     templateUrl: './DisplayPackingMaster.component.html'
 })
 export class DisplayPackingMaster extends BaseMatTableMagicComponent {

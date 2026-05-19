@@ -12,13 +12,13 @@ export enum MgControlName {
         Edit2 = "Edit2",
         Edit4 = "Edit4",
         Edit5 = "Edit5",
-        Label6 = "Label6",
+        btnexit = "btnexit",
         Label7 = "Label7",
         Lot_Id_v = "Lot_Id_v",
-        LOT_MAST_LOT_DESC = "LOT_MAST_LOT_DESC",
         Label9 = "Label9",
         Effective_Date_v = "Effective_Date_v",
         OK_Button_v = "OK_Button_v",
+        LOT_MAST_LOT_DESC = "LOT_MAST_LOT_DESC",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -44,12 +44,12 @@ export class MgFormControlsAccessor {
         return this.fg.controls[MgControlName.Lot_Id_v] as FormControl;
     }
 
-    get LOT_MAST_LOT_DESC(): FormControl {
-        return this.fg.controls[MgControlName.LOT_MAST_LOT_DESC] as FormControl;
-    }
-
     get Effective_Date_v(): FormControl {
         return this.fg.controls[MgControlName.Effective_Date_v] as FormControl;
+    }
+
+    get LOT_MAST_LOT_DESC(): FormControl {
+        return this.fg.controls[MgControlName.LOT_MAST_LOT_DESC] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

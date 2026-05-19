@@ -58,7 +58,7 @@
 			"props":	{
 				"id":	"Edit2",
 				"dataexp":	true,
-				"format":	"XXXXXXXXXXXXXX",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 				"modifiable":	false,
 				"common_line_id":	"line3"
 			},
@@ -115,17 +115,18 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label6",
-				"common_line_id":	"line57"
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line46"
 			},
 			"coordinates":	{
-				"x":	9,
-				"y":	57,
-				"width":	543,
-				"height":	55
+				"x":	484,
+				"y":	46,
+				"width":	61,
+				"height":	23
 			},
 			"hint":	null,
-			"controlType":	"L",
+			"controlType":	"B",
 			"children":	null
 		},
 		{
@@ -133,7 +134,7 @@
 			"props":	{
 				"id":	"Label7",
 				"text":	"Lot Id",
-				"common_line_id":	"line57"
+				"common_line_id":	"line75"
 			},
 			"coordinates":	{
 				"x":	21,
@@ -153,7 +154,7 @@
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line57"
+				"common_line_id":	"line75"
 			},
 			"coordinates":	{
 				"x":	60,
@@ -168,28 +169,9 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"LOT_MAST_LOT_DESC",
-				"mgformat":	"mgFormat",
-				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-				"attribute":	"A",
-				"common_line_id":	"line57"
-			},
-			"coordinates":	{
-				"x":	60,
-				"y":	96,
-				"width":	155,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Label9",
 				"text":	"Effective Date",
-				"common_line_id":	"line57"
+				"common_line_id":	"line75"
 			},
 			"coordinates":	{
 				"x":	128,
@@ -208,7 +190,7 @@
 				"mgformat":	"mgFormat",
 				"format":	"DD/MM/YYYY",
 				"attribute":	"D",
-				"common_line_id":	"line57"
+				"common_line_id":	"line75"
 			},
 			"coordinates":	{
 				"x":	210,
@@ -225,7 +207,7 @@
 			"props":	{
 				"id":	"OK_Button_v",
 				"attribute":	"A",
-				"common_line_id":	"line57"
+				"common_line_id":	"line75"
 			},
 			"coordinates":	{
 				"x":	484,
@@ -235,6 +217,25 @@
 			},
 			"hint":	null,
 			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"LOT_MAST_LOT_DESC",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line96"
+			},
+			"coordinates":	{
+				"x":	60,
+				"y":	96,
+				"width":	155,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
 			"children":	null
 		}
 	]

@@ -22,6 +22,7 @@ export enum MgControlName {
         Column22 = "Column22",
         btnEdit = "btnEdit",
         btnDelete = "btnDelete",
+        btnCopy = "btnCopy"
 }
 export enum MgCustomProperties {}
 export var

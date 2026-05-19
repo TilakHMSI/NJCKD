@@ -19,7 +19,9 @@ export enum MgControlName {
         Option_v = "Option_v",
         LOT_MAST_LOT_DESC = "LOT_MAST_LOT_DESC",
         Edit12 = "Edit12",
-        Display_Packing_Master = "Display_Packing_Master",
+        DisplayPackingMaster = "DisplayPackingMaster",
+        btnSearch = "btnSearch",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

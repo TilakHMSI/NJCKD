@@ -126,13 +126,21 @@
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
-                                <button class="btn-tbl" [magic]="mgc.btnEdit" [rowId]="row.rowId">
+                                <button class="btn-tbl" [magic]="mgc.btnEdit" 
+                                [style.visibility]="mg.getVisible(mgc.btnCopy, row.rowId)" [rowId]="row.rowId">
                                     <i class="icon-xl far fa-edit text-info" aria-hidden="true"></i>
                                 </button>
                             </div>
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
-                                <button class="btn-tbl" [magic]="mgc.btnDelete" [rowId]="row.rowId">
+                                <button class="btn-tbl" [magic]="mgc.btnDelete" 
+                                [style.visibility]="mg.getVisible(mgc.btnCopy, row.rowId)" [rowId]="row.rowId">
                                     <i class="icon-xl fas fa-trash text-danger" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <button class="btn-tbl" [magic]="mgc.btnCopy" 
+                                [style.visibility]="mg.getVisible(mgc.btnCopy, row.rowId)" [rowId]="row.rowId">
+                                    <i class="icon-xl fas fa-copy text-warning" aria-hidden="true"></i>
                                 </button>
                             </div>
                         </mat-cell>

@@ -12,16 +12,16 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/CKDMST1CKDParameters/CKDPARAMETERS.json
+[>] Loading JSON file .//magic-metadata/CKDZ001BrowseLotMaster/List/LotMasterList.json
 *** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component CKDPARAMETERS
+[>] Processing JSON file for component LotMasterList
 *** Step 3: generate components. (1 components) ***
-[>] generate component CKDPARAMETERS
+[>] generate component LotMasterList
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/CKDMST1CKDParameters/CKDPARAMETERS.mg.controls.g.ts (3420 bytes)
-[36mUPDATE[39m src/app/magic/CKDMST1CKDParameters/CKDPARAMETERS.component.ts (2088 bytes)
-[36mUPDATE[39m src/app/magic/CKDMST1CKDParameters/CKDPARAMETERS.component.html (9289 bytes)
+[32mCREATE[39m src/app/magic/CKDZ001BrowseLotMaster/List/LotMasterList.mg.controls.g.ts (1604 bytes)
+[32mCREATE[39m src/app/magic/CKDZ001BrowseLotMaster/List/LotMasterList.component.ts (2265 bytes)
+[32mCREATE[39m src/app/magic/CKDZ001BrowseLotMaster/List/LotMasterList.component.html (11890 bytes)
 
 
 

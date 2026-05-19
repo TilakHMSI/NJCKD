@@ -17,6 +17,7 @@ export enum MgControlName {
         Lot_Id_v = "Lot_Id_v",
         LOT_MAST_LOT_DESC = "LOT_MAST_LOT_DESC",
         OK_Button_v = "OK_Button_v",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
