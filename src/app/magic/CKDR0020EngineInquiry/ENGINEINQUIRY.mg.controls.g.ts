@@ -13,7 +13,6 @@ export enum MgControlName {
         Edit4 = "Edit4",
         Edit5 = "Edit5",
         btnexit = "btnexit",
-        Label7 = "Label7",
         Label9 = "Label9",
         PC_No_v = "PC_No_v",
         Label11 = "Label11",
@@ -22,8 +21,8 @@ export enum MgControlName {
         Engine1_v = "Engine1_v",
         Label15 = "Label15",
         Engine2_v = "Engine2_v",
-        Label8 = "Label8",
         Display_Type_v = "Display_Type_v",
+        btnView = "btnView",
         Label17 = "Label17",
         KDPCHED_PH_DSCD = "KDPCHED_PH_DSCD",
         DSTBMST_DS_DSENAM = "DSTBMST_DS_DSENAM",
@@ -32,7 +31,7 @@ export enum MgControlName {
         MTOCMST_MTMDN1 = "MTOCMST_MTMDN1",
         PKD_LTID_PKD_MDTY = "PKD_LTID_PKD_MDTY",
         PKD_LTID_PKD_MDOP = "PKD_LTID_PKD_MDOP",
-        Engine_Data = "Engine_Data",
+        EngineData = "EngineData",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

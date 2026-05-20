@@ -244,17 +244,52 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Edit13",
-				"dataexp":	true,
-				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-				"modifiable":	false,
-				"common_line_id":	"line102"
+				"id":	"btnView",
+				"format":	"View",
+				"common_line_id":	"line106"
 			},
 			"coordinates":	{
-				"x":	293,
-				"y":	102,
-				"width":	255,
-				"height":	13
+				"x":	470,
+				"y":	106,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vFileName",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line146"
+			},
+			"coordinates":	{
+				"x":	70,
+				"y":	149,
+				"width":	48,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vBlob64base",
+				"password_edit":	false,
+				"attribute":	"O",
+				"common_line_id":	"line146"
+			},
+			"coordinates":	{
+				"x":	164,
+				"y":	146,
+				"width":	56,
+				"height":	19
 			},
 			"hint":	null,
 			"controlType":	"T",

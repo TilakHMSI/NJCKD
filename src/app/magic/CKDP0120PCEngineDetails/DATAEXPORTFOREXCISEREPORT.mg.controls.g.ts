@@ -19,7 +19,9 @@ export enum MgControlName {
         Label10 = "Label10",
         KDPCHED_PH_DSCD = "KDPCHED_PH_DSCD",
         DSTBMST_DS_DSENAM = "DSTBMST_DS_DSENAM",
-        Edit13 = "Edit13",
+        btnView = "btnView",
+        vFileName = "vFileName",
+        vBlob64base = "vBlob64base",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -53,8 +55,12 @@ export class MgFormControlsAccessor {
         return this.fg.controls[MgControlName.DSTBMST_DS_DSENAM] as FormControl;
     }
 
-    get Edit13(): FormControl {
-        return this.fg.controls[MgControlName.Edit13] as FormControl;
+    get vFileName(): FormControl {
+        return this.fg.controls[MgControlName.vFileName] as FormControl;
+    }
+
+    get vBlob64base(): FormControl {
+        return this.fg.controls[MgControlName.vBlob64base] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

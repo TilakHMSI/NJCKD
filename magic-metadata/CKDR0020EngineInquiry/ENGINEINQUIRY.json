@@ -10,7 +10,7 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	560,
+		"width":	647,
 		"height":	481
 	},
 	"hint":	null,
@@ -127,22 +127,6 @@
 			},
 			"hint":	null,
 			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label7",
-				"common_line_id":	"line63"
-			},
-			"coordinates":	{
-				"x":	18,
-				"y":	63,
-				"width":	526,
-				"height":	33
-			},
-			"hint":	null,
-			"controlType":	"L",
 			"children":	null
 		},
 		{
@@ -295,22 +279,6 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label8",
-				"common_line_id":	"line63"
-			},
-			"coordinates":	{
-				"x":	406,
-				"y":	67,
-				"width":	134,
-				"height":	26
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Display_Type_v",
 				"enabled":	{
 					"value":	null,
@@ -322,12 +290,29 @@
 			},
 			"coordinates":	{
 				"x":	409,
-				"y":	68,
+				"y":	63,
 				"width":	126,
-				"height":	21
+				"height":	33
 			},
 			"hint":	null,
 			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnView",
+				"format":	"View",
+				"common_line_id":	"line83"
+			},
+			"coordinates":	{
+				"x":	563,
+				"y":	83,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
 			"children":	null
 		},
 		{
@@ -489,14 +474,14 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Engine_Data",
-				"common_line_id":	"line123"
+				"id":	"EngineData",
+				"common_line_id":	"line188"
 			},
 			"coordinates":	{
-				"x":	5,
-				"y":	123,
-				"width":	549,
-				"height":	350
+				"x":	12,
+				"y":	188,
+				"width":	616,
+				"height":	212
 			},
 			"hint":	null,
 			"controlType":	"F",

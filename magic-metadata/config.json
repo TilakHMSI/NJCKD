@@ -16,7 +16,9 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"CKDP0130PackingMasterError/PACKINGMASTERVALIDATIONBOM"
+				"CKDR0020EngineInquiry/ENGINEINQUIRY",
+				"CKDR0020EngineInquiry/EngineData/EngineData",
+				"CKDR0020EngineInquiry/PCEngineData/PCEngineData"
 			]
 		}
 	],
