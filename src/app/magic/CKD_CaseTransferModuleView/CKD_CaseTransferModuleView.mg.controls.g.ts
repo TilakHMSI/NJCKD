@@ -24,6 +24,8 @@ export enum MgControlName {
         v_Details = "v_Details",
         v_Print_Challan = "v_Print_Challan",
         btnexit = "btnexit",
+        vBlob64base="vBlob64base",
+        vFileName="vFileName"
 }
 export enum MgCustomProperties {}
 export var

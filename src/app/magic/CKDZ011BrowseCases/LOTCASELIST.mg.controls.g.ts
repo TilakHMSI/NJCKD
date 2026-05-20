@@ -15,6 +15,7 @@ export enum MgControlName {
         PCS_DATA_PCS_CSTY = "PCS_DATA_PCS_CSTY",
         Column5 = "Column5",
         Edit8 = "Edit8",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export var
