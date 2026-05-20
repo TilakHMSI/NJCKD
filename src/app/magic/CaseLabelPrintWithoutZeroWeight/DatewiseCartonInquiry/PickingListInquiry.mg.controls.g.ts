@@ -30,6 +30,10 @@ export enum MgControlName {
         Print_v1 = "Print_v1",
         Exportv1 = "Exportv1",
         Help = "Help",
+        vBlob64base="vBlob64base",
+        vFileName="vFileName",
+        vBlob64base1="vBlob64base1",
+        vFileName1="vFileName1"
 }
 export enum MgCustomProperties {}
 export var

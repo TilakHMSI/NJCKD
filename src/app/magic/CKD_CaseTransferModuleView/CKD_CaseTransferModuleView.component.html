@@ -1,260 +1,149 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.CKD_CaseTransferModuleView"
-    >
-        <div style="display: flex; flex-direction: row">
-            <div class="example-container mat-elevation-z8 Table2TableContainerProps">
-                <mat-table
-                    #table
-                    [dataSource]="dataSource"
-                    class="container_border"
-                    matSort
-                    matSortDisableClear
-                    (matSortChange)="tableService.sortData($event)"
-                >
-                    <ng-container
-                        [magic]="mgc.Column3"
-                        [matColumnDef]="mgc.Column3"
-                    >
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div [magic]="mgc.CKD_CaseTransferModuleView">
+              <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                       <h3><label class="lbl-sm" class="lable_overflow mb-0">
+                            Case Transfer Module View
+                        </label></h3>
+                    <button type="button" [magic]="mgc.btnexit"
+                        class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                </div>
+            </div>
+        </div>
+        <div class="m-tablewrapper pl-0 pr-0">
+            <div class="example-container mat-elevation-z8 Table7TableContainerProps">
+                <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)">
+                    <ng-container [magic]="mgc.Column3" [matColumnDef]="mgc.Column3">
                         <mat-header-cell *matHeaderCellDef>
-                            TransferChallanNo
+                           Transfer Challan No
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.TransferChallanNo"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.TransferChallanNo"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.TransferChallanNo
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.TransferChallanNo"
-                                            [rowId]="row.rowId"
-                                        >
+                                        <input [formControlName]="mgc.TransferChallanNo" *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.TransferChallanNo" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.TransferChallanNo [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.TransferChallanNo"
+                                            [rowId]="row.rowId">
                                             {{mg.getValue(mgc.TransferChallanNo, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column4"
-                        [matColumnDef]="mgc.Column4"
-                    >
-                        <mat-header-cell *matHeaderCellDef>
-                            TransferChallanDate
+    	    <ng-container [magic]="mgc.Column4" [matColumnDef]="mgc.Column4">
+                        <mat-header-cell class="header-row" *matHeaderCellDef>
+                            AE-OFF DATE
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer" class="table_row">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div
-                                        *ngIf="mg.isRowInRowEditing(row)"
-                                        style="display: flex; flex-direction: row"
-                                    >
-                                        <input
-                                            type="date"
-                                            [formControlName]="mgc.TransferChallanDate"
-                                            [magic]="mgc.TransferChallanDate"
-                                            [rowId]="row.rowId"
-                                            dateInput
-                                        />
+                                    <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="date" [formControlName]="mgc.TransferChallanDate"
+                                            [magic]="mgc.TransferChallanDate" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.TransferChallanDate, row.rowId)"
+                                            dateInput />
                                     </div>
-                                    <label
-                                        *ngIf="!mg.isRowInRowEditing(row)"
-                                        [magic]="mgc.TransferChallanDate"
+                                    <label class="font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.TransferChallanDate"
                                         [rowId]="row.rowId"
-                                    >
+                                        [style.visibility]="mg.getVisible(mgc.TransferChallanDate, row.rowId)">
                                         {{mg.getValue(mgc.TransferChallanDate, row.rowId)
-| magicDate : mgc.TransferChallanDate}}
+                                        | magicDate : mgc.TransferChallanDate}}
                                     </label>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column5"
-                        [matColumnDef]="mgc.Column5"
-                    >
-                        <mat-header-cell *matHeaderCellDef>
-                            TransferChallanTime
+                   <ng-container [magic]="mgc.Column5" [matColumnDef]="mgc.Column5">
+                        <mat-header-cell class="header-row" *matHeaderCellDef>
+                            AE-OFF TIME
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer" class="table_row">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div
-                                        *ngIf="mg.isRowInRowEditing(row)"
-                                        style="display: flex; flex-direction: row"
-                                    >
-                                        <input
-                                            type="time"
-                                            [formControlName]="mgc.TransferChallanTime"
-                                            [magic]="mgc.TransferChallanTime"
-                                            [rowId]="row.rowId"
-                                            step=1
-                                        />
+                                    <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="time" [formControlName]="mgc.TransferChallanTime"
+                                            [magic]="mgc.TransferChallanTime" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.TransferChallanTime, row.rowId)" step=1 />
                                     </div>
-                                    <label
-                                        *ngIf="!mg.isRowInRowEditing(row)"
-                                        [magic]="mgc.TransferChallanTime"
+                                    <label class="font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.TransferChallanTime"
                                         [rowId]="row.rowId"
-                                    >
+                                        [style.visibility]="mg.getVisible(mgc.TransferChallanTime, row.rowId)">
                                         {{mg.getValue(mgc.TransferChallanTime, row.rowId)
-| magicTime : mgc.TransferChallanTime}}
+                                        | magicTime : mgc.TransferChallanTime}}
                                     </label>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column6"
-                        [matColumnDef]="mgc.Column6"
-                    >
+                    <ng-container [magic]="mgc.Column6" [matColumnDef]="mgc.Column6">
                         <mat-header-cell *matHeaderCellDef>
-                            TransferMode
+                            Transfer Mode
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.TransferMode"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.TransferMode"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.TransferMode
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.TransferMode"
-                                            [rowId]="row.rowId"
-                                        >
+                                        <input [formControlName]="mgc.TransferMode"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.TransferMode"
+                                            [magic]="mgc.TransferMode" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.TransferMode [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.TransferMode"
+                                            [rowId]="row.rowId">
                                             {{mg.getValue(mgc.TransferMode, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column7"
-                        [matColumnDef]="mgc.Column7"
-                    >
+                    <ng-container [magic]="mgc.Column7" [matColumnDef]="mgc.Column7">
                         <mat-header-cell *matHeaderCellDef>
-                            PC_No
+                          Pc No
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.CKD_CASE_TransferDTL_PC_No"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CKD_CASE_TransferDTL_PC_No"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.CKD_CASE_TransferDTL_PC_No
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CKD_CASE_TransferDTL_PC_No"
-                                            [rowId]="row.rowId"
-                                        >
+                                        <input [formControlName]="mgc.CKD_CASE_TransferDTL_PC_No"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.CKD_CASE_TransferDTL_PC_No"
+                                            [magic]="mgc.CKD_CASE_TransferDTL_PC_No" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.CKD_CASE_TransferDTL_PC_No [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.CKD_CASE_TransferDTL_PC_No"
+                                            [rowId]="row.rowId">
                                             {{mg.getValue(mgc.CKD_CASE_TransferDTL_PC_No, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column8"
-                        [matColumnDef]="mgc.Column8"
-                    >
+                    <ng-container [magic]="mgc.Column8" [matColumnDef]="mgc.Column8">
                         <mat-header-cell *matHeaderCellDef>
-                            LOT_ID
+                            Lot ID
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.CKD_CASE_TransferDTL_LOT_ID"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            type='number'
-                                            [magic]="mgc.CKD_CASE_TransferDTL_LOT_ID"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.CKD_CASE_TransferDTL_LOT_ID
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CKD_CASE_TransferDTL_LOT_ID"
-                                            [rowId]="row.rowId"
-                                        >
-                                            {{mg.getValue(mgc.CKD_CASE_TransferDTL_LOT_ID, row.rowId)
-}}
+                                        <input [formControlName]="mgc.CKD_CASE_TransferDTL_LOT_ID"
+                                            *ngIf="mg.isRowInRowEditing(row)" currencyMask
+                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.CKD_CASE_TransferDTL_LOT_ID))"
+                                            [magic]="mgc.CKD_CASE_TransferDTL_LOT_ID" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.CKD_CASE_TransferDTL_LOT_ID [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.CKD_CASE_TransferDTL_LOT_ID"
+                                            [rowId]="row.rowId">
+                                            {{mg.getFormattedValue(mgc.CKD_CASE_TransferDTL_LOT_ID, row.rowId)
+                                            }}
                                         </label>
                                     </div>
                                 </div>
@@ -262,45 +151,19 @@
                         </mat-cell>
                     </ng-container>
                     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-                    <mat-row
-                        *matRowDef="let row; columns: displayedColumns;"
-                        class="table_row"
-                        [ngClass]="{ 'selected': selection.isSelected(row)}"
-                        [magicRow]="row?.rowId"
-                        (click)="row? tableService.selectRow(row.rowId) : null"
-                    >
+                    <mat-row *matRowDef="let row; columns: displayedColumns;" class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}" [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null">
                     </mat-row>
                 </mat-table>
-                <mat-paginator
-                    #paginator
-                    [pageSize]="10"
-                     [hidePageSize]="true"
-                    (page)="tableService.mgOnPaginateChange($event)"
-                >
+                <mat-paginator #paginator [pageSize]="10"  [hidePageSize]="true" showFirstLastButtons
+                    (page)="tableService.mgOnPaginateChange($event)">
                 </mat-paginator>
             </div>
         </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
-                **UnSupported Control**
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button
-                [magic]="mgc.v_Details"
-                [style.visibility]="mg.getVisible(mgc.v_Details)"
-            >
-                Details
-            </button>
-            <button [magic]="mgc.v_Print_Challan">
-                Print MGP
-            </button>
-            <button [magic]="mgc.btnexit">
-                Exit
-            </button>
-        </div>
+           <button type="button" [magic]="mgc.v_Details"
+                            class="btn btn-primary btn-sm font-weight-bold ml-2">Details</button>
+                            <button type="button" [magic]="mgc.v_Print_Challan"
+                            class="btn btn-primary btn-sm font-weight-bold ml-2">Print Challan</button>
     </div>
 </div>
