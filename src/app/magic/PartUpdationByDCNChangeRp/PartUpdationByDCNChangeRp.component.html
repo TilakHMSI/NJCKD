@@ -1,130 +1,175 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.PartUpdationByDCNChangeRp"
-    >
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.PartUpdationByDCNChangeRp">
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
-                <<
-                    UPDATION
-                    REPORT
-                >>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2) }}
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
-            <div
-                [magic]="mgc.v_Range"
-                (change)="task.mgOnRadioSelectionChanged(mgc.v_Range)"
-            >
+            <div [magic]="mgc.v_Range" (change)="task.mgOnRadioSelectionChanged(mgc.v_Range)">
                 <div *ngFor="let o of mg.getItemListValues(mgc.v_Range);">
                     <label>
-                        <input
-                            type="radio"
-                            [formControlName]="mgc.v_Range"
-                            [value]="o.index"
-                        />
+                        <input type="radio" [formControlName]="mgc.v_Range" [value]="o.index" />
                         {{o.displayValue}}
                     </label>
                 </div>
             </div>
+            <div>
+                <input [formControlName]="mgc.vFileName" [magic]="mgc.vFileName" mgFormat />
+                <mgError [magic]=mgc.vFileName> </mgError>
+            </div>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+            <button [magic]="mgc.btnView">
+                View
+            </button>
+            <div>
+                <input [formControlName]="mgc.vBlob64base" [magic]="mgc.vBlob64base" />
+                <mgError [magic]=mgc.vBlob64base> </mgError>
+            </div>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label2"
-                [style.visibility]="mg.getVisible(mgc.Label2)"
-                class="lable_overflow"
-            >
-                ENTER FROM DATE:
-            </label>
-            <label
-                [magic]="mgc.Label3"
-                [style.visibility]="mg.getVisible(mgc.Label3)"
-                class="lable_overflow"
-            >
-                ENTER DCN NO.:
-            </label>
-            <label
-                [magic]="mgc.Label4"
-                [style.visibility]="mg.getVisible(mgc.Label4)"
-                class="lable_overflow"
-            >
-                ENTER LOT NO.:
-            </label>
-            <label
-                [magic]="mgc.Label5"
-                [style.visibility]="mg.getVisible(mgc.Label5)"
-                class="lable_overflow"
-            >
-                ENTER PC NO.:
-            </label>
-            <label
-                [magic]="mgc.Label6"
-                [style.visibility]="mg.getVisible(mgc.Label6)"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label6" [style.visibility]="mg.getVisible(mgc.Label6)" class="lable_overflow">
                 ENTER MONTH:
             </label>
-            <input
-                type="date"
-                [formControlName]="mgc.v_DateF"
-                [magic]="mgc.v_DateF"
-                [style.visibility]="mg.getVisible(mgc.v_DateF)"
-                dateInput
-            />
             <div>
-                <input
-                    [formControlName]="mgc.v_DCN_No"
-                    [magic]="mgc.v_DCN_No"
-                    [style.visibility]="mg.getVisible(mgc.v_DCN_No)"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.v_DCN_No" [magic]="mgc.v_DCN_No"
+                    [style.visibility]="mg.getVisible(mgc.v_DCN_No)" mgFormat />
                 <mgError [magic]=mgc.v_DCN_No> </mgError>
             </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
             <div>
-                <input
-                    [formControlName]="mgc.v_LotNo"
-                    [magic]="mgc.v_LotNo"
-                    [style.visibility]="mg.getVisible(mgc.v_LotNo)"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.v_LotNo" [magic]="mgc.v_LotNo"
+                    [style.visibility]="mg.getVisible(mgc.v_LotNo)" mgFormat />
                 <mgError [magic]=mgc.v_LotNo> </mgError>
             </div>
-            <div>
-                <input
-                    [formControlName]="mgc.v_PCNo"
-                    [magic]="mgc.v_PCNo"
-                    [style.visibility]="mg.getVisible(mgc.v_PCNo)"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.v_PCNo> </mgError>
-            </div>
-            <input
-                type="date"
-                [formControlName]="mgc.v_Month"
-                [magic]="mgc.v_Month"
-                [style.visibility]="mg.getVisible(mgc.v_Month)"
-                dateInput
-            />
-            <label
-                [magic]="mgc.Label12"
-                [style.visibility]="mg.getVisible(mgc.Label12)"
-                class="lable_overflow"
-            >
+            <input type="date" [formControlName]="mgc.v_DateT" [magic]="mgc.v_DateT"
+                [style.visibility]="mg.getVisible(mgc.v_DateT)" dateInput />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label2" [style.visibility]="mg.getVisible(mgc.Label2)" class="lable_overflow">
+                ENTER FROM DATE:
+            </label>
+            <label [magic]="mgc.Label3" [style.visibility]="mg.getVisible(mgc.Label3)" class="lable_overflow">
+                ENTER DCN NO.:
+            </label>
+            <label [magic]="mgc.Label4" [style.visibility]="mg.getVisible(mgc.Label4)" class="lable_overflow">
+                ENTER LOT NO.:
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label12" [style.visibility]="mg.getVisible(mgc.Label12)" class="lable_overflow">
                 TO:
             </label>
-            <input
-                type="date"
-                [formControlName]="mgc.v_DateT"
-                [magic]="mgc.v_DateT"
-                [style.visibility]="mg.getVisible(mgc.v_DateT)"
-                dateInput
-            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label5" [style.visibility]="mg.getVisible(mgc.Label5)" class="lable_overflow">
+                ENTER PC NO.:
+            </label>
+            <div>
+                <input [formControlName]="mgc.v_PCNo" [magic]="mgc.v_PCNo"
+                    [style.visibility]="mg.getVisible(mgc.v_PCNo)" mgFormat />
+                <mgError [magic]=mgc.v_PCNo> </mgError>
+            </div>
+            <input type="date" [formControlName]="mgc.v_Month" [magic]="mgc.v_Month"
+                [style.visibility]="mg.getVisible(mgc.v_Month)" dateInput />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <input type="date" [formControlName]="mgc.v_DateF" [magic]="mgc.v_DateF"
+                [style.visibility]="mg.getVisible(mgc.v_DateF)" dateInput />
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.PartUpdationByDCNChangeRp">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                           {{mg.getValue(mgc.Edit2) }}
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                             <div class="col-lg-4">
+                               <div class="form-group-sm">
+                                    <div [magic]="mgc.v_Range" *ngIf="mg.getVisible(mgc.v_Range)==='visible'"
+                                        (change)="task.mgOnRadioSelectionChanged(mgc.v_Range)">
+                                        <div *ngFor="let o of mg.getItemListValues(mgc.v_Range);">
+                                            <label>
+                                                <input type="radio" [formControlName]="mgc.v_Range"
+                                                    [value]="o.index" />
+                                                {{o.displayValue}}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4" *ngIf="mg.getVisible(mgc.v_DateF)==='visible'">
+                               <div class="form-group-sm">
+                                    <label>Date From</label>
+                                    <input class="form-control-ed" type="date" [formControlName]="mgc.v_DateF" [magic]="mgc.v_DateF" dateInput />
+                                </div>
+                            </div>
+                            <div class="col-lg-4" *ngIf="mg.getVisible(mgc.v_DateT)==='visible'">
+                               <div class="form-group-sm">
+                                    <label>Date To</label>
+                                    <input class="form-control-ed" type="date" [formControlName]="mgc.v_DateT" [magic]="mgc.v_DateT" dateInput />
+                                </div>
+                            </div>
+                            <div class="col-lg-6" *ngIf="mg.getVisible(mgc.v_Month)==='visible'">
+                               <div class="form-group-sm">
+                                    <label>Month</label>
+                                    <input class="form-control-ed" type="date" [formControlName]="mgc.v_Month" [magic]="mgc.v_Month" dateInput />
+                                </div>
+                            </div>
+                            <div class="col-lg-6" *ngIf="mg.getVisible(mgc.v_DCN_No)==='visible'">
+                               <div class="form-group-sm">
+                                    <label>DCN No</label>
+                                    <input class="form-control" [formControlName]="mgc.v_DCN_No"
+                                        [magic]="mgc.v_DCN_No" mgFormat />
+                                    <mgError [magic]=mgc.v_DCN_No> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" *ngIf="mg.getVisible(mgc.v_LotNo)==='visible'">
+                               <div class="form-group-sm">
+                                    <label>Lot No</label>
+                                    <input class="form-control" [formControlName]="mgc.v_LotNo"
+                                        [magic]="mgc.v_LotNo" mgFormat />
+                                    <mgError [magic]=mgc.v_LotNo> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" *ngIf="mg.getVisible(mgc.v_PCNo)==='visible'">
+                               <div class="form-group-sm">
+                                    <label>PC No</label>
+                                    <input class="form-control" [formControlName]="mgc.v_PCNo"
+                                        [magic]="mgc.v_PCNo" mgFormat />
+                                    <mgError [magic]=mgc.v_PCNo> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group-sm">
+                                    <button type="button" [magic]="mgc.btnView"
+                                        class="btn btn-primary font-weight-bold mt-8 btn-wdth">
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

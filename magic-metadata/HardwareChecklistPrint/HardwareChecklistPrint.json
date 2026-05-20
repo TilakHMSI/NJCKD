@@ -19,18 +19,20 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label1",
-				"text":	"\u003c\u003c  HARDWARE CHECKLIST PRINTING  \u003e\u003e",
-				"common_line_id":	"line13"
+				"id":	"Edit2",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line3"
 			},
 			"coordinates":	{
-				"x":	6,
-				"y":	13,
-				"width":	465,
-				"height":	39
+				"x":	388,
+				"y":	3,
+				"width":	84,
+				"height":	20
 			},
 			"hint":	null,
-			"controlType":	"L",
+			"controlType":	"T",
 			"children":	null
 		},
 		{
@@ -38,11 +40,11 @@
 			"props":	{
 				"id":	"btnexit",
 				"format":	"Back",
-				"common_line_id":	"line13"
+				"common_line_id":	"line29"
 			},
 			"coordinates":	{
-				"x":	423,
-				"y":	13,
+				"x":	415,
+				"y":	29,
 				"width":	48,
 				"height":	24
 			},
@@ -90,8 +92,45 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"vFileName",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line163"
+			},
+			"coordinates":	{
+				"x":	337,
+				"y":	163,
+				"width":	56,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vBlob64base",
+				"password_edit":	false,
+				"attribute":	"O",
+				"common_line_id":	"line163"
+			},
+			"coordinates":	{
+				"x":	404,
+				"y":	163,
+				"width":	69,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"v_Exec",
-				"format":	"\\LIST",
+				"format":	"Exec",
 				"attribute":	"A",
 				"common_line_id":	"line211"
 			},

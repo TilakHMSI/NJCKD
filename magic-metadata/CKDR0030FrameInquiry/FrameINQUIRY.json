@@ -10,7 +10,7 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	560,
+		"width":	566,
 		"height":	481
 	},
 	"hint":	null,
@@ -96,11 +96,33 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Display_Type_v",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"items_list":	"Case Wise,Frame Wise",
+				"attribute":	"A",
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	175,
+				"y":	23,
+				"width":	139,
+				"height":	44
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"Edit4",
 				"dataexp":	true,
 				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 				"modifiable":	false,
-				"common_line_id":	"line36"
+				"common_line_id":	"line23"
 			},
 			"coordinates":	{
 				"x":	383,
@@ -117,7 +139,7 @@
 			"props":	{
 				"id":	"btnexit",
 				"format":	"Back",
-				"common_line_id":	"line36"
+				"common_line_id":	"line45"
 			},
 			"coordinates":	{
 				"x":	494,
@@ -132,25 +154,9 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label6",
-				"common_line_id":	"line63"
-			},
-			"coordinates":	{
-				"x":	18,
-				"y":	63,
-				"width":	535,
-				"height":	33
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Label8",
 				"text":	"P/C No.",
-				"common_line_id":	"line63"
+				"common_line_id":	"line66"
 			},
 			"coordinates":	{
 				"x":	25,
@@ -170,7 +176,7 @@
 				"mask":	"mask",
 				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
 				"attribute":	"A",
-				"common_line_id":	"line63"
+				"common_line_id":	"line66"
 			},
 			"coordinates":	{
 				"x":	70,
@@ -187,7 +193,7 @@
 			"props":	{
 				"id":	"Label10",
 				"text":	"Lot No.",
-				"common_line_id":	"line63"
+				"common_line_id":	"line66"
 			},
 			"coordinates":	{
 				"x":	136,
@@ -208,7 +214,7 @@
 				"currency":	"currency",
 				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
 				"attribute":	"N",
-				"common_line_id":	"line63"
+				"common_line_id":	"line66"
 			},
 			"coordinates":	{
 				"x":	181,
@@ -225,7 +231,7 @@
 			"props":	{
 				"id":	"Label12",
 				"text":	"Frame No.",
-				"common_line_id":	"line63"
+				"common_line_id":	"line66"
 			},
 			"coordinates":	{
 				"x":	220,
@@ -244,7 +250,7 @@
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line63"
+				"common_line_id":	"line66"
 			},
 			"coordinates":	{
 				"x":	280,
@@ -261,7 +267,7 @@
 			"props":	{
 				"id":	"Label14",
 				"text":	"-",
-				"common_line_id":	"line63"
+				"common_line_id":	"line66"
 			},
 			"coordinates":	{
 				"x":	344,
@@ -280,7 +286,7 @@
 				"mgformat":	"mgFormat",
 				"format":	"#######",
 				"attribute":	"N",
-				"common_line_id":	"line63"
+				"common_line_id":	"line66"
 			},
 			"coordinates":	{
 				"x":	353,
@@ -295,39 +301,18 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label7",
-				"common_line_id":	"line63"
+				"id":	"btnView",
+				"format":	"View",
+				"common_line_id":	"line66"
 			},
 			"coordinates":	{
-				"x":	406,
-				"y":	67,
-				"width":	140,
-				"height":	26
+				"x":	495,
+				"y":	66,
+				"width":	41,
+				"height":	22
 			},
 			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Display_Type_v",
-				"enabled":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"items_list":	"Case Wise,Frame Wise",
-				"attribute":	"A",
-				"common_line_id":	"line63"
-			},
-			"coordinates":	{
-				"x":	409,
-				"y":	68,
-				"width":	139,
-				"height":	21
-			},
-			"hint":	null,
-			"controlType":	"R",
+			"controlType":	"B",
 			"children":	null
 		},
 		{
@@ -489,7 +474,7 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Frame_Data",
+				"id":	"FrameData",
 				"common_line_id":	"line128"
 			},
 			"coordinates":	{

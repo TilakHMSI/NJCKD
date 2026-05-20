@@ -1,65 +1,49 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.CKDDAILYREPORT"
-    >
-        <div style="display: flex; flex-direction: row">
-            <div *ngIf="mg.isImageExists(mgc.Image1)">
-                <img
-                    [magic]="mgc.Image1"
-                    [src]="mg.getImage(mgc.Image1)"
-                />
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.CKDDAILYREPORT">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                           {{mg.getValue(mgc.Edit2) }}
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
             </div>
-            <label [magic]="mgc.Edit3">
-                {{mg.getValue(mgc.Edit3)
-| magicDate : mgc.Edit3}}
-            </label>
-            <label [magic]="mgc.Edit2">
-                {{mg.getValue(mgc.Edit2) }}
-            </label>
-            <label [magic]="mgc.Edit4">
-                {{mg.getValue(mgc.Edit4)
-| magicTime : mgc.Edit4}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Edit5">
-                {{mg.getValue(mgc.Edit5) }}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.btnexit">
-                Back
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label8"
-                class="lable_overflow"
-            >
-                Date :
-            </label>
-            <input
-                type="date"
-                [formControlName]="mgc.Date_From_v"
-                [magic]="mgc.Date_From_v"
-                dateInput
-            />
-            <label
-                [magic]="mgc.Label10"
-                class="lable_overflow"
-            >
-                -
-            </label>
-            <input
-                type="date"
-                [formControlName]="mgc.Date_To_v"
-                [magic]="mgc.Date_To_v"
-                dateInput
-            />
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>Date From</label>
+                                    <input class="form-control-ed" type="date" [formControlName]="mgc.Date_From_v" [magic]="mgc.Date_From_v" dateInput />
+                                    <mgError [magic]=mgc.Date_From_v> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                               <div class="form-group-sm">
+                                    <label>Date To</label>
+                                    <input class="form-control-ed" type="date" [formControlName]="mgc.Date_To_v" [magic]="mgc.Date_To_v" dateInput />
+                                    <mgError [magic]=mgc.Date_To_v> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group-sm">
+                                    <button type="button" [magic]="mgc.btnView"
+                                        class="btn btn-primary font-weight-bold mt-8 btn-wdth">
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

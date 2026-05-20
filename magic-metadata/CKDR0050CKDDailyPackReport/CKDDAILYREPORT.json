@@ -117,13 +117,13 @@
 			"props":	{
 				"id":	"btnexit",
 				"format":	"Back",
-				"common_line_id":	"line51"
+				"common_line_id":	"line55"
 			},
 			"coordinates":	{
-				"x":	491,
-				"y":	51,
-				"width":	41,
-				"height":	22
+				"x":	479,
+				"y":	55,
+				"width":	61,
+				"height":	23
 			},
 			"hint":	null,
 			"controlType":	"B",
@@ -132,9 +132,25 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label7",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	68,
+				"width":	210,
+				"height":	36
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"Label8",
 				"text":	"Date :",
-				"common_line_id":	"line80"
+				"common_line_id":	"line68"
 			},
 			"coordinates":	{
 				"x":	25,
@@ -153,7 +169,7 @@
 				"mgformat":	"mgFormat",
 				"format":	"DD/MM/YYYY",
 				"attribute":	"D",
-				"common_line_id":	"line80"
+				"common_line_id":	"line68"
 			},
 			"coordinates":	{
 				"x":	65,
@@ -170,7 +186,7 @@
 			"props":	{
 				"id":	"Label10",
 				"text":	"-",
-				"common_line_id":	"line80"
+				"common_line_id":	"line68"
 			},
 			"coordinates":	{
 				"x":	126,
@@ -189,13 +205,67 @@
 				"mgformat":	"mgFormat",
 				"format":	"DD/MM/YYYY",
 				"attribute":	"D",
-				"common_line_id":	"line80"
+				"common_line_id":	"line68"
 			},
 			"coordinates":	{
 				"x":	140,
 				"y":	80,
 				"width":	56,
 				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnView",
+				"format":	"View",
+				"common_line_id":	"line85"
+			},
+			"coordinates":	{
+				"x":	500,
+				"y":	85,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vFileName",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line168"
+			},
+			"coordinates":	{
+				"x":	128,
+				"y":	168,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vBlob64base",
+				"password_edit":	false,
+				"attribute":	"O",
+				"common_line_id":	"line168"
+			},
+			"coordinates":	{
+				"x":	236,
+				"y":	168,
+				"width":	34,
+				"height":	20
 			},
 			"hint":	null,
 			"controlType":	"T",

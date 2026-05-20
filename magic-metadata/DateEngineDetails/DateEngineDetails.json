@@ -19,6 +19,25 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	535,
+				"y":	15,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"btnexit",
 				"format":	"Back",
 				"common_line_id":	"line12"
@@ -108,8 +127,45 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Ok",
+				"id":	"vFileName",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
+				"common_line_id":	"line129"
+			},
+			"coordinates":	{
+				"x":	527,
+				"y":	129,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vBlob64base",
+				"password_edit":	false,
+				"attribute":	"O",
+				"common_line_id":	"line129"
+			},
+			"coordinates":	{
+				"x":	603,
+				"y":	133,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnView",
+				"format":	"View",
 				"common_line_id":	"line194"
 			},
 			"coordinates":	{
@@ -120,23 +176,6 @@
 			},
 			"hint":	null,
 			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label2",
-				"text":	"Report Path= C:\\MAGIC\\TEMP\\ENGINE-DETAIL.TXT",
-				"common_line_id":	"line325"
-			},
-			"coordinates":	{
-				"x":	430,
-				"y":	325,
-				"width":	275,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
 			"children":	null
 		}
 	]

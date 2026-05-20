@@ -184,25 +184,6 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Edit10",
-				"dataexp":	true,
-				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-				"modifiable":	false,
-				"common_line_id":	"line68"
-			},
-			"coordinates":	{
-				"x":	124,
-				"y":	80,
-				"width":	171,
-				"height":	16
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Ok_Button",
 				"attribute":	"A",
 				"common_line_id":	"line82"
@@ -215,6 +196,43 @@
 			},
 			"hint":	null,
 			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vFileName",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line146"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	146,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vBlob64base",
+				"password_edit":	false,
+				"attribute":	"O",
+				"common_line_id":	"line146"
+			},
+			"coordinates":	{
+				"x":	134,
+				"y":	146,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
 			"children":	null
 		}
 	]

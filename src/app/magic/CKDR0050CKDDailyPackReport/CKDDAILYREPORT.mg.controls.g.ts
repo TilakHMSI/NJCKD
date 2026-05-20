@@ -13,10 +13,14 @@ export enum MgControlName {
         Edit4 = "Edit4",
         Edit5 = "Edit5",
         btnexit = "btnexit",
+        Label7 = "Label7",
         Label8 = "Label8",
         Date_From_v = "Date_From_v",
         Label10 = "Label10",
         Date_To_v = "Date_To_v",
+        btnView = "btnView",
+        vFileName = "vFileName",
+        vBlob64base = "vBlob64base",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -44,6 +48,14 @@ export class MgFormControlsAccessor {
 
     get Date_To_v(): FormControl {
         return this.fg.controls[MgControlName.Date_To_v] as FormControl;
+    }
+
+    get vFileName(): FormControl {
+        return this.fg.controls[MgControlName.vFileName] as FormControl;
+    }
+
+    get vBlob64base(): FormControl {
+        return this.fg.controls[MgControlName.vBlob64base] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

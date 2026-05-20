@@ -1,0 +1,42 @@
+.lbl-header {
+    text-align: center;
+    background-color: #d1d3e0;
+    color: blue;
+    width: 100%;
+}
+
+.lbl-header-tbl {
+    text-align: center;
+    font-size: large;
+    background-color: #c3ddf7;
+    color: blue;
+    width: 100%;
+}
+
+.lbl-header-text {
+    text-align: center;
+    width: 100%;
+}
+
+.lbl-header-tbl-data {
+    text-align: center;
+    font-size: 1.3rem;
+    width: 100%;
+}
+.lbl-header-data {
+    text-align: center;
+    width: 100%;
+    background-color: #90f39c;
+}
+
+
+hr{
+    border:2! important;
+}
+.border {
+    border: 1px solid #1c202e !important;
+}
+
+.border-yellow {
+    border: 1px solid #cbaf23 !important;
+}

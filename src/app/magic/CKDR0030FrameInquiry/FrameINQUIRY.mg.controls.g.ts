@@ -11,9 +11,9 @@ export enum MgControlName {
         Edit1 = "Edit1",
         Edit2 = "Edit2",
         Edit3 = "Edit3",
+        Display_Type_v = "Display_Type_v",
         Edit4 = "Edit4",
         btnexit = "btnexit",
-        Label6 = "Label6",
         Label8 = "Label8",
         PC_No_v = "PC_No_v",
         Label10 = "Label10",
@@ -22,8 +22,7 @@ export enum MgControlName {
         Engine1_v = "Engine1_v",
         Label14 = "Label14",
         Engine2_v = "Engine2_v",
-        Label7 = "Label7",
-        Display_Type_v = "Display_Type_v",
+        btnView = "btnView",
         Label16 = "Label16",
         KDPCHED_PH_DSCD = "KDPCHED_PH_DSCD",
         DSTBMST_DS_DSENAM = "DSTBMST_DS_DSENAM",
@@ -32,7 +31,7 @@ export enum MgControlName {
         MTOCMST_MTMDN1 = "MTOCMST_MTMDN1",
         PKD_LTID_PKD_MDTY = "PKD_LTID_PKD_MDTY",
         PKD_LTID_PKD_MDOP = "PKD_LTID_PKD_MDOP",
-        Frame_Data = "Frame_Data",
+        FrameData = "FrameData",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -48,6 +47,10 @@ export class MgFormControlsAccessor {
 
     get Edit3(): FormControl {
         return this.fg.controls[MgControlName.Edit3] as FormControl;
+    }
+
+    get Display_Type_v(): FormControl {
+        return this.fg.controls[MgControlName.Display_Type_v] as FormControl;
     }
 
     get Edit4(): FormControl {
@@ -68,10 +71,6 @@ export class MgFormControlsAccessor {
 
     get Engine2_v(): FormControl {
         return this.fg.controls[MgControlName.Engine2_v] as FormControl;
-    }
-
-    get Display_Type_v(): FormControl {
-        return this.fg.controls[MgControlName.Display_Type_v] as FormControl;
     }
 
     get KDPCHED_PH_DSCD(): FormControl {

@@ -1,82 +1,57 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.Description"
-    >
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.btnexit">
-                Back
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
-                Sl. Description Date Changed by
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
-                1
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.V_V_DESC1"
-                    [magic]="mgc.V_V_DESC1"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_V_DESC1> </mgError>
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.Description">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            Changes Details
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
             </div>
-            <input
-                type="date"
-                [formControlName]="mgc.V_V_DATE1"
-                [magic]="mgc.V_V_DATE1"
-                dateInput
-            />
-            <div>
-                <input
-                    [formControlName]="mgc.V_V_CHANGED_BY1"
-                    [magic]="mgc.V_V_CHANGED_BY1"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_V_CHANGED_BY1> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
-                2
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.V_V_DESC2"
-                    [magic]="mgc.V_V_DESC2"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_V_DESC2> </mgError>
-            </div>
-            <input
-                type="date"
-                [formControlName]="mgc.V_V_DATE2"
-                [magic]="mgc.V_V_DATE2"
-                dateInput
-            />
-            <div>
-                <input
-                    [formControlName]="mgc.V_V_CHANGED_BY2"
-                    [magic]="mgc.V_V_CHANGED_BY2"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_V_CHANGED_BY2> </mgError>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem ! important;">
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                            <div class="col-lg-3 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    SR.No
+                                </label>
+                                <label class="lbl-header-tbl-data mb-8" [magic]="mgc.Label2">
+                                    1
+                                </label>
+                                <label class="lbl-header-tbl-data" [magic]="mgc.Label6">
+                                    2
+                                </label>
+                            </div>
+                            <div class="col-lg-4 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    DESCRIPTION
+                                </label>
+                                <input class="form-control-ed mb-8" [formControlName]="mgc.V_V_DESC1" [magic]="mgc.V_V_DESC1" mgFormat />
+                                <input class="form-control-ed" [formControlName]="mgc.V_V_DESC2" [magic]="mgc.V_V_DESC2" mgFormat />
+                            </div>
+                             <div class="col-lg-2 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    DATE
+                                </label>
+                                <input class="form-control-ed mb-8" type="date" [formControlName]="mgc.V_V_DATE1" [magic]="mgc.V_V_DATE1" dateInput />
+                                 <input class="form-control-ed" type="date" [formControlName]="mgc.V_V_DATE2" [magic]="mgc.V_V_DATE2" dateInput />
+                            </div>
+                            <div class="col-lg-3 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    CHANGED BY
+                                </label>
+                                <input class="form-control-ed mb-8" [formControlName]="mgc.V_V_CHANGED_BY1" [magic]="mgc.V_V_CHANGED_BY1" mgFormat />
+                                <input class="form-control-ed" [formControlName]="mgc.V_V_CHANGED_BY2" [magic]="mgc.V_V_CHANGED_BY2" mgFormat />
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
