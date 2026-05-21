@@ -94,7 +94,6 @@ import { DateEngineDetails as DateEngineDetails_DateEngineDetails } from './Date
 import { FrameINQUIRY as CKDR0030FrameInquiry_FrameINQUIRY } from './CKDR0030FrameInquiry/FrameINQUIRY.component';
 import { EngineData as CKDR0030FrameInquiry_FrameData_EngineData } from './CKDR0030FrameInquiry/FrameData/EngineData.component';
 import { PCEngineData as CKDR0030FrameInquiry_PCFrameData_PCEngineData } from './CKDR0030FrameInquiry/PCFrameData/PCEngineData.component';
-import { PURCHASECONTRACTLIST as CKDZ008BrowsePCList_PURCHASECONTRACTLIST } from './CKDZ008BrowsePCList/PURCHASECONTRACTLIST.component';
 import { PURCHASECONTRACTLOTLIST as CKDZ009BrowsePCLot_PURCHASECONTRACTLOTLIST } from './CKDZ009BrowsePCLot/PURCHASECONTRACTLOTLIST.component';
 import { LOTGENERATIONFORPURCHASECO as CKDP0010LotNoCreate_LOTGENERATIONFORPURCHASECO } from './CKDP0010LotNoCreate/LOTGENERATIONFORPURCHASECO.component';
 import { DisplayLots as CKDP0010LotNoCreate_DisplayLots_DisplayLots } from './CKDP0010LotNoCreate/DisplayLots/DisplayLots.component';
@@ -178,10 +177,14 @@ import { VPRDS005OKNO as VPRDS005OKNO_VPRDS005OKNO } from './VPRDS005OKNO/VPRDS0
 import { VPRDS012WARNING as VPRDS012WARNING_VPRDS012WARNING } from './VPRDS012WARNING/VPRDS012WARNING.component';
 import { LotMasterList as CKDZ001BrowseLotMaster_List_LotMasterList } from './CKDZ001BrowseLotMaster/List/LotMasterList.component';
 import { VPRDS013SUCCESS as VPRDS013SUCCESS_VPRDS013SUCCESS } from './VPRDS013SUCCESS/VPRDS013SUCCESS.component';
+import { CKDZ008BrowsePCList as CKDZ008BrowsePCList_CKDZ008BrowsePCList } from './CKDZ008BrowsePCList/CKDZ008BrowsePCList.component';
+import { List as CKDZ008BrowsePCList_List_List } from './CKDZ008BrowsePCList/List/List.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               VPRDS013SUCCESS_VPRDS013SUCCESS:VPRDS013SUCCESS_VPRDS013SUCCESS,
+export const magicGenCmpsHash = {               CKDZ008BrowsePCList_CKDZ008BrowsePCList:CKDZ008BrowsePCList_CKDZ008BrowsePCList,
+              CKDZ008BrowsePCList_List_List:CKDZ008BrowsePCList_List_List,
+                      VPRDS013SUCCESS_VPRDS013SUCCESS:VPRDS013SUCCESS_VPRDS013SUCCESS,
                       CKDZ001BrowseLotMaster_List_LotMasterList:CKDZ001BrowseLotMaster_List_LotMasterList,
        
                       VPRDS005OKNO_VPRDS005OKNO:VPRDS005OKNO_VPRDS005OKNO,
@@ -281,7 +284,6 @@ export const magicGenCmpsHash = {               VPRDS013SUCCESS_VPRDS013SUCCESS:
               CKDR0030FrameInquiry_FrameINQUIRY:CKDR0030FrameInquiry_FrameINQUIRY,
               CKDR0030FrameInquiry_FrameData_EngineData:CKDR0030FrameInquiry_FrameData_EngineData,
               CKDR0030FrameInquiry_PCFrameData_PCEngineData:CKDR0030FrameInquiry_PCFrameData_PCEngineData,
-              CKDZ008BrowsePCList_PURCHASECONTRACTLIST:CKDZ008BrowsePCList_PURCHASECONTRACTLIST,
               CKDZ009BrowsePCLot_PURCHASECONTRACTLOTLIST:CKDZ009BrowsePCLot_PURCHASECONTRACTLOTLIST,
                       CKDPM010LotMaster_CKDPM010LotMaster:CKDPM010LotMaster_CKDPM010LotMaster,
               CKDPM010LotMaster_LotMasterList_LotMasterList:CKDPM010LotMaster_LotMasterList_LotMasterList,
@@ -366,6 +368,8 @@ export const magicGenCmpsHash = {               VPRDS013SUCCESS_VPRDS013SUCCESS:
 };
 
 export const magicGenComponents = [
+	CKDZ008BrowsePCList_CKDZ008BrowsePCList,
+	CKDZ008BrowsePCList_List_List,
 	VPRDS013SUCCESS_VPRDS013SUCCESS,
 	CKDZ001BrowseLotMaster_List_LotMasterList,
 	VPRDS005OKNO_VPRDS005OKNO,
@@ -465,7 +469,6 @@ export const magicGenComponents = [
 	CKDR0030FrameInquiry_FrameINQUIRY,
 	CKDR0030FrameInquiry_FrameData_EngineData,
 	CKDR0030FrameInquiry_PCFrameData_PCEngineData,
-	CKDZ008BrowsePCList_PURCHASECONTRACTLIST,
 	CKDZ009BrowsePCLot_PURCHASECONTRACTLOTLIST,
 	CKDPM010LotMaster_CKDPM010LotMaster,
 	CKDPM010LotMaster_LotMasterList_LotMasterList,

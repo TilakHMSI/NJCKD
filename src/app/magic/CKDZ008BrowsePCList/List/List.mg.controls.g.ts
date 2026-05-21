@@ -6,15 +6,13 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    PURCHASECONTRACTLIST = "PURCHASECONTRACTLIST",
-        btnexit = "btnexit",
-        Edit1 = "Edit1",
-        Table2 = "Table2",
+    List = "List",
+        Table1 = "Table1",
         Column3 = "Column3",
-        WRK_PCNO_WRK_PCNO_PCNO = "WRK_PCNO_WRK_PCNO_PCNO",
+        V_KDPM_PCNO = "V_KDPM_PCNO",
         Column4 = "Column4",
         KDPCHED_PH_DSCD = "KDPCHED_PH_DSCD",
-        Column5 = "Column5",
+        Column6 = "Column6",
         DSTBMST_DS_DSENAM = "DSTBMST_DS_DSENAM",
 }
 export enum MgCustomProperties {}
@@ -22,18 +20,14 @@ export var
     MgDisplayedColumns = [
         'Column3',
         'Column4',
-        'Column5',
+        'Column6',
     ];
 
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get Edit1(): FormControl {
-        return this.fg.controls[MgControlName.Edit1] as FormControl;
-    }
-
-    get WRK_PCNO_WRK_PCNO_PCNO(): FormControl {
-        return this.getTableChildFormControl(MgControlName.WRK_PCNO_WRK_PCNO_PCNO);
+    get V_KDPM_PCNO(): FormControl {
+        return this.getTableChildFormControl(MgControlName.V_KDPM_PCNO);
     }
 
     get KDPCHED_PH_DSCD(): FormControl {

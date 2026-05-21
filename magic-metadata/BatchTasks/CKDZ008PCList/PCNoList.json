@@ -1,0 +1,76 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PCNoList",
+		"window_type":	12,
+		"component_path":	"BatchTasks/CKDZ008PCList/",
+		"module_name":	"",
+		"component_uniquename":	"CKDZ008PCList_PCNoList"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	187,
+		"height":	332
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	24,
+				"table_title_height":	19,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	13,
+				"width":	158,
+				"height":	302
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"KDPM_PCNO",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	154
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_KDPM_PCNO",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line36"
+							},
+							"coordinates":	{
+								"x":	16,
+								"y":	36,
+								"width":	146,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

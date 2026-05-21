@@ -16,9 +16,8 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"CKDR0030FrameInquiry/FrameINQUIRY",
-				"CKDR0030FrameInquiry/FrameData/EngineData",
-				"CKDR0030FrameInquiry/PCFrameData/PCEngineData"
+				"CKDZ008BrowsePCList/CKDZ008BrowsePCList",
+				"CKDZ008BrowsePCList/List/List"
 			]
 		}
 	],
