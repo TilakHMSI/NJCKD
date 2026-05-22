@@ -34,6 +34,8 @@ export enum MgControlName {
         All_Select_v1 = "All_Select_v1",
         All_Unselect_v1 = "All_Unselect_v1",
         Print_v1 = "Print_v1",
+          vBlob64base="vBlob64base",
+        vFileName="vFileName"
 }
 export enum MgCustomProperties {}
 export var

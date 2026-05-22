@@ -248,22 +248,15 @@
                                     class="form-control" mgFormat />
                                 </div>
                             </div>
-                                  <div class="col-lg-1">
-                                        <div class="checkbox-inline">
-
-                                            <input style="width: 22px;height: 22px;" type="checkbox"
-                                                id="Special_Approval_v"
-                                                formControlName="{{mgc.Special_Approval_v}}"
-                                                magic="{{mgc.Special_Approval_v}}">
-                                        </div>
-                                    </div>
-                            
-                          <div class="col-lg-5">
-                                        <label>
-                                           Special Approval
-                                        </label>
-                                    </div>
-                        
+                              <div class="col-lg-6">
+                                <div class="form-group-sm mt-10">
+                                    <label class="mr-5"> Special Approval</label>
+                                    <input type="checkbox" id="Special_Approval_v" [formControlName]="mgc.Special_Approval_v"
+                                        [magic]="mgc.Special_Approval_v" />
+                                </div>
+                            </div>
+                                 
+             
 							
                         </div>
                     </div>
