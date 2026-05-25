@@ -1,165 +1,131 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.CASEPACKINGSCHEDULEAPPROVAL"
-    >
-        <div style="display: flex; flex-direction: row">
-            <div *ngIf="mg.isImageExists(mgc.Image1)">
-                <img
-                    [magic]="mgc.Image1"
-                    [src]="mg.getImage(mgc.Image1)"
-                />
-            </div>
-            <label [magic]="mgc.Edit3">
-                {{mg.getValue(mgc.Edit3)
-| magicDate : mgc.Edit3}}
-            </label>
-            <label [magic]="mgc.Edit2">
-                {{mg.getValue(mgc.Edit2) }}
-            </label>
-            <label [magic]="mgc.Edit4">
-                {{mg.getValue(mgc.Edit4)
-| magicTime : mgc.Edit4}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Edit5">
-                {{mg.getValue(mgc.Edit5) }}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label7"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label14"
-                [style.visibility]="mg.getVisible(mgc.Label14)"
-                class="lable_overflow"
-            >
-                Dist:
-            </label>
-            <label
-                [magic]="mgc.Label8"
-                class="lable_overflow"
-            >
-                P/C No. :
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.KDPCHED_PH_DSCD"
-                    [magic]="mgc.KDPCHED_PH_DSCD"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.KDPCHED_PH_DSCD> </mgError>
-            </div>
-            <div>
-                <input
-                    style="width: 70%"
-                    [formControlName]="mgc.PC_No_v"
-                    [magic]="mgc.PC_No_v"
-                    [mask]="mg.getAlphaMask(mgc.PC_No_v)"
-                    [showMaskTyped]='true'
-                />
-                <mgError [magic]=mgc.PC_No_v> </mgError>
-                <button
-                    style="min-width: auto; margin: auto"
-                    [magic]="mgc.PC_No_v"
-                >...</button>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.DSTBMST_DS_DSENAM"
-                    [magic]="mgc.DSTBMST_DS_DSENAM"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.DSTBMST_DS_DSENAM> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label10"
-                class="lable_overflow"
-            >
-                Lot No. :
-            </label>
-            <div>
-                <input
-                    style="width: 70%"
-                    [formControlName]="mgc.Lot_No_v"
-                    currencyMask
-                    [options]="mg.getNumericPicture(mg.getPicture(mgc.Lot_No_v))"
-                    [magic]="mgc.Lot_No_v"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.Lot_No_v> </mgError>
-                <button
-                    style="min-width: auto; margin: auto"
-                    [magic]="mgc.Lot_No_v"
-                >...</button>
-            </div>
-            <label
-                [magic]="mgc.Label12"
-                class="lable_overflow"
-            >
-                Date :
-            </label>
-            <label
-                [magic]="mgc.Label17"
-                [style.visibility]="mg.getVisible(mgc.Label17)"
-                class="lable_overflow"
-            >
-                Model
-            </label>
-            <input
-                type="date"
-                [formControlName]="mgc.Date_v"
-                [magic]="mgc.Date_v"
-                dateInput
-            />
-            <div>
-                <input
-                    [formControlName]="mgc.PKD_LTID_PKD_MDCD"
-                    [magic]="mgc.PKD_LTID_PKD_MDCD"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.PKD_LTID_PKD_MDCD> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.MTOCMST_MTMDN1"
-                    [magic]="mgc.MTOCMST_MTMDN1"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.MTOCMST_MTMDN1> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.PKD_LTID_PKD_MDTY"
-                    [magic]="mgc.PKD_LTID_PKD_MDTY"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.PKD_LTID_PKD_MDTY> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.PKD_LTID_PKD_MDOP"
-                    [magic]="mgc.PKD_LTID_PKD_MDOP"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.PKD_LTID_PKD_MDOP> </mgError>
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.CASEPACKINGSCHEDULEAPPROVAL">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lbl-sm" class="lable_overflow mb-0">
+                            {{mg.getValue(mgc.Edit2) }}
+                        </label></h3>
+                    <button type="button" [magic]="mgc.btnexit"
+                        class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                </div>
             </div>
         </div>
-        <div style="display: flex; flex-direction: row">
-            <magic-subform [magic]="mgc.ScheduleApproval">
-            </magic-subform>
+        <div class="card-body">
+            <div class="form-group row" style="margin: 0rem;">
+                <div class="col-lg-12">
+                    <div class="form-group row">
+                        <div class="col-lg-2">
+                            <div class="form-group-sm">
+                                <label>PC No</label>
+                                <div class="input-group">
+                                    <input type="text" [formControlName]="mgc.PC_No_v" [magic]="mgc.PC_No_v"
+                                        class="form-control" placeholder="SELECT PC NO" mgFormat />
+                                    <div class="input-group-append">
+                                        <button type="button" class="btn btn-loanlist btn-icon" [magic]="mgc.PC_No_v">
+                                            <span class="svg-icon svg-icon-lg"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                    height="24px" viewBox="0 0 24 24" version="1.1">
+                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <rect x="0" y="0" width="24" height="24" />
+                                                        <path
+                                                            d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                            fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                        <path
+                                                            d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                            fill="#000000" opacity="0.3" />
+                                                    </g>
+                                                </svg></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group-sm">
+                                <label>Lot No</label>
+                                <div class="input-group">
+                                    <input type="text" [formControlName]="mgc.Lot_No_v" [magic]="mgc.Lot_No_v"
+                                        class="form-control" placeholder="SELECT Lot NO" mgFormat />
+                                    <div class="input-group-append">
+                                        <button type="button" class="btn btn-loanlist btn-icon" [magic]="mgc.Lot_No_v">
+                                            <span class="svg-icon svg-icon-lg"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                    height="24px" viewBox="0 0 24 24" version="1.1">
+                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <rect x="0" y="0" width="24" height="24" />
+                                                        <path
+                                                            d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                            fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                        <path
+                                                            d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                            fill="#000000" opacity="0.3" />
+                                                    </g>
+                                                </svg></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group-sm">
+                                <label>Date</label>
+                                <input type="date" class="form-control-ed" [formControlName]="mgc.Date_v" [magic]="mgc.Date_v" dateInput />
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group-sm">
+                                <label>Dist </label>
+                                <input type="text" [formControlName]="mgc.KDPCHED_PH_DSCD" [magic]="mgc.KDPCHED_PH_DSCD"
+                                    class="form-control" mgFormat />
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group-sm">
+                                <label>. </label>
+                                <input type="text" [formControlName]="mgc.DSTBMST_DS_DSENAM"
+                                    [magic]="mgc.DSTBMST_DS_DSENAM" class="form-control" mgFormat />
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group-sm">
+                                <label>MODEL CODE</label>
+                                <input class="form-control-ed" [formControlName]="mgc.PKD_LTID_PKD_MDCD"
+                                    [magic]="mgc.PKD_LTID_PKD_MDCD" mgFormat />
+                                <mgError [magic]=mgc.PKD_LTID_PKD_MDCD> </mgError>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group-sm">
+                                <label>MODEL DESCRIPTION</label>
+                                <input class="form-control-ed" [formControlName]="mgc.MTOCMST_MTMDN1"
+                                    [magic]="mgc.MTOCMST_MTMDN1" mgFormat />
+                                <mgError [magic]=mgc.MTOCMST_MTMDN1> </mgError>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <div class="form-group-sm">
+                                <label>TYPE</label>
+                                <input class="form-control-ed" [formControlName]="mgc.PKD_LTID_PKD_MDTY"
+                                    [magic]="mgc.PKD_LTID_PKD_MDTY" mgFormat />
+                                <mgError [magic]=mgc.PKD_LTID_PKD_MDTY> </mgError>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group-sm">
+                                <label>OPTION</label>
+                                <input class="form-control-ed" [formControlName]="mgc.PKD_LTID_PKD_MDOP"
+                                    [magic]="mgc.PKD_LTID_PKD_MDOP" mgFormat />
+                                <mgError [magic]=mgc.PKD_LTID_PKD_MDOP> </mgError>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <magic-subform [magic]="mgc.ScheduleApproval">
+                </magic-subform>
+            </div>
         </div>
     </div>
 </div>

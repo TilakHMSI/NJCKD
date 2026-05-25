@@ -11,6 +11,7 @@ export enum MgControlName {
         Table2 = "Table2",
         Column3 = "Column3",
         PEG_DATA_PEG_EGNO = "PEG_DATA_PEG_EGNO",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export var

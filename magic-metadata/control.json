@@ -1,22 +1,23 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"PCS_DATA_PCS_APTM",
-		"visible":	{
+		"id":	"WRK_CSCH_CSAP",
+		"enabled":	{
 			"value":	null,
 			"has_exp":	true
 		},
-		"showsecs":	true,
-		"format":	"HH:MM:SS",
-		"attribute":	"T"
+		"text":	"",
+		"attribute":	"B",
+		"is_table_child":	true,
+		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	623,
-		"y":	120,
-		"width":	36,
-		"height":	13
+		"x":	506,
+		"y":	33,
+		"width":	15,
+		"height":	16
 	},
 	"hint":	null,
-	"controlType":	"T",
+	"controlType":	"C",
 	"children":	null
 }
