@@ -1,0 +1,21 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"HelpInformation",
+		"window_type":	12,
+		"component_path":	"CKD_PC_DETAIL_UPLOAD/HelpInformation/",
+		"module_name":	"",
+		"component_uniquename":	"CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	180,
+		"height":	60
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		
+	]
+}

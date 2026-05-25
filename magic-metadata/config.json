@@ -16,8 +16,8 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"CKDZ008BrowsePCList/CKDZ008BrowsePCList",
-				"CKDZ008BrowsePCList/List/List"
+				"CKD_PC_DETAIL_UPLOAD/CKD_PC_DETAIL_UPLOAD",
+				"CKD_PC_DETAIL_UPLOAD/HelpInformation/HelpInformation"
 			]
 		}
 	],

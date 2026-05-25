@@ -1,0 +1,167 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKD_PC_DETAIL_UPLOAD",
+		"window_type":	12,
+		"component_path":	"CKD_PC_DETAIL_UPLOAD/",
+		"module_name":	"",
+		"component_uniquename":	"CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	694,
+		"height":	349
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Exit",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	581,
+				"y":	12,
+				"width":	96,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"File Name :",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	20,
+				"y":	184,
+				"width":	84,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_FileName",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	103,
+				"y":	184,
+				"width":	183,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnBrowse",
+				"format":	"Browse",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	524,
+				"y":	182,
+				"width":	96,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnUpload",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"Upload",
+				"common_line_id":	"line212"
+			},
+			"coordinates":	{
+				"x":	524,
+				"y":	212,
+				"width":	96,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vStatus",
+				"modifiable":	false,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line225"
+			},
+			"coordinates":	{
+				"x":	103,
+				"y":	225,
+				"width":	149,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_help",
+				"format":	"?",
+				"attribute":	"A",
+				"common_line_id":	"line286"
+			},
+			"coordinates":	{
+				"x":	7,
+				"y":	286,
+				"width":	20,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vBlob64base",
+				"password_edit":	false,
+				"attribute":	"O",
+				"common_line_id":	"line286"
+			},
+			"coordinates":	{
+				"x":	164,
+				"y":	286,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}

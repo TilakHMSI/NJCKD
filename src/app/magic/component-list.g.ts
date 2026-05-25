@@ -179,10 +179,14 @@ import { LotMasterList as CKDZ001BrowseLotMaster_List_LotMasterList } from './CK
 import { VPRDS013SUCCESS as VPRDS013SUCCESS_VPRDS013SUCCESS } from './VPRDS013SUCCESS/VPRDS013SUCCESS.component';
 import { CKDZ008BrowsePCList as CKDZ008BrowsePCList_CKDZ008BrowsePCList } from './CKDZ008BrowsePCList/CKDZ008BrowsePCList.component';
 import { List as CKDZ008BrowsePCList_List_List } from './CKDZ008BrowsePCList/List/List.component';
+import { CKD_PC_DETAIL_UPLOAD as CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD } from './CKD_PC_DETAIL_UPLOAD/CKD_PC_DETAIL_UPLOAD.component';
+import { HelpInformation as CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation } from './CKD_PC_DETAIL_UPLOAD/HelpInformation/HelpInformation.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               CKDZ008BrowsePCList_CKDZ008BrowsePCList:CKDZ008BrowsePCList_CKDZ008BrowsePCList,
+export const magicGenCmpsHash = {               CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD:CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD,
+              CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation:CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation,
+                      CKDZ008BrowsePCList_CKDZ008BrowsePCList:CKDZ008BrowsePCList_CKDZ008BrowsePCList,
               CKDZ008BrowsePCList_List_List:CKDZ008BrowsePCList_List_List,
                       VPRDS013SUCCESS_VPRDS013SUCCESS:VPRDS013SUCCESS_VPRDS013SUCCESS,
                       CKDZ001BrowseLotMaster_List_LotMasterList:CKDZ001BrowseLotMaster_List_LotMasterList,
@@ -368,6 +372,8 @@ export const magicGenCmpsHash = {               CKDZ008BrowsePCList_CKDZ008Brows
 };
 
 export const magicGenComponents = [
+	CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD,
+	CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation,
 	CKDZ008BrowsePCList_CKDZ008BrowsePCList,
 	CKDZ008BrowsePCList_List_List,
 	VPRDS013SUCCESS_VPRDS013SUCCESS,
