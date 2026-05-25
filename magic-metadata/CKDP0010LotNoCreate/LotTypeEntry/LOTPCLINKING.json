@@ -10,27 +10,44 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	416,
+		"width":	500,
 		"height":	293
 	},
 	"hint":	null,
 	"controlType":	null,
 	"children":	[
 		{
+			"style":	null,
+			"props":	{
+				"id":	"btnAdd",
+				"format":	"Add",
+				"common_line_id":	"line53"
+			},
+			"coordinates":	{
+				"x":	7,
+				"y":	53,
+				"width":	61,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
 			"style":	{
 				"line_divider":	true
 			},
 			"props":	{
 				"id":	"Table2",
-				"table_row_height":	20,
+				"table_row_height":	53,
 				"table_title_height":	20,
-				"common_line_id":	"line8"
+				"common_line_id":	"line93"
 			},
 			"coordinates":	{
 				"x":	5,
-				"y":	8,
-				"width":	406,
-				"height":	241
+				"y":	93,
+				"width":	480,
+				"height":	156
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -53,17 +70,16 @@
 							"style":	null,
 							"props":	{
 								"id":	"KDPM_LOT_ID",
-								"show_zoom_button":	true,
 								"mgformat":	"mgFormat",
 								"format":	"XXXXXXXXXX",
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line31"
+								"common_line_id":	"line116"
 							},
 							"coordinates":	{
 								"x":	8,
-								"y":	31,
+								"y":	116,
 								"width":	55,
 								"height":	13
 							},
@@ -96,11 +112,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line31"
+								"common_line_id":	"line116"
 							},
 							"coordinates":	{
 								"x":	73,
-								"y":	31,
+								"y":	116,
 								"width":	60,
 								"height":	13
 							},
@@ -133,11 +149,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line31"
+								"common_line_id":	"line116"
 							},
 							"coordinates":	{
 								"x":	138,
-								"y":	31,
+								"y":	116,
 								"width":	105,
 								"height":	13
 							},
@@ -170,11 +186,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line31"
+								"common_line_id":	"line116"
 							},
 							"coordinates":	{
 								"x":	248,
-								"y":	31,
+								"y":	116,
 								"width":	25,
 								"height":	13
 							},
@@ -207,11 +223,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line31"
+								"common_line_id":	"line116"
 							},
 							"coordinates":	{
 								"x":	303,
-								"y":	31,
+								"y":	116,
 								"width":	20,
 								"height":	13
 							},
@@ -244,11 +260,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line31"
+								"common_line_id":	"line116"
 							},
 							"coordinates":	{
 								"x":	353,
-								"y":	31,
+								"y":	116,
 								"width":	30,
 								"height":	13
 							},
@@ -257,42 +273,44 @@
 							"children":	null
 						}
 					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column17",
+						"column_title":	"Action",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	69
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnEdit",
+								"format":	"Edit",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line117"
+							},
+							"coordinates":	{
+								"x":	399,
+								"y":	117,
+								"width":	61,
+								"height":	23
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
 				}
 			]
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Create_Button_v1",
-				"attribute":	"A",
-				"common_line_id":	"line263"
-			},
-			"coordinates":	{
-				"x":	283,
-				"y":	263,
-				"width":	61,
-				"height":	23
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Cancel_Button_v1",
-				"attribute":	"A",
-				"common_line_id":	"line263"
-			},
-			"coordinates":	{
-				"x":	349,
-				"y":	263,
-				"width":	61,
-				"height":	23
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
 		}
 	]
 }

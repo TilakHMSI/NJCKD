@@ -6,61 +6,47 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    LOTPCLINKING = "LOTPCLINKING",
-        btnAdd = "btnAdd",
-        Table2 = "Table2",
-        Column3 = "Column3",
+    LotTypeCM = "LotTypeCM",
+        btnexit = "btnexit",
+        Label20 = "Label20",
         KDPM_LOT_ID = "KDPM_LOT_ID",
-        Column4 = "Column4",
+        Label21 = "Label21",
         KDPCMODLOT_KDPM_MODEL = "KDPCMODLOT_KDPM_MODEL",
-        Column5 = "Column5",
         MTOCMST_MTMDN1 = "MTOCMST_MTMDN1",
-        Column6 = "Column6",
+        Label22 = "Label22",
         KDPCMODLOT_KDPM_TYPE = "KDPCMODLOT_KDPM_TYPE",
-        Column7 = "Column7",
+        Label23 = "Label23",
         KDPCMODLOT_KDPM_OPT = "KDPCMODLOT_KDPM_OPT",
-        Column8 = "Column8",
+        Label24 = "Label24",
         KDPCMODLOT_KDPM_QTY = "KDPCMODLOT_KDPM_QTY",
-        Column17 = "Column17",
-        btnEdit = "btnEdit",
+        btnSave = "btnSave",
 }
 export enum MgCustomProperties {}
-export var
-    MgDisplayedColumns = [
-        'Column3',
-        'Column4',
-        'Column5',
-        'Column6',
-        'Column7',
-        'Column8',
-        'Column17',
-    ];
-
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
     get KDPM_LOT_ID(): FormControl {
-        return this.getTableChildFormControl(MgControlName.KDPM_LOT_ID);
+        return this.fg.controls[MgControlName.KDPM_LOT_ID] as FormControl;
     }
 
     get KDPCMODLOT_KDPM_MODEL(): FormControl {
-        return this.getTableChildFormControl(MgControlName.KDPCMODLOT_KDPM_MODEL);
+        return this.fg.controls[MgControlName.KDPCMODLOT_KDPM_MODEL] as FormControl;
     }
 
     get MTOCMST_MTMDN1(): FormControl {
-        return this.getTableChildFormControl(MgControlName.MTOCMST_MTMDN1);
+        return this.fg.controls[MgControlName.MTOCMST_MTMDN1] as FormControl;
     }
 
     get KDPCMODLOT_KDPM_TYPE(): FormControl {
-        return this.getTableChildFormControl(MgControlName.KDPCMODLOT_KDPM_TYPE);
+        return this.fg.controls[MgControlName.KDPCMODLOT_KDPM_TYPE] as FormControl;
     }
 
     get KDPCMODLOT_KDPM_OPT(): FormControl {
-        return this.getTableChildFormControl(MgControlName.KDPCMODLOT_KDPM_OPT);
+        return this.fg.controls[MgControlName.KDPCMODLOT_KDPM_OPT] as FormControl;
     }
 
     get KDPCMODLOT_KDPM_QTY(): FormControl {
-        return this.getTableChildFormControl(MgControlName.KDPCMODLOT_KDPM_QTY);
+        return this.fg.controls[MgControlName.KDPCMODLOT_KDPM_QTY] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

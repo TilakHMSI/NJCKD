@@ -181,10 +181,12 @@ import { CKDZ008BrowsePCList as CKDZ008BrowsePCList_CKDZ008BrowsePCList } from '
 import { List as CKDZ008BrowsePCList_List_List } from './CKDZ008BrowsePCList/List/List.component';
 import { CKD_PC_DETAIL_UPLOAD as CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD } from './CKD_PC_DETAIL_UPLOAD/CKD_PC_DETAIL_UPLOAD.component';
 import { HelpInformation as CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation } from './CKD_PC_DETAIL_UPLOAD/HelpInformation/HelpInformation.component';
+import { LotTypeCM as CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM } from './CKDP0010LotNoCreate/LotTypeEntry/LotTypeCM/LotTypeCM.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD:CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD,
+export const magicGenCmpsHash = {               CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM:CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM,
+                      CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD:CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD,
               CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation:CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation,
                       CKDZ008BrowsePCList_CKDZ008BrowsePCList:CKDZ008BrowsePCList_CKDZ008BrowsePCList,
               CKDZ008BrowsePCList_List_List:CKDZ008BrowsePCList_List_List,
@@ -372,6 +374,7 @@ export const magicGenCmpsHash = {               CKD_PC_DETAIL_UPLOAD_CKD_PC_DETA
 };
 
 export const magicGenComponents = [
+	CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM,
 	CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD,
 	CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation,
 	CKDZ008BrowsePCList_CKDZ008BrowsePCList,

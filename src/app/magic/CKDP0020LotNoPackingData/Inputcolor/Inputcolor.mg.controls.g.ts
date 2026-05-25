@@ -7,18 +7,23 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     Inputcolor = "Inputcolor",
+        btnAdd = "btnAdd",
         Table1 = "Table1",
         Column2 = "Column2",
         COLOR_CODE = "COLOR_CODE",
         Column3 = "Column3",
         QTY = "QTY",
-        Ok = "Ok",
+        Column7 = "Column7",
+        EnterRowEditing = "EnterRowEditing",
+        SaveRowEditing = "SaveRowEditing",
+        CancelRowEditing = "CancelRowEditing",
 }
 export enum MgCustomProperties {}
 export var
     MgDisplayedColumns = [
         'Column2',
         'Column3',
+        'Column7',
     ];
 
 export class MgFormControlsAccessor {

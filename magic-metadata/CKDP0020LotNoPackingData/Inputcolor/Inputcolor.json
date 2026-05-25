@@ -10,27 +10,44 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	263,
-		"height":	242
+		"width":	429,
+		"height":	244
 	},
 	"hint":	null,
 	"controlType":	null,
 	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnAdd",
+				"format":	"Add",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	3,
+				"width":	96,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
 		{
 			"style":	{
 				"line_divider":	true
 			},
 			"props":	{
 				"id":	"Table1",
-				"table_row_height":	23,
+				"table_row_height":	78,
 				"table_title_height":	20,
-				"common_line_id":	"line0"
+				"common_line_id":	"line50"
 			},
 			"coordinates":	{
 				"x":	10,
-				"y":	0,
-				"width":	240,
-				"height":	195
+				"y":	50,
+				"width":	272,
+				"height":	145
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -60,11 +77,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line23"
+								"common_line_id":	"line73"
 							},
 							"coordinates":	{
 								"x":	14,
-								"y":	23,
+								"y":	73,
 								"width":	79,
 								"height":	16
 							},
@@ -98,11 +115,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line23"
+								"common_line_id":	"line73"
 							},
 							"coordinates":	{
 								"x":	100,
-								"y":	23,
+								"y":	73,
 								"width":	79,
 								"height":	16
 							},
@@ -111,25 +128,83 @@
 							"children":	null
 						}
 					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	51
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"EnterRowEditing",
+								"format":	"Edit",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	1,
+								"common_line_id":	"line74"
+							},
+							"coordinates":	{
+								"x":	231,
+								"y":	74,
+								"width":	28,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SaveRowEditing",
+								"format":	"Save",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	3,
+								"common_line_id":	"line100"
+							},
+							"coordinates":	{
+								"x":	231,
+								"y":	100,
+								"width":	35,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CancelRowEditing",
+								"format":	"Cancel",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	2,
+								"common_line_id":	"line126"
+							},
+							"coordinates":	{
+								"x":	231,
+								"y":	126,
+								"width":	43,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
 				}
 			]
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Ok",
-				"attribute":	"A",
-				"common_line_id":	"line195"
-			},
-			"coordinates":	{
-				"x":	80,
-				"y":	195,
-				"width":	96,
-				"height":	23
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
 		}
 	]
 }

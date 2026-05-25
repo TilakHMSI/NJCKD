@@ -1,0 +1,254 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"LotTypeCM",
+		"window_type":	12,
+		"component_path":	"CKDP0010LotNoCreate/LotTypeEntry/LotTypeCM/",
+		"module_name":	"",
+		"component_uniquename":	"CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	547,
+		"height":	293
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	460,
+				"y":	20,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label20",
+				"text":	"Lot Type",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	27,
+				"y":	52,
+				"width":	56,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"KDPM_LOT_ID",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	89,
+				"y":	49,
+				"width":	101,
+				"height":	19
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label21",
+				"text":	"Model Code",
+				"common_line_id":	"line74"
+			},
+			"coordinates":	{
+				"x":	27,
+				"y":	74,
+				"width":	56,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"KDPCMODLOT_KDPM_MODEL",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line74"
+			},
+			"coordinates":	{
+				"x":	102,
+				"y":	74,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MTOCMST_MTMDN1",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line74"
+			},
+			"coordinates":	{
+				"x":	177,
+				"y":	74,
+				"width":	105,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label22",
+				"text":	"Model Type",
+				"common_line_id":	"line102"
+			},
+			"coordinates":	{
+				"x":	27,
+				"y":	110,
+				"width":	56,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"KDPCMODLOT_KDPM_TYPE",
+				"mgformat":	"mgFormat",
+				"format":	"XXXX",
+				"attribute":	"A",
+				"common_line_id":	"line102"
+			},
+			"coordinates":	{
+				"x":	102,
+				"y":	105,
+				"width":	25,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label23",
+				"text":	"Option",
+				"common_line_id":	"line102"
+			},
+			"coordinates":	{
+				"x":	134,
+				"y":	105,
+				"width":	56,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"KDPCMODLOT_KDPM_OPT",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line102"
+			},
+			"coordinates":	{
+				"x":	191,
+				"y":	105,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label24",
+				"text":	"Quantity",
+				"common_line_id":	"line102"
+			},
+			"coordinates":	{
+				"x":	226,
+				"y":	102,
+				"width":	56,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"KDPCMODLOT_KDPM_QTY",
+				"mgformat":	"mgFormat",
+				"format":	"-####",
+				"attribute":	"N",
+				"common_line_id":	"line102"
+			},
+			"coordinates":	{
+				"x":	278,
+				"y":	102,
+				"width":	53,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSave",
+				"format":	"Save",
+				"common_line_id":	"line176"
+			},
+			"coordinates":	{
+				"x":	134,
+				"y":	176,
+				"width":	61,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

@@ -1,0 +1,56 @@
+.col-lg-12, .col-xxl-12{
+  padding-right: 1px !important; 
+  padding-left: 1px !important; 
+}
+.mat-header-row {
+    background: none;
+    background-color: #008080 ! important;
+    color: #ffffff;
+}
+
+.mat-mdc-cell:first-child {
+    flex: 0 0 6%;
+}
+.mat-mdc-header-cell:first-child {
+    flex: 0 0 6%;
+}
+.mat-mdc-cell:nth-child(2) {
+    flex: 0 0 8%;
+}
+.mat-mdc-header-cell:nth-child(2) {
+    flex: 0 0 8%;
+}
+.mat-mdc-cell:nth-child(3) {
+    flex: 0 0 12%;
+}
+.mat-mdc-header-cell:nth-child(3) {
+    flex: 0 0 12%;
+}
+
+.mat-mdc-cell:nth-child(5) {
+    flex: 0 0 12%;
+}
+.mat-mdc-header-cell:nth-child(5) {
+    flex: 0 0 12%;
+}
+ .mat-mdc-cell:nth-child(6){
+  flex: 0 0 15%;
+}
+.mat-mdc-header-cell:nth-child(6){
+  flex: 0 0 15%;
+}
+.mat-mdc-cell:nth-child(7){
+  flex: 0 0 15%;
+}
+.mat-mdc-header-cell:nth-child(7){
+  flex: 0 0 15%;
+} 
+.mat-mdc-cell:nth-child(8) {
+   flex: 0 0 12%;
+    justify-content: flex-end;
+}
+
+.mat-mdc-header-cell:nth-child(8) {
+   flex: 0 0 12%;
+    justify-content: flex-end;
+}

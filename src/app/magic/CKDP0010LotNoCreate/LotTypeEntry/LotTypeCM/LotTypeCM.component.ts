@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./CKDZ004CartonSelection.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./LotTypeCM.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-Colorpicklist_CKDZ004CartonSelection',
+    selector: 'mga-CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './CKDZ004CartonSelection.component.html'
+    templateUrl: './LotTypeCM.component.html'
 })
-export class CKDZ004CartonSelection extends TaskBaseMagicComponent implements MagicModalInterface {
+export class LotTypeCM extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,44 +23,44 @@ export class CKDZ004CartonSelection extends TaskBaseMagicComponent implements Ma
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "CKDZ004CartonSelection";
+    private static readonly formName: string = "LotTypeCM";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "800px";
-    private static readonly height: string = "600px";
+    private static readonly height: string = "520px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return CKDZ004CartonSelection.x;
+        return LotTypeCM.x;
     }
     Y() {
-        return CKDZ004CartonSelection.y;
+        return LotTypeCM.y;
     }
     Width(): string {
-        return CKDZ004CartonSelection.width;
+        return LotTypeCM.width;
     }
     Height(): string {
-        return CKDZ004CartonSelection.height;
+        return LotTypeCM.height;
     }
     IsCenteredToWindow() {
-        return CKDZ004CartonSelection.isCenteredToWindow;
+        return LotTypeCM.isCenteredToWindow;
     }
     FormName() {
-        return CKDZ004CartonSelection.formName;
+        return LotTypeCM.formName;
     }
     ShowTitleBar() {
-        return CKDZ004CartonSelection.showTitleBar;
+        return LotTypeCM.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return CKDZ004CartonSelection.shouldCloseOnBackgroundClick;
+        return LotTypeCM.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return CKDZ004CartonSelection.isResizable;
+        return LotTypeCM.isResizable;
     }
     IsMovable() {
-        return CKDZ004CartonSelection.isMovable;
+        return LotTypeCM.isMovable;
     }
 }

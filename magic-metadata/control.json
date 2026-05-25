@@ -1,16 +1,22 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"btnexit",
-		"format":	"Back"
+		"id":	"PCS_DATA_PCS_APTM",
+		"visible":	{
+			"value":	null,
+			"has_exp":	true
+		},
+		"showsecs":	true,
+		"format":	"HH:MM:SS",
+		"attribute":	"T"
 	},
 	"coordinates":	{
-		"x":	504,
-		"y":	50,
-		"width":	41,
-		"height":	22
+		"x":	623,
+		"y":	120,
+		"width":	36,
+		"height":	13
 	},
 	"hint":	null,
-	"controlType":	"B",
+	"controlType":	"T",
 	"children":	null
 }

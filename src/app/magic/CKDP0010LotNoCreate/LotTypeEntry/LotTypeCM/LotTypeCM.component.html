@@ -1,10 +1,10 @@
 <div novalidate [formGroup]="screenFormGroup">
-    <div class="container-fluid-ov" [magic]="mgc.PARTSPACKINGMASTERINQUIRY">
+    <div class="container-fluid-ov" [magic]="mgc.LotTypeCM">
         <div class="card">
             <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <h3><label class="lable_overflow mb-0">
-                            PARTS PACKING MASTER INQUIRY
+                            LOT Number Create
                         </label></h3>
                     <div class="d-flex align-items-center">
                         <button type="button" [magic]="mgc.btnexit"
@@ -16,15 +16,15 @@
                 <div class="form-group row" style="margin: 0rem;">
                     <div class="col-lg-12 col-xxl-12">
                         <div class="form-group row">
-                            <div class="col-lg-2">
+                            <div class="col-lg-4">
                                 <div class="form-group">
-                                    <label>LOT CODE</label>
+                                    <label>LOT ID</label>
                                     <div class="input-group">
-                                        <input type="text" [formControlName]="mgc.Lot_Type_v" [magic]="mgc.Lot_Type_v"
+                                        <input type="text" [formControlName]="mgc.KDPM_LOT_ID" [magic]="mgc.KDPM_LOT_ID"
                                             class="form-control" placeholder="SELECT LOT CODE" mgFormat />
                                         <div class="input-group-append">
                                             <button type="button" class="btn btn-loanlist btn-icon"
-                                                [magic]="mgc.Lot_Type_v">
+                                                [magic]="mgc.KDPM_LOT_ID">
                                                 <span class="svg-icon svg-icon-lg"><svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
@@ -44,48 +44,63 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-4">
                                 <div class="form-group-sm">
-                                    <label>LOT DESCRIPTION</label>
-                                    <input class="form-control" [formControlName]="mgc.LOT_MAST_LOT_DESC"
-                                        [magic]="mgc.LOT_MAST_LOT_DESC" mgFormat />
-                                    <mgError [magic]=mgc.LOT_MAST_LOT_DESC> </mgError>
+                                    <label>MODEL CODE</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.KDPCMODLOT_KDPM_MODEL"
+                                        [magic]="mgc.KDPCMODLOT_KDPM_MODEL" mgFormat />
+                                    <mgError [magic]=mgc.KDPCMODLOT_KDPM_MODEL> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-4">
                                 <div class="form-group-sm">
-                                    <label>Date</label>
-                                    <input class="form-control" type="date" [formControlName]="mgc.Date_v" [magic]="mgc.Date_v" dateInput />
+                                    <label>MODEL DESCRIPTION</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.MTOCMST_MTMDN1"
+                                        [magic]="mgc.MTOCMST_MTMDN1" mgFormat />
+                                    <mgError [magic]=mgc.MTOCMST_MTMDN1> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-2">
-                                <div class="form-group-sm mt-5">
-                                     <div [magic]="mgc.Option_v" *ngIf="mg.getVisible(mgc.Option_v)==='visible'"
-                                        (change)="task.mgOnRadioSelectionChanged(mgc.Option_v)">
-                                        <div *ngFor="let o of mg.getItemListValues(mgc.Option_v);">
-                                            <label>
-                                                <input type="radio" [formControlName]="mgc.Option_v"
-                                                    [value]="o.index" />
-                                                {{o.displayValue}}
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-1">
+                             
+                            <div class="col-lg-4">
                                 <div class="form-group-sm">
-                                    <button type="button" [magic]="mgc.btnSearch"
-                                        class="btn btn-primary font-weight-bold mt-8 btn-wdth">
-                                        View
-                                    </button>
+                                    <label>MODEL TYPE</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.KDPCMODLOT_KDPM_TYPE"
+                                        [magic]="mgc.KDPCMODLOT_KDPM_TYPE" mgFormat />
+                                    <mgError [magic]=mgc.KDPCMODLOT_KDPM_TYPE> </mgError>
                                 </div>
                             </div>
+                            <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                    <label>OPTION</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.KDPCMODLOT_KDPM_OPT"
+                                        [magic]="mgc.KDPCMODLOT_KDPM_OPT" mgFormat />
+                                    <mgError [magic]=mgc.KDPCMODLOT_KDPM_OPT> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                    <label> QUANTITY</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.KDPCMODLOT_KDPM_QTY" type='number'
+                                        [magic]="mgc.KDPCMODLOT_KDPM_QTY" mgFormat />
+                                    <mgError [magic]=mgc.KDPCMODLOT_KDPM_QTY> </mgError>
+                                </div>
+                            </div>                           
                         </div>
                     </div>
 
-                     <div class="col-lg-12">
-                        <magic-subform [magic]="mgc.DisplayPackingMaster">
-                        </magic-subform>
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-12 text-center">
+                                <div class="form-group d-flex justify-content-center">
+                                    <button type="button" [magic]="mgc.btnSave"
+                                        class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                        SAVE
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
 

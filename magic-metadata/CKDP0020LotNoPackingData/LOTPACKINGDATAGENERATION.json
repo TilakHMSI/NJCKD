@@ -115,24 +115,8 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label6",
-				"common_line_id":	"line57"
-			},
-			"coordinates":	{
-				"x":	9,
-				"y":	57,
-				"width":	543,
-				"height":	106
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Label7",
-				"common_line_id":	"line57"
+				"common_line_id":	"line68"
 			},
 			"coordinates":	{
 				"x":	14,
@@ -150,13 +134,13 @@
 				"id":	"Option_v",
 				"items_list":	"Addition, Delete, Inquiry",
 				"attribute":	"A",
-				"common_line_id":	"line57"
+				"common_line_id":	"line68"
 			},
 			"coordinates":	{
 				"x":	19,
 				"y":	72,
 				"width":	165,
-				"height":	26
+				"height":	81
 			},
 			"hint":	null,
 			"controlType":	"R",
@@ -166,7 +150,7 @@
 			"style":	null,
 			"props":	{
 				"id":	"Label8",
-				"common_line_id":	"line57"
+				"common_line_id":	"line68"
 			},
 			"coordinates":	{
 				"x":	194,
@@ -183,54 +167,12 @@
 			"props":	{
 				"id":	"Label9",
 				"text":	"P/C No.",
-				"common_line_id":	"line57"
+				"common_line_id":	"line68"
 			},
 			"coordinates":	{
 				"x":	201,
 				"y":	80,
 				"width":	40,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label13",
-				"visible":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"text":	"Dist",
-				"common_line_id":	"line57"
-			},
-			"coordinates":	{
-				"x":	201,
-				"y":	114,
-				"width":	25,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label16",
-				"visible":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"text":	"Model",
-				"common_line_id":	"line57"
-			},
-			"coordinates":	{
-				"x":	201,
-				"y":	140,
-				"width":	30,
 				"height":	13
 			},
 			"hint":	null,
@@ -245,7 +187,7 @@
 				"mask":	"mask",
 				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
 				"attribute":	"A",
-				"common_line_id":	"line57"
+				"common_line_id":	"line68"
 			},
 			"coordinates":	{
 				"x":	246,
@@ -260,70 +202,13 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"KDPCHED_PH_DSCD",
-				"mgformat":	"mgFormat",
-				"format":	"XXXXXXXXXX",
-				"attribute":	"A",
-				"common_line_id":	"line57"
-			},
-			"coordinates":	{
-				"x":	246,
-				"y":	114,
-				"width":	20,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"PKD_LTID_PKD_MDCD",
-				"mgformat":	"mgFormat",
-				"format":	"XXXXXXXXXXX",
-				"attribute":	"A",
-				"common_line_id":	"line57"
-			},
-			"coordinates":	{
-				"x":	246,
-				"y":	140,
-				"width":	60,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"DSTBMST_DS_DSENAM",
-				"mgformat":	"mgFormat",
-				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-				"attribute":	"A",
-				"common_line_id":	"line57"
-			},
-			"coordinates":	{
-				"x":	274,
-				"y":	114,
-				"width":	205,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Label11",
 				"visible":	{
 					"value":	null,
 					"has_exp":	true
 				},
 				"text":	"Lot No.",
-				"common_line_id":	"line57"
+				"common_line_id":	"line68"
 			},
 			"coordinates":	{
 				"x":	313,
@@ -333,25 +218,6 @@
 			},
 			"hint":	null,
 			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"MTOCMST_MTMDN1",
-				"mgformat":	"mgFormat",
-				"format":	"XXXXXXXXXXXXXXXXXXXX",
-				"attribute":	"A",
-				"common_line_id":	"line57"
-			},
-			"coordinates":	{
-				"x":	315,
-				"y":	140,
-				"width":	105,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"T",
 			"children":	null
 		},
 		{
@@ -367,13 +233,148 @@
 				"currency":	"currency",
 				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
 				"attribute":	"N",
-				"common_line_id":	"line57"
+				"common_line_id":	"line68"
 			},
 			"coordinates":	{
 				"x":	358,
 				"y":	80,
-				"width":	26,
-				"height":	15
+				"width":	75,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Ok_Button_V",
+				"attribute":	"A",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	476,
+				"y":	75,
+				"width":	66,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label13",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Dist",
+				"common_line_id":	"line114"
+			},
+			"coordinates":	{
+				"x":	201,
+				"y":	114,
+				"width":	25,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"KDPCHED_PH_DSCD",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line114"
+			},
+			"coordinates":	{
+				"x":	246,
+				"y":	114,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"DSTBMST_DS_DSENAM",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line114"
+			},
+			"coordinates":	{
+				"x":	274,
+				"y":	114,
+				"width":	205,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label16",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Model",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	201,
+				"y":	140,
+				"width":	30,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PKD_LTID_PKD_MDCD",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	246,
+				"y":	140,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MTOCMST_MTMDN1",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	315,
+				"y":	140,
+				"width":	105,
+				"height":	13
 			},
 			"hint":	null,
 			"controlType":	"T",
@@ -386,7 +387,7 @@
 				"mgformat":	"mgFormat",
 				"format":	"XXXX",
 				"attribute":	"A",
-				"common_line_id":	"line57"
+				"common_line_id":	"line140"
 			},
 			"coordinates":	{
 				"x":	428,
@@ -405,7 +406,7 @@
 				"mgformat":	"mgFormat",
 				"format":	"XXX",
 				"attribute":	"A",
-				"common_line_id":	"line57"
+				"common_line_id":	"line140"
 			},
 			"coordinates":	{
 				"x":	461,
@@ -420,18 +421,17 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Ok_Button_V",
-				"attribute":	"A",
-				"common_line_id":	"line57"
+				"id":	"Sub1",
+				"common_line_id":	"line169"
 			},
 			"coordinates":	{
-				"x":	476,
-				"y":	75,
-				"width":	66,
-				"height":	21
+				"x":	16,
+				"y":	169,
+				"width":	526,
+				"height":	298
 			},
 			"hint":	null,
-			"controlType":	"B",
+			"controlType":	"F",
 			"children":	null
 		}
 	]

@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-CKDQ0020PackingDataInquiry_DisplayPackData_DisplayPackData',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./DisplayPackData.component.css'],
     templateUrl: './DisplayPackData.component.html'
 })
 export class DisplayPackData extends BaseMatTableMagicComponent {
