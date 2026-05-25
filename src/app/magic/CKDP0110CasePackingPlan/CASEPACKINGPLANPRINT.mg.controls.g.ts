@@ -23,6 +23,7 @@ export enum MgControlName {
         Carton_Details_v = "Carton_Details_v",
         Label15 = "Label15",
         Packing_Plan_Inquiry = "Packing_Plan_Inquiry",
+      
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

@@ -81,4 +81,4 @@ export class MgFormControlsAccessor {
     getTableChildFormControl(name: MgControlName): FormControl {
         return this.magicServices.mgAccessorService.getFormGroupByRow(this.magicServices.tableService.getSelectedRow()).controls[name] as FormControl;
     }
-}
+} 
