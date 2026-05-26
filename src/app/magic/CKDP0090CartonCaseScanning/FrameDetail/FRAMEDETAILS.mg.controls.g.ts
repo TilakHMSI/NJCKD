@@ -11,6 +11,7 @@ export enum MgControlName {
         Column2 = "Column2",
         WRK_EGNO_EGNO = "WRK_EGNO_EGNO",
         Save_v = "Save_v",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export var
