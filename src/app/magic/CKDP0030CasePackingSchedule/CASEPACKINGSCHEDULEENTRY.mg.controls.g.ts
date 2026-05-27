@@ -28,7 +28,8 @@ export enum MgControlName {
         MTOCMST_MTMDN1 = "MTOCMST_MTMDN1",
         PKD_LTID_PKD_MDTY = "PKD_LTID_PKD_MDTY",
         PKD_LTID_PKD_MDOP = "PKD_LTID_PKD_MDOP",
-        Schedule_Entry = "Schedule_Entry",
+        ScheduleEntry = "ScheduleEntry",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

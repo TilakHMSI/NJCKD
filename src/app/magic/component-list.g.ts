@@ -118,18 +118,13 @@ import { SelectNewPartNoFromDCN as UpdateLotDCNUpdation_SelectNewPartNoFromDCN_S
 import { SelectLots as SelectLotForDCNPartUpd_SelectLots_SelectLots } from './SelectLotForDCNPartUpd/SelectLots/SelectLots.component';
 import { PARTSPACKINGMASTERMENU as CKDMNBangladeshScanningMenu_PARTSPACKINGMASTERMENU } from './CKDMNBangladeshScanningMenu/PARTSPACKINGMASTERMENU.component';
 import { CompareFramesAndEngines as CompareFramesAndEngines_CompareFramesAndEngines } from './CompareFramesAndEngines/CompareFramesAndEngines.component';
-import { PCGuide as CompareFramesAndEngines_PCGuide_PCGuide } from './CompareFramesAndEngines/PCGuide/PCGuide.component';
 import { ScannedFrameEngineView as CompareFramesAndEngines_ScannedFrameEngineView_ScannedFrameEngineView } from './CompareFramesAndEngines/ScannedFrameEngineView/ScannedFrameEngineView.component';
 import { CancelScannedFrameEngine as CancelScannedFrameEngine_CancelScannedFrameEngine } from './CancelScannedFrameEngine/CancelScannedFrameEngine.component';
-import { PCGuide as CancelScannedFrameEngine_PCGuide_PCGuide } from './CancelScannedFrameEngine/PCGuide/PCGuide.component';
 import { ScannedFrameEngineView as CancelScannedFrameEngine_ScannedFrameEngineView_ScannedFrameEngineView } from './CancelScannedFrameEngine/ScannedFrameEngineView/ScannedFrameEngineView.component';
 import { ReportScannedFrameEngine as ReportScannedFrameEngine_ReportScannedFrameEngine } from './ReportScannedFrameEngine/ReportScannedFrameEngine.component';
-import { PCGuide as ReportScannedFrameEngine_PCGuide_PCGuide } from './ReportScannedFrameEngine/PCGuide/PCGuide.component';
 import { SPCancelScannedFrameEngine as SPCancelScannedFrameEngine_SPCancelScannedFrameEngine } from './SPCancelScannedFrameEngine/SPCancelScannedFrameEngine.component';
-import { PCGuide as SPCancelScannedFrameEngine_PCGuide_PCGuide } from './SPCancelScannedFrameEngine/PCGuide/PCGuide.component';
 import { ScannedFrameEngineView as SPCancelScannedFrameEngine_ScannedFrameEngineView_ScannedFrameEngineView } from './SPCancelScannedFrameEngine/ScannedFrameEngineView/ScannedFrameEngineView.component';
 import { CancelAllFrameEngines as CancelAllFrameEngines_CancelAllFrameEngines } from './CancelAllFrameEngines/CancelAllFrameEngines.component';
-import { PCGuide as CancelAllFrameEngines_PCGuide_PCGuide } from './CancelAllFrameEngines/PCGuide/PCGuide.component';
 import { ScannedFrameEngineView as CancelAllFrameEngines_ScannedFrameEngineView_ScannedFrameEngineView } from './CancelAllFrameEngines/ScannedFrameEngineView/ScannedFrameEngineView.component';
 import { PARTPICKINGLISTPRINT as CKDP0050PickingListPrint_PARTPICKINGLISTPRINT } from './CKDP0050PickingListPrint/PARTPICKINGLISTPRINT.component';
 import { PickingListInquiry as CKDP0050PickingListPrint_PickingListInquiry_PickingListInquiry } from './CKDP0050PickingListPrint/PickingListInquiry/PickingListInquiry.component';
@@ -182,10 +177,12 @@ import { List as CKDZ008BrowsePCList_List_List } from './CKDZ008BrowsePCList/Lis
 import { CKD_PC_DETAIL_UPLOAD as CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD } from './CKD_PC_DETAIL_UPLOAD/CKD_PC_DETAIL_UPLOAD.component';
 import { HelpInformation as CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation } from './CKD_PC_DETAIL_UPLOAD/HelpInformation/HelpInformation.component';
 import { LotTypeCM as CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM } from './CKDP0010LotNoCreate/LotTypeEntry/LotTypeCM/LotTypeCM.component';
+import { PCGuide as PCGuide_PCGuide } from './PCGuide/PCGuide.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM:CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM,
+export const magicGenCmpsHash = {               PCGuide_PCGuide:PCGuide_PCGuide,
+                      CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM:CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM,
                       CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD:CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD,
               CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation:CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation,
                       CKDZ008BrowsePCList_CKDZ008BrowsePCList:CKDZ008BrowsePCList_CKDZ008BrowsePCList,
@@ -260,18 +257,13 @@ export const magicGenCmpsHash = {               CKDP0010LotNoCreate_LotTypeEntry
               SelectLotForDCNPartUpd_SelectLots_SelectLots:SelectLotForDCNPartUpd_SelectLots_SelectLots,
               CKDMNBangladeshScanningMenu_PARTSPACKINGMASTERMENU:CKDMNBangladeshScanningMenu_PARTSPACKINGMASTERMENU,
               CompareFramesAndEngines_CompareFramesAndEngines:CompareFramesAndEngines_CompareFramesAndEngines,
-              CompareFramesAndEngines_PCGuide_PCGuide:CompareFramesAndEngines_PCGuide_PCGuide,
               CompareFramesAndEngines_ScannedFrameEngineView_ScannedFrameEngineView:CompareFramesAndEngines_ScannedFrameEngineView_ScannedFrameEngineView,
               CancelScannedFrameEngine_CancelScannedFrameEngine:CancelScannedFrameEngine_CancelScannedFrameEngine,
-              CancelScannedFrameEngine_PCGuide_PCGuide:CancelScannedFrameEngine_PCGuide_PCGuide,
               CancelScannedFrameEngine_ScannedFrameEngineView_ScannedFrameEngineView:CancelScannedFrameEngine_ScannedFrameEngineView_ScannedFrameEngineView,
               ReportScannedFrameEngine_ReportScannedFrameEngine:ReportScannedFrameEngine_ReportScannedFrameEngine,
-              ReportScannedFrameEngine_PCGuide_PCGuide:ReportScannedFrameEngine_PCGuide_PCGuide,
               SPCancelScannedFrameEngine_SPCancelScannedFrameEngine:SPCancelScannedFrameEngine_SPCancelScannedFrameEngine,
-              SPCancelScannedFrameEngine_PCGuide_PCGuide:SPCancelScannedFrameEngine_PCGuide_PCGuide,
               SPCancelScannedFrameEngine_ScannedFrameEngineView_ScannedFrameEngineView:SPCancelScannedFrameEngine_ScannedFrameEngineView_ScannedFrameEngineView,
               CancelAllFrameEngines_CancelAllFrameEngines:CancelAllFrameEngines_CancelAllFrameEngines,
-              CancelAllFrameEngines_PCGuide_PCGuide:CancelAllFrameEngines_PCGuide_PCGuide,
               CancelAllFrameEngines_ScannedFrameEngineView_ScannedFrameEngineView:CancelAllFrameEngines_ScannedFrameEngineView_ScannedFrameEngineView,
                       CKDP0120PCEngineDetails_DATAEXPORTFOREXCISEREPORT:CKDP0120PCEngineDetails_DATAEXPORTFOREXCISEREPORT,
               CKDP120PCFrameDetails_DATAEXPORTFOREXCISEREPORT:CKDP120PCFrameDetails_DATAEXPORTFOREXCISEREPORT,
@@ -374,6 +366,7 @@ export const magicGenCmpsHash = {               CKDP0010LotNoCreate_LotTypeEntry
 };
 
 export const magicGenComponents = [
+	PCGuide_PCGuide,
 	CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM,
 	CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD,
 	CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation,
@@ -448,18 +441,13 @@ export const magicGenComponents = [
 	SelectLotForDCNPartUpd_SelectLots_SelectLots,
 	CKDMNBangladeshScanningMenu_PARTSPACKINGMASTERMENU,
 	CompareFramesAndEngines_CompareFramesAndEngines,
-	CompareFramesAndEngines_PCGuide_PCGuide,
 	CompareFramesAndEngines_ScannedFrameEngineView_ScannedFrameEngineView,
 	CancelScannedFrameEngine_CancelScannedFrameEngine,
-	CancelScannedFrameEngine_PCGuide_PCGuide,
 	CancelScannedFrameEngine_ScannedFrameEngineView_ScannedFrameEngineView,
 	ReportScannedFrameEngine_ReportScannedFrameEngine,
-	ReportScannedFrameEngine_PCGuide_PCGuide,
 	SPCancelScannedFrameEngine_SPCancelScannedFrameEngine,
-	SPCancelScannedFrameEngine_PCGuide_PCGuide,
 	SPCancelScannedFrameEngine_ScannedFrameEngineView_ScannedFrameEngineView,
 	CancelAllFrameEngines_CancelAllFrameEngines,
-	CancelAllFrameEngines_PCGuide_PCGuide,
 	CancelAllFrameEngines_ScannedFrameEngineView_ScannedFrameEngineView,
 	CKDP0120PCEngineDetails_DATAEXPORTFOREXCISEREPORT,
 	CKDP120PCFrameDetails_DATAEXPORTFOREXCISEREPORT,

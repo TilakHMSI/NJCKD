@@ -7,7 +7,7 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     PCGuide = "PCGuide",
-        btnexit = "btnexit",
+        btn_Exit = "btn_Exit",
         Table1 = "Table1",
         Column2 = "Column2",
         V_CHK_PCNO = "V_CHK_PCNO",

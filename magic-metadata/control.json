@@ -1,23 +1,23 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"WRK_CSCH_CSAP",
-		"enabled":	{
+		"id":	"V_V_SCANNING_MESSAGE",
+		"visible":	{
 			"value":	null,
 			"has_exp":	true
 		},
-		"text":	"",
-		"attribute":	"B",
-		"is_table_child":	true,
-		"web_style":	2
+		"modifiable":	false,
+		"mgformat":	"mgFormat",
+		"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+		"attribute":	"A"
 	},
 	"coordinates":	{
-		"x":	506,
-		"y":	33,
-		"width":	15,
-		"height":	16
+		"x":	40,
+		"y":	141,
+		"width":	341,
+		"height":	23
 	},
 	"hint":	null,
-	"controlType":	"C",
+	"controlType":	"T",
 	"children":	null
 }

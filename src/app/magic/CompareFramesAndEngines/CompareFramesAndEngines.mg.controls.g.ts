@@ -26,6 +26,7 @@ export enum MgControlName {
         V_V_COUNT_1 = "V_V_COUNT_1",
         V_FRAMEENGINE_No = "V_FRAMEENGINE_No",
         Scanned_FrameEngine_View = "Scanned_FrameEngine_View",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

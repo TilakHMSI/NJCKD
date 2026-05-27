@@ -1,325 +1,166 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.ScannedFrameEngineView"
-    >
-        <div style="display: flex; flex-direction: row">
+<div novalidate [formGroup]="screenFormGroup">
+    <div [magic]="mgc.ScannedFrameEngineView">
+            <div class="m-tablewrapper pl-0 pr-0">
             <div class="example-container mat-elevation-z8 Table1TableContainerProps">
-                <mat-table
-                    #table
-                    [dataSource]="dataSource"
-                    class="container_border"
-                    matSort
-                    matSortDisableClear
-                    (matSortChange)="tableService.sortData($event)"
-                >
-                    <ng-container
-                        [magic]="mgc.Column2"
-                        [matColumnDef]="mgc.Column2"
-                    >
+                <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)">
+                    <ng-container [magic]="mgc.Column2" [matColumnDef]="mgc.Column2">
                         <mat-header-cell *matHeaderCellDef>
                             STATUS
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.FRAME_ENGINE_CHECK_C_STATUS"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.FRAME_ENGINE_CHECK_C_STATUS"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                            rangevalidator
-                                        />
-                                        <mgError
-                                            [magic]=mgc.FRAME_ENGINE_CHECK_C_STATUS
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.FRAME_ENGINE_CHECK_C_STATUS"
-                                            [rowId]="row.rowId"
-                                        >
+                                        <input [formControlName]="mgc.FRAME_ENGINE_CHECK_C_STATUS"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.FRAME_ENGINE_CHECK_C_STATUS"
+                                            [rowId]="row.rowId" mgFormat rangevalidator />
+                                        <mgError [magic]=mgc.FRAME_ENGINE_CHECK_C_STATUS [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.FRAME_ENGINE_CHECK_C_STATUS" [rowId]="row.rowId">
                                             {{mg.getValue(mgc.FRAME_ENGINE_CHECK_C_STATUS, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column3"
-                        [matColumnDef]="mgc.Column3"
-                    >
+                    <ng-container [magic]="mgc.Column3" [matColumnDef]="mgc.Column3">
                         <mat-header-cell *matHeaderCellDef>
                             PC NUMBER
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.FRAME_ENGINE_CHECK_C_PC_NUMBER"
+                                        <input [formControlName]="mgc.FRAME_ENGINE_CHECK_C_PC_NUMBER"
                                             *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.FRAME_ENGINE_CHECK_C_PC_NUMBER"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.FRAME_ENGINE_CHECK_C_PC_NUMBER
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.FRAME_ENGINE_CHECK_C_PC_NUMBER"
-                                            [rowId]="row.rowId"
-                                        >
+                                            [magic]="mgc.FRAME_ENGINE_CHECK_C_PC_NUMBER" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.FRAME_ENGINE_CHECK_C_PC_NUMBER [rowId]="row.rowId">
+                                        </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.FRAME_ENGINE_CHECK_C_PC_NUMBER" [rowId]="row.rowId">
                                             {{mg.getValue(mgc.FRAME_ENGINE_CHECK_C_PC_NUMBER, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column4"
-                        [matColumnDef]="mgc.Column4"
-                    >
+                    <ng-container [magic]="mgc.Column4" [matColumnDef]="mgc.Column4">
                         <mat-header-cell *matHeaderCellDef>
                             ENG/FRM TYPE
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.C_ENG_FRM_TYPE"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.C_ENG_FRM_TYPE"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.C_ENG_FRM_TYPE
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.C_ENG_FRM_TYPE"
-                                            [rowId]="row.rowId"
-                                        >
+                                        <input [formControlName]="mgc.C_ENG_FRM_TYPE" *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.C_ENG_FRM_TYPE" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.C_ENG_FRM_TYPE [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.C_ENG_FRM_TYPE"
+                                            [rowId]="row.rowId">
                                             {{mg.getValue(mgc.C_ENG_FRM_TYPE, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column5"
-                        [matColumnDef]="mgc.Column5"
-                    >
+                    <ng-container [magic]="mgc.Column5" [matColumnDef]="mgc.Column5">
                         <mat-header-cell *matHeaderCellDef>
                             CHASSIS NO
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.C_CHASSIS_NO"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            type='number'
-                                            [magic]="mgc.C_CHASSIS_NO"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.C_CHASSIS_NO
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.C_CHASSIS_NO"
-                                            [rowId]="row.rowId"
-                                        >
+                                        <input [formControlName]="mgc.C_CHASSIS_NO" *ngIf="mg.isRowInRowEditing(row)"
+                                            type='number' [magic]="mgc.C_CHASSIS_NO" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.C_CHASSIS_NO [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.C_CHASSIS_NO"
+                                            [rowId]="row.rowId">
                                             {{mg.getValue(mgc.C_CHASSIS_NO, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column6"
-                        [matColumnDef]="mgc.Column6"
-                    >
+                    <ng-container [magic]="mgc.Column6" [matColumnDef]="mgc.Column6">
                         <mat-header-cell *matHeaderCellDef>
                             EFM
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.FRAME_ENGINE_CHECK_C_EFM"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.FRAME_ENGINE_CHECK_C_EFM"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                            rangevalidator
-                                        />
-                                        <mgError
-                                            [magic]=mgc.FRAME_ENGINE_CHECK_C_EFM
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.FRAME_ENGINE_CHECK_C_EFM"
-                                            [rowId]="row.rowId"
-                                        >
+                                        <input [formControlName]="mgc.FRAME_ENGINE_CHECK_C_EFM"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.FRAME_ENGINE_CHECK_C_EFM"
+                                            [rowId]="row.rowId" mgFormat rangevalidator />
+                                        <mgError [magic]=mgc.FRAME_ENGINE_CHECK_C_EFM [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.FRAME_ENGINE_CHECK_C_EFM"
+                                            [rowId]="row.rowId">
                                             {{mg.getValue(mgc.FRAME_ENGINE_CHECK_C_EFM, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column7"
-                        [matColumnDef]="mgc.Column7"
-                    >
+                    <ng-container [magic]="mgc.Column7" [matColumnDef]="mgc.Column7">
                         <mat-header-cell *matHeaderCellDef>
                             ENTRY DATE
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div
-                                        *ngIf="mg.isRowInRowEditing(row)"
-                                        style="display: flex; flex-direction: row"
-                                    >
-                                        <input
-                                            type="date"
-                                            [formControlName]="mgc.C_REC_ENTRY_DATE"
-                                            [magic]="mgc.C_REC_ENTRY_DATE"
-                                            [rowId]="row.rowId"
-                                            dateInput
-                                        />
+                                    <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="date" [formControlName]="mgc.C_REC_ENTRY_DATE"
+                                            [magic]="mgc.C_REC_ENTRY_DATE" [rowId]="row.rowId" dateInput />
                                     </div>
-                                    <label
-                                        *ngIf="!mg.isRowInRowEditing(row)"
-                                        [magic]="mgc.C_REC_ENTRY_DATE"
-                                        [rowId]="row.rowId"
-                                    >
+                                    <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.C_REC_ENTRY_DATE"
+                                        [rowId]="row.rowId">
                                         {{mg.getValue(mgc.C_REC_ENTRY_DATE, row.rowId)
-| magicDate : mgc.C_REC_ENTRY_DATE}}
+                                        | magicDate : mgc.C_REC_ENTRY_DATE}}
                                     </label>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column8"
-                        [matColumnDef]="mgc.Column8"
-                    >
+                    <ng-container [magic]="mgc.Column8" [matColumnDef]="mgc.Column8">
                         <mat-header-cell *matHeaderCellDef>
                             ENTRY TIME
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div
-                                        *ngIf="mg.isRowInRowEditing(row)"
-                                        style="display: flex; flex-direction: row"
-                                    >
-                                        <input
-                                            type="time"
-                                            [formControlName]="mgc.C_REC_ENTRY_TIME"
-                                            [magic]="mgc.C_REC_ENTRY_TIME"
-                                            [rowId]="row.rowId"
-                                            step=1
-                                        />
+                                    <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="time" [formControlName]="mgc.C_REC_ENTRY_TIME"
+                                            [magic]="mgc.C_REC_ENTRY_TIME" [rowId]="row.rowId" step=1 />
                                     </div>
-                                    <label
-                                        *ngIf="!mg.isRowInRowEditing(row)"
-                                        [magic]="mgc.C_REC_ENTRY_TIME"
-                                        [rowId]="row.rowId"
-                                    >
+                                    <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.C_REC_ENTRY_TIME"
+                                        [rowId]="row.rowId">
                                         {{mg.getValue(mgc.C_REC_ENTRY_TIME, row.rowId)
-| magicTime : mgc.C_REC_ENTRY_TIME}}
+                                        | magicTime : mgc.C_REC_ENTRY_TIME}}
                                     </label>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
                     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-                    <mat-row
-                        *matRowDef="let row; columns: displayedColumns;"
-                        class="table_row"
-                        [ngClass]="{ 'selected': selection.isSelected(row)}"
-                        [magicRow]="row?.rowId"
-                        (click)="row? tableService.selectRow(row.rowId) : null"
-                    >
+                    <mat-row *matRowDef="let row; columns: displayedColumns;" class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}" [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null">
                     </mat-row>
                 </mat-table>
-                <mat-paginator
-                    #paginator
-                    [pageSize]="10"
-                     [hidePageSize]="true"
-                    (page)="tableService.mgOnPaginateChange($event)"
-                >
+                <mat-paginator #paginator [pageSize]="10" [hidePageSize]="true"
+                    (page)="tableService.mgOnPaginateChange($event)">
                 </mat-paginator>
             </div>
         </div>

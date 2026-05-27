@@ -17,6 +17,23 @@
 	"controlType":	null,
 	"children":	[
 		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line10"
+			},
+			"coordinates":	{
+				"x":	127,
+				"y":	10,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
 			"style":	{
 				"line_divider":	true
 			},
@@ -24,13 +41,13 @@
 				"id":	"Table1",
 				"table_row_height":	20,
 				"table_title_height":	18,
-				"common_line_id":	"line13"
+				"common_line_id":	"line38"
 			},
 			"coordinates":	{
 				"x":	5,
-				"y":	13,
+				"y":	38,
 				"width":	163,
-				"height":	307
+				"height":	282
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -58,11 +75,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line34"
+								"common_line_id":	"line59"
 							},
 							"coordinates":	{
 								"x":	10,
-								"y":	34,
+								"y":	59,
 								"width":	133,
 								"height":	15
 							},

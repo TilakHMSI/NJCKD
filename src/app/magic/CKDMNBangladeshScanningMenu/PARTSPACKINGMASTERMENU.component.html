@@ -1,73 +1,60 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.PARTSPACKINGMASTERMENU"
-    >
-        <div style="display: flex; flex-direction: row">
-            <div *ngIf="mg.isImageExists(mgc.Image1)">
-                <img
-                    [magic]="mgc.Image1"
-                    [src]="mg.getImage(mgc.Image1)"
-                />
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.PARTSPACKINGMASTERMENU">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            Bangladesh Scanning Menu
+                        </label></h3>
+
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
             </div>
-            <label [magic]="mgc.Edit2">
-                {{mg.getValue(mgc.Edit2)
-| magicDate : mgc.Edit2}}
-            </label>
-            <label [magic]="mgc.Edit3">
-                {{mg.getValue(mgc.Edit3)
-| magicTime : mgc.Edit3}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Edit4">
-                {{mg.getValue(mgc.Edit4) }}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.btnexit">
-                Back
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label5"
-                class="lable_overflow"
-            >
-            </label>
-            <button
-                [magic]="mgc.btn_5_Cancel_All_FramesEnginesv"
-                [style.visibility]="mg.getVisible(mgc.btn_5_Cancel_All_FramesEnginesv)"
-            >
-                {{mg.getValue(mgc.btn_5_Cancel_All_FramesEnginesv)}}
-            </button>
-            <button
-                [magic]="mgc.btn_1_Compare_FramesEngines_v"
-                [style.visibility]="mg.getVisible(mgc.btn_1_Compare_FramesEngines_v)"
-            >
-                {{mg.getValue(mgc.btn_1_Compare_FramesEngines_v)}}
-            </button>
-            <button
-                [magic]="mgc.btn_2_Cancel_Scanned_FrameEnginev"
-                [style.visibility]="mg.getVisible(mgc.btn_2_Cancel_Scanned_FrameEnginev)"
-            >
-                {{mg.getValue(mgc.btn_2_Cancel_Scanned_FrameEnginev)}}
-            </button>
-            <button
-                [magic]="mgc.btn_3_Report_Scanned_FrameEnginev"
-                [style.visibility]="mg.getVisible(mgc.btn_3_Report_Scanned_FrameEnginev)"
-            >
-                {{mg.getValue(mgc.btn_3_Report_Scanned_FrameEnginev)}}
-            </button>
-            <button
-                [magic]="mgc.btn_4_Cancel_Scanned_FrameEnginev"
-                [style.visibility]="mg.getVisible(mgc.btn_4_Cancel_Scanned_FrameEnginev)"
-            >
-                {{mg.getValue(mgc.btn_4_Cancel_Scanned_FrameEnginev)}}
-            </button>
+            <div class="card-body">
+                <div class="form-group row">
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_5_Cancel_All_FramesEnginesv)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_5_Cancel_All_FramesEnginesv">
+                                {{mg.getValue(mgc.btn_5_Cancel_All_FramesEnginesv)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_1_Compare_FramesEngines_v)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_1_Compare_FramesEngines_v">
+                                {{mg.getValue(mgc.btn_1_Compare_FramesEngines_v)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_2_Cancel_Scanned_FrameEnginev)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_2_Cancel_Scanned_FrameEnginev">
+                                {{mg.getValue(mgc.btn_2_Cancel_Scanned_FrameEnginev)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_3_Report_Scanned_FrameEnginev)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_3_Report_Scanned_FrameEnginev">
+                                {{mg.getValue(mgc.btn_3_Report_Scanned_FrameEnginev)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.btn_4_Cancel_Scanned_FrameEnginev)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.btn_4_Cancel_Scanned_FrameEnginev">
+                                {{mg.getValue(mgc.btn_4_Cancel_Scanned_FrameEnginev)}}
+                            </button>
+                        </div>
+                       
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -1,14 +1,14 @@
 <div novalidate [formGroup]="screenFormGroup">
-    <div [magic]="mgc.SelectLots">
+    <div [magic]="mgc.PCGuide">
         <div class="card">
             <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <h3><label class="lable_overflow mb-0">
-                            Browse DC No
+                           PC Guide
                         </label></h3>
                     <div class="d-flex align-items-center">
 
-                        <button type="button" [magic]="mgc.btnexit"
+                        <button type="button" [magic]="mgc.btn_Exit"
                             class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
                     </div>
                 </div>
@@ -19,18 +19,18 @@
                     (matSortChange)="tableService.sortData($event)">
                     <ng-container [magic]="mgc.Column2" [matColumnDef]="mgc.Column2">
                         <mat-header-cell *matHeaderCellDef>
-                            PC NO.
+                            PC NUMBER
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input [formControlName]="mgc.WRK_PCSEL_PCNO" *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.WRK_PCSEL_PCNO" [rowId]="row.rowId" mgFormat />
-                                        <mgError [magic]=mgc.WRK_PCSEL_PCNO [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_PCSEL_PCNO"
+                                        <input [formControlName]="mgc.V_CHK_PCNO" *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.V_CHK_PCNO" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.V_CHK_PCNO [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.V_CHK_PCNO"
                                             [rowId]="row.rowId">
-                                            {{mg.getValue(mgc.WRK_PCSEL_PCNO, row.rowId)
+                                            {{mg.getValue(mgc.V_CHK_PCNO, row.rowId)
                                             }}
                                         </label>
                                     </div>
@@ -40,18 +40,18 @@
                     </ng-container>
                     <ng-container [magic]="mgc.Column3" [matColumnDef]="mgc.Column3">
                         <mat-header-cell *matHeaderCellDef>
-                            LOT NO.
+                            MODEL CODE
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input [formControlName]="mgc.WRK_PCSEL_LTNO" *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.WRK_PCSEL_LTNO" [rowId]="row.rowId" mgFormat />
-                                        <mgError [magic]=mgc.WRK_PCSEL_LTNO [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_PCSEL_LTNO"
+                                        <input [formControlName]="mgc.V_CHK_MDCD" *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.V_CHK_MDCD" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.V_CHK_MDCD [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.V_CHK_MDCD"
                                             [rowId]="row.rowId">
-                                            {{mg.getValue(mgc.WRK_PCSEL_LTNO, row.rowId)
+                                            {{mg.getValue(mgc.V_CHK_MDCD, row.rowId)
                                             }}
                                         </label>
                                     </div>
@@ -61,27 +61,42 @@
                     </ng-container>
                     <ng-container [magic]="mgc.Column4" [matColumnDef]="mgc.Column4">
                         <mat-header-cell *matHeaderCellDef>
-                            DESCRIPTION
+                            MODEL TYPE
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input [formControlName]="mgc.LOT_MAST_LOT_DESC"
-                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.LOT_MAST_LOT_DESC"
-                                            [rowId]="row.rowId" mgFormat />
-                                        <mgError [magic]=mgc.LOT_MAST_LOT_DESC [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.LOT_MAST_LOT_DESC"
+                                        <input [formControlName]="mgc.V_CHK_MDTY" *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.V_CHK_MDTY" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.V_CHK_MDTY [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.V_CHK_MDTY"
                                             [rowId]="row.rowId">
-                                            {{mg.getValue(mgc.LOT_MAST_LOT_DESC, row.rowId)
+                                            {{mg.getValue(mgc.V_CHK_MDTY, row.rowId)
                                             }}
                                         </label>
                                     </div>
                                 </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container [magic]="mgc.Column5" [matColumnDef]="mgc.Column5">
+                        <mat-header-cell *matHeaderCellDef>
+                            MODEL OPTION
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input type="checkbox" id="WRK_PCSEL_FLAG_{{row.rowId}}"
-                                        [formControlName]="mgc.WRK_PCSEL_FLAG" [magic]="mgc.WRK_PCSEL_FLAG"
-                                        [rowId]="row.rowId" />
+                                    <div>
+                                        <input [formControlName]="mgc.V_CHK_MDOP" *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.V_CHK_MDOP" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.V_CHK_MDOP [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.V_CHK_MDOP"
+                                            [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.V_CHK_MDOP, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </mat-cell>
