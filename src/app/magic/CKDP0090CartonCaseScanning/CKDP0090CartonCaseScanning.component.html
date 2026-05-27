@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -360,6 +360,326 @@
                     mgFormat
                 />
                 <mgError [magic]=mgc.PKD_LTID_PKD_MDOP> </mgError>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.CKDP0090CartonCaseScanning">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Edit2)}}
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <label [magic]="mgc.Edit5" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit4)
+                            | magicDate : mgc.Edit4}}
+                        </label>
+                        <label [magic]="mgc.Edit6" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit5)
+                            | magicTime : mgc.Edit5}}
+                        </label>
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem ! important;">
+                    <div class="col-lg-12">
+                        <magic-subform [magic]="mgc.DisplayCartons">
+                        </magic-subform>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                            <div class="col-lg-2">
+                                <div class="form-group">
+                                    <div [magic]="mgc.Option_v" *ngIf="mg.getVisible(mgc.Option_v)==='visible'"
+                                        (change)="task.mgOnRadioSelectionChanged(mgc.Option_v)">
+                                        <div *ngFor="let o of mg.getItemListValues(mgc.Option_v);">
+                                            <label>
+                                                <input type="radio" [formControlName]="mgc.Option_v"
+                                                    [value]="o.index" />
+                                                {{o.displayValue}}
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                     <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Edit10)}}
+                        </label></h3>
+                                    <input class="form-control-ed" [formControlName]="mgc.Case__Carton_Id_v"
+                                        [magic]="mgc.Case__Carton_Id_v" mgFormat />
+                                    <mgError [magic]=mgc.Case__Carton_Id_v> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-3" *ngIf="mg.getVisible(mgc.Case__Carton_Weight_v)==='visible'">
+                                <div class="form-group">
+                                    <label>Weight</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.Case__Carton_Weight_v"
+                                        [magic]="mgc.Case__Carton_Weight_v" mgFormat />
+                                    <mgError [magic]=mgc.Case__Carton_Weight_v> </mgError>
+                                </div>
+                            </div>
+                              <div class="col-lg-3" *ngIf="mg.getVisible(mgc.CC_Carton_Id_v)==='visible'">
+                                <div class="form-group">
+                                    <label>Weight</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.CC_Carton_Id_v"
+                                        [magic]="mgc.CC_Carton_Id_v" mgFormat />
+                                    <mgError [magic]=mgc.CC_Carton_Id_v> </mgError>
+                                </div>
+                            </div>
+                              <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>SKID No</label>
+                                     <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.SKID_v"
+                                            [magic]="mgc.SKID_v" class="form-control"
+                                            placeholder="SELECT SKID NO" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.SKID_v">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                               <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label>PC No</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.PC_No_v"
+                                            [magic]="mgc.PC_No_v" class="form-control"
+                                            placeholder="SELECT PC NO" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.PC_No_v">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                               <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label>Lot No</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.Lot_No_v"
+                                            [magic]="mgc.Lot_No_v" class="form-control"
+                                            placeholder="SELECT LOT NO" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.Lot_No_v">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                               <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label>Container </label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.Cont_v"
+                                            [magic]="mgc.Cont_v" class="form-control"
+                                            placeholder="SELECT CONTAINER" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.Cont_v">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                               <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label>CASE</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.Case_v"
+                                            [magic]="mgc.Case_v" class="form-control"
+                                            placeholder="SELECT CASE" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.Case_v">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                               <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label>Carton</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.Carton_v"
+                                            [magic]="mgc.Carton_v" class="form-control"
+                                            placeholder="SELECT CARTON" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.Carton_v">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="col-lg-2">
+    <div class="form-group-sm">
+        <label>Range</label>
+
+        <select class="form-control-ed"
+                [magic]="mgc.Option_1_v"
+                [formControlName]="mgc.Option_1_v">
+
+            <option *ngFor="let o of mg.getItemListValues(mgc.Option_1_v)"
+                    [value]="o.index">
+                {{ o.displayValue }}
+            </option>
+
+        </select>
+    </div>
+</div>
+                              <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label>Dist</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.KDPCHED_PH_DSCD"
+                                        [magic]="mgc.KDPCHED_PH_DSCD" mgFormat />
+                                    <mgError [magic]=mgc.KDPCHED_PH_DSCD> </mgError>
+                                </div>
+                            </div>
+                               <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>.</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.DSTBMST_DS_DSENAM"
+                                        [magic]="mgc.DSTBMST_DS_DSENAM" mgFormat />
+                                    <mgError [magic]=mgc.DSTBMST_DS_DSENAM> </mgError>
+                                </div>
+                            </div>
+          <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label>Model</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.PKD_LTID_PKD_MDCD"
+                                        [magic]="mgc.PKD_LTID_PKD_MDCD" mgFormat />
+                                    <mgError [magic]=mgc.PKD_LTID_PKD_MDCD> </mgError>
+                                </div>
+                            </div>
+                                <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label>.</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.MTOCMST_MTMDN1"
+                                        [magic]="mgc.MTOCMST_MTMDN1" mgFormat />
+                                    <mgError [magic]=mgc.MTOCMST_MTMDN1> </mgError>
+                                </div>
+                            </div>
+                                <div class="col-lg-1">
+                                <div class="form-group">
+                                    <label>.</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.PKD_LTID_PKD_MDTY"
+                                        [magic]="mgc.PKD_LTID_PKD_MDTY" mgFormat />
+                                    <mgError [magic]=mgc.PKD_LTID_PKD_MDTY> </mgError>
+                                </div>
+                            </div>
+                                <div class="col-lg-1">
+                                <div class="form-group">
+                                    <label>.</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.PKD_LTID_PKD_MDOP"
+                                        [magic]="mgc.PKD_LTID_PKD_MDOP" mgFormat />
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

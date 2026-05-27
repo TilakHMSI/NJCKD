@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -719,8 +719,458 @@
                 [style.visibility]="mg.getVisible(mgc.Label13)"
                 class="lable_overflow"
             >
-                (Ctrl + I --> SKID List)
+                (Ctrl + I  SKID List)
             </label>
         </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div [magic]="mgc.DisplayCases">
+        <div class="m-tablewrapper pl-0 pr-0">
+            <div class="example-container mat-elevation-z8 Table1TableContainerProps">
+                <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)">
+                    <ng-container [magic]="mgc.Column15" [matColumnDef]="mgc.Column15">
+                        <mat-header-cell *matHeaderCellDef>
+                            Pc No/ Packing Approval
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+<div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                        <div>
+                                            <div class="input-group" *ngIf="mg.isRowInRowEditing(row)">
+                                                <input type="text" [formControlName]="mgc.WRK_CROF_PCNO"
+                                                    *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CROF_PCNO"
+                                                    [rowId]="row.rowId" class="form-control-sm"
+                                                    placeholder="SELECT PC NO" mgFormat />
+                                                <div class="input-group-append">
+                                                    <button type="button" class="btn btn-loanlist btn-icon-sm"
+                                                        [magic]="mgc.WRK_CROF_PCNO" [rowId]="row.rowId">
+                                                        <span class="svg-icon svg-icon-lg"><svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                                height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none"
+                                                                    fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24" />
+                                                                    <path
+                                                                        d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                        fill="#000000" fill-rule="nonzero"
+                                                                        opacity="0.3" />
+                                                                    <path
+                                                                        d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                        fill="#000000" opacity="0.3" />
+                                                                </g>
+                                                            </svg></span></button>
+                                                </div>
+                                            </div>
+
+                                            <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CROF_PCNO"
+                                                [rowId]="row.rowId">
+                                                {{mg.getValue(mgc.WRK_CROF_PCNO, row.rowId)
+                                                }}
+                                            </label>
+                                         
+                                        </div>
+                                    </div> 
+
+                                       <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.Edit27"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.Edit27" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.Edit27 [rowId]="row.rowId">
+                                        </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.Edit27" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.Edit27, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                                </div>
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="date" [formControlName]="mgc.PCS_DATA_PCS_APDT"
+                                            [magic]="mgc.PCS_DATA_PCS_APDT" [rowId]="row.rowId" dateInput />
+                                    </div>
+                                    <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.PCS_DATA_PCS_APDT" [rowId]="row.rowId">
+                                        {{ mg.getValue(mgc.PCS_DATA_PCS_APDT, row.rowId) | date:'dd/MM/yyyy'
+                                        }}
+                                    </label>
+                                </div>
+                                   <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="time" [formControlName]="mgc.PCS_DATA_PCS_APTM"
+                                            [magic]="mgc.PCS_DATA_PCS_APTM" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_APTM, row.rowId)" step=1 />
+                                    </div>
+                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PCS_DATA_PCS_APTM"
+                                        [rowId]="row.rowId"
+                                        [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_APTM, row.rowId)">
+                                        {{mg.getValue(mgc.PCS_DATA_PCS_APTM, row.rowId)
+                                        | magicTime : mgc.PCS_DATA_PCS_APTM}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container [magic]="mgc.Column16" [matColumnDef]="mgc.Column16">
+                        <mat-header-cell *matHeaderCellDef>
+                            Lot
+                            NO./
+                          Picking List Print
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                           
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.PCS_DATA_PCS_LTNO"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.PCS_DATA_PCS_LTNO" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PCS_DATA_PCS_LTNO [rowId]="row.rowId"> </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PCS_DATA_PCS_LTNO" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.PCS_DATA_PCS_LTNO, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.Edit28"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.Edit28" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.Edit28 [rowId]="row.rowId">
+                                        </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.Edit28" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.Edit28, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                                </div>
+                                 <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                 <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="date" [formControlName]="mgc.PCS_DATA_PCS_PLDT"
+                                        [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_PLDT, row.rowId)"
+                                            [magic]="mgc.PCS_DATA_PCS_PLDT" [rowId]="row.rowId" dateInput />
+                                    </div>
+                                    <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.PCS_DATA_PCS_PLDT" [rowId]="row.rowId"
+                                        [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_PLDT, row.rowId)">
+                                        {{ mg.getValue(mgc.PCS_DATA_PCS_PLDT, row.rowId) | date:'dd/MM/yyyy'
+                                        }}
+                                    </label>
+                                </div>
+                            
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="time" [formControlName]="mgc.PCS_DATA_PCS_PLTM"
+                                            [magic]="mgc.PCS_DATA_PCS_PLTM" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_PLTM, row.rowId)" step=1 />
+                                    </div>
+                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PCS_DATA_PCS_PLTM"
+                                        [rowId]="row.rowId"
+                                        [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_PLTM, row.rowId)">
+                                        {{mg.getValue(mgc.PCS_DATA_PCS_PLTM, row.rowId)
+                                        | magicTime : mgc.PCS_DATA_PCS_PLTM}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+
+                       <ng-container [magic]="mgc.Column17" [matColumnDef]="mgc.Column17">
+                        <mat-header-cell *matHeaderCellDef>
+                           Conatiner/
+                            Packing Plan Print
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                           
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.PCS_DATA_PCS_CNNO"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.PCS_DATA_PCS_CNNO" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PCS_DATA_PCS_CNNO [rowId]="row.rowId"> </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PCS_DATA_PCS_CNNO" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.PCS_DATA_PCS_CNNO, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.Edit29"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.Edit29" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.Edit29 [rowId]="row.rowId">
+                                        </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.Edit29" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.Edit29, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                                </div>
+                                 <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                 <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="date" [formControlName]="mgc.PCS_DATA_PCS_PPDT"
+                                        [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_PPDT, row.rowId)"
+                                            [magic]="mgc.PCS_DATA_PCS_PPDT" [rowId]="row.rowId" dateInput />
+                                    </div>
+                                    <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.PCS_DATA_PCS_PPDT" [rowId]="row.rowId"
+                                        [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_PPDT, row.rowId)">
+                                        {{ mg.getValue(mgc.PCS_DATA_PCS_PPDT, row.rowId) | date:'dd/MM/yyyy'
+                                        }}
+                                    </label>
+                                </div>
+                                  <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="time" [formControlName]="mgc.PCS_DATA_PCS_PPTM"
+                                            [magic]="mgc.PCS_DATA_PCS_PPTM" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_PPTM, row.rowId)" step=1 />
+                                    </div>
+                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PCS_DATA_PCS_PPTM"
+                                        [rowId]="row.rowId"
+                                        [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_PPTM, row.rowId)">
+                                        {{mg.getValue(mgc.PCS_DATA_PCS_PPTM, row.rowId)
+                                        | magicTime : mgc.PCS_DATA_PCS_PPTM}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+
+                        <ng-container [magic]="mgc.Column18" [matColumnDef]="mgc.Column18">
+                        <mat-header-cell *matHeaderCellDef>
+                           Case/
+                            Label Printing
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                           
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.PCS_DATA_PCS_CSNO"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.PCS_DATA_PCS_CSNO" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PCS_DATA_PCS_CSNO [rowId]="row.rowId"> </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PCS_DATA_PCS_CSNO" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.PCS_DATA_PCS_CSNO, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>     
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">                 
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.Edit30"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.Edit30" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.Edit30 [rowId]="row.rowId">
+                                        </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.Edit30" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.Edit30, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                              </div>   
+                                 <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                 <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="date" [formControlName]="mgc.PCS_DATA_PCS_LBDT"
+                                          [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_LBDT, row.rowId)"
+                                        [magic]="mgc.PCS_DATA_PCS_LBDT" [rowId]="row.rowId" dateInput />
+                                    </div>
+                                    <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.PCS_DATA_PCS_LBDT" [rowId]="row.rowId" [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_LBDT, row.rowId)">
+                                        
+                                        {{ mg.getValue(mgc.PCS_DATA_PCS_LBDT, row.rowId) | date:'dd/MM/yyyy'
+                                        }}
+                                    </label>
+                                </div>
+                           
+                              <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="time" [formControlName]="mgc.PCS_DATA_PCS_LBTM"
+                                            [magic]="mgc.PCS_DATA_PCS_LBTM" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_LBTM, row.rowId)" step=1 />
+                                    </div>
+                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PCS_DATA_PCS_LBTM"
+                                        [rowId]="row.rowId"
+                                        [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_LBTM, row.rowId)">
+                                        {{mg.getValue(mgc.PCS_DATA_PCS_LBTM, row.rowId)
+                                        | magicTime : mgc.PCS_DATA_PCS_LBTM}}
+                                    </label>
+                                </div>
+                                 </div>
+                        </mat-cell>
+                    </ng-container>
+
+                    <ng-container [magic]="mgc.Column19" [matColumnDef]="mgc.Column19">
+                        <mat-header-cell *matHeaderCellDef>
+                        Case Type/
+                        Packing Off
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.PCS_DATA_PCS_CSTY"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.PCS_DATA_PCS_CSTY"
+                                            [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PCS_DATA_PCS_CSTY [rowId]="row.rowId">
+                                        </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PCS_DATA_PCS_CSTY" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.PCS_DATA_PCS_CSTY, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.Edit31"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.Edit31"
+                                            [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.Edit31 [rowId]="row.rowId"> </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.Edit31"
+                                            [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.Edit31, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                 <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="date" [formControlName]="mgc.PCS_DATA_PCS_APKD"
+                                          [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_APKD, row.rowId)"
+                                        [magic]="mgc.PCS_DATA_PCS_APKD" [rowId]="row.rowId" dateInput />
+                                    </div>
+                                    <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.PCS_DATA_PCS_APKD" [rowId]="row.rowId" [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_APKD, row.rowId)">
+                                        
+                                        {{ mg.getValue(mgc.PCS_DATA_PCS_APKD, row.rowId) | date:'dd/MM/yyyy'
+                                        }}
+                                    </label>
+                                </div>
+                           
+                              <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="time" [formControlName]="mgc.PCS_DATA_PCS_APKT"
+                                            [magic]="mgc.PCS_DATA_PCS_APKT" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_APKT, row.rowId)" step=1 />
+                                    </div>
+                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PCS_DATA_PCS_APKT"
+                                        [rowId]="row.rowId"
+                                        [style.visibility]="mg.getVisible(mgc.PCS_DATA_PCS_APKT, row.rowId)">
+                                        {{mg.getValue(mgc.PCS_DATA_PCS_APKT, row.rowId)
+                                        | magicTime : mgc.PCS_DATA_PCS_APKT}}
+                                    </label>
+                                </div>
+                                 </div>
+                          
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container [magic]="mgc.Column20" [matColumnDef]="mgc.Column20">
+                        <mat-header-cell *matHeaderCellDef>
+                            Packing Schedule Date/
+                            Gross Weight
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                               
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                 <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
+                                        <input type="date" [formControlName]="mgc.Edit26"
+                                          [style.visibility]="mg.getVisible(mgc.Edit26, row.rowId)"
+                                        [magic]="mgc.Edit26" [rowId]="row.rowId" dateInput />
+                                    </div>
+                                    <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.Edit26" [rowId]="row.rowId" [style.visibility]="mg.getVisible(mgc.Edit26, row.rowId)">
+                                        
+                                        {{ mg.getValue(mgc.Edit26, row.rowId) | date:'dd/MM/yyyy'
+                                        }}
+                                    </label>
+                                </div>
+                                       <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.Edit32"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.Edit32"
+                                            [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.Edit32 [rowId]="row.rowId"> </mgError>
+                                        <label class="text-danger font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.Edit32"
+                                            [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.Edit32, row.rowId)
+                                            }}
+                                        </label>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;" class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}" [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null">
+                    </mat-row>
+                </mat-table>
+                <mat-paginator #paginator [pageSize]="8" [hidePageSize]="true" showFirstLastButtons
+                    (page)="tableService.mgOnPaginateChange($event)">
+                </mat-paginator>
+            </div>
+        </div>
+        
+            <div class="row">
+                <div class="col-lg-12 col-xxl-12">
+                    <div class="form-group row">          
+                        <div class="col-lg-3">
+                            <div class="form-group-sm">
+                                <label class="font-size-h6" >Total Cases</label>
+                                <input class="form-control-sm"  type="number" [formControlName]="mgc.V_Total_Cases_v1" type='number'
+                                    [magic]="mgc.V_Total_Cases_v1" mgFormat />
+                            </div>
+                        </div>
+                        <div class="col-lg-3" *ngIf="mg.getVisible(mgc.V_Packed_Cases_v1)==='visible'">
+                            <div class="form-group-sm">
+                                <label class="font-size-h6" >Packed Cases</label>
+                                <input type="number" [formControlName]="mgc.V_Packed_Cases_v1" [magic]="mgc.V_Packed_Cases_v1"
+                                    class="form-control-sm" mgFormat />
+                            </div>
+                        </div>
+                         <div class="col-lg-3" *ngIf="mg.getVisible(mgc.Edit12)==='visible'">
+                            <div class="form-group-sm">
+                                <label class="font-size-h6" >UnPacked Cases</label>
+                                <input type="number" [formControlName]="mgc.Edit12" [magic]="mgc.Edit12"
+                                    class="form-control-sm" mgFormat />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 </div>
