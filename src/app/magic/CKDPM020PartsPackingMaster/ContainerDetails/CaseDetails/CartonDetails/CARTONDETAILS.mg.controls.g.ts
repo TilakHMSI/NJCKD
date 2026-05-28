@@ -35,6 +35,7 @@ export enum MgControlName {
         Label11 = "Label11",
         Label12 = "Label12",
         CARTONCOPY = "CARTONCOPY",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export var

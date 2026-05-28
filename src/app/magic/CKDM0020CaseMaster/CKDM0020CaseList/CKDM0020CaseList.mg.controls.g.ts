@@ -7,23 +7,24 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     CKDM0020CaseList = "CKDM0020CaseList",
-        Table7 = "Table7",
-        Column8 = "Column8",
-        CNT_CODE = "CNT_CODE",
-        Column9 = "Column9",
-        CNT_MAST_CNT_DESC = "CNT_MAST_CNT_DESC",
-        Column10 = "Column10",
-        CNT_MAST_CNT_LENG = "CNT_MAST_CNT_LENG",
-        Column11 = "Column11",
-        CNT_MAST_CNT_HEIG = "CNT_MAST_CNT_HEIG",
-        Column12 = "Column12",
-        CNT_MAST_CNT_WIDT = "CNT_MAST_CNT_WIDT",
-        Column13 = "Column13",
-        CNT_MAST_CNT_WEIG = "CNT_MAST_CNT_WEIG",
-        Column22 = "Column22",
-        btnEdit = "btnEdit",
+    Table7 = "Table7",
+    Column8 = "Column8",
+    CNT_CODE = "CNT_CODE",
+    Column9 = "Column9",
+    CNT_MAST_CNT_DESC = "CNT_MAST_CNT_DESC",
+    Column10 = "Column10",
+    CNT_MAST_CNT_LENG = "CNT_MAST_CNT_LENG",
+    Column11 = "Column11",
+    CNT_MAST_CNT_HEIG = "CNT_MAST_CNT_HEIG",
+    Column12 = "Column12",
+    CNT_MAST_CNT_WIDT = "CNT_MAST_CNT_WIDT",
+    Column13 = "Column13",
+    CNT_MAST_CNT_WEIG = "CNT_MAST_CNT_WEIG",
+    Column22 = "Column22",
+    btnEdit = "btnEdit",
+    btnAdd = "btnAdd",
 }
-export enum MgCustomProperties {}
+export enum MgCustomProperties { }
 export var
     MgDisplayedColumns = [
         'Column8',
@@ -36,7 +37,7 @@ export var
     ];
 
 export class MgFormControlsAccessor {
-    constructor(private fg: FormGroup, private magicServices: MagicServices) {}
+    constructor(private fg: FormGroup, private magicServices: MagicServices) { }
 
     get CNT_CODE(): FormControl {
         return this.getTableChildFormControl(MgControlName.CNT_CODE);

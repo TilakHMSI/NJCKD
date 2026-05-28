@@ -22,6 +22,7 @@ export enum MgControlName {
         CNT_MAST_CNT_WEIG = "CNT_MAST_CNT_WEIG",
         Column22 = "Column22",
         btnEdit = "btnEdit",
+        btnAdd = "btnAdd",
 }
 export enum MgCustomProperties {}
 export var

@@ -1,38 +1,3 @@
-<!-- <div novalidate [formGroup]="screenFormGroup">
-    <div style="display: flex; flex-direction: column" [magic]="mgc.LoginScreen"
-        [ngStyle]="{'background-image': mg.getStyle(mgc.LoginScreen, magicProperties.Wallpaper)}">
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.DisplayMessage" [style.visibility]="mg.getVisible(mgc.DisplayMessage)"
-                class="lable_overflow">
-                {{mg.getText(mgc.DisplayMessage)}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div>
-                <input [formControlName]="mgc.User" [magic]="mgc.User" mgFormat />
-                <mgError [magic]=mgc.User> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div>
-                <input [formControlName]="mgc.Password" [magic]="mgc.Password" [attr.required]="" type="password"
-                    mgFormat />
-                <mgError [magic]=mgc.Password> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button type="button" [magic]="mgc.Login" class="button_image_background_size"
-                [ngStyle]="{'background-image': mg.getStyle(mgc.Login, magicProperties.ImageFile)}">
-                &amp;Login
-            </button>
-            <button type="button" [magic]="mgc.btn_Exit_System" class="button_image_background_size"
-                [ngStyle]="{'background-image': mg.getStyle(mgc.btn_Exit_System, magicProperties.ImageFile)}">
-                Cancel
-            </button>
-        </div>
-    </div>
-</div> -->
-
 <body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed page-loading">
 
     <div class="d-flex flex-column flex-root" style="height: 100%;" [formGroup]="screenFormGroup">
@@ -46,13 +11,13 @@
                         <div
                             class="login-form text-center text-white p-10 position-relative overflow-hidden bg-dark-o-60 rounded-lg01">
                             <div class="d-flex flex-center mb-8 mt-5 mr-10 ml-10">
-                                <a href="#">
+                                <!-- <a href="#">
                                     <img src="assets/media/logos/logo.png" class="max-h-70px" alt="">
-                                </a>
+                                </a> -->
                             </div>
                             <div class="login-signin">
                                 <div class="mb-6 test001">
-                                    <p class="opacity-100 h4 font-weight-bold ">HMSI CKD</p>
+                                    <p class="opacity-100 h3 font-weight-bold ">HMSI CKD</p>
                                     <p class="opacity-80 font-weight-bold">Enter your details to login:</p>
                                 </div>
                                 <div class="form-group fv-plugins-icon-container">

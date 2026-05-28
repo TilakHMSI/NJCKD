@@ -12,16 +12,16 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/SelectLotForDCNPartUpd/SelectLots/SelectLots.json
+[>] Loading JSON file .//magic-metadata/CKDPM023CaseCartonToCopy/CKDPM023CaseCartonToCopy.json
 *** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component SelectLots
+[>] Processing JSON file for component CKDPM023CaseCartonToCopy
 *** Step 3: generate components. (1 components) ***
-[>] generate component SelectLots
+[>] generate component CKDPM023CaseCartonToCopy
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/SelectLotForDCNPartUpd/SelectLots/SelectLots.mg.controls.g.ts (1480 bytes)
-[36mUPDATE[39m src/app/magic/SelectLotForDCNPartUpd/SelectLots/SelectLots.component.ts (2223 bytes)
-[36mUPDATE[39m src/app/magic/SelectLotForDCNPartUpd/SelectLots/SelectLots.component.html (8477 bytes)
+[36mUPDATE[39m src/app/magic/CKDPM023CaseCartonToCopy/CKDPM023CaseCartonToCopy.mg.controls.g.ts (991 bytes)
+[36mUPDATE[39m src/app/magic/CKDPM023CaseCartonToCopy/CKDPM023CaseCartonToCopy.component.ts (2257 bytes)
+[36mUPDATE[39m src/app/magic/CKDPM023CaseCartonToCopy/CKDPM023CaseCartonToCopy.component.html (1185 bytes)
 
 
 

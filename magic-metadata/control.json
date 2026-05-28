@@ -1,23 +1,19 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"V_V_SCANNING_MESSAGE",
-		"visible":	{
-			"value":	null,
-			"has_exp":	true
-		},
-		"modifiable":	false,
-		"mgformat":	"mgFormat",
-		"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
-		"attribute":	"A"
+		"id":	"Reqprn",
+		"text":	"",
+		"attribute":	"B",
+		"is_table_child":	true,
+		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	40,
-		"y":	141,
-		"width":	341,
-		"height":	23
+		"x":	425,
+		"y":	144,
+		"width":	20,
+		"height":	15
 	},
 	"hint":	null,
-	"controlType":	"T",
+	"controlType":	"C",
 	"children":	null
 }

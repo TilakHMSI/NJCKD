@@ -10,7 +10,7 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	170,
+		"width":	226,
 		"height":	109
 	},
 	"hint":	null,
@@ -53,6 +53,23 @@
 			},
 			"hint":	null,
 			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line18"
+			},
+			"coordinates":	{
+				"x":	171,
+				"y":	27,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
 			"children":	null
 		},
 		{

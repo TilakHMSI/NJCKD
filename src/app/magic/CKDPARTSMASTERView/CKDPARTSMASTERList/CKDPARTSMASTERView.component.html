@@ -1,6 +1,6 @@
 <div novalidate [formGroup]="screenFormGroup">
     <div [magic]="mgc.CKDPARTSMASTERView">
-               <div
+        <div
             class="container-fluid d-flex align-items-center justify-content-sm-between justify-content-center flex-wrap flex-sm-nowrap">
             <div class="d-flex align-items-center flex-wrap mb-2">
                 <div class="d-flex align-items-center ser-bt1">
@@ -65,16 +65,8 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <input [formControlName]="mgc.HW_YN" *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.HW_YN" [rowId]="row.rowId" mgFormat rangevalidator />
-                                        <mgError [magic]=mgc.HW_YN [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.HW_YN"
-                                            [rowId]="row.rowId">
-                                            {{mg.getValue(mgc.HW_YN, row.rowId)
-                                            }}
-                                        </label>
-                                    </div>
+                                    <input type="checkbox" id="HW_YN_{{row.rowId}}" [formControlName]="mgc.HW_YN"
+                                        [magic]="mgc.HW_YN" [rowId]="row.rowId" />
                                 </div>
                             </div>
                         </mat-cell>

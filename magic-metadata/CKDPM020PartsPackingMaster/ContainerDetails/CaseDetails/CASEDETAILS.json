@@ -11,7 +11,7 @@
 		"x":	0,
 		"y":	0,
 		"width":	560,
-		"height":	481
+		"height":	522
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -172,20 +172,35 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"line_divider":	true
-			},
+			"style":	null,
 			"props":	{
-				"id":	"Table10",
-				"table_row_height":	20,
-				"table_title_height":	20,
-				"common_line_id":	"line50"
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line53"
 			},
 			"coordinates":	{
-				"x":	195,
-				"y":	50,
-				"width":	164,
-				"height":	361
+				"x":	474,
+				"y":	53,
+				"width":	61,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table10",
+				"table_row_height":	19,
+				"table_title_height":	19,
+				"common_line_id":	"line168"
+			},
+			"coordinates":	{
+				"x":	122,
+				"y":	168,
+				"width":	331,
+				"height":	213
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -199,7 +214,7 @@
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	50
+						"width":	41
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -214,11 +229,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line73"
+								"common_line_id":	"line191"
 							},
 							"coordinates":	{
-								"x":	198,
-								"y":	73,
+								"x":	126,
+								"y":	191,
 								"width":	30,
 								"height":	13
 							},
@@ -252,11 +267,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line73"
+								"common_line_id":	"line191"
 							},
 							"coordinates":	{
-								"x":	248,
-								"y":	73,
+								"x":	167,
+								"y":	191,
 								"width":	55,
 								"height":	13
 							},
@@ -275,7 +290,7 @@
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	39
+						"width":	106
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -283,18 +298,18 @@
 						{
 							"style":	null,
 							"props":	{
-								"id":	"WRK_CASE_CSEG",
+								"id":	"WRK_CASE_WRK_CASE_CSEG",
 								"text":	"",
 								"attribute":	"B",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line73"
+								"common_line_id":	"line191"
 							},
 							"coordinates":	{
-								"x":	308,
-								"y":	73,
-								"width":	14,
-								"height":	11
+								"x":	227,
+								"y":	191,
+								"width":	20,
+								"height":	15
 							},
 							"hint":	null,
 							"controlType":	"C",
@@ -307,34 +322,18 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label9",
-				"common_line_id":	"line447"
-			},
-			"coordinates":	{
-				"x":	489,
-				"y":	447,
-				"width":	66,
-				"height":	29
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"CASECOPY",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
 				"attribute":	"A",
-				"common_line_id":	"line447"
+				"common_line_id":	"line478"
 			},
 			"coordinates":	{
-				"x":	491,
-				"y":	450,
-				"width":	61,
+				"x":	245,
+				"y":	478,
+				"width":	89,
 				"height":	23
 			},
 			"hint":	null,

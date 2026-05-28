@@ -15,14 +15,14 @@ export enum MgControlName {
         Edit6 = "Edit6",
         Edit7 = "Edit7",
         Edit8 = "Edit8",
+        btnexit = "btnexit",
         Table10 = "Table10",
         Column11 = "Column11",
         WRK_CASE_CSCD = "WRK_CASE_CSCD",
         Column12 = "Column12",
         WRK_CASE_CSTY = "WRK_CASE_CSTY",
         Column13 = "Column13",
-        WRK_CASE_CSEG = "WRK_CASE_CSEG",
-        Label9 = "Label9",
+        WRK_CASE_WRK_CASE_CSEG = "WRK_CASE_WRK_CASE_CSEG",
         CASECOPY = "CASECOPY",
 }
 export enum MgCustomProperties {}
@@ -68,8 +68,8 @@ export class MgFormControlsAccessor {
         return this.getTableChildFormControl(MgControlName.WRK_CASE_CSTY);
     }
 
-    get WRK_CASE_CSEG(): FormControl {
-        return this.getTableChildFormControl(MgControlName.WRK_CASE_CSEG);
+    get WRK_CASE_WRK_CASE_CSEG(): FormControl {
+        return this.getTableChildFormControl(MgControlName.WRK_CASE_WRK_CASE_CSEG);
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

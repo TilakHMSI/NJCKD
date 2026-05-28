@@ -43,6 +43,7 @@ export enum MgControlName {
         WRK_PART_COLOR = "WRK_PART_COLOR",
         Column26 = "Column26",
         WRK_PART_FRAME_FLAG = "WRK_PART_FRAME_FLAG",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export var

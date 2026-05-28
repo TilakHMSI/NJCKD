@@ -1,44 +1,43 @@
 <div novalidate [formGroup]="screenFormGroup">
-    <div style="display: flex; flex-direction: column" [magic]="mgc.CARTONDETAILS">
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Label2" class="lable_overflow">
-                Lot:
-            </label>
-            <label [magic]="mgc.V_Lot_Id_v">
-                {{mg.getValue(mgc.V_Lot_Id_v) }}
-            </label>
-            <label [magic]="mgc.Label4" class="lable_overflow">
-                Container:
-            </label>
-            <label [magic]="mgc.WRK_CONT_WRK_CONT_CNCD">
-                {{mg.getValue(mgc.WRK_CONT_WRK_CONT_CNCD) }}
-            </label>
-            <label [magic]="mgc.Label6" class="lable_overflow">
-                Case:
-            </label>
-            <label [magic]="mgc.WRK_CASE_WRK_CASE_CSCD">
-                {{mg.getValue(mgc.WRK_CASE_WRK_CASE_CSCD) }}
-            </label>
-            <label [magic]="mgc.Edit1">
-                {{mg.getValue(mgc.Edit1) }}
-            </label>
+    <div [magic]="mgc.CARTONDETAILS">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            Container Details
+                        </label></h3>
+                    <label class="lable_overflow mb-0">
+                        {{mg.getText(mgc.Edit1)}}
+                    </label>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row">
+                <label class="lbl_title">
+                    Lot:
+                </label>
+                <label class="lbl_table mt-1" [magic]="mgc.V_Lot_Id_v">
+                    {{mg.getValue(mgc.V_Lot_Id_v) }}
+                </label>
+                <label class="lbl_title">
+                    Container:
+                </label>
+                <label class="lbl_table mt-1 mr-4" [magic]="mgc.WRK_CONT_WRK_CONT_CNCD">
+                    {{mg.getValue(mgc.WRK_CONT_WRK_CONT_CNCD) }}
+                </label>
+                <label class="lbl_title">
+                    Case:
+                </label>
+                <label class="lbl_table mt-1" [magic]="mgc.WRK_CASE_WRK_CASE_CSCD">
+                    {{mg.getValue(mgc.WRK_CASE_WRK_CASE_CSCD) }}
+                </label>
+
+            </div>
         </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Edit8">
-                {{mg.getValue(mgc.Edit8)
-                | magicDate : mgc.Edit8}}
-            </label>
-            <label [magic]="mgc.Edit9">
-                {{mg.getValue(mgc.Edit9)
-                | magicTime : mgc.Edit9}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Edit10">
-                {{mg.getValue(mgc.Edit10) }}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
+        <div class="m-tablewrapper pl-0 pr-0">
             <div class="example-container mat-elevation-z8 Table13TableContainerProps">
                 <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
                     (matSortChange)="tableService.sortData($event)">
@@ -202,20 +201,19 @@
                         (click)="row? tableService.selectRow(row.rowId) : null">
                     </mat-row>
                 </mat-table>
-                <mat-paginator #paginator [pageSize]="10"  [hidePageSize]="true"
+                <mat-paginator #paginator [pageSize]="10" [hidePageSize]="true"
                     (page)="tableService.mgOnPaginateChange($event)">
                 </mat-paginator>
             </div>
-            <label [magic]="mgc.Label11" class="lable_overflow">
-                Weight Limits
-            </label>
         </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Label12" class="lable_overflow">
-            </label>
-            <button [magic]="mgc.CARTONCOPY" [disabled]="mg.isDisabled(mgc.CARTONCOPY )">
-                {{mg.getValue(mgc.CARTONCOPY)}}
-            </button>
+         <div class="col-lg-12">
+            <div class="form-group-sm">
+                <button type="button" [magic]="mgc.CARTONCOPY" [disabled]="mg.isDisabled(mgc.CARTONCOPY )" 
+                class="btn btn-primary font-weight-bold mt-10 btn-wdth">
+                    {{mg.getValue(mgc.CARTONCOPY)}}
+                </button>
+            </div>
         </div>
+       
     </div>
 </div>

@@ -9,6 +9,7 @@ export enum MgControlName {
     CKDPM023CaseCartonToCopy = "CKDPM023CaseCartonToCopy",
         Edit1 = "Edit1",
         Case__Carton_No_v = "Case__Carton_No_v",
+        btnexit = "btnexit",
         Label3 = "Label3",
         OK_Button_v = "OK_Button_v",
 }
