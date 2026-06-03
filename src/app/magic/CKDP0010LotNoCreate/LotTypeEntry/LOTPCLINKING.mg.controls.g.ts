@@ -23,6 +23,7 @@ export enum MgControlName {
         KDPCMODLOT_KDPM_QTY = "KDPCMODLOT_KDPM_QTY",
         Column17 = "Column17",
         btnEdit = "btnEdit",
+                btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export var

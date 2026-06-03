@@ -5,6 +5,7 @@
                 <div class="col-lg-12 col-xxl-12">
                     <div class="form-group row">
                         <div class="col-lg-7">
+
                             <div class="example-container mat-elevation-z8 Table7TableContainerProps">
                                 <mat-table #table [dataSource]="dataSource" class="container_border" matSort
                                     matSortDisableClear (matSortChange)="tableService.sortData($event)">
@@ -18,14 +19,13 @@
                                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                                     <div>
                                                         <input [formControlName]="mgc.WRK_PAKD_LTNO"
-                                                            *ngIf="mg.isRowInRowEditing(row)" currencyMask
-                                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_PAKD_LTNO))"
+                                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
                                                             [magic]="mgc.WRK_PAKD_LTNO" [rowId]="row.rowId" mgFormat />
                                                         <mgError [magic]=mgc.WRK_PAKD_LTNO [rowId]="row.rowId">
                                                         </mgError>
                                                         <label *ngIf="!mg.isRowInRowEditing(row)"
                                                             [magic]="mgc.WRK_PAKD_LTNO" [rowId]="row.rowId">
-                                                            {{mg.getFormattedValue(mgc.WRK_PAKD_LTNO, row.rowId)
+                                                            {{mg.getValue(mgc.WRK_PAKD_LTNO, row.rowId)
                                                             }}
                                                         </label>
                                                     </div>
@@ -43,14 +43,13 @@
                                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                                     <div>
                                                         <input [formControlName]="mgc.WRK_PAKD_CNNO"
-                                                            *ngIf="mg.isRowInRowEditing(row)" currencyMask
-                                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_PAKD_CNNO))"
+                                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
                                                             [magic]="mgc.WRK_PAKD_CNNO" [rowId]="row.rowId" mgFormat />
                                                         <mgError [magic]=mgc.WRK_PAKD_CNNO [rowId]="row.rowId">
                                                         </mgError>
                                                         <label *ngIf="!mg.isRowInRowEditing(row)"
                                                             [magic]="mgc.WRK_PAKD_CNNO" [rowId]="row.rowId">
-                                                            {{mg.getFormattedValue(mgc.WRK_PAKD_CNNO, row.rowId)
+                                                            {{mg.getValue(mgc.WRK_PAKD_CNNO, row.rowId)
                                                             }}
                                                         </label>
                                                     </div>
@@ -68,14 +67,13 @@
                                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                                     <div>
                                                         <input [formControlName]="mgc.WRK_PAKD_CSNO"
-                                                            *ngIf="mg.isRowInRowEditing(row)" currencyMask
-                                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_PAKD_CSNO))"
+                                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
                                                             [magic]="mgc.WRK_PAKD_CSNO" [rowId]="row.rowId" mgFormat />
                                                         <mgError [magic]=mgc.WRK_PAKD_CSNO [rowId]="row.rowId">
                                                         </mgError>
                                                         <label *ngIf="!mg.isRowInRowEditing(row)"
                                                             [magic]="mgc.WRK_PAKD_CSNO" [rowId]="row.rowId">
-                                                            {{mg.getFormattedValue(mgc.WRK_PAKD_CSNO, row.rowId)
+                                                            {{mg.getValue(mgc.WRK_PAKD_CSNO, row.rowId)
                                                             }}
                                                         </label>
                                                     </div>
@@ -93,8 +91,7 @@
                                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                                     <div>
                                                         <input [formControlName]="mgc.WRK_PAKD_CRNO"
-                                                            *ngIf="mg.isRowInRowEditing(row)" currencyMask
-                                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_PAKD_CRNO))"
+                                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
                                                             [magic]="mgc.WRK_PAKD_CRNO" [rowId]="row.rowId"
                                                             [style.visibility]="mg.getVisible(mgc.WRK_PAKD_CRNO, row.rowId)"
                                                             mgFormat />
@@ -103,7 +100,7 @@
                                                         <label *ngIf="!mg.isRowInRowEditing(row)"
                                                             [magic]="mgc.WRK_PAKD_CRNO" [rowId]="row.rowId"
                                                             [style.visibility]="mg.getVisible(mgc.WRK_PAKD_CRNO, row.rowId)">
-                                                            {{mg.getFormattedValue(mgc.WRK_PAKD_CRNO, row.rowId)
+                                                            {{mg.getValue(mgc.WRK_PAKD_CRNO, row.rowId)
                                                             }}
                                                         </label>
                                                     </div>
@@ -261,10 +258,10 @@
                                             <mgError [magic]=mgc.Edit6> </mgError>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 d-flex align-items-center"
+                                    <div class="col-lg-12 d-flex align-items-center" 
                                         style="background-color: #edc883; padding: 10px; gap: 10px;">
                                         <label class="mb-0" style="width: 50%;">Engine Case</label>
-                                        <button type="button" [magic]="mgc.Case_Engine_Details_v1"
+                                        <button type="button" [magic]="mgc.Case_Engine_Details_v1" *ngIf="mg.getVisible(mgc.Case_Engine_Details_v1)==='visible'"
                                             class="btn btn-info font-weight-bold btn-wdth">
                                             Engine Details
                                         </button>
@@ -368,11 +365,11 @@
                                                 *ngIf="mg.getVisible(mgc.PCS_DATA_PCS_APKT)==='visible'" step=1 />
                                         </div>
                                     </div>
-                                    
-                                    <div class="col-lg-12 d-flex align-items-center"
+
+                                    <div class="col-lg-12 d-flex align-items-center" 
                                         style="background-color: #edc883; padding: 10px; gap: 10px;">
                                         <label class="mb-0" style="width: 50%;">Engine Carton</label>
-                                        <button type="button" [magic]="mgc.Carton_Engine_Details_v1"
+                                        <button type="button" [magic]="mgc.Carton_Engine_Details_v1" *ngIf="mg.getVisible(mgc.Carton_Engine_Details_v1)==='visible'"
                                             class="btn btn-info font-weight-bold btn-wdth">
                                             Engine Carton Details
                                         </button>

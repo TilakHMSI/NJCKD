@@ -60,18 +60,26 @@
                                     class="form-control" mgFormat />
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-2">
                             <div class="form-group-sm">
                                 <label>. </label>
                                 <input type="text" [formControlName]="mgc.DSTBMST_DS_DSENAM"
                                     [magic]="mgc.DSTBMST_DS_DSENAM" class="form-control" mgFormat />
                             </div>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-lg-2" *ngIf="mg.getVisible(mgc.Check_PC_Mark)==='visible'">
                             <div class="form-group-sm">
                                 <label style="width: 100%;">Check PC </label>
                                 <input type="checkbox" id="Check_PC_Mark" [formControlName]="mgc.Check_PC_Mark"
-                                    [magic]="mgc.Check_PC_Mark" [style.visibility]="mg.getVisible(mgc.Check_PC_Mark)" />
+                                    [magic]="mgc.Check_PC_Mark" />
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div class="form-group-sm">
+                                  <button type="button" [magic]="mgc.btnAction"
+                                        class="btn btn-primary font-weight-bold mt-8 btn-wdth">
+                                         {{mg.getValue(mgc.btnAction)}}
+                                    </button>
                             </div>
                         </div>
                     </div>

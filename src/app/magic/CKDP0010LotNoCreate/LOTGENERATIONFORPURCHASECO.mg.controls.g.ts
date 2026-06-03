@@ -23,6 +23,7 @@ export enum MgControlName {
         Check_PC_Mark = "Check_PC_Mark",
         btnexit = "btnexit",
         Lot_Type_Entry = "Lot_Type_Entry",
+        btnAction = "btnAction",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
