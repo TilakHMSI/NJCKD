@@ -178,10 +178,14 @@ import { CKD_PC_DETAIL_UPLOAD as CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD } fro
 import { HelpInformation as CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation } from './CKD_PC_DETAIL_UPLOAD/HelpInformation/HelpInformation.component';
 import { LotTypeCM as CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM } from './CKDP0010LotNoCreate/LotTypeEntry/LotTypeCM/LotTypeCM.component';
 import { PCGuide as PCGuide_PCGuide } from './PCGuide/PCGuide.component';
+import { GetDCNNo as GetDCNNo_GetDCNNo } from './GetDCNNo/GetDCNNo.component';
+import { DCNNoList as GetDCNNo_List_DCNNoList } from './GetDCNNo/List/DCNNoList.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               PCGuide_PCGuide:PCGuide_PCGuide,
+export const magicGenCmpsHash = {               GetDCNNo_GetDCNNo:GetDCNNo_GetDCNNo,
+              GetDCNNo_List_DCNNoList:GetDCNNo_List_DCNNoList,
+                      PCGuide_PCGuide:PCGuide_PCGuide,
                       CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM:CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM,
                       CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD:CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD,
               CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation:CKD_PC_DETAIL_UPLOAD_HelpInformation_HelpInformation,
@@ -366,6 +370,8 @@ export const magicGenCmpsHash = {               PCGuide_PCGuide:PCGuide_PCGuide,
 };
 
 export const magicGenComponents = [
+	GetDCNNo_GetDCNNo,
+	GetDCNNo_List_DCNNoList,
 	PCGuide_PCGuide,
 	CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM,
 	CKD_PC_DETAIL_UPLOAD_CKD_PC_DETAIL_UPLOAD,

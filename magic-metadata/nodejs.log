@@ -1,5 +1,20 @@
 Generation output:
 
+ Generate Modules
+
+C:\MagicXPA412\Projects\HondaCKD\output\HondaCKD>echo off 
+copying files
+
+
+
+C:\MagicXPA412\Projects\HondaCKD\output\HondaCKD>echo off 
+generating modules
+[V-CLI] cmd.exe /c ng g @magic-xpa/cli:modules
+   Number of modules to be check for generate: 1
+Nothing to be done.
+
+Generate Components
+
 C:\MagicXPA412\Projects\HondaCKD\output\HondaCKD>echo off 
 copying files
 
@@ -12,17 +27,24 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/CKDPM023CaseCartonToCopy/CKDPM023CaseCartonToCopy.json
-*** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component CKDPM023CaseCartonToCopy
-*** Step 3: generate components. (1 components) ***
-[>] generate component CKDPM023CaseCartonToCopy
+[>] Loading JSON file .//magic-metadata/GetDCNNo/GetDCNNo.json
+[>] Loading JSON file .//magic-metadata/GetDCNNo/List/DCNNoList.json
+*** Step 2: Processing JSON files -  (2 components) ***
+[>] Processing JSON file for component GetDCNNo
+[>] Processing JSON file for component DCNNoList
+*** Step 3: generate components. (2 components) ***
+[>] generate component GetDCNNo
+[>] generate component DCNNoList
 [>] Step 4: components-list.
+ Total old components: 180, added components: 2. 
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/CKDPM023CaseCartonToCopy/CKDPM023CaseCartonToCopy.mg.controls.g.ts (991 bytes)
-[36mUPDATE[39m src/app/magic/CKDPM023CaseCartonToCopy/CKDPM023CaseCartonToCopy.component.ts (2257 bytes)
-[36mUPDATE[39m src/app/magic/CKDPM023CaseCartonToCopy/CKDPM023CaseCartonToCopy.component.html (1185 bytes)
+[32mCREATE[39m src/app/magic/GetDCNNo/GetDCNNo.mg.controls.g.ts (1196 bytes)
+[32mCREATE[39m src/app/magic/GetDCNNo/GetDCNNo.component.ts (2001 bytes)
+[32mCREATE[39m src/app/magic/GetDCNNo/GetDCNNo.component.html (1743 bytes)
+[32mCREATE[39m src/app/magic/GetDCNNo/List/DCNNoList.mg.controls.g.ts (1005 bytes)
+[32mCREATE[39m src/app/magic/GetDCNNo/List/DCNNoList.component.ts (2187 bytes)
+[32mCREATE[39m src/app/magic/GetDCNNo/List/DCNNoList.component.html (5590 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (57903 bytes)
 
 
 
-Generation warnings/errors:
