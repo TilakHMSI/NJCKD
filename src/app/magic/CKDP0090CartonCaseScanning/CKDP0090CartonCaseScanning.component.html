@@ -412,33 +412,33 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div *ngIf="mg.getVisible(mgc.Case__Carton_Id_v)==='visible'" class="col-lg-4">
                                 <div class="form-group">
                                      <h3><label class="lable_overflow mb-0">
                             {{mg.getText(mgc.Edit10)}}
                         </label></h3>
-                                    <input class="form-control-ed" [formControlName]="mgc.Case__Carton_Id_v"
+                                    <input class="form-control-ent" [formControlName]="mgc.Case__Carton_Id_v"
                                         [magic]="mgc.Case__Carton_Id_v" mgFormat />
                                     <mgError [magic]=mgc.Case__Carton_Id_v> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-3" *ngIf="mg.getVisible(mgc.Case__Carton_Weight_v)==='visible'">
+                            <div class="col-lg-2" *ngIf="mg.getVisible(mgc.Case__Carton_Weight_v)==='visible'">
                                 <div class="form-group">
-                                    <label>Weight</label>
-                                    <input class="form-control-ed" [formControlName]="mgc.Case__Carton_Weight_v"
+                                    <label>Weight </label>
+                                    <input class="form-control-ent" [formControlName]="mgc.Case__Carton_Weight_v"
                                         [magic]="mgc.Case__Carton_Weight_v" mgFormat />
                                     <mgError [magic]=mgc.Case__Carton_Weight_v> </mgError>
                                 </div>
                             </div>
                               <div class="col-lg-3" *ngIf="mg.getVisible(mgc.CC_Carton_Id_v)==='visible'">
                                 <div class="form-group">
-                                    <label>Weight</label>
-                                    <input class="form-control-ed" [formControlName]="mgc.CC_Carton_Id_v"
+                                    <label>Carton</label>
+                                    <input class="form-control-ent" [formControlName]="mgc.CC_Carton_Id_v"
                                         [magic]="mgc.CC_Carton_Id_v" mgFormat />
                                     <mgError [magic]=mgc.CC_Carton_Id_v> </mgError>
                                 </div>
                             </div>
-                              <div class="col-lg-4">
+                              <div *ngIf="mg.getVisible(mgc.SKID_v)==='visible'" class="col-lg-4">
                                 <div class="form-group">
                                     <label>SKID No</label>
                                      <div class="input-group">
@@ -467,7 +467,7 @@
                                     </div>
                                 </div>
                             </div>
-                               <div class="col-lg-2">
+                               <div  *ngIf="mg.getVisible(mgc.PC_No_v)==='visible'" class="col-lg-2">
                                 <div class="form-group">
                                     <label>PC No</label>
                                     <div class="input-group">
@@ -496,7 +496,7 @@
                                     </div>
                                 </div>
                             </div>
-                               <div class="col-lg-2">
+                               <div *ngIf="mg.getVisible(mgc.Lot_No_v)==='visible'" class="col-lg-2">
                                 <div class="form-group">
                                     <label>Lot No</label>
                                     <div class="input-group">
@@ -525,7 +525,7 @@
                                     </div>
                                 </div>
                             </div>
-                               <div class="col-lg-2">
+                               <div *ngIf="mg.getVisible(mgc.Cont_v)==='visible'" class="col-lg-2">
                                 <div class="form-group">
                                     <label>Container </label>
                                     <div class="input-group">
@@ -554,7 +554,7 @@
                                     </div>
                                 </div>
                             </div>
-                               <div class="col-lg-2">
+                               <div *ngIf="mg.getVisible(mgc.Case_v)==='visible'" class="col-lg-2">
                                 <div class="form-group">
                                     <label>CASE</label>
                                     <div class="input-group">
@@ -583,7 +583,7 @@
                                     </div>
                                 </div>
                             </div>
-                               <div class="col-lg-2">
+                               <div  *ngIf="mg.getVisible(mgc.Carton_v)==='visible'"  class="col-lg-2">
                                 <div class="form-group">
                                     <label>Carton</label>
                                     <div class="input-group">
@@ -612,8 +612,8 @@
                                     </div>
                                 </div>
                             </div>
-                              <div class="col-lg-2">
-    <div class="form-group-sm">
+                              <div *ngIf="mg.getVisible(mgc.Option_1_v)==='visible'" class="col-lg-2">
+    <div  class="form-group-sm">
         <label>Range</label>
 
         <select class="form-control-ed"

@@ -29,7 +29,7 @@ export class SKIDLIST extends BaseMatTableMagicComponent implements MagicModalIn
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "600px";
+    private static readonly width: string = "600px"; 
     private static readonly height: string = "500px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
