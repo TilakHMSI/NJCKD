@@ -48,6 +48,8 @@ export enum MgControlName {
         Option_1_v = "Option_1_v",
         PKD_LTID_PKD_MDTY = "PKD_LTID_PKD_MDTY",
         PKD_LTID_PKD_MDOP = "PKD_LTID_PKD_MDOP",
+        vBlob64base="vBlob64base",
+        vFileName="vFileName"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

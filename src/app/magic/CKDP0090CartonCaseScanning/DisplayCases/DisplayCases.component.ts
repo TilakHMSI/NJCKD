@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-CKDP0090CartonCaseScanning_DisplayCases_DisplayCases',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./DisplayCases.component.css'],
     templateUrl: './DisplayCases.component.html'
 })
 export class DisplayCases extends BaseMatTableMagicComponent {
