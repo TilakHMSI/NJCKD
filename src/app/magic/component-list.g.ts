@@ -180,10 +180,20 @@ import { LotTypeCM as CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM } fro
 import { PCGuide as PCGuide_PCGuide } from './PCGuide/PCGuide.component';
 import { GetDCNNo as GetDCNNo_GetDCNNo } from './GetDCNNo/GetDCNNo.component';
 import { DCNNoList as GetDCNNo_List_DCNNoList } from './GetDCNNo/List/DCNNoList.component';
+import { StockTransferMain as StockTransferMain_StockTransferMain } from './StockTransferMain/StockTransferMain.component';
+import { CKDInHousePartTransfer as StockTransferMain_StockTransferDetails_CKDInHousePartTransfer } from './StockTransferMain/StockTransferDetails/CKDInHousePartTransfer.component';
+import { StatusMessage as StockTransferMain_StatusMessage_StatusMessage } from './StockTransferMain/StatusMessage/StatusMessage.component';
+import { Transporter as StockTransferMain_Transporter_Transporter } from './StockTransferMain/Transporter/Transporter.component';
+import { PC_HelpList as StockTransferMain_PC_HelpList_PC_HelpList } from './StockTransferMain/PC_HelpList/PC_HelpList.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               GetDCNNo_GetDCNNo:GetDCNNo_GetDCNNo,
+export const magicGenCmpsHash = {               StockTransferMain_StockTransferMain:StockTransferMain_StockTransferMain,
+              StockTransferMain_StockTransferDetails_CKDInHousePartTransfer:StockTransferMain_StockTransferDetails_CKDInHousePartTransfer,
+              StockTransferMain_StatusMessage_StatusMessage:StockTransferMain_StatusMessage_StatusMessage,
+              StockTransferMain_Transporter_Transporter:StockTransferMain_Transporter_Transporter,
+              StockTransferMain_PC_HelpList_PC_HelpList:StockTransferMain_PC_HelpList_PC_HelpList,
+                      GetDCNNo_GetDCNNo:GetDCNNo_GetDCNNo,
               GetDCNNo_List_DCNNoList:GetDCNNo_List_DCNNoList,
                       PCGuide_PCGuide:PCGuide_PCGuide,
                       CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM:CKDP0010LotNoCreate_LotTypeEntry_LotTypeCM_LotTypeCM,
@@ -370,6 +380,11 @@ export const magicGenCmpsHash = {               GetDCNNo_GetDCNNo:GetDCNNo_GetDC
 };
 
 export const magicGenComponents = [
+	StockTransferMain_StockTransferMain,
+	StockTransferMain_StockTransferDetails_CKDInHousePartTransfer,
+	StockTransferMain_StatusMessage_StatusMessage,
+	StockTransferMain_Transporter_Transporter,
+	StockTransferMain_PC_HelpList_PC_HelpList,
 	GetDCNNo_GetDCNNo,
 	GetDCNNo_List_DCNNoList,
 	PCGuide_PCGuide,

@@ -1,0 +1,245 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.StockTransferMain"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                User ID
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group4"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label5"
+                        class="lable_overflow"
+                    >
+                        Challan Date
+                    </label>
+                    <label [magic]="mgc.v_ChallanDate">
+                        {{mg.getValue(mgc.v_ChallanDate)
+| magicDate : mgc.v_ChallanDate}}
+                    </label>
+                    <input
+                        type="time"
+                        [formControlName]="mgc.V_v_ChallanTime"
+                        [magic]="mgc.V_v_ChallanTime"
+                        step=1
+                    />
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label8"
+                        class="lable_overflow"
+                    >
+                        Stock Transfer To
+                    </label>
+                    <label [magic]="mgc.V_v_TransferTo">
+                        {{mg.getValue(mgc.V_v_TransferTo) }}
+                    </label>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label10"
+                        class="lable_overflow"
+                    >
+                        Transfer Mode
+                    </label>
+                    <div>
+                        <input
+                            [formControlName]="mgc.v_Mode"
+                            [magic]="mgc.v_Mode"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.v_Mode> </mgError>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label12"
+                        class="lable_overflow"
+                    >
+                        Transporter
+                    </label>
+                    <div>
+                        <input
+                            style="width: 70%"
+                            [formControlName]="mgc.v_Transport"
+                            [magic]="mgc.v_Transport"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.v_Transport> </mgError>
+                        <button
+                            style="min-width: auto; margin: auto"
+                            [magic]="mgc.v_Transport"
+                        >...</button>
+                    </div>
+                    <div>
+                        <input
+                            [formControlName]="mgc.TransporterMaster_TRNS_NM"
+                            [magic]="mgc.TransporterMaster_TRNS_NM"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.TransporterMaster_TRNS_NM> </mgError>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label15"
+                        class="lable_overflow"
+                    >
+                        Truck No
+                    </label>
+                    <div>
+                        <input
+                            [formControlName]="mgc.v_TruckRef"
+                            [magic]="mgc.v_TruckRef"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.v_TruckRef> </mgError>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label17"
+                        class="lable_overflow"
+                    >
+                        GR No.
+                    </label>
+                    <div>
+                        <input
+                            [formControlName]="mgc.v_GRNO"
+                            [magic]="mgc.v_GRNO"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.v_GRNO> </mgError>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label19"
+                        class="lable_overflow"
+                    >
+                        Responsible Person
+                    </label>
+                    <div>
+                        <input
+                            [formControlName]="mgc.v_ResponsiblePerson"
+                            [magic]="mgc.v_ResponsiblePerson"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.v_ResponsiblePerson> </mgError>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label21"
+                        class="lable_overflow"
+                    >
+                        Responsible Dept
+                    </label>
+                    <div>
+                        <input
+                            [formControlName]="mgc.v_ResponsibleDept"
+                            [magic]="mgc.v_ResponsibleDept"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.v_ResponsibleDept> </mgError>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label23"
+                        class="lable_overflow"
+                    >
+                        Remark
+                    </label>
+                    <div>
+                        <input
+                            [formControlName]="mgc.v_Remark"
+                            [magic]="mgc.v_Remark"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.v_Remark> </mgError>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group25"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label28"
+                        class="lable_overflow"
+                    >
+                        P C No. :
+                    </label>
+                    <div>
+                        <input
+                            style="width: 70%"
+                            [formControlName]="mgc.v_P_C_No"
+                            [magic]="mgc.v_P_C_No"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.v_P_C_No> </mgError>
+                        <button
+                            style="min-width: auto; margin: auto"
+                            [magic]="mgc.v_P_C_No"
+                        >...</button>
+                    </div>
+                    <div>
+                        <input
+                            [formControlName]="mgc.v_LotID"
+                            type='number'
+                            [magic]="mgc.v_LotID"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.v_LotID> </mgError>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group29"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <button [magic]="mgc.Proceed">
+                        Proceed
+                    </button>
+                    <button [magic]="mgc.Exit">
+                        Exit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
