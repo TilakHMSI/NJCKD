@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./PARTSDETAILS.mg.controls.g";
-import { MgDisplayedColumns } from "./PARTSDETAILS.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./PackingMatDetails.mg.controls.g";
+import { MgDisplayedColumns } from "./PackingMatDetails.mg.controls.g";
 
 
 import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
@@ -11,12 +11,12 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-CKDPM020PartsPackingMaster_ContainerDetails_CaseDetails_CartonDetails_PartDetails_PARTSDETAILS',
+    selector: 'mga-GetPakingMaterialEntry_PackingMatDetails',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './PARTSDETAILS.component.html'
+    templateUrl: './PackingMatDetails.component.html'
 })
-export class PARTSDETAILS extends BaseMatTableMagicComponent implements MagicModalInterface {
+export class PackingMatDetails extends BaseMatTableMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -25,45 +25,45 @@ export class PARTSDETAILS extends BaseMatTableMagicComponent implements MagicMod
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "PARTSDETAILS";
+    private static readonly formName: string = "PackingMatDetails";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "1000px";
-    private static readonly height: string = "700px";
+    private static readonly width: string = "800px";
+    private static readonly height: string = "520px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
-    private static readonly isResizable: boolean = false;
+    private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return PARTSDETAILS.x;
+        return PackingMatDetails.x;
     }
     Y() {
-        return PARTSDETAILS.y;
+        return PackingMatDetails.y;
     }
     Width(): string {
-        return PARTSDETAILS.width;
+        return PackingMatDetails.width;
     }
     Height(): string {
-        return PARTSDETAILS.height;
+        return PackingMatDetails.height;
     }
     IsCenteredToWindow() {
-        return PARTSDETAILS.isCenteredToWindow;
+        return PackingMatDetails.isCenteredToWindow;
     }
     FormName() {
-        return PARTSDETAILS.formName;
+        return PackingMatDetails.formName;
     }
     ShowTitleBar() {
-        return PARTSDETAILS.showTitleBar;
+        return PackingMatDetails.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return PARTSDETAILS.shouldCloseOnBackgroundClick;
+        return PackingMatDetails.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return PARTSDETAILS.isResizable;
+        return PackingMatDetails.isResizable;
     }
     IsMovable() {
-        return PARTSDETAILS.isMovable;
+        return PackingMatDetails.isMovable;
     }
     override displayedColumns = this.mgdp;
 }

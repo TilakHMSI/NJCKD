@@ -185,10 +185,12 @@ import { CKDInHousePartTransfer as StockTransferMain_StockTransferDetails_CKDInH
 import { StatusMessage as StockTransferMain_StatusMessage_StatusMessage } from './StockTransferMain/StatusMessage/StatusMessage.component';
 import { Transporter as StockTransferMain_Transporter_Transporter } from './StockTransferMain/Transporter/Transporter.component';
 import { PC_HelpList as StockTransferMain_PC_HelpList_PC_HelpList } from './StockTransferMain/PC_HelpList/PC_HelpList.component';
+import { PackingMatDetails as GetPakingMaterialEntry_PackingMatDetails } from './GetPakingMaterialEntry/PackingMatDetails.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               StockTransferMain_StockTransferMain:StockTransferMain_StockTransferMain,
+export const magicGenCmpsHash = {               GetPakingMaterialEntry_PackingMatDetails:GetPakingMaterialEntry_PackingMatDetails,
+                      StockTransferMain_StockTransferMain:StockTransferMain_StockTransferMain,
               StockTransferMain_StockTransferDetails_CKDInHousePartTransfer:StockTransferMain_StockTransferDetails_CKDInHousePartTransfer,
               StockTransferMain_StatusMessage_StatusMessage:StockTransferMain_StatusMessage_StatusMessage,
               StockTransferMain_Transporter_Transporter:StockTransferMain_Transporter_Transporter,
@@ -380,6 +382,7 @@ export const magicGenCmpsHash = {               StockTransferMain_StockTransferM
 };
 
 export const magicGenComponents = [
+	GetPakingMaterialEntry_PackingMatDetails,
 	StockTransferMain_StockTransferMain,
 	StockTransferMain_StockTransferDetails_CKDInHousePartTransfer,
 	StockTransferMain_StatusMessage_StatusMessage,
