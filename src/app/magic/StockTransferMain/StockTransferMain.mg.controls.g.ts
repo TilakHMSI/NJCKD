@@ -38,6 +38,7 @@ export enum MgControlName {
         Group29 = "Group29",
         Proceed = "Proceed",
         Exit = "Exit",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
