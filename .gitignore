@@ -2,6 +2,8 @@
 
 # Compiled output
 /dist
+/public
+/public/assets/cache
 /tmp
 /out-tsc
 /bazel-out
@@ -36,7 +38,9 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
-
+magic-metadata/config.json
+magic-metadata/control.json
+magic-metadata/nodejs.log
 # System files
 .DS_Store
 Thumbs.db

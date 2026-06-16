@@ -16,11 +16,7 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"StockTransferMain/StockTransferMain",
-				"StockTransferMain/StockTransferDetails/CKDInHousePartTransfer",
-				"StockTransferMain/StatusMessage/StatusMessage",
-				"StockTransferMain/Transporter/Transporter",
-				"StockTransferMain/PC_HelpList/PC_HelpList"
+				"GetPakingMaterialEntry/PackingMatDetails"
 			]
 		}
 	],
