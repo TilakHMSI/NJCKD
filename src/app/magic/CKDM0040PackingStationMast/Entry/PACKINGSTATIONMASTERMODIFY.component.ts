@@ -28,7 +28,7 @@ export class PACKINGSTATIONMASTERMODIFY extends TaskBaseMagicComponent implement
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "400px";
-    private static readonly height: string = "350px";
+    private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
