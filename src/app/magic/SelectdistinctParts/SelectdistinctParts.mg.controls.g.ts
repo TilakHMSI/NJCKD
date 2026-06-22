@@ -7,49 +7,33 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     SelectdistinctParts = "SelectdistinctParts",
-        Table1 = "Table1",
-        Column2 = "Column2",
-        PT_NO = "PT_NO",
-        Column3 = "Column3",
-        APL_MT = "APL_MT",
-        Column4 = "Column4",
-        DC_EF_DT = "DC_EF_DT",
-        Column5 = "Column5",
-        DC_ED_DT = "DC_ED_DT",
-        Column6 = "Column6",
-        PLANT = "PLANT",
+        Edit2 = "Edit2",
+        Label5 = "Label5",
+        vSearch = "vSearch",
+        Edit3 = "Edit3",
+        Edit4 = "Edit4",
+        Label7 = "Label7",
+        btnexit = "btnexit",
+        Sub1 = "Sub1",
 }
 export enum MgCustomProperties {}
-export var
-    MgDisplayedColumns = [
-        'Column2',
-        'Column3',
-        'Column4',
-        'Column5',
-        'Column6',
-    ];
-
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get PT_NO(): FormControl {
-        return this.getTableChildFormControl(MgControlName.PT_NO);
+    get Edit2(): FormControl {
+        return this.fg.controls[MgControlName.Edit2] as FormControl;
     }
 
-    get APL_MT(): FormControl {
-        return this.getTableChildFormControl(MgControlName.APL_MT);
+    get vSearch(): FormControl {
+        return this.fg.controls[MgControlName.vSearch] as FormControl;
     }
 
-    get DC_EF_DT(): FormControl {
-        return this.getTableChildFormControl(MgControlName.DC_EF_DT);
+    get Edit3(): FormControl {
+        return this.fg.controls[MgControlName.Edit3] as FormControl;
     }
 
-    get DC_ED_DT(): FormControl {
-        return this.getTableChildFormControl(MgControlName.DC_ED_DT);
-    }
-
-    get PLANT(): FormControl {
-        return this.getTableChildFormControl(MgControlName.PLANT);
+    get Edit4(): FormControl {
+        return this.fg.controls[MgControlName.Edit4] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

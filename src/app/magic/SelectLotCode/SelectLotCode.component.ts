@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./SelectPartColor.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./SelectLotCode.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-SelectPartColor_SelectPartColor',
+    selector: 'mga-SelectLotCode_SelectLotCode',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './SelectPartColor.component.html'
+    templateUrl: './SelectLotCode.component.html'
 })
-export class SelectPartColor extends TaskBaseMagicComponent implements MagicModalInterface {
+export class SelectLotCode extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,7 +23,7 @@ export class SelectPartColor extends TaskBaseMagicComponent implements MagicModa
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "SelectPartColor";
+    private static readonly formName: string = "SelectLotCode";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -34,33 +34,33 @@ export class SelectPartColor extends TaskBaseMagicComponent implements MagicModa
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return SelectPartColor.x;
+        return SelectLotCode.x;
     }
     Y() {
-        return SelectPartColor.y;
+        return SelectLotCode.y;
     }
     Width(): string {
-        return SelectPartColor.width;
+        return SelectLotCode.width;
     }
     Height(): string {
-        return SelectPartColor.height;
+        return SelectLotCode.height;
     }
     IsCenteredToWindow() {
-        return SelectPartColor.isCenteredToWindow;
+        return SelectLotCode.isCenteredToWindow;
     }
     FormName() {
-        return SelectPartColor.formName;
+        return SelectLotCode.formName;
     }
     ShowTitleBar() {
-        return SelectPartColor.showTitleBar;
+        return SelectLotCode.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return SelectPartColor.shouldCloseOnBackgroundClick;
+        return SelectLotCode.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return SelectPartColor.isResizable;
+        return SelectLotCode.isResizable;
     }
     IsMovable() {
-        return SelectPartColor.isMovable;
+        return SelectLotCode.isMovable;
     }
 }

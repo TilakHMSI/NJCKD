@@ -16,7 +16,12 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"GetPakingMaterialEntry/PackingMatDetails"
+				"SelectLotCode/SelectLotCode",
+				"SelectLotCode/List/List",
+				"SelectdistinctParts/SelectdistinctParts",
+				"SelectdistinctParts/List/List",
+				"SelectPartColor/SelectPartColor",
+				"SelectPartColor/List/SelectPartColor"
 			]
 		}
 	],

@@ -2,26 +2,24 @@ import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
 import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./SelectdistinctParts.mg.controls.g";
-import { MgDisplayedColumns } from "./SelectdistinctParts.mg.controls.g";
 
 
-import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
+import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 
 
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
     selector: 'mga-SelectdistinctParts_SelectdistinctParts',
-    providers: [...matMagicProviders],
+    providers: [...magicProviders],
     standalone: false,
     templateUrl: './SelectdistinctParts.component.html'
 })
-export class SelectdistinctParts extends BaseMatTableMagicComponent implements MagicModalInterface {
+export class SelectdistinctParts extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
     mgfc!: MgFormControlsAccessor;
-    mgdp = MgDisplayedColumns;
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
@@ -29,11 +27,11 @@ export class SelectdistinctParts extends BaseMatTableMagicComponent implements M
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "500px";
-    private static readonly height: string = "350px";
+    private static readonly width: string = "800px";
+    private static readonly height: string = "600px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
-    private static readonly isResizable: boolean = false;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
+    private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
         return SelectdistinctParts.x;
@@ -65,5 +63,4 @@ export class SelectdistinctParts extends BaseMatTableMagicComponent implements M
     IsMovable() {
         return SelectdistinctParts.isMovable;
     }
-    override displayedColumns = this.mgdp;
 }

@@ -186,10 +186,22 @@ import { StatusMessage as StockTransferMain_StatusMessage_StatusMessage } from '
 import { Transporter as StockTransferMain_Transporter_Transporter } from './StockTransferMain/Transporter/Transporter.component';
 import { PC_HelpList as StockTransferMain_PC_HelpList_PC_HelpList } from './StockTransferMain/PC_HelpList/PC_HelpList.component';
 import { PackingMatDetails as GetPakingMaterialEntry_PackingMatDetails } from './GetPakingMaterialEntry/PackingMatDetails.component';
+import { PartsNoPicklist as PicklistForPartNo_PartsNoPicklist } from './PicklistForPartNo/PartsNoPicklist.component';
+import { List as PicklistForPartNo_List_List } from './PicklistForPartNo/List/List.component';
+import { SelectLotCode as SelectLotCode_SelectLotCode } from './SelectLotCode/SelectLotCode.component';
+import { List as SelectLotCode_List_List } from './SelectLotCode/List/List.component';
+import { List as SelectdistinctParts_List_List } from './SelectdistinctParts/List/List.component';
+import { SelectPartColor as SelectPartColor_List_SelectPartColor } from './SelectPartColor/List/SelectPartColor.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               GetPakingMaterialEntry_PackingMatDetails:GetPakingMaterialEntry_PackingMatDetails,
+export const magicGenCmpsHash = {               SelectLotCode_SelectLotCode:SelectLotCode_SelectLotCode,
+              SelectLotCode_List_List:SelectLotCode_List_List,
+              SelectdistinctParts_List_List:SelectdistinctParts_List_List,
+              SelectPartColor_List_SelectPartColor:SelectPartColor_List_SelectPartColor,
+                      PicklistForPartNo_PartsNoPicklist:PicklistForPartNo_PartsNoPicklist,
+              PicklistForPartNo_List_List:PicklistForPartNo_List_List,
+                      GetPakingMaterialEntry_PackingMatDetails:GetPakingMaterialEntry_PackingMatDetails,
                       StockTransferMain_StockTransferMain:StockTransferMain_StockTransferMain,
               StockTransferMain_StockTransferDetails_CKDInHousePartTransfer:StockTransferMain_StockTransferDetails_CKDInHousePartTransfer,
               StockTransferMain_StatusMessage_StatusMessage:StockTransferMain_StatusMessage_StatusMessage,
@@ -382,6 +394,12 @@ export const magicGenCmpsHash = {               GetPakingMaterialEntry_PackingMa
 };
 
 export const magicGenComponents = [
+	SelectLotCode_SelectLotCode,
+	SelectLotCode_List_List,
+	SelectdistinctParts_List_List,
+	SelectPartColor_List_SelectPartColor,
+	PicklistForPartNo_PartsNoPicklist,
+	PicklistForPartNo_List_List,
 	GetPakingMaterialEntry_PackingMatDetails,
 	StockTransferMain_StockTransferMain,
 	StockTransferMain_StockTransferDetails_CKDInHousePartTransfer,

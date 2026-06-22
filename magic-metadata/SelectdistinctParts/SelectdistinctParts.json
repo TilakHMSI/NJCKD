@@ -10,217 +10,157 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	548,
-		"height":	317
+		"width":	560,
+		"height":	481
 	},
 	"hint":	null,
 	"controlType":	null,
 	"children":	[
 		{
-			"style":	{
-				"line_divider":	true
-			},
+			"style":	null,
 			"props":	{
-				"id":	"Table1",
-				"table_row_height":	21,
-				"table_title_height":	20,
-				"common_line_id":	"line13"
+				"id":	"Edit2",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line3"
 			},
 			"coordinates":	{
-				"x":	10,
-				"y":	13,
-				"width":	510,
-				"height":	296
+				"x":	470,
+				"y":	3,
+				"width":	70,
+				"height":	13
 			},
 			"hint":	null,
-			"controlType":	"A",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column2",
-						"column_title":	"PART_NO",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	139
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"PT_NO",
-								"mgformat":	"mgFormat",
-								"format":	"XXXXXXXXXXXXXXXXXX",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line37"
-							},
-							"coordinates":	{
-								"x":	15,
-								"y":	37,
-								"width":	130,
-								"height":	16
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column3",
-						"column_title":	"BOM_CODE",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	139
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"APL_MT",
-								"mgformat":	"mgFormat",
-								"format":	"XXXXXXXXXXXXXXXXXX",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line37"
-							},
-							"coordinates":	{
-								"x":	154,
-								"y":	37,
-								"width":	130,
-								"height":	16
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column4",
-						"column_title":	"EFFECT_DT",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	83
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"DC_EF_DT",
-								"mgformat":	"mgFormat",
-								"format":	"XXXXXXXXXX",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line37"
-							},
-							"coordinates":	{
-								"x":	293,
-								"y":	37,
-								"width":	74,
-								"height":	16
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column5",
-						"column_title":	"END_DT",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	83
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"DC_ED_DT",
-								"mgformat":	"mgFormat",
-								"format":	"XXXXXXXXXX",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line37"
-							},
-							"coordinates":	{
-								"x":	375,
-								"y":	37,
-								"width":	74,
-								"height":	16
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column6",
-						"column_title":	"PLANT",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	41
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"PLANT",
-								"mgformat":	"mgFormat",
-								"format":	"XXXX",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line37"
-							},
-							"coordinates":	{
-								"x":	458,
-								"y":	37,
-								"width":	33,
-								"height":	16
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				}
-			]
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	71,
+				"y":	26,
+				"width":	159,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vSearch",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	164,
+				"y":	29,
+				"width":	113,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	454,
+				"y":	20,
+				"width":	55,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	510,
+				"y":	20,
+				"width":	45,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"Search",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	74,
+				"y":	31,
+				"width":	85,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"X",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	483,
+				"y":	52,
+				"width":	57,
+				"height":	25
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line94"
+			},
+			"coordinates":	{
+				"x":	54,
+				"y":	94,
+				"width":	448,
+				"height":	338
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
 		}
 	]
 }

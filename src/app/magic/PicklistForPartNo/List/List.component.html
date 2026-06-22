@@ -6,18 +6,18 @@
                     (matSortChange)="tableService.sortData($event)">
                     <ng-container [magic]="mgc.Column2" [matColumnDef]="mgc.Column2">
                         <mat-header-cell *matHeaderCellDef>
-                            CECLC1
+                            PT NO
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input [formControlName]="mgc.CECLC1" *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CECLC1" [rowId]="row.rowId" mgFormat />
-                                        <mgError [magic]=mgc.CECLC1 [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.CECLC1"
+                                        <input [formControlName]="mgc.PT_NO" *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PT_NO" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PT_NO [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PT_NO"
                                             [rowId]="row.rowId">
-                                            {{mg.getValue(mgc.CECLC1, row.rowId)
+                                            {{mg.getValue(mgc.PT_NO, row.rowId)
                                             }}
                                         </label>
                                     </div>

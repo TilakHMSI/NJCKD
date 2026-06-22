@@ -1,11 +1,11 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"SelectPartColor",
+		"id":	"PartsNoPicklist",
 		"window_type":	12,
-		"component_path":	"SelectPartColor/",
+		"component_path":	"PicklistForPartNo/",
 		"module_name":	"",
-		"component_uniquename":	"SelectPartColor_SelectPartColor"
+		"component_uniquename":	"PicklistForPartNo_PartsNoPicklist"
 	},
 	"coordinates":	{
 		"x":	0,

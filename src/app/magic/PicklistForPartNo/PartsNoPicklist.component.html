@@ -1,5 +1,5 @@
 <div novalidate [formGroup]="screenFormGroup">
-    <div class="container-fluid-ov" [magic]="mgc.SelectdistinctParts">
+    <div class="container-fluid-ov" [magic]="mgc.PartsNoPicklist">
         <div class="card">
             <div style="display: flex; flex-direction: column">
 
@@ -18,7 +18,7 @@
                     <div class="form-group row">
                         <div class="col-lg-6 col-sm-6">
                             <input class="form-control" [formControlName]="mgc.vSearch" [magic]="mgc.vSearch"
-                                placeholder="Search by Parts" mgFormat />
+                                placeholder="Search by Color" mgFormat />
                             <mgError [magic]=mgc.vSearch> </mgError>
                         </div>
                     </div>

@@ -1,80 +1,34 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.SelectPartColor"
-    >
-        <div style="display: flex; flex-direction: row">
-            <div class="example-container mat-elevation-z8 Table1TableContainerProps">
-                <mat-table
-                    #table
-                    [dataSource]="dataSource"
-                    class="container_border"
-                    matSort
-                    matSortDisableClear
-                    (matSortChange)="tableService.sortData($event)"
-                >
-                    <ng-container
-                        [magic]="mgc.Column2"
-                        [matColumnDef]="mgc.Column2"
-                    >
-                        <mat-header-cell *matHeaderCellDef>
-                            CECLC1
-                        </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
-                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <input
-                                            [formControlName]="mgc.CECLC1"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CECLC1"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.CECLC1
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CECLC1"
-                                            [rowId]="row.rowId"
-                                        >
-                                            {{mg.getValue(mgc.CECLC1, row.rowId)
-}}
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </mat-cell>
-                    </ng-container>
-                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-                    <mat-row
-                        *matRowDef="let row; columns: displayedColumns;"
-                        class="table_row"
-                        [ngClass]="{ 'selected': selection.isSelected(row)}"
-                        [magicRow]="row?.rowId"
-                        (click)="row? tableService.selectRow(row.rowId) : null"
-                    >
-                    </mat-row>
-                </mat-table>
-                <mat-paginator
-                    #paginator
-                    [pageSize]="10"
-                     [hidePageSize]="true"
-                    (page)="tableService.mgOnPaginateChange($event)"
-                >
-                </mat-paginator>
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.SelectPartColor">
+        <div class="card">
+            <div style="display: flex; flex-direction: column">
+
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <h3><label class="lable_overflow mb-0">
+                                {{mg.getValue(mgc.Edit2) }}
+                            </label></h3>
+                        <div class="d-flex align-items-center">
+                            <button type="button" [magic]="mgc.btnexit"
+                                class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 px-0">
+                    <div class="form-group row">
+                        <div class="col-lg-6 col-sm-6">
+                            <input class="form-control" [formControlName]="mgc.vSearch" [magic]="mgc.vSearch"
+                                placeholder="Search by Part Color" mgFormat />
+                            <mgError [magic]=mgc.vSearch> </mgError>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 px-0">
+                    <magic-subform [magic]="mgc.Sub1">
+                    </magic-subform>
+                </div>
             </div>
         </div>
+
     </div>
 </div>

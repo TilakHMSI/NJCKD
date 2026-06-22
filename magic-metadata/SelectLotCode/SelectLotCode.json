@@ -1,11 +1,11 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"SelectPartColor",
+		"id":	"SelectLotCode",
 		"window_type":	12,
-		"component_path":	"SelectPartColor/",
+		"component_path":	"SelectLotCode/",
 		"module_name":	"",
-		"component_uniquename":	"SelectPartColor_SelectPartColor"
+		"component_uniquename":	"SelectLotCode_SelectLotCode"
 	},
 	"coordinates":	{
 		"x":	0,

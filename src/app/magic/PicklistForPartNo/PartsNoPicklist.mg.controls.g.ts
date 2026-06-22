@@ -6,7 +6,7 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    SelectPartColor = "SelectPartColor",
+    PartsNoPicklist = "PartsNoPicklist",
         Edit2 = "Edit2",
         Label5 = "Label5",
         vSearch = "vSearch",

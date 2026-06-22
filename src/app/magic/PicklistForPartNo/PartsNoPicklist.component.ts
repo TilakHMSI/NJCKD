@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./SelectPartColor.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./PartsNoPicklist.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-SelectPartColor_SelectPartColor',
+    selector: 'mga-PicklistForPartNo_PartsNoPicklist',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './SelectPartColor.component.html'
+    templateUrl: './PartsNoPicklist.component.html'
 })
-export class SelectPartColor extends TaskBaseMagicComponent implements MagicModalInterface {
+export class PartsNoPicklist extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,7 +23,7 @@ export class SelectPartColor extends TaskBaseMagicComponent implements MagicModa
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "SelectPartColor";
+    private static readonly formName: string = "PartsNoPicklist";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -34,33 +34,33 @@ export class SelectPartColor extends TaskBaseMagicComponent implements MagicModa
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return SelectPartColor.x;
+        return PartsNoPicklist.x;
     }
     Y() {
-        return SelectPartColor.y;
+        return PartsNoPicklist.y;
     }
     Width(): string {
-        return SelectPartColor.width;
+        return PartsNoPicklist.width;
     }
     Height(): string {
-        return SelectPartColor.height;
+        return PartsNoPicklist.height;
     }
     IsCenteredToWindow() {
-        return SelectPartColor.isCenteredToWindow;
+        return PartsNoPicklist.isCenteredToWindow;
     }
     FormName() {
-        return SelectPartColor.formName;
+        return PartsNoPicklist.formName;
     }
     ShowTitleBar() {
-        return SelectPartColor.showTitleBar;
+        return PartsNoPicklist.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return SelectPartColor.shouldCloseOnBackgroundClick;
+        return PartsNoPicklist.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return SelectPartColor.isResizable;
+        return PartsNoPicklist.isResizable;
     }
     IsMovable() {
-        return SelectPartColor.isMovable;
+        return PartsNoPicklist.isMovable;
     }
 }
