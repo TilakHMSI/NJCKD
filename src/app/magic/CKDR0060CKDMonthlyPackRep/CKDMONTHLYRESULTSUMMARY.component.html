@@ -17,27 +17,42 @@
                     <div class="col-lg-12 col-xxl-12">
                         <div class="form-group row">
                             
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <div class="form-group-sm">
                                     <label>Month</label>
                                     <input class="form-control-ed" type="date" [formControlName]="mgc.Month_v" [magic]="mgc.Month_v" dateInput />
                                     <mgError [magic]=mgc.Month_v> </mgError>
                                 </div>
                             </div>
-                            
-                            <div class="col-lg-12">
-                                <div class="form-group-sm">
-                                    <button type="button" [magic]="mgc.btnView"
-                                        class="btn btn-primary font-weight-bold mt-8 btn-wdth">
-                                        View
-                                    </button>
-                                </div>
-                            </div>
+          
                         </div>
+                       
                     </div>
+                   
                 </div>
 
             </div>
+            
         </div>
+            <div class="col-lg-12 col-xxl-12">
+                            <div class="form-group row">
+                            <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                    <button type="button" [magic]="mgc.btnView"
+                                        class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                        VIEW
+                                    </button>
+                                </div>
+                            </div>
+                             <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                </div>
+                            </div>
+                    </div>
+                </div>
     </div>
 </div>
