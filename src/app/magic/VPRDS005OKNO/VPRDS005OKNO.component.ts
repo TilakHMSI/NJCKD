@@ -31,7 +31,7 @@ export class VPRDS005OKNO extends TaskBaseMagicComponent implements MagicModalIn
     private static readonly width: string = "600px";
     private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {

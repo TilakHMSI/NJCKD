@@ -32,7 +32,7 @@ export class List extends BaseMatTableMagicComponent implements MagicModalInterf
     private static readonly width: string = "300px";
     private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {

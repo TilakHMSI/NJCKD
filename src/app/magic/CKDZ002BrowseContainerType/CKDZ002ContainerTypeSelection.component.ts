@@ -30,7 +30,7 @@ export class CKDZ002ContainerTypeSelection extends TaskBaseMagicComponent implem
     private static readonly width: string = "500px";
     private static readonly height: string = "500px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = false;
     private static readonly isMovable: boolean = true;
     X() {
