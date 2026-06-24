@@ -28,7 +28,7 @@ export class PACKING_TYPE_MASTER_CM extends TaskBaseMagicComponent implements Ma
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";
-    private static readonly height: string = "350px";
+    private static readonly height: string = "400px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;

@@ -16,6 +16,7 @@ export enum MgControlName {
         PST_STAT = "PST_STAT",
         btnSave = "btnSave",
         Label6 = "Label6",
+        Label12="Label12"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

@@ -16,6 +16,7 @@ export enum MgControlName {
         PK_TYPE_DESC = "PK_TYPE_DESC",
         btnSave = "btnSave",
         btnexit = "btnexit",
+        Label22="Label22"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

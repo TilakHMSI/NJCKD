@@ -34,6 +34,7 @@ export enum MgControlName {
         Label23 = "Label23",
         VARNC = "VARNC",
         btnSave = "btnSave",
+        Label28="Label28"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
