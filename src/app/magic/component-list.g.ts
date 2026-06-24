@@ -192,10 +192,12 @@ import { SelectLotCode as SelectLotCode_SelectLotCode } from './SelectLotCode/Se
 import { List as SelectLotCode_List_List } from './SelectLotCode/List/List.component';
 import { List as SelectdistinctParts_List_List } from './SelectdistinctParts/List/List.component';
 import { SelectPartColor as SelectPartColor_List_SelectPartColor } from './SelectPartColor/List/SelectPartColor.component';
+import { ErrorScreen as ErrorScreen_ErrorScreen } from './ErrorScreen/ErrorScreen.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               SelectLotCode_SelectLotCode:SelectLotCode_SelectLotCode,
+export const magicGenCmpsHash = {               ErrorScreen_ErrorScreen:ErrorScreen_ErrorScreen,
+                      SelectLotCode_SelectLotCode:SelectLotCode_SelectLotCode,
               SelectLotCode_List_List:SelectLotCode_List_List,
               SelectdistinctParts_List_List:SelectdistinctParts_List_List,
               SelectPartColor_List_SelectPartColor:SelectPartColor_List_SelectPartColor,
@@ -394,6 +396,7 @@ export const magicGenCmpsHash = {               SelectLotCode_SelectLotCode:Sele
 };
 
 export const magicGenComponents = [
+	ErrorScreen_ErrorScreen,
 	SelectLotCode_SelectLotCode,
 	SelectLotCode_List_List,
 	SelectdistinctParts_List_List,

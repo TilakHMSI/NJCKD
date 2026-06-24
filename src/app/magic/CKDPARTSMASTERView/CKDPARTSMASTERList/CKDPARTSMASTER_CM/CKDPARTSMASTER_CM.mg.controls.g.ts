@@ -26,6 +26,8 @@ export enum MgControlName {
         PK_MAT_CODE = "PK_MAT_CODE",
         PK_MAST_DESC = "PK_MAST_DESC",
         btnSave = "btnSave",
+        btnCancel = "btnCancel",
+        Label22 = "Label22",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

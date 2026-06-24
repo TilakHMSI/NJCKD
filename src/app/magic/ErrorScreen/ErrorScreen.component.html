@@ -1,0 +1,97 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.ErrorScreen">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            ERROR SCREEN
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>ErrDatabaseName</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.ErrDatabaseName"
+                                        [magic]="mgc.ErrDatabaseName" mgFormat />
+                                    <mgError [magic]=mgc.ErrDatabaseName> </mgError>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group-sm mt-10">
+                                    <label class="mr-5">Err DBMS Message</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.ErrDbmsMessage"
+                                        [magic]="mgc.ErrDbmsMessage" mgFormat />
+                                    <mgError [magic]=mgc.ErrDbmsMessage> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>Err Magic Name</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.ErrMagicName"
+                                        [magic]="mgc.ErrMagicName" mgFormat />
+                                    <mgError [magic]=mgc.ErrMagicName> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm mt-10">
+                                    <label class="mr-5">Err Table Name</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.ErrTableName"
+                                        [magic]="mgc.ErrTableName" mgFormat />
+                                    <mgError [magic]=mgc.ErrTableName> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>Program</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.Program" [magic]="mgc.Program"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.Program> </mgError>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>Task ID</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.TaskID" [magic]="mgc.TaskID"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.TaskID> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>Date</label>
+                                    <input type="date" class="form-control-ed" [formControlName]="mgc.Date"
+                                        [magic]="mgc.Date">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>Time</label>
+                                    <input type="time" class="form-control-ed" [formControlName]="mgc.Time"
+                                        [magic]="mgc.Time">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label>DB Error</label>
+                                        <input class="form-control-ed" [formControlName]="mgc.DBErr_0001"
+                                            [magic]="mgc.DBErr_0001" mgFormat />
+                                        <mgError [magic]=mgc.DBErr_0001> </mgError>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

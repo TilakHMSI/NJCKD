@@ -1,21 +1,19 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"v_Update",
-		"enabled":	{
+		"id":	"Label22",
+		"text":	{
 			"value":	null,
 			"has_exp":	true
-		},
-		"format":	"\\UPD\\ATE",
-		"attribute":	"A"
+		}
 	},
 	"coordinates":	{
-		"x":	264,
-		"y":	348,
-		"width":	125,
-		"height":	28
+		"x":	120,
+		"y":	263,
+		"width":	373,
+		"height":	30
 	},
 	"hint":	null,
-	"controlType":	"B",
+	"controlType":	"L",
 	"children":	null
 }
