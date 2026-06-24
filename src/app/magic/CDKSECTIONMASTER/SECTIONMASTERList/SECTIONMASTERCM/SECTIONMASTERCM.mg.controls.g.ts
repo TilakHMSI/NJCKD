@@ -7,19 +7,20 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     SECTIONMASTERCM = "SECTIONMASTERCM",
-        btnexit = "btnexit",
-        Label2 = "Label2",
-        SEC_CD = "SEC_CD",
-        Label4 = "Label4",
-        SEC_DESC = "SEC_DESC",
-        Label6 = "Label6",
-        Reqprn = "Reqprn",
-        Desc = "Desc",
-        v_SaveExit = "v_SaveExit",
+    btnexit = "btnexit",
+    Label2 = "Label2",
+    SEC_CD = "SEC_CD",
+    Label4 = "Label4",
+    SEC_DESC = "SEC_DESC",
+    Label6 = "Label6",
+    Reqprn = "Reqprn",
+    Desc = "Desc",
+    v_SaveExit = "v_SaveExit",
+    Label22 = "Label22",
 }
-export enum MgCustomProperties {}
+export enum MgCustomProperties { }
 export class MgFormControlsAccessor {
-    constructor(private fg: FormGroup, private magicServices: MagicServices) {}
+    constructor(private fg: FormGroup, private magicServices: MagicServices) { }
 
     get SEC_CD(): FormControl {
         return this.fg.controls[MgControlName.SEC_CD] as FormControl;

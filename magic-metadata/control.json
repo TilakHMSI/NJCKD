@@ -2,16 +2,20 @@
 	"style":	null,
 	"props":	{
 		"id":	"Label22",
-		"text":	{
+		"visible":	{
 			"value":	null,
+			"has_exp":	true
+		},
+		"text":	{
+			"value":	"Text",
 			"has_exp":	true
 		}
 	},
 	"coordinates":	{
-		"x":	120,
-		"y":	263,
-		"width":	373,
-		"height":	30
+		"x":	206,
+		"y":	289,
+		"width":	286,
+		"height":	24
 	},
 	"hint":	null,
 	"controlType":	"L",

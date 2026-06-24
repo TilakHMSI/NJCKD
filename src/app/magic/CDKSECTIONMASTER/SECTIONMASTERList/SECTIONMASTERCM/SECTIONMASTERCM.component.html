@@ -27,31 +27,32 @@
                             <div class="col-lg-6">
                                 <div class="form-group-sm">
                                     <label>DESCRIPTION:</label>
-                                    <input class="form-control-ed" [formControlName]="mgc.SEC_DESC" [magic]="mgc.SEC_DESC"
-                                        mgFormat />
+                                    <input class="form-control-ed" [formControlName]="mgc.SEC_DESC"
+                                        [magic]="mgc.SEC_DESC" mgFormat />
                                     <mgError [magic]=mgc.SEC_DESC> </mgError>
                                 </div>
                             </div>
-                           <div class="col-lg-6">
+                            <div class="col-lg-6">
                                 <div class="form-group-sm mt-10">
                                     <label class="mr-5">PARTS REQUIREMENT PRINT:</label>
                                     <input type="checkbox" id="Reqprn" [formControlName]="mgc.Reqprn"
                                         [magic]="mgc.Reqprn" />
                                 </div>
                             </div>
-                             <div class="col-lg-6" *ngIf="mg.getVisible(mgc.Desc)==='visible'">
+                            <div class="col-lg-6" *ngIf="mg.getVisible(mgc.Desc)==='visible'">
                                 <div class="form-group-sm">
                                     <label>.</label>
-                                   <textarea [formControlName]="mgc.Desc"
-                                        [magic]="mgc.Desc" mgFormat class="form-control"
-                                        id="Desc" rows="3"></textarea>
+                                    <textarea [formControlName]="mgc.Desc" [magic]="mgc.Desc" mgFormat
+                                        class="form-control" id="Desc" rows="3"></textarea>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <label [magic]="mgc.Label22" class="text-danger mb-5">
+                        {{mg.getText(mgc.Label22)}}
+                    </label>
                     <div class="col-lg-12 col-xxl-12">
-                     <div class="form-group row">
+                        <div class="form-group row">
                             <div class="col-lg-4">
                                 <div class="form-group-sm">
                                 </div>
@@ -64,11 +65,11 @@
                                     </button>
                                 </div>
                             </div>
-                             <div class="col-lg-4">
+                            <div class="col-lg-4">
                                 <div class="form-group-sm">
                                 </div>
                             </div>
-                    </div>
+                        </div>
 
                     </div>
                 </div>
