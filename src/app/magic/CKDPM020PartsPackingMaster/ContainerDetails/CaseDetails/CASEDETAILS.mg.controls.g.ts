@@ -16,13 +16,19 @@ export enum MgControlName {
         Edit7 = "Edit7",
         Edit8 = "Edit8",
         btnexit = "btnexit",
-        Table10 = "Table10",
+        btnAdd = "btnAdd",
+        Table22 = "Table22",
         Column11 = "Column11",
         WRK_CASE_CSCD = "WRK_CASE_CSCD",
         Column12 = "Column12",
         WRK_CASE_CSTY = "WRK_CASE_CSTY",
         Column13 = "Column13",
         WRK_CASE_WRK_CASE_CSEG = "WRK_CASE_WRK_CASE_CSEG",
+        Column26 = "Column26",
+        EnterRowEditing = "EnterRowEditing",
+        SaveRowEditing = "SaveRowEditing",
+        CancelRowEditing = "CancelRowEditing",
+        btnNext = "btnNext",
         CASECOPY = "CASECOPY",
 }
 export enum MgCustomProperties {}
@@ -31,6 +37,7 @@ export var
         'Column11',
         'Column12',
         'Column13',
+        'Column26',
     ];
 
 export class MgFormControlsAccessor {

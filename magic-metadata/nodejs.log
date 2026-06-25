@@ -1,20 +1,5 @@
 Generation output:
 
- Generate Modules
-
-C:\MagicXPA412\Projects\HondaCKD\output\HondaCKD>echo off 
-copying files
-
-
-
-C:\MagicXPA412\Projects\HondaCKD\output\HondaCKD>echo off 
-generating modules
-[V-CLI] cmd.exe /c ng g @magic-xpa/cli:modules
-   Number of modules to be check for generate: 1
-Nothing to be done.
-
-Generate Components
-
 C:\MagicXPA412\Projects\HondaCKD\output\HondaCKD>echo off 
 copying files
 
@@ -27,16 +12,17 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/ErrorScreen/ErrorScreen.json
+[>] Loading JSON file .//magic-metadata/CKDPM020PartsPackingMaster/ContainerDetails/CONTAINERDETAILS.json
 *** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component ErrorScreen
+[>] Processing JSON file for component CONTAINERDETAILS
 *** Step 3: generate components. (1 components) ***
-[>] generate component ErrorScreen
+[>] generate component CONTAINERDETAILS
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/ErrorScreen/ErrorScreen.mg.controls.g.ts (2369 bytes)
-[36mUPDATE[39m src/app/magic/ErrorScreen/ErrorScreen.component.ts (2049 bytes)
-[36mUPDATE[39m src/app/magic/ErrorScreen/ErrorScreen.component.html (3825 bytes)
+[36mUPDATE[39m src/app/magic/CKDPM020PartsPackingMaster/ContainerDetails/CONTAINERDETAILS.mg.controls.g.ts (2081 bytes)
+[36mUPDATE[39m src/app/magic/CKDPM020PartsPackingMaster/ContainerDetails/CONTAINERDETAILS.component.ts (2329 bytes)
+[36mUPDATE[39m src/app/magic/CKDPM020PartsPackingMaster/ContainerDetails/CONTAINERDETAILS.component.html (10200 bytes)
 
 
 
+Generation warnings/errors:

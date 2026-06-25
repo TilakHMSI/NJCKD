@@ -1,23 +1,21 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"Label22",
-		"visible":	{
-			"value":	null,
-			"has_exp":	true
-		},
-		"text":	{
-			"value":	"Text",
-			"has_exp":	true
-		}
+		"id":	"CAS_WEIG",
+		"mgformat":	"mgFormat",
+		"currency":	"currency",
+		"format":	"#######.###",
+		"attribute":	"N",
+		"is_table_child":	true,
+		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	206,
-		"y":	289,
-		"width":	286,
-		"height":	24
+		"x":	376,
+		"y":	42,
+		"width":	60,
+		"height":	13
 	},
 	"hint":	null,
-	"controlType":	"L",
+	"controlType":	"T",
 	"children":	null
 }

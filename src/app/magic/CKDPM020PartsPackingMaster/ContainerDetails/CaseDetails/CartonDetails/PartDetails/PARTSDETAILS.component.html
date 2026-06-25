@@ -16,26 +16,26 @@
                 </div>
             </div>
             <div style="display: flex; flex-direction: row">
-                <label class="lbl_title">
+                <label class="lbl_title mr-2">
                     Lot:
                 </label>
                 <label class="lbl_table mt-1" [magic]="mgc.V_Lot_Id_v">
                     {{mg.getValue(mgc.V_Lot_Id_v) }}
                 </label>
-                <label class="lbl_title">
+                <label class="lbl_title mr-2">
                     Container:
                 </label>
                 <label class="lbl_table mt-1 mr-4" [magic]="mgc.WRK_CONT_WRK_CONT_CNCD">
                     {{mg.getValue(mgc.WRK_CONT_WRK_CONT_CNCD) }}
                 </label>
-                <label class="lbl_title">
+                <label class="lbl_title mr-2">
                     Case:
                 </label>
                 <label class="lbl_table mt-1" [magic]="mgc.WRK_CASE_WRK_CASE_CSCD">
                     {{mg.getValue(mgc.WRK_CASE_WRK_CASE_CSCD) }}
                 </label>
 
-                <label class="lbl_title">
+                <label class="lbl_title mr-2">
                     E/F:
                 </label>
                 <label class="lbl_table mt-1" [magic]="mgc.Edit14">
@@ -65,8 +65,10 @@
                                             {{mg.getValue(mgc.WRK_PART_PART, row.rowId)
                                             }}
                                         </label>
-                                        <button style="min-width: auto; margin: auto" [magic]="mgc.WRK_PART_PART"
-                                            [rowId]="row.rowId">...</button>
+                                        <button class="btn-tbl" style="min-width: auto; margin: auto"
+                                            [magic]="mgc.WRK_PART_PART" [rowId]="row.rowId"><i
+                                                class="icon-xl fas fa-search text-warning"
+                                                aria-hidden="true"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -80,10 +82,7 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input [formControlName]="mgc.PT_NAM" *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.PT_NAM" [rowId]="row.rowId" mgFormat />
-                                        <mgError [magic]=mgc.PT_NAM [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PT_NAM"
+                                        <label [magic]="mgc.PT_NAM"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.PT_NAM, row.rowId)
                                             }}
@@ -258,13 +257,37 @@
                             </div>
                         </mat-cell>
                     </ng-container>
+                    <ng-container [magic]="mgc.Column38" [matColumnDef]="mgc.Column38">
+                        <mat-header-cell *matHeaderCellDef>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <button *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.EnterRowEditing"
+                                    [rowId]="row.rowId">
+                                    Edit
+                                </button>
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <button *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.SaveRowEditing"
+                                    [rowId]="row.rowId">
+                                    Save
+                                </button>
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <button *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.CancelRowEditing"
+                                    [rowId]="row.rowId">
+                                    Cancel
+                                </button>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
                     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
                     <mat-row *matRowDef="let row; columns: displayedColumns;" class="table_row"
                         [ngClass]="{ 'selected': selection.isSelected(row)}" [magicRow]="row?.rowId"
                         (click)="row? tableService.selectRow(row.rowId) : null">
                     </mat-row>
                 </mat-table>
-                <mat-paginator #paginator [pageSize]="10" [hidePageSize]="true"
+                <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20]"
                     (page)="tableService.mgOnPaginateChange($event)">
                 </mat-paginator>
             </div>

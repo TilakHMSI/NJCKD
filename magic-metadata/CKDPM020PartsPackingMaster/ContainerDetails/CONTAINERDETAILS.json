@@ -58,7 +58,7 @@
 			"props":	{
 				"id":	"Edit1",
 				"dataexp":	true,
-				"format":	"XXXXXXXXXXXXXX",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 				"modifiable":	false,
 				"common_line_id":	"line5"
 			},
@@ -134,20 +134,54 @@
 			"children":	null
 		},
 		{
+			"style":	null,
+			"props":	{
+				"id":	"btnAdd",
+				"format":	"Add",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	126,
+				"y":	61,
+				"width":	61,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CancelCtrl",
+				"format":	"Back",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	481,
+				"y":	55,
+				"width":	61,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
 			"style":	{
 				"line_divider":	true
 			},
 			"props":	{
 				"id":	"Table8",
-				"table_row_height":	20,
+				"table_row_height":	104,
 				"table_title_height":	20,
-				"common_line_id":	"line55"
+				"common_line_id":	"line89"
 			},
 			"coordinates":	{
-				"x":	220,
-				"y":	55,
-				"width":	121,
-				"height":	361
+				"x":	124,
+				"y":	89,
+				"width":	213,
+				"height":	327
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -171,16 +205,15 @@
 							"props":	{
 								"id":	"WRK_CONT_CNCD",
 								"mgformat":	"mgFormat",
-								"currency":	"currency",
-								"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+								"format":	"#####",
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line78"
+								"common_line_id":	"line112"
 							},
 							"coordinates":	{
-								"x":	223,
-								"y":	78,
+								"x":	127,
+								"y":	112,
 								"width":	30,
 								"height":	13
 							},
@@ -199,7 +232,7 @@
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	55
+						"width":	93
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -214,16 +247,111 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line78"
+								"common_line_id":	"line112"
 							},
 							"coordinates":	{
-								"x":	273,
-								"y":	78,
+								"x":	177,
+								"y":	112,
 								"width":	55,
 								"height":	13
 							},
 							"hint":	null,
 							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column15",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	51
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"EnterRowEditing",
+								"format":	"Edit",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	1,
+								"common_line_id":	"line113"
+							},
+							"coordinates":	{
+								"x":	271,
+								"y":	113,
+								"width":	28,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SaveRowEditing",
+								"format":	"Save",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	3,
+								"common_line_id":	"line139"
+							},
+							"coordinates":	{
+								"x":	271,
+								"y":	139,
+								"width":	35,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CancelRowEditing",
+								"format":	"Cancel",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	2,
+								"common_line_id":	"line165"
+							},
+							"coordinates":	{
+								"x":	271,
+								"y":	165,
+								"width":	43,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnNext",
+								"format":	"Next",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line191"
+							},
+							"coordinates":	{
+								"x":	271,
+								"y":	191,
+								"width":	41,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
 							"children":	null
 						}
 					]
@@ -233,45 +361,12 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label7",
-				"common_line_id":	"line447"
-			},
-			"coordinates":	{
-				"x":	423,
-				"y":	447,
-				"width":	133,
-				"height":	29
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"SaveCtrl",
-				"attribute":	"A",
-				"common_line_id":	"line447"
+				"format":	"Save",
+				"common_line_id":	"line450"
 			},
 			"coordinates":	{
 				"x":	425,
-				"y":	450,
-				"width":	61,
-				"height":	23
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"CancelCtrl",
-				"attribute":	"A",
-				"common_line_id":	"line447"
-			},
-			"coordinates":	{
-				"x":	491,
 				"y":	450,
 				"width":	61,
 				"height":	23

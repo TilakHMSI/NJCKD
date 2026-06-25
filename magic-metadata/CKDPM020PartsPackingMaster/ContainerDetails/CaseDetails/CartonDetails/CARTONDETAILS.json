@@ -134,7 +134,7 @@
 			"props":	{
 				"id":	"Edit1",
 				"dataexp":	true,
-				"format":	"XXXXXXXXXXXXXX",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 				"modifiable":	false,
 				"common_line_id":	"line5"
 			},
@@ -210,20 +210,71 @@
 			"children":	null
 		},
 		{
+			"style":	null,
+			"props":	{
+				"id":	"btnAdd",
+				"format":	"Add",
+				"common_line_id":	"line46"
+			},
+			"coordinates":	{
+				"x":	20,
+				"y":	50,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"text":	"Weight Limits",
+				"common_line_id":	"line46"
+			},
+			"coordinates":	{
+				"x":	156,
+				"y":	46,
+				"width":	130,
+				"height":	11
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line46"
+			},
+			"coordinates":	{
+				"x":	511,
+				"y":	50,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
 			"style":	{
 				"line_divider":	true
 			},
 			"props":	{
 				"id":	"Table13",
-				"table_row_height":	23,
+				"table_row_height":	104,
 				"table_title_height":	20,
-				"common_line_id":	"line46"
+				"common_line_id":	"line80"
 			},
 			"coordinates":	{
 				"x":	23,
-				"y":	55,
-				"width":	469,
-				"height":	362
+				"y":	80,
+				"width":	509,
+				"height":	337
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -246,17 +297,18 @@
 							"style":	null,
 							"props":	{
 								"id":	"WRK_CART_CRCD",
+								"modifiable":	false,
 								"mgformat":	"mgFormat",
 								"currency":	"currency",
 								"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line78"
+								"common_line_id":	"line103"
 							},
 							"coordinates":	{
 								"x":	25,
-								"y":	78,
+								"y":	103,
 								"width":	30,
 								"height":	13
 							},
@@ -290,11 +342,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line78"
+								"common_line_id":	"line103"
 							},
 							"coordinates":	{
 								"x":	75,
-								"y":	78,
+								"y":	103,
 								"width":	55,
 								"height":	13
 							},
@@ -328,11 +380,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line78"
+								"common_line_id":	"line103"
 							},
 							"coordinates":	{
 								"x":	135,
-								"y":	78,
+								"y":	103,
 								"width":	60,
 								"height":	13
 							},
@@ -366,11 +418,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line78"
+								"common_line_id":	"line103"
 							},
 							"coordinates":	{
 								"x":	200,
-								"y":	78,
+								"y":	103,
 								"width":	60,
 								"height":	13
 							},
@@ -404,11 +456,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line78"
+								"common_line_id":	"line103"
 							},
 							"coordinates":	{
 								"x":	265,
-								"y":	78,
+								"y":	103,
 								"width":	60,
 								"height":	13
 							},
@@ -442,11 +494,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line78"
+								"common_line_id":	"line103"
 							},
 							"coordinates":	{
 								"x":	335,
-								"y":	78,
+								"y":	103,
 								"width":	105,
 								"height":	13
 							},
@@ -478,38 +530,116 @@
 								"attribute":	"B",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line78"
+								"common_line_id":	"line103"
 							},
 							"coordinates":	{
 								"x":	445,
-								"y":	78,
+								"y":	103,
 								"width":	14,
-								"height":	11
+								"height":	15
 							},
 							"hint":	null,
 							"controlType":	"C",
 							"children":	null
 						}
 					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column31",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	51
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"EnterRowEditing",
+								"format":	"Edit",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	1,
+								"common_line_id":	"line104"
+							},
+							"coordinates":	{
+								"x":	481,
+								"y":	104,
+								"width":	28,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SaveRowEditing",
+								"format":	"Save",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	3,
+								"common_line_id":	"line130"
+							},
+							"coordinates":	{
+								"x":	481,
+								"y":	130,
+								"width":	35,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CancelRowEditing",
+								"format":	"Cancel",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	2,
+								"common_line_id":	"line156"
+							},
+							"coordinates":	{
+								"x":	481,
+								"y":	156,
+								"width":	43,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnNext",
+								"format":	"Next",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line182"
+							},
+							"coordinates":	{
+								"x":	481,
+								"y":	182,
+								"width":	41,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
 				}
 			]
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label11",
-				"text":	"Weight Limits",
-				"common_line_id":	"line46"
-			},
-			"coordinates":	{
-				"x":	156,
-				"y":	46,
-				"width":	130,
-				"height":	11
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
 		},
 		{
 			"style":	null,

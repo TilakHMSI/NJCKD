@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-CKDPM020PartsPackingMaster_ContainerDetails_CONTAINERDETAILS',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./CONTAINERDETAILS.component.css'],
     templateUrl: './CONTAINERDETAILS.component.html'
 })
 export class CONTAINERDETAILS extends BaseMatTableMagicComponent implements MagicModalInterface {

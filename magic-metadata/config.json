@@ -16,7 +16,7 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"control"
+				"CKDPM020PartsPackingMaster/ContainerDetails/CaseDetails/CartonDetails/PartDetails/PARTSDETAILS"
 			]
 		}
 	],

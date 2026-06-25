@@ -48,7 +48,6 @@ import { COLOURCODEMASTER as COLOURCODEMASTER_COLOURCODEMASTER } from './COLOURC
 import { COLOURCODEMASTERList as COLOURCODEMASTER_COLOURCODEMASTERList_COLOURCODEMASTERList } from './COLOURCODEMASTER/COLOURCODEMASTERList/COLOURCODEMASTERList.component';
 import { COLORCD_CM as COLOURCODEMASTER_COLOURCODEMASTERList_COLORCD_CM_COLORCD_CM } from './COLOURCODEMASTER/COLOURCODEMASTERList/COLORCD_CM/COLORCD_CM.component';
 import { CKDPARAMETERS as CKDMST1CKDParameters_CKDPARAMETERS } from './CKDMST1CKDParameters/CKDPARAMETERS.component';
-import { List as SelectLotCode_List } from './SelectLotCode/List.component';
 import { SelectdistinctParts as SelectdistinctParts_SelectdistinctParts } from './SelectdistinctParts/SelectdistinctParts.component';
 import { SelectPartColor as SelectPartColor_SelectPartColor } from './SelectPartColor/SelectPartColor.component';
 import { CKDZ001BrowseLotMaster as CKDZ001BrowseLotMaster_CKDZ001BrowseLotMaster } from './CKDZ001BrowseLotMaster/CKDZ001BrowseLotMaster.component';
@@ -366,7 +365,6 @@ export const magicGenCmpsHash = {               ErrorScreen_ErrorScreen:ErrorScr
               COLOURCODEMASTER_COLOURCODEMASTERList_COLOURCODEMASTERList:COLOURCODEMASTER_COLOURCODEMASTERList_COLOURCODEMASTERList,
               COLOURCODEMASTER_COLOURCODEMASTERList_COLORCD_CM_COLORCD_CM:COLOURCODEMASTER_COLOURCODEMASTERList_COLORCD_CM_COLORCD_CM,
               CKDMST1CKDParameters_CKDPARAMETERS:CKDMST1CKDParameters_CKDPARAMETERS,
-              SelectLotCode_List:SelectLotCode_List,
               SelectdistinctParts_SelectdistinctParts:SelectdistinctParts_SelectdistinctParts,
               SelectPartColor_SelectPartColor:SelectPartColor_SelectPartColor,
                       PACKINGTYPEMASTERView_PACKINGTYPEMASTERView:PACKINGTYPEMASTERView_PACKINGTYPEMASTERView,
@@ -565,7 +563,6 @@ export const magicGenComponents = [
 	COLOURCODEMASTER_COLOURCODEMASTERList_COLOURCODEMASTERList,
 	COLOURCODEMASTER_COLOURCODEMASTERList_COLORCD_CM_COLORCD_CM,
 	CKDMST1CKDParameters_CKDPARAMETERS,
-	SelectLotCode_List,
 	SelectdistinctParts_SelectdistinctParts,
 	SelectPartColor_SelectPartColor,
 	PACKINGTYPEMASTERView_PACKINGTYPEMASTERView,

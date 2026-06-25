@@ -191,15 +191,32 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Table10",
-				"table_row_height":	19,
+				"id":	"btnAdd",
+				"format":	"Add",
+				"common_line_id":	"line120"
+			},
+			"coordinates":	{
+				"x":	120,
+				"y":	120,
+				"width":	61,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table22",
+				"table_row_height":	104,
 				"table_title_height":	19,
 				"common_line_id":	"line168"
 			},
 			"coordinates":	{
 				"x":	122,
 				"y":	168,
-				"width":	331,
+				"width":	262,
 				"height":	213
 			},
 			"hint":	null,
@@ -223,9 +240,9 @@
 							"style":	null,
 							"props":	{
 								"id":	"WRK_CASE_CSCD",
+								"modifiable":	false,
 								"mgformat":	"mgFormat",
-								"currency":	"currency",
-								"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+								"format":	"#####",
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
@@ -316,6 +333,101 @@
 							"children":	null
 						}
 					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column26",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	51
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"EnterRowEditing",
+								"format":	"Edit",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	1,
+								"common_line_id":	"line191"
+							},
+							"coordinates":	{
+								"x":	333,
+								"y":	191,
+								"width":	28,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SaveRowEditing",
+								"format":	"Save",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	3,
+								"common_line_id":	"line217"
+							},
+							"coordinates":	{
+								"x":	333,
+								"y":	217,
+								"width":	35,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CancelRowEditing",
+								"format":	"Cancel",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	2,
+								"common_line_id":	"line243"
+							},
+							"coordinates":	{
+								"x":	333,
+								"y":	243,
+								"width":	43,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnNext",
+								"format":	"Next",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line269"
+							},
+							"coordinates":	{
+								"x":	333,
+								"y":	269,
+								"width":	41,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
 				}
 			]
 		},
@@ -327,7 +439,7 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"attribute":	"A",
+				"format":	"CASE COPY",
 				"common_line_id":	"line478"
 			},
 			"coordinates":	{

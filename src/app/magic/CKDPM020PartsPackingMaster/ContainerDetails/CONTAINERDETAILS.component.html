@@ -17,20 +17,29 @@
                 </div>
             </div>
             <div style="display: flex; flex-direction: row">
-                <label class="lbl_title">  
+                <label class="lbl_title mr-2">
                     Lot:
                 </label>
                 <label class="lbl_table mt-1" [magic]="mgc.V_Lot_Id_v">
                     {{mg.getValue(mgc.V_Lot_Id_v) }}
                 </label>
-
+            </div>
+        </div>
+        <div
+            class="container-fluid d-flex align-items-center justify-content-sm-between justify-content-center flex-wrap flex-sm-nowrap">
+            <div class="d-flex align-items-center flex-wrap mb-2">
+                <div class="d-flex align-items-center ser-bt1">
+                    <div></div><button type="button" class="btn btn-sm btn-success" [magic]="mgc.btnAdd"
+                        *ngIf="mg.getVisible(mgc.btnAdd)==='visible'">
+                        <i class="flaticon-app mr-2"></i>ADD CONTAINER DETAILS
+                    </button>
+                </div>
             </div>
         </div>
         <div class="m-tablewrapper pl-0 pr-0">
             <div class="example-container mat-elevation-z8 Table8TableContainerProps">
                 <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
                     (matSortChange)="tableService.sortData($event)">
-
                     <ng-container [magic]="mgc.Column9" [matColumnDef]="mgc.Column9">
                         <mat-header-cell *matHeaderCellDef>
                             Code
@@ -39,11 +48,7 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input [formControlName]="mgc.WRK_CONT_CNCD" *ngIf="mg.isRowInRowEditing(row)"
-                                            type='number' [magic]="mgc.WRK_CONT_CNCD" [rowId]="row.rowId" mgFormat />
-                                        <mgError [magic]=mgc.WRK_CONT_CNCD [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CONT_CNCD"
-                                            [rowId]="row.rowId">
+                                        <label [magic]="mgc.WRK_CONT_CNCD" [rowId]="row.rowId">
                                             {{mg.getValue(mgc.WRK_CONT_CNCD, row.rowId)
                                             }}
                                         </label>
@@ -69,12 +74,45 @@
                                             {{mg.getValue(mgc.WRK_CONT_CNTY, row.rowId)
                                             }}
                                         </label>
-                                        <button style="min-width: auto; margin: auto" [magic]="mgc.WRK_CONT_CNTY"
-                                            [rowId]="row.rowId">...</button>
+                                        <button class="btn-tbl" style="min-width: auto; margin: auto"
+                                            [magic]="mgc.WRK_CONT_CNTY" [rowId]="row.rowId"><i
+                                                class="icon-xl fas fa-search text-warning"
+                                                aria-hidden="true"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
+                    </ng-container>
+                    <ng-container [magic]="mgc.Column15" [matColumnDef]="mgc.Column15">
+                        <mat-header-cell *matHeaderCellDef>Action
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <button class="btn-tbl" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.EnterRowEditing"
+                                    [rowId]="row.rowId">
+                                    <i class="icon-xl far fa-edit text-info" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.SaveRowEditing"
+                                    [rowId]="row.rowId">
+                                    <i class="icon-xl far fa-save text-success" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.CancelRowEditing"
+                                    [rowId]="row.rowId">
+                                    <i class="icon-xl fas fa-eraser  text-danger" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <button *ngIf="!mg.isRowInRowEditing(row)" class="btn-tbl" [magic]="mgc.btnNext"
+                                    [rowId]="row.rowId">
+                                    <i class="icon-xl fas fa-arrow-right text-warning" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </mat-cell>
+
                     </ng-container>
                     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
                     <mat-row *matRowDef="let row; columns: displayedColumns;" class="table_row"
@@ -87,18 +125,26 @@
                 </mat-paginator>
             </div>
         </div>
-        <!-- <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.SaveCtrl">
-                {{mg.getValue(mgc.SaveCtrl)}}
-            </button>
-        </div> -->
-
-        <div class="col-lg-12">
-            <div class="form-group-sm">
-                <button type="button" [magic]="mgc.SaveCtrl" class="btn btn-primary font-weight-bold mt-10 btn-wdth">
-                    OK
-                </button>
+        <div class="col-lg-12 col-xxl-12">
+            <div class="form-group row">
+                <div class="col-lg-4">
+                    <div class="form-group-sm">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group-sm">
+                        <button type="button" [magic]="mgc.SaveCtrl"
+                            class="btn btn-primary font-weight-bold mt-10 btn-wdth">
+                            OK
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group-sm">
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 </div>

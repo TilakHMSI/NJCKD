@@ -8,18 +8,15 @@
     flex: 0 0 15%;
     padding-left: 2px;
 }
-
 .mat-mdc-header-cell:first-child {
     flex: 0 0 15%;
     padding-left: 2px;
 }
-
 .mat-mdc-cell:nth-child(2) {
-    flex: 0 0 25%;
+    flex: 0 0 35%;
 }
-
 .mat-mdc-header-cell:nth-child(2) {
-    flex: 0 0 25%;
+    flex: 0 0 35%;
 }
 
 /* .mat-mdc-cell:nth-child(3){
