@@ -6,19 +6,27 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    PACKINGSTATIONMASTERMODIFY = "PACKINGSTATIONMASTERMODIFY",
+    PACKINGSTATIONMASTERINQUIRY = "PACKINGSTATIONMASTERINQUIRY",
         Image1 = "Image1",
         Edit3 = "Edit3",
         Edit2 = "Edit2",
         Edit4 = "Edit4",
         Edit5 = "Edit5",
+        btnAdd = "btnAdd",
         btnexit = "btnexit",
+        Table7 = "Table7",
+        Column8 = "Column8",
         PST_STAT = "PST_STAT",
-        btnSave = "btnSave",
-        Label6 = "Label6",
-        Label12="Label12"
+        Column12 = "Column12",
+        btnEdit = "btnEdit",
 }
 export enum MgCustomProperties {}
+export var
+    MgDisplayedColumns = [
+        'Column8',
+        'Column12',
+    ];
+
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
@@ -39,7 +47,7 @@ export class MgFormControlsAccessor {
     }
 
     get PST_STAT(): FormControl {
-        return this.fg.controls[MgControlName.PST_STAT] as FormControl;
+        return this.getTableChildFormControl(MgControlName.PST_STAT);
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

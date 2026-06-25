@@ -11,10 +11,9 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-CKDM0040PackingStationMast_PACKINGSTATIONMASTERINQUIRY',
+    selector: 'mga-CKDM0040PackingStationMast_PackingStationList_PACKINGSTATIONMASTERINQUIRY',
     providers: [...matMagicProviders],
     standalone: false,
-    styleUrls: ['./PACKINGSTATIONMASTERINQUIRY.component.css'],
     templateUrl: './PACKINGSTATIONMASTERINQUIRY.component.html'
 })
 export class PACKINGSTATIONMASTERINQUIRY extends BaseMatTableMagicComponent implements MagicModalInterface {
@@ -27,13 +26,13 @@ export class PACKINGSTATIONMASTERINQUIRY extends BaseMatTableMagicComponent impl
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "PACKINGSTATIONMASTERINQUIRY";
-    private static readonly showTitleBar: boolean = false;
+    private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "1220px";
-    private static readonly height: string = "720px";
+    private static readonly width: string = "300px";
+    private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = false;
+    private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {

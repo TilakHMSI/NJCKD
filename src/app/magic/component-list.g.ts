@@ -25,7 +25,6 @@ import { CKDM0030PackingMaster as CKDM0030PackingMatMaster_CKDM0030PackingMaster
 import { CKDM0030PackingMatMaster as CKDM0030PackingMatMaster_List_CKDM0030PackingMatMaster } from './CKDM0030PackingMatMaster/List/CKDM0030PackingMatMaster.component';
 import { PackingMatCM as CKDM0030PackingMatMaster_List_PackingMatCM_PackingMatCM } from './CKDM0030PackingMatMaster/List/PackingMatCM/PackingMatCM.component';
 import { PACKINGSTATIONMASTERINQUIRY as CKDM0040PackingStationMast_PACKINGSTATIONMASTERINQUIRY } from './CKDM0040PackingStationMast/PACKINGSTATIONMASTERINQUIRY.component';
-import { PACKINGSTATIONMASTERMODIFY as CKDM0040PackingStationMast_Entry_PACKINGSTATIONMASTERMODIFY } from './CKDM0040PackingStationMast/Entry/PACKINGSTATIONMASTERMODIFY.component';
 import { CKDPARTSMASTERView as CKDPARTSMASTERView_CKDPARTSMASTERView } from './CKDPARTSMASTERView/CKDPARTSMASTERView.component';
 import { CKDPARTSMASTERView as CKDPARTSMASTERView_CKDPARTSMASTERList_CKDPARTSMASTERView } from './CKDPARTSMASTERView/CKDPARTSMASTERList/CKDPARTSMASTERView.component';
 import { CKDPARTSMASTER_CM as CKDPARTSMASTERView_CKDPARTSMASTERList_CKDPARTSMASTER_CM_CKDPARTSMASTER_CM } from './CKDPARTSMASTERView/CKDPARTSMASTERList/CKDPARTSMASTER_CM/CKDPARTSMASTER_CM.component';
@@ -192,10 +191,16 @@ import { List as SelectLotCode_List_List } from './SelectLotCode/List/List.compo
 import { List as SelectdistinctParts_List_List } from './SelectdistinctParts/List/List.component';
 import { SelectPartColor as SelectPartColor_List_SelectPartColor } from './SelectPartColor/List/SelectPartColor.component';
 import { ErrorScreen as ErrorScreen_ErrorScreen } from './ErrorScreen/ErrorScreen.component';
+import { CKDM0040PackingStationMast as CKDM0040PackingStationMast_CKDM0040PackingStationMast } from './CKDM0040PackingStationMast/CKDM0040PackingStationMast.component';
+import { PACKINGSTATIONMASTERINQUIRY as CKDM0040PackingStationMast_PackingStationList_PACKINGSTATIONMASTERINQUIRY } from './CKDM0040PackingStationMast/PackingStationList/PACKINGSTATIONMASTERINQUIRY.component';
+import { PACKINGSTATIONMASTERMODIFY as CKDM0040PackingStationMast_PackingStationList_Entry_PACKINGSTATIONMASTERMODIFY } from './CKDM0040PackingStationMast/PackingStationList/Entry/PACKINGSTATIONMASTERMODIFY.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               ErrorScreen_ErrorScreen:ErrorScreen_ErrorScreen,
+export const magicGenCmpsHash = {               CKDM0040PackingStationMast_CKDM0040PackingStationMast:CKDM0040PackingStationMast_CKDM0040PackingStationMast,
+              CKDM0040PackingStationMast_PackingStationList_PACKINGSTATIONMASTERINQUIRY:CKDM0040PackingStationMast_PackingStationList_PACKINGSTATIONMASTERINQUIRY,
+              CKDM0040PackingStationMast_PackingStationList_Entry_PACKINGSTATIONMASTERMODIFY:CKDM0040PackingStationMast_PackingStationList_Entry_PACKINGSTATIONMASTERMODIFY,
+                      ErrorScreen_ErrorScreen:ErrorScreen_ErrorScreen,
                       SelectLotCode_SelectLotCode:SelectLotCode_SelectLotCode,
               SelectLotCode_List_List:SelectLotCode_List_List,
               SelectdistinctParts_List_List:SelectdistinctParts_List_List,
@@ -342,7 +347,6 @@ export const magicGenCmpsHash = {               ErrorScreen_ErrorScreen:ErrorScr
               CKDM0030PackingMatMaster_List_CKDM0030PackingMatMaster:CKDM0030PackingMatMaster_List_CKDM0030PackingMatMaster,
               CKDM0030PackingMatMaster_List_PackingMatCM_PackingMatCM:CKDM0030PackingMatMaster_List_PackingMatCM_PackingMatCM,
               CKDM0040PackingStationMast_PACKINGSTATIONMASTERINQUIRY:CKDM0040PackingStationMast_PACKINGSTATIONMASTERINQUIRY,
-              CKDM0040PackingStationMast_Entry_PACKINGSTATIONMASTERMODIFY:CKDM0040PackingStationMast_Entry_PACKINGSTATIONMASTERMODIFY,
               CKDPARTSMASTERView_CKDPARTSMASTERView:CKDPARTSMASTERView_CKDPARTSMASTERView,
               CKDPARTSMASTERView_CKDPARTSMASTERList_CKDPARTSMASTERView:CKDPARTSMASTERView_CKDPARTSMASTERList_CKDPARTSMASTERView,
               CKDPARTSMASTERView_CKDPARTSMASTERList_CKDPARTSMASTER_CM_CKDPARTSMASTER_CM:CKDPARTSMASTERView_CKDPARTSMASTERList_CKDPARTSMASTER_CM_CKDPARTSMASTER_CM,
@@ -394,6 +398,9 @@ export const magicGenCmpsHash = {               ErrorScreen_ErrorScreen:ErrorScr
 };
 
 export const magicGenComponents = [
+	CKDM0040PackingStationMast_CKDM0040PackingStationMast,
+	CKDM0040PackingStationMast_PackingStationList_PACKINGSTATIONMASTERINQUIRY,
+	CKDM0040PackingStationMast_PackingStationList_Entry_PACKINGSTATIONMASTERMODIFY,
 	ErrorScreen_ErrorScreen,
 	SelectLotCode_SelectLotCode,
 	SelectLotCode_List_List,
@@ -540,7 +547,6 @@ export const magicGenComponents = [
 	CKDM0030PackingMatMaster_List_CKDM0030PackingMatMaster,
 	CKDM0030PackingMatMaster_List_PackingMatCM_PackingMatCM,
 	CKDM0040PackingStationMast_PACKINGSTATIONMASTERINQUIRY,
-	CKDM0040PackingStationMast_Entry_PACKINGSTATIONMASTERMODIFY,
 	CKDPARTSMASTERView_CKDPARTSMASTERView,
 	CKDPARTSMASTERView_CKDPARTSMASTERList_CKDPARTSMASTERView,
 	CKDPARTSMASTERView_CKDPARTSMASTERList_CKDPARTSMASTER_CM_CKDPARTSMASTER_CM,
