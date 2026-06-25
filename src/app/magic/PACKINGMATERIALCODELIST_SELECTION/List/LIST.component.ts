@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-PACKINGMATERIALCODELIST_SELECTION_List_LIST',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./List.component.css'],
     templateUrl: './LIST.component.html'
 })
 export class LIST extends BaseMatTableMagicComponent implements MagicModalInterface {

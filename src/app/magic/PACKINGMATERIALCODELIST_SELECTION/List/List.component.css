@@ -1,0 +1,21 @@
+.mat-header-row {
+    background: none;
+    background-color: #008080 ! important;
+    color: #ffffff;
+}
+
+.mat-mdc-cell:first-child {
+    flex: 0 0 30%;
+    padding-left: 2px;
+}
+.mat-mdc-header-cell:first-child {
+    flex: 0 0 30%;
+    padding-left: 2px;
+}
+
+/* .mat-mdc-cell:nth-child(3){
+   justify-content: flex-end;
+}
+.mat-mdc-header-cell:nth-child(3){
+   justify-content: flex-end;
+}  */
