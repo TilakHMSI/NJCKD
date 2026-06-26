@@ -1,0 +1,189 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PartNoList",
+		"window_type":	12,
+		"component_path":	"CKDZ007BrowseBomParts/BomPartsList/",
+		"module_name":	"",
+		"component_uniquename":	"CKDZ007BrowseBomParts_BomPartsList_PartNoList"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	441,
+		"height":	307
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	23,
+				"table_title_height":	20,
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	12,
+				"width":	424,
+				"height":	284
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"Part No.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	100
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_Part_No_v1",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	6,
+								"y":	34,
+								"width":	95,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"Part Name",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	160
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"BOMAB44_PT_NAM",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	106,
+								"y":	34,
+								"width":	155,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"Model Code",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	85
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Model_Code_p",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	266,
+								"y":	34,
+								"width":	60,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"Frame / Engine",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	62
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S1_EFM",
+								"mgformat":	"mgFormat",
+								"format":	"X",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	351,
+								"y":	34,
+								"width":	10,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

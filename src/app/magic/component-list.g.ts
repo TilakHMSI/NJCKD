@@ -193,10 +193,14 @@ import { ErrorScreen as ErrorScreen_ErrorScreen } from './ErrorScreen/ErrorScree
 import { CKDM0040PackingStationMast as CKDM0040PackingStationMast_CKDM0040PackingStationMast } from './CKDM0040PackingStationMast/CKDM0040PackingStationMast.component';
 import { PACKINGSTATIONMASTERINQUIRY as CKDM0040PackingStationMast_PackingStationList_PACKINGSTATIONMASTERINQUIRY } from './CKDM0040PackingStationMast/PackingStationList/PACKINGSTATIONMASTERINQUIRY.component';
 import { PACKINGSTATIONMASTERMODIFY as CKDM0040PackingStationMast_PackingStationList_Entry_PACKINGSTATIONMASTERMODIFY } from './CKDM0040PackingStationMast/PackingStationList/Entry/PACKINGSTATIONMASTERMODIFY.component';
+import { CKDZ007BrowseBomParts as CKDZ007BrowseBomParts_CKDZ007BrowseBomParts } from './CKDZ007BrowseBomParts/CKDZ007BrowseBomParts.component';
+import { PartNoList as CKDZ007BrowseBomParts_BomPartsList_PartNoList } from './CKDZ007BrowseBomParts/BomPartsList/PartNoList.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               CKDM0040PackingStationMast_CKDM0040PackingStationMast:CKDM0040PackingStationMast_CKDM0040PackingStationMast,
+export const magicGenCmpsHash = {               CKDZ007BrowseBomParts_CKDZ007BrowseBomParts:CKDZ007BrowseBomParts_CKDZ007BrowseBomParts,
+              CKDZ007BrowseBomParts_BomPartsList_PartNoList:CKDZ007BrowseBomParts_BomPartsList_PartNoList,
+                      CKDM0040PackingStationMast_CKDM0040PackingStationMast:CKDM0040PackingStationMast_CKDM0040PackingStationMast,
               CKDM0040PackingStationMast_PackingStationList_PACKINGSTATIONMASTERINQUIRY:CKDM0040PackingStationMast_PackingStationList_PACKINGSTATIONMASTERINQUIRY,
               CKDM0040PackingStationMast_PackingStationList_Entry_PACKINGSTATIONMASTERMODIFY:CKDM0040PackingStationMast_PackingStationList_Entry_PACKINGSTATIONMASTERMODIFY,
                       ErrorScreen_ErrorScreen:ErrorScreen_ErrorScreen,
@@ -396,6 +400,8 @@ export const magicGenCmpsHash = {               CKDM0040PackingStationMast_CKDM0
 };
 
 export const magicGenComponents = [
+	CKDZ007BrowseBomParts_CKDZ007BrowseBomParts,
+	CKDZ007BrowseBomParts_BomPartsList_PartNoList,
 	CKDM0040PackingStationMast_CKDM0040PackingStationMast,
 	CKDM0040PackingStationMast_PackingStationList_PACKINGSTATIONMASTERINQUIRY,
 	CKDM0040PackingStationMast_PackingStationList_Entry_PACKINGSTATIONMASTERMODIFY,

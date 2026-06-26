@@ -16,9 +16,8 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"CKDM0040PackingStationMast/CKDM0040PackingStationMast",
-				"CKDM0040PackingStationMast/PackingStationList/PACKINGSTATIONMASTERINQUIRY",
-				"CKDM0040PackingStationMast/PackingStationList/Entry/PACKINGSTATIONMASTERMODIFY"
+				"CKDZ007BrowseBomParts/CKDZ007BrowseBomParts",
+				"CKDZ007BrowseBomParts/BomPartsList/PartNoList"
 			]
 		}
 	],
