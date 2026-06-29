@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-CKDZ007BrowseBomParts_BomPartsList_PartNoList',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./PartNoList.component.css'],
     templateUrl: './PartNoList.component.html'
 })
 export class PartNoList extends BaseMatTableMagicComponent implements MagicModalInterface {

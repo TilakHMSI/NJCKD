@@ -413,6 +413,7 @@
 							"style":	null,
 							"props":	{
 								"id":	"PT_NAM",
+								"modifiable":	false,
 								"mgformat":	"mgFormat",
 								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 								"attribute":	"A",

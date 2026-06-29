@@ -64,35 +64,19 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                        <div class="input-group" *ngIf="mg.isRowInRowEditing(row)">
-                                            <input type="text" [formControlName]="mgc.WRK_CONT_CNTY"
-                                                class="form-control-sm" placeholder="Select Container"
-                                                [magic]="mgc.WRK_CONT_CNTY" [rowId]="row.rowId" mgFormat />
-                                            <div class="input-group-append">
-                                                <button type="button" class="btn btn-loanlist btn-icon-sm"
-                                                    [magic]="mgc.WRK_CONT_CNTY" [rowId]="row.rowId">
-                                                    <span class="svg-icon svg-icon-lg"><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-                                                            height="24px" viewBox="0 0 24 24" version="1.1">
-                                                            <g stroke="none" stroke-width="1" fill="none"
-                                                                fill-rule="evenodd">
-                                                                <rect x="0" y="0" width="24" height="24" />
-                                                                <path
-                                                                    d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
-                                                                    fill="#000000" fill-rule="nonzero" opacity="0.3" />
-                                                                <path
-                                                                    d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
-                                                                    fill="#000000" opacity="0.3" />
-                                                            </g>
-                                                        </svg></span></button>
-                                            </div>
-                                        </div>
+                                    <div>
+                                        <input style="width: 70%" [formControlName]="mgc.WRK_CONT_CNTY"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CONT_CNTY"
+                                            [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.WRK_CONT_CNTY [rowId]="row.rowId"> </mgError>
                                         <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CONT_CNTY"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.WRK_CONT_CNTY, row.rowId)
                                             }}
                                         </label>
+                                        <button class="btn-primary" style="min-width: auto; margin: auto" [magic]="mgc.WRK_CONT_CNTY"
+                                            [rowId]="row.rowId">...</button>
+                                    </div>
                                 </div>
                             </div>
                         </mat-cell>
@@ -142,20 +126,21 @@
         <div class="col-lg-12 col-xxl-12">
             <div class="form-group row">
                 <div class="col-lg-4">
-                    <div class="form-group-sm">
-                    </div>
+                   
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" [magic]="mgc.SaveCtrl"
+                        class="btn btn-primary font-weight-bold mt-10 btn-wdth">
+                        Save
+                    </button>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" [magic]="mgc.btnCancel"
+                        class="btn btn-secondary font-weight-bold mt-10 btn-wdth">
+                        Cancel
+                    </button>
                 </div>
                 <div class="col-lg-4">
-                    <div class="form-group-sm">
-                        <button type="button" [magic]="mgc.SaveCtrl"
-                            class="btn btn-primary font-weight-bold mt-10 btn-wdth">
-                            OK
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="form-group-sm">
-                    </div>
                 </div>
             </div>
         </div>

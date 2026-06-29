@@ -30,7 +30,7 @@ export class PARTSDETAILS extends BaseMatTableMagicComponent implements MagicMod
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "1100px";
+    private static readonly width: string = "1150px";
     private static readonly height: string = "700px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
