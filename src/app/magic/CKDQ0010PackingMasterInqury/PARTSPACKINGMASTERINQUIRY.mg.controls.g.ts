@@ -22,6 +22,7 @@ export enum MgControlName {
         DisplayPackingMaster = "DisplayPackingMaster",
         btnSearch = "btnSearch",
         btnexit = "btnexit",
+        vPartNo = "vPartNo",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -61,6 +62,10 @@ export class MgFormControlsAccessor {
 
     get Edit12(): FormControl {
         return this.fg.controls[MgControlName.Edit12] as FormControl;
+    }
+
+    get vPartNo(): FormControl {
+        return this.fg.controls[MgControlName.vPartNo] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

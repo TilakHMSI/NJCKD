@@ -1,60 +1,18 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"Column3",
-		"column_title":	"PAKING MATERIAL TYPE",
-		"is_table_child":	true,
-		"web_style":	2
+		"id":	"vPartNo",
+		"mgformat":	"mgFormat",
+		"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+		"attribute":	"A"
 	},
 	"coordinates":	{
-		"width":	261
+		"x":	260,
+		"y":	59,
+		"width":	59,
+		"height":	13
 	},
 	"hint":	null,
-	"controlType":	"K",
-	"children":	[
-		{
-			"style":	null,
-			"props":	{
-				"id":	"PM_TYPE",
-				"show_zoom_button":	true,
-				"mgformat":	"mgFormat",
-				"format":	"XXX",
-				"attribute":	"A",
-				"is_table_child":	true,
-				"web_style":	2,
-				"common_line_id":	"line99"
-			},
-			"coordinates":	{
-				"x":	11,
-				"y":	99,
-				"width":	28,
-				"height":	15
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"PK_TYPE_MAST_PK_TYPE_DESC",
-				"modifiable":	false,
-				"mgformat":	"mgFormat",
-				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-				"attribute":	"A",
-				"is_table_child":	true,
-				"web_style":	2,
-				"common_line_id":	"line99"
-			},
-			"coordinates":	{
-				"x":	46,
-				"y":	99,
-				"width":	218,
-				"height":	15
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		}
-	]
+	"controlType":	"T",
+	"children":	null
 }

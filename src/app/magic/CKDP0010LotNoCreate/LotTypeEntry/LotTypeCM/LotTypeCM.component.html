@@ -60,7 +60,7 @@
                                     <mgError [magic]=mgc.MTOCMST_MTMDN1> </mgError>
                                 </div>
                             </div>
-                             
+
                             <div class="col-lg-4">
                                 <div class="form-group-sm">
                                     <label>MODEL TYPE</label>
@@ -80,11 +80,15 @@
                             <div class="col-lg-4">
                                 <div class="form-group-sm">
                                     <label> QUANTITY</label>
-                                    <input class="form-control-ed" [formControlName]="mgc.KDPCMODLOT_KDPM_QTY" type='number'
-                                        [magic]="mgc.KDPCMODLOT_KDPM_QTY" mgFormat />
+                                    <input class="form-control-ed" [formControlName]="mgc.KDPCMODLOT_KDPM_QTY"
+                                        type='number' [magic]="mgc.KDPCMODLOT_KDPM_QTY" mgFormat />
+                                    <label class="text-secondary" [magic]="mgc.LOT_MQTY">
+                                        {{mg.getValue(mgc.LOT_MQTY) }}
+                                    </label>
                                     <mgError [magic]=mgc.KDPCMODLOT_KDPM_QTY> </mgError>
                                 </div>
-                            </div>                           
+                            </div>
+
                         </div>
                     </div>
 

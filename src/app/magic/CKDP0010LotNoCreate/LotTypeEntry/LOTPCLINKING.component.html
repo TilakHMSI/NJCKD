@@ -1,16 +1,6 @@
 <div novalidate [formGroup]="screenFormGroup">
-    <!--         
-<div
-            class="container-fluid d-flex align-items-center justify-content-sm-between justify-content-center flex-wrap flex-sm-nowrap">
-            <div class="d-flex align-items-center flex-wrap mr-1">
-                <div class="d-flex align-items-center ser-bt1">
-                    <div></div><button type="button" class="btn btn-sm btn-success mb-4" [magic]="mgc.btnAdd"
-                        *ngIf="mg.getVisible(mgc.btnAdd)==='visible'">
-                        <i class="flaticon-app mr-2"></i>Add
-                    </button>
-                </div>
-            </div>
-        </div> -->
+
+
     <div class="container-fluid-ov" [magic]="mgc.LOTPCLINKING">
         <div class="card">
             <div class="card-header">
@@ -24,6 +14,17 @@
                     </div>
                 </div>
             </div>
+            <!-- <div
+                class="container-fluid d-flex align-items-center justify-content-sm-between justify-content-center flex-wrap flex-sm-nowrap">
+                <div class="d-flex align-items-center flex-wrap mr-1">
+                    <div class="d-flex align-items-center ser-bt1">
+                        <div></div><button type="button" class="btn btn-sm btn-success mb-4" [magic]="mgc.btnAdd"
+                            *ngIf="mg.getVisible(mgc.btnAdd)==='visible'">
+                            <i class="flaticon-app mr-2"></i>Add
+                        </button>
+                    </div>
+                </div>
+            </div> -->
             <div class="m-tablewrapper pl-0 pr-0">
                 <div class="example-container mat-elevation-z8 Table2TableContainerProps">
                     <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear

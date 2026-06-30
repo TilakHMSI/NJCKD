@@ -44,12 +44,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-3">
                                 <div class="form-group-sm">
                                     <label>LOT DESCRIPTION</label>
                                     <input class="form-control" [formControlName]="mgc.LOT_MAST_LOT_DESC"
                                         [magic]="mgc.LOT_MAST_LOT_DESC" mgFormat />
                                     <mgError [magic]=mgc.LOT_MAST_LOT_DESC> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label>Part No</label>
+                                    <input class="form-control" [formControlName]="mgc.vPartNo"
+                                        placeholder="Search Part No" [magic]="mgc.vPartNo" mgFormat />
+                                    <mgError [magic]=mgc.vPartNo> </mgError>
                                 </div>
                             </div>
                             <div class="col-lg-2">

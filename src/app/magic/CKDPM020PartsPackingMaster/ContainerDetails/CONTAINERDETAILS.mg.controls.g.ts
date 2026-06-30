@@ -27,6 +27,7 @@ export enum MgControlName {
         btnNext = "btnNext",
         SaveCtrl = "SaveCtrl",
         btnCancel = "btnCancel",
+        btnDelete = "btnDelete",
 }
 export enum MgCustomProperties {}
 export var

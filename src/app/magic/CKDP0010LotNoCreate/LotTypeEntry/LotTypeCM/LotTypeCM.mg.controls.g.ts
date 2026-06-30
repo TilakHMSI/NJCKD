@@ -20,6 +20,9 @@ export enum MgControlName {
         Label24 = "Label24",
         KDPCMODLOT_KDPM_QTY = "KDPCMODLOT_KDPM_QTY",
         btnSave = "btnSave",
+        LOT_MQTY = "LOT_MQTY",
+        LOT_MAST_LOT_MDCD = "LOT_MAST_LOT_MDCD",
+        LOT_MAST_LOT_MQTY = "LOT_MAST_LOT_MQTY",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -49,6 +52,17 @@ export class MgFormControlsAccessor {
         return this.fg.controls[MgControlName.KDPCMODLOT_KDPM_QTY] as FormControl;
     }
 
+    get LOT_MQTY(): FormControl {
+        return this.fg.controls[MgControlName.LOT_MQTY] as FormControl;
+    }
+
+    get LOT_MAST_LOT_MDCD(): FormControl {
+        return this.fg.controls[MgControlName.LOT_MAST_LOT_MDCD] as FormControl;
+    }
+
+    get LOT_MAST_LOT_MQTY(): FormControl {
+        return this.fg.controls[MgControlName.LOT_MAST_LOT_MQTY] as FormControl;
+    }
     getTableChildFormControl(name: MgControlName): FormControl {
         return this.magicServices.mgAccessorService.getFormGroupByRow(this.magicServices.tableService.getSelectedRow()).controls[name] as FormControl;
     }
