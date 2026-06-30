@@ -16,8 +16,7 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"CKDQ0010PackingMasterInqury/PARTSPACKINGMASTERINQUIRY",
-				"CKDQ0010PackingMasterInqury/DisplayPackingMaster/DisplayPackingMaster"
+				"WebClientPassDetails/WebClientPassDetails"
 			]
 		}
 	],

@@ -1,0 +1,236 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.WebClientPassDetails"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table1TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="container_border"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        [magic]="mgc.Column11"
+                        [matColumnDef]="mgc.Column11"
+                    >
+                        <mat-header-cell
+                            *matHeaderCellDef
+                            mat-sort-header
+                        >
+                            USERID
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.PassDetails_USERID"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PassDetails_USERID"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.PassDetails_USERID
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PassDetails_USERID"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.PassDetails_USERID, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column12"
+                        [matColumnDef]="mgc.Column12"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            EXPIRYDATE
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div
+                                        *ngIf="mg.isRowInRowEditing(row)"
+                                        style="display: flex; flex-direction: row"
+                                    >
+                                        <input
+                                            type="date"
+                                            [formControlName]="mgc.PassDetails_EXPIRYDATE"
+                                            [magic]="mgc.PassDetails_EXPIRYDATE"
+                                            [rowId]="row.rowId"
+                                            dateInput
+                                        />
+                                    </div>
+                                    <label
+                                        *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.PassDetails_EXPIRYDATE"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue(mgc.PassDetails_EXPIRYDATE, row.rowId)
+| magicDate : mgc.PassDetails_EXPIRYDATE}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column13"
+                        [matColumnDef]="mgc.Column13"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            FAILLOGONATTEMPTS
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.PassDetails_FAILLOGONATTEMPTS"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            type='number'
+                                            [magic]="mgc.PassDetails_FAILLOGONATTEMPTS"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.PassDetails_FAILLOGONATTEMPTS
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PassDetails_FAILLOGONATTEMPTS"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.PassDetails_FAILLOGONATTEMPTS, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column15"
+                        [matColumnDef]="mgc.Column15"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    [magic]="mgc.btnRemovePasswords"
+                                    [rowId]="row.rowId"
+                                >
+                                    Remove
+                                </button>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column16"
+                        [matColumnDef]="mgc.Column16"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    *ngIf="!mg.isRowInRowEditing(row)"
+                                    [magic]="mgc.EnterRowEditing"
+                                    [rowId]="row.rowId"
+                                >
+                                    Edit
+                                </button>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    *ngIf="mg.isRowInRowEditing(row)"
+                                    [magic]="mgc.SaveRowEditing"
+                                    [rowId]="row.rowId"
+                                >
+                                    Save
+                                </button>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    *ngIf="mg.isRowInRowEditing(row)"
+                                    [magic]="mgc.CancelRowEditing"
+                                    [rowId]="row.rowId"
+                                >
+                                    Cancel
+                                </button>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div>
+        </div>
+    </div>
+</div>
