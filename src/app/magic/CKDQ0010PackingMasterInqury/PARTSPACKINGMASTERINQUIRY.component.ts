@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { FormGroup } from "@angular/forms";
+import { FormControl, FormGroup } from "@angular/forms";
 import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./PARTSPACKINGMASTERINQUIRY.mg.controls.g";
 
 
@@ -63,4 +63,46 @@ export class PARTSPACKINGMASTERINQUIRY extends TaskBaseMagicComponent implements
     IsMovable() {
         return PARTSPACKINGMASTERINQUIRY.isMovable;
     }
+
+    override ngOnInit(): void {
+  super.ngOnInit();
+
+  const ctrl = this.screenFormGroup?.get('vBlob64base') as FormControl | null;
+
+  if (ctrl) {
+    ctrl.valueChanges.subscribe(() => this.onChangeBlob());
+  }
+}
+
+private onChangeBlob(): void {
+  const base64 = this.mg.getValue('vBlob64base');
+  
+  if (base64 !== undefined && base64 !== null && base64 !== '') {
+    this.downloadblb2();
+  }
+}
+
+private downloadblb2(): void {
+  const base64 = this.mg.getValue('vBlob64base');
+
+  if (base64 === undefined || base64 === null || base64 === '') {
+    return;
+  }
+
+  const byteCharacters = atob(base64);
+  const byteNumbers = Array.from(byteCharacters, c => c.charCodeAt(0));
+  const byteArray = new Uint8Array(byteNumbers);
+  const fileBlob = new Blob([byteArray]);
+
+  if (fileBlob.size > 0) {
+    const filename = this.mg.getValue(this.mgc.vFileName) || 'download.bin';
+    const url = window.URL.createObjectURL(fileBlob);
+    const a = document.createElement('a');
+
+    a.href = url;
+    a.download = filename;
+    a.click();
+    window.URL.revokeObjectURL(url);
+  }
+}
 }
