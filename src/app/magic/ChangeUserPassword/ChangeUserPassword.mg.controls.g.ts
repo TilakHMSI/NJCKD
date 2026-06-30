@@ -19,6 +19,7 @@ export enum MgControlName {
         imgConfirm = "imgConfirm",
         ChangeBtn = "ChangeBtn",
         CancelBtn = "CancelBtn",
+        ErrorMsg="ErrorMsg"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

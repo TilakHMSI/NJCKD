@@ -1,61 +1,4 @@
-<!-- <div novalidate [formGroup]="screenFormGroup">
-    <div style="display: flex; flex-direction: column" [magic]="mgc.PACKINGDATAMENU">
-        <div style="display: flex; flex-direction: row">
-            <div *ngIf="mg.isImageExists(mgc.Image1)">
-                <img [magic]="mgc.Image1" [src]="mg.getImage(mgc.Image1)" />
-            </div>
-            <label [magic]="mgc.Edit3">
-                {{mg.getValue(mgc.Edit3)
-                | magicDate : mgc.Edit3}}
-            </label>
-            <label [magic]="mgc.Edit2">
-                {{mg.getValue(mgc.Edit2) }}
-            </label>
-            <label [magic]="mgc.Edit4">
-                {{mg.getValue(mgc.Edit4)
-                | magicTime : mgc.Edit4}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Edit5">
-                {{mg.getValue(mgc.Edit5) }}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.btnexit">
-                Back
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Label6" class="lable_overflow">
-            </label>
-            <button [magic]="mgc.btn_1_PC_Lot_Generation_v">
-                {{mg.getValue(mgc.btn_1_PC_Lot_Generation_v)}}
-            </button>
-            <button [magic]="mgc.btn_2_Packing_Data_Generation_v">
-                {{mg.getValue(mgc.btn_2_Packing_Data_Generation_v)}}
-            </button>
-            <button [magic]="mgc.btn_3_Packing_Data_Inquriy_v">
-                {{mg.getValue(mgc.btn_3_Packing_Data_Inquriy_v)}}
-            </button>
-            <button [magic]="mgc.btn_4_Case_Packing_Schedule_Entrv"
-                [style.visibility]="mg.getVisible(mgc.btn_4_Case_Packing_Schedule_Entrv)">
-                {{mg.getValue(mgc.btn_4_Case_Packing_Schedule_Entrv)}}
-            </button>
-            <button [magic]="mgc.btn_5_Case_Packing_Approval_v"
-                [style.visibility]="mg.getVisible(mgc.btn_5_Case_Packing_Approval_v)">
-                {{mg.getValue(mgc.btn_5_Case_Packing_Approval_v)}}
-            </button>
-            <button [magic]="mgc.btn_6_DCN_Updation_v">
-                {{mg.getValue(mgc.btn_6_DCN_Updation_v)}}
-            </button>
-            <button [magic]="mgc.btn_7_Bangladesh_Lot_Scanning_v"
-                [style.visibility]="mg.getVisible(mgc.btn_7_Bangladesh_Lot_Scanning_v)">
-                {{mg.getValue(mgc.btn_7_Bangladesh_Lot_Scanning_v)}}
-            </button>
-        </div>
-    </div>
-</div> -->
+
 
 <div novalidate [formGroup]="screenFormGroup">
     <div class="container-fluid-ov" [magic]="mgc.PACKINGDATAMENU">
@@ -67,14 +10,6 @@
                         </label></h3>
 
                     <div class="d-flex align-items-center">
-                        <!-- <label [magic]="mgc.Edit6" class="mb-0 mr-3">
-                            {{mg.getValue(mgc.Edit6)
-                            | magicDate : mgc.Edit6}}
-                        </label>
-                        <label [magic]="mgc.Edit7" class="mb-0 mr-3">
-                            {{mg.getValue(mgc.Edit7)
-                            | magicTime : mgc.Edit7}}
-                        </label> -->
                         <button type="button" [magic]="mgc.btnexit"
                             class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
                     </div>
