@@ -207,7 +207,7 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input type="checkbox" id="WRK_CART_CREG_{{row.rowId}}"
+                                    <input type="checkbox" id="WRK_CART_CREG_{{row.rowId}}" 
                                         [formControlName]="mgc.WRK_CART_CREG" [magic]="mgc.WRK_CART_CREG"
                                         [rowId]="row.rowId" />
                                 </div>

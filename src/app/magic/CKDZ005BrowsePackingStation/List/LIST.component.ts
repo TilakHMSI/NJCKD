@@ -14,7 +14,6 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-CKDZ005BrowsePackingStation_List_LIST',
     providers: [...matMagicProviders],
     standalone: false,
-    styleUrls: ['./List.component.css'],
     templateUrl: './LIST.component.html'
 })
 export class LIST extends BaseMatTableMagicComponent implements MagicModalInterface {
@@ -27,14 +26,14 @@ export class LIST extends BaseMatTableMagicComponent implements MagicModalInterf
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "LIST";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "500px";
+    private static readonly height: string = "550px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
-    private static readonly isResizable: boolean = true;
+    private static readonly isResizable: boolean = false;
     private static readonly isMovable: boolean = true;
     X() {
         return LIST.x;

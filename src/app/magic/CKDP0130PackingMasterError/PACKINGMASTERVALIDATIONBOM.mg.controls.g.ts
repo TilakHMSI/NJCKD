@@ -8,9 +8,11 @@ import {
 export enum MgControlName {
     PACKINGMASTERVALIDATIONBOM = "PACKINGMASTERVALIDATIONBOM",
         Image1 = "Image1",
+        vBlob64Base = "vBlob64Base",
         Edit3 = "Edit3",
         Edit2 = "Edit2",
         Edit4 = "Edit4",
+        vFileName = "vFileName",
         Edit5 = "Edit5",
         btnexit = "btnexit",
         Label7 = "Label7",
@@ -24,6 +26,10 @@ export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
+    get vBlob64Base(): FormControl {
+        return this.fg.controls[MgControlName.vBlob64Base] as FormControl;
+    }
+
     get Edit3(): FormControl {
         return this.fg.controls[MgControlName.Edit3] as FormControl;
     }
@@ -34,6 +40,10 @@ export class MgFormControlsAccessor {
 
     get Edit4(): FormControl {
         return this.fg.controls[MgControlName.Edit4] as FormControl;
+    }
+
+    get vFileName(): FormControl {
+        return this.fg.controls[MgControlName.vFileName] as FormControl;
     }
 
     get Edit5(): FormControl {

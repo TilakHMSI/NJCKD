@@ -14,7 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-CKDZ003BrowseCaseType_List_CARTONTYPELIST',
     providers: [...matMagicProviders],
     standalone: false,
-    styleUrls: ['./List.component.css'],
+    styleUrls: ['./CARTONTYPELIST.component.css'],
     templateUrl: './CARTONTYPELIST.component.html'
 })
 export class CARTONTYPELIST extends BaseMatTableMagicComponent implements MagicModalInterface {
