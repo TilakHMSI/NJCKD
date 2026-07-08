@@ -53,11 +53,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-lg-2" *ngIf="mg.getVisible(mgc.Lot_No_v)==='visible'">
                             <div class="form-group">
                                 <label>Lot No</label>
                                 <div class="input-group">
-                                    <input type="text" [formControlName]="mgc.Lot_No_v" [magic]="mgc.Lot_No_v"
+                                    <input type="text" [formControlName]="mgc.Lot_No_v" [magic]="mgc.Lot_No_v" 
                                         class="form-control" placeholder="SELECT Lot NO" mgFormat />
                                     <div class="input-group-append">
                                         <button type="button" class="btn btn-loanlist btn-icon" [magic]="mgc.Lot_No_v">
@@ -85,7 +85,7 @@
                                     class="form-control" mgFormat />
                             </div>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-lg-3">
                             <div class="form-group-sm">
                                 <label>. </label>
                                 <input type="text" [formControlName]="mgc.DSTBMST_DS_DSENAM"

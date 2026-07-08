@@ -29,7 +29,7 @@ export class VPRDS013SUCCESS extends TaskBaseMagicComponent implements MagicModa
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";
-    private static readonly height: string = "200px";
+    private static readonly height: string = "230px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
