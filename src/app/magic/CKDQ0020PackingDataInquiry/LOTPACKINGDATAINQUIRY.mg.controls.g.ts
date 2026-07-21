@@ -29,6 +29,7 @@ export enum MgControlName {
         PKD_LTID_PKD_MDOP = "PKD_LTID_PKD_MDOP",
         Part_Detail_v = "Part_Detail_v",
         DisplayPackData = "DisplayPackData",
+        vPartNo="vPartNo"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

@@ -30,6 +30,7 @@ export enum MgControlName {
         PKD_LTID_PKD_MDOP = "PKD_LTID_PKD_MDOP",
         ScheduleApproval = "ScheduleApproval",
         btnexit = "btnexit",
+        Btn_View="Btn_View"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

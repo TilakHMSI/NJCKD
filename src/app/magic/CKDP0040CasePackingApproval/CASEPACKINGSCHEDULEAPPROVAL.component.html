@@ -71,6 +71,15 @@
                                 <input type="date" class="form-control-ed" [formControlName]="mgc.Date_v" [magic]="mgc.Date_v" dateInput />
                             </div>
                         </div>
+                             <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label>.</label>
+                                    <button type="button" [magic]="mgc.Btn_View"
+                                        class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                        View
+                                    </button>
+                                </div>
+                            </div>
                         <div class="col-lg-2">
                             <div class="form-group-sm">
                                 <label>Dist </label>
@@ -93,9 +102,9 @@
                                 <mgError [magic]=mgc.PKD_LTID_PKD_MDCD> </mgError>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-2">
                             <div class="form-group-sm">
-                                <label>MODEL DESCRIPTION</label>
+                                <label> DESCRIPTION</label>
                                 <input class="form-control-ed" [formControlName]="mgc.MTOCMST_MTMDN1"
                                     [magic]="mgc.MTOCMST_MTMDN1" mgFormat />
                                 <mgError [magic]=mgc.MTOCMST_MTMDN1> </mgError>

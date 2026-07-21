@@ -45,7 +45,7 @@ export var
         'Column9',
         'Column10',
         'Column11',
-        'Column24',
+        
     ];
 
 export class MgFormControlsAccessor {

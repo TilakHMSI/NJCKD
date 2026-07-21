@@ -65,6 +65,14 @@
                                 </div>
                             </div>
                         </div>
+                          <div class="col-lg-2">
+                            <div class="form-group-sm">
+                                <label style="width: 100%;">Part No. </label>
+                                 <input class="form-control-ed" [formControlName]="mgc.vPartNo"
+                                    [magic]="mgc.vPartNo" mgFormat />
+                                <mgError [magic]=mgc.vPartNo> </mgError>
+                            </div>
+                        </div>
                         <div class="col-lg-2">
                             <div class="form-group-sm">
                                 <label>Dist </label>
@@ -119,6 +127,7 @@
                                     [magic]="mgc.Part_Detail_v" [style.visibility]="mg.getVisible(mgc.Part_Detail_v)" />
                             </div>
                         </div>
+                         
                     </div>
                 </div>
             </div>
