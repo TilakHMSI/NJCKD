@@ -19,20 +19,22 @@
     flex: 0 0 20%;
 } 
  .mat-mdc-cell:nth-child(6){
-  flex: 0 0 20%;
+  flex: 0 0 18%;
 }
 .mat-mdc-header-cell:nth-child(6){
-  flex: 0 0 20%;
+  flex: 0 0 18%;
 }
  .mat-mdc-cell:nth-child(7){
-  flex: 0 0 8%;
+  flex: 0 0 7%;
 }
 .mat-mdc-header-cell:nth-child(7){
-  flex: 0 0 8%;
+  flex: 0 0 7%;
 }
 .mat-mdc-cell:nth-child(8){
+  flex: 0 0 15%;
    justify-content: flex-end;
 }
 .mat-mdc-header-cell:nth-child(8){
+  flex: 0 0 15%;
    justify-content: flex-end;
 } 

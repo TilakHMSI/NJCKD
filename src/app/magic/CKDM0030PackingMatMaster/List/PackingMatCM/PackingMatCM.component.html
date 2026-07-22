@@ -29,7 +29,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group-sm">
-                                    <label>.</label>
+                                    <label>MATERIAL CODE</label>
                                     <input class="form-control-ed" [formControlName]="mgc.CODE" [magic]="mgc.CODE"
                                         mgFormat />
                                     <mgError [magic]=mgc.CODE> </mgError>
@@ -37,7 +37,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group-sm">
-                                    <label>.</label>
+                                    <label>DESCRIPTIOIN</label>
                                     <input class="form-control-ed" [formControlName]="mgc.DESC" [magic]="mgc.DESC"
                                         mgFormat />
                                     <mgError [magic]=mgc.DESC> </mgError>
@@ -51,6 +51,14 @@
                                     <mgError [magic]=mgc.LENG> </mgError>
                                 </div>
                             </div>
+                                <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label> WIDTH (In MM)</label>
+                                    <input class="form-control-ed" [formControlName]="mgc.WIDT" type='number'
+                                        [magic]="mgc.WIDT" mgFormat />
+                                    <mgError [magic]=mgc.WIDT> </mgError>
+                                </div>
+                            </div>
                             <div class="col-lg-6">
                                 <div class="form-group-sm">
                                     <label> HEIGHT (In MM)</label>
@@ -59,14 +67,7 @@
                                     <mgError [magic]=mgc.HEIG> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="form-group-sm">
-                                    <label> WIDTH (In MM)</label>
-                                    <input class="form-control-ed" [formControlName]="mgc.WIDT" type='number'
-                                        [magic]="mgc.WIDT" mgFormat />
-                                    <mgError [magic]=mgc.WIDT> </mgError>
-                                </div>
-                            </div>
+                        
                             <div class="col-lg-6">
                                 <div class="form-group-sm">
                                     <label> WEIGHT (In GM)</label>

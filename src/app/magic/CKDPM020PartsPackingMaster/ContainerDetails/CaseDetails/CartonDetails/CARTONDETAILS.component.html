@@ -224,6 +224,12 @@
                                     <i class="icon-xl far fa-edit text-info" aria-hidden="true"></i>
                                 </button>
                             </div>
+                              <!-- <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <button class="btn-tbl" [magic]="mgc.btnDelete" 
+                                 [rowId]="row.rowId">
+                                    <i class="icon-xl fas fa-trash text-danger" aria-hidden="true"></i>
+                                </button>
+                            </div> -->
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.SaveRowEditing"
                                     [rowId]="row.rowId">
