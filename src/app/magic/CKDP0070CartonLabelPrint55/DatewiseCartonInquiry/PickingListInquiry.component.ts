@@ -12,7 +12,8 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-CKDP0070CartonLabelPrint55_DatewiseCartonInquiry_PickingListInquiry',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './PickingListInquiry.component.html'
+    templateUrl: './PickingListInquiry.component.html',
+    styleUrls: ['./PickingListInquiry.component.css'],
 })
 export class PickingListInquiry extends BaseMatTableMagicComponent {
 

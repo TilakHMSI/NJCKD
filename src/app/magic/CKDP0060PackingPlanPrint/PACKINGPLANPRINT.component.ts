@@ -27,8 +27,8 @@ export class PACKINGPLANPRINT extends TaskBaseMagicComponent implements MagicMod
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "850px";
-    private static readonly height: string = "600px";
+    private static readonly width: string = "1100px";
+    private static readonly height: string = "700px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;

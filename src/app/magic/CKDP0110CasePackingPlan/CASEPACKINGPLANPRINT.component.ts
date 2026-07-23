@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-CKDP0110CasePackingPlan_CASEPACKINGPLANPRINT',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './CASEPACKINGPLANPRINT.component.html'
+    templateUrl: './CASEPACKINGPLANPRINT.component.html',
+    
 })
 export class CASEPACKINGPLANPRINT extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -27,8 +28,8 @@ export class CASEPACKINGPLANPRINT extends TaskBaseMagicComponent implements Magi
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "850px";
-    private static readonly height: string = "600px";
+    private static readonly width: string = "1100px";
+    private static readonly height: string = "700px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;

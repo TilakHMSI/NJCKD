@@ -12,7 +12,8 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-CKDR0010PMRequiredRepor_CartonTypes_CartonTypes',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './CartonTypes.component.html'
+    templateUrl: './CartonTypes.component.html',
+    styleUrls: ['./CartonTypes.component.css'],
 })
 export class CartonTypes extends BaseMatTableMagicComponent {
 
