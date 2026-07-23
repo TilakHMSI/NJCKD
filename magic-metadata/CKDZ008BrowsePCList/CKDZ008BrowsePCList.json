@@ -55,8 +55,8 @@
 			"style":	null,
 			"props":	{
 				"id":	"vSearch",
-				"mgformat":	"mgFormat",
-				"format":	"XXXXXXXXXXXXXXXXXXXX",
+				"mask":	"mask",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
 				"attribute":	"A",
 				"common_line_id":	"line20"
 			},

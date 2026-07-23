@@ -1,16 +1,17 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"vPartNo",
-		"mgformat":	"mgFormat",
-		"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+		"id":	"PC_No_v",
+		"show_zoom_button":	true,
+		"mask":	"mask",
+		"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
 		"attribute":	"A"
 	},
 	"coordinates":	{
-		"x":	260,
-		"y":	59,
-		"width":	59,
-		"height":	13
+		"x":	185,
+		"y":	80,
+		"width":	61,
+		"height":	15
 	},
 	"hint":	null,
 	"controlType":	"T",

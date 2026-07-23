@@ -17,8 +17,8 @@
                 <div class="col-lg-12 px-0">
                     <div class="form-group row">
                         <div class="col-lg-6 col-sm-6">
-                            <input class="form-control" [formControlName]="mgc.vSearch" [magic]="mgc.vSearch"
-                                placeholder="Search by PC No" mgFormat />
+                            <input type="text" [formControlName]="mgc.vSearch" [magic]="mgc.vSearch" [mask]="mg.getAlphaMask(mgc.vSearch)" [showMaskTyped]='true'
+                            class="form-control" placeholder="Search by PC No" mgFormat />
                             <mgError [magic]=mgc.vSearch> </mgError>
                         </div>
                     </div>

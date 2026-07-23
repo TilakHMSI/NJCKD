@@ -8,8 +8,8 @@ import {
 export enum MgControlName {
     PARTPICKINGLISTPRINT = "PARTPICKINGLISTPRINT",
         Image1 = "Image1",
-        Edit3 = "Edit3",
         Edit2 = "Edit2",
+        Edit3 = "Edit3",
         Edit4 = "Edit4",
         Edit5 = "Edit5",
         btnexit = "btnexit",
@@ -28,10 +28,6 @@ export class MgFormControlsAccessor {
 
     get Edit3(): FormControl {
         return this.fg.controls[MgControlName.Edit3] as FormControl;
-    }
-
-    get Edit2(): FormControl {
-        return this.fg.controls[MgControlName.Edit2] as FormControl;
     }
 
     get Edit4(): FormControl {

@@ -12,16 +12,16 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/CKDPM020PartsPackingMaster/ContainerDetails/CaseDetails/CartonDetails/PartDetails/PARTSDETAILS.json
+[>] Loading JSON file .//magic-metadata/CKDP0050PickingListPrint/PARTPICKINGLISTPRINT.json
 *** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component PARTSDETAILS
+[>] Processing JSON file for component PARTPICKINGLISTPRINT
 *** Step 3: generate components. (1 components) ***
-[>] generate component PARTSDETAILS
+[>] generate component PARTPICKINGLISTPRINT
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/CKDPM020PartsPackingMaster/ContainerDetails/CaseDetails/CartonDetails/PartDetails/PARTSDETAILS.mg.controls.g.ts (4627 bytes)
-[36mUPDATE[39m src/app/magic/CKDPM020PartsPackingMaster/ContainerDetails/CaseDetails/CartonDetails/PartDetails/PARTSDETAILS.component.ts (2303 bytes)
-[36mUPDATE[39m src/app/magic/CKDPM020PartsPackingMaster/ContainerDetails/CaseDetails/CartonDetails/PartDetails/PARTSDETAILS.component.html (26244 bytes)
+[36mUPDATE[39m src/app/magic/CKDP0050PickingListPrint/PARTPICKINGLISTPRINT.mg.controls.g.ts (1819 bytes)
+[36mUPDATE[39m src/app/magic/CKDP0050PickingListPrint/PARTPICKINGLISTPRINT.component.ts (2197 bytes)
+[36mUPDATE[39m src/app/magic/CKDP0050PickingListPrint/PARTPICKINGLISTPRINT.component.html (3256 bytes)
 
 
 
