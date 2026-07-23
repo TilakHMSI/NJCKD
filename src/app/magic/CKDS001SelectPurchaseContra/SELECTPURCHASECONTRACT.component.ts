@@ -14,7 +14,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-CKDS001SelectPurchaseContra_SELECTPURCHASECONTRACT',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './SELECTPURCHASECONTRACT.component.html'
+    templateUrl: './SELECTPURCHASECONTRACT.component.html',
+    styleUrls: ['./SELECTPURCHASECONTRACT.component.css'],
 })
 export class SELECTPURCHASECONTRACT extends BaseMatTableMagicComponent implements MagicModalInterface {
 
@@ -29,7 +30,7 @@ export class SELECTPURCHASECONTRACT extends BaseMatTableMagicComponent implement
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "600px";
+    private static readonly width: string = "700px";
     private static readonly height: string = "500px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
