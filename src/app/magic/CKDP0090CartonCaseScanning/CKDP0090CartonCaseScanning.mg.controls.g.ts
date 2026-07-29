@@ -49,7 +49,9 @@ export enum MgControlName {
         PKD_LTID_PKD_MDTY = "PKD_LTID_PKD_MDTY",
         PKD_LTID_PKD_MDOP = "PKD_LTID_PKD_MDOP",
         vBlob64base="vBlob64base",
-        vFileName="vFileName"
+        vFileName="vFileName",
+        vWeightCheck="vWeightCheck",
+        Btn_Exe="Btn_Exe"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

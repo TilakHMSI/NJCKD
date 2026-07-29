@@ -30,9 +30,17 @@ export enum MgControlName {
         btn_9_Import_PC_Detail_v = "btn_9_Import_PC_Detail_v",
         btnexit = "btnexit",
         Label13 = "Label13",
+        Btn_EXECall="Btn_EXECall",
+        Edit13="Edit13",
+        vWeight="vWeight"
+        
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
+    formGroup: any;
+    get(Edit1: MgControlName) {
+        throw new Error('Method not implemented.');
+    }
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
     get V_Bom_User_v(): FormControl {
@@ -70,4 +78,5 @@ export class MgFormControlsAccessor {
     getTableChildFormControl(name: MgControlName): FormControl {
         return this.magicServices.mgAccessorService.getFormGroupByRow(this.magicServices.tableService.getSelectedRow()).controls[name] as FormControl;
     }
+    
 }

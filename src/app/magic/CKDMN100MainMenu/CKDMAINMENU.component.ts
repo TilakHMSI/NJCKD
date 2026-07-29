@@ -1,66 +1,89 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
+
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./CKDMAINMENU.mg.controls.g";
 
-
-import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
-
-
-import { MagicModalInterface } from "@magic-xpa/angular";
+import { TaskBaseMagicComponent, magicProviders, MagicServices } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-CKDMN100MainMenu_CKDMAINMENU',
+
+    selector: 'mga-CKDMAINMENU_CKDMAINMENU',
+
     providers: [...magicProviders],
+
     standalone: false,
+
     templateUrl: './CKDMAINMENU.component.html'
+
 })
-export class CKDMAINMENU extends TaskBaseMagicComponent implements MagicModalInterface {
+
+export class CKDMAINMENU extends TaskBaseMagicComponent {
 
     mgc = MgControlName;
+
     mgcp = MgCustomProperties;
+
     mgfc!: MgFormControlsAccessor;
+
+    weightValue: string = '';
+
+    constructor(
+
+        ref: ChangeDetectorRef,
+
+        magicServices: MagicServices,
+
+        private http: HttpClient
+
+    ) {
+
+        super(ref, magicServices);
+
+    }
+
     override createFormControlsAccessor(formGroup: FormGroup) {
+
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
+
     }
-    private static readonly formName: string = "CKDMAINMENU";
-    private static readonly showTitleBar: boolean = true;
-    private static readonly x: number = 0;
-    private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
-    private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = false;
-    private static readonly isResizable: boolean = true;
-    private static readonly isMovable: boolean = true;
-    X() {
-        return CKDMAINMENU.x;
+
+    openApp() {
+
+        const url = 'http://127.0.0.1:8000/open-app';
+
+        const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+
+        this.http.post<any>(url, { app_name: 'xpa' }, { headers }).subscribe({
+
+            next: (res) => {
+
+                console.log('API response:', res);
+
+                const raw = (res?.weight || '').toString();
+                const parts = raw.split('|');
+                this.weightValue = parts.length > 1 ? parts[1].trim() : raw.trim();
+                this.mg.setValueToControl('vWeight', this.weightValue);
+            },
+
+            error: (err) => {
+
+                console.error('Error:', err);
+
+                this.weightValue = '';
+
+            }
+
+        });
+
     }
-    Y() {
-        return CKDMAINMENU.y;
+
+    onOpenClick() {
+
+        this.openApp();
+
     }
-    Width(): string {
-        return CKDMAINMENU.width;
-    }
-    Height(): string {
-        return CKDMAINMENU.height;
-    }
-    IsCenteredToWindow() {
-        return CKDMAINMENU.isCenteredToWindow;
-    }
-    FormName() {
-        return CKDMAINMENU.formName;
-    }
-    ShowTitleBar() {
-        return CKDMAINMENU.showTitleBar;
-    }
-    ShouldCloseOnBackgroundClick() {
-        return CKDMAINMENU.shouldCloseOnBackgroundClick;
-    }
-    IsResizable() {
-        return CKDMAINMENU.isResizable;
-    }
-    IsMovable() {
-        return CKDMAINMENU.isMovable;
-    }
+
 }
