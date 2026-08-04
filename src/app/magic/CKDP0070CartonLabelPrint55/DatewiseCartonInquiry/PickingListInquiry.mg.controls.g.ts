@@ -35,7 +35,8 @@ export enum MgControlName {
         vBlob64base="vBlob64base",
         vFileName="vFileName",
         vBlob64base1="vBlob64base1",
-        vFileName1="vFileName1"
+        vFileName1="vFileName1",
+        SelectImg="SelectImg"
 }
 export enum MgCustomProperties {}
 export var

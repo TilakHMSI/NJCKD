@@ -5,7 +5,7 @@
             <div class="example-container mat-elevation-z8 Table2TableContainerProps">
                 <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
                     (matSortChange)="tableService.sortData($event)">
-                    <ng-container [magic]="mgc.Column3" [matColumnDef]="mgc.Column3">
+                    <!-- <ng-container [magic]="mgc.Column3" [matColumnDef]="mgc.Column3">
                         <mat-header-cell *matHeaderCellDef>
                             
                         </mat-header-cell>
@@ -25,7 +25,20 @@
                                 </div>
                             </div>
                         </mat-cell>
-                    </ng-container>
+                    </ng-container> -->
+                        <ng-container [magic]="mgc.Column3" [matColumnDef]="mgc.Column3">
+                            <mat-header-cell *matHeaderCellDef>
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                                <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                    <div *ngIf="mg.isImageExists(mgc.SelectImg)">
+                                        <img style="width: 1.5vw!important;" [magic]="mgc.SelectImg" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.SelectImg, row.rowId)"
+                                            [src]="mg.getImage(mgc.SelectImg, row.rowId)" />
+                                    </div>
+                                </div>
+                            </mat-cell>
+                        </ng-container>
                     <ng-container [magic]="mgc.Column4" [matColumnDef]="mgc.Column4">
                         <mat-header-cell *matHeaderCellDef>
                             Pc No
