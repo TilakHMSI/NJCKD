@@ -140,9 +140,10 @@ export class CKDP0090CartonCaseScanning extends TaskBaseMagicComponent implement
         console.log('API response:', res);
 
         const raw = (res?.weight || '').toString();
-        const parts = raw.split('|');
-        this.weightValue = parts.length > 1 ? parts[1].trim() : raw.trim();
-        this.mg.setValueToControl('Case__Carton_Weight_v', this.weightValue);
+        // const parts = raw.split('|');
+                // this.weightValue = parts.length > 1 ? parts[1].trim() : raw.trim();
+                this.weightValue = raw.slice(1); 
+                this.mg.setValueToControl('Case__Carton_Weight_v', this.weightValue);
       },
 
       error: (err: any) => {
