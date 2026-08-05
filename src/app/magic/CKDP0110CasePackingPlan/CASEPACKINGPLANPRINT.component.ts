@@ -29,7 +29,7 @@ export class CASEPACKINGPLANPRINT extends TaskBaseMagicComponent implements Magi
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "1100px";
-    private static readonly height: string = "700px";
+    private static readonly height: string = "750px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
