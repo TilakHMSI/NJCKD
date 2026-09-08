@@ -67,4 +67,6 @@ export class CARTONDETAILS extends BaseMatTableMagicComponent implements MagicMo
         return CARTONDETAILS.isMovable;
     }
     override displayedColumns = this.mgdp;
+
+    
 }

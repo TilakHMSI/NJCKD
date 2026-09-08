@@ -1,17 +1,19 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"PC_No_v",
-		"show_zoom_button":	true,
-		"mask":	"mask",
-		"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
-		"attribute":	"A"
+		"id":	"WRK_CART_CRLW",
+		"mgformat":	"mgFormat",
+		"currency":	"currency",
+		"format":	"#######.###",
+		"attribute":	"N",
+		"is_table_child":	true,
+		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	185,
-		"y":	80,
-		"width":	61,
-		"height":	15
+		"x":	135,
+		"y":	103,
+		"width":	60,
+		"height":	13
 	},
 	"hint":	null,
 	"controlType":	"T",

@@ -1,6 +1,3 @@
-
-
-
 <div novalidate [formGroup]="screenFormGroup">
     <div class="container-fluid-ov" [magic]="mgc.CKDP0090CartonCaseScanning">
         <div class="card">
@@ -49,9 +46,9 @@
                             </div>
                             <div *ngIf="mg.getVisible(mgc.Case__Carton_Id_v)==='visible'" class="col-lg-4">
                                 <div class="form-group">
-                                     <h3><label class="lable_overflow mb-0">
-                            {{mg.getText(mgc.Edit10)}}
-                        </label></h3>
+                                    <h3><label class="lable_overflow mb-0">
+                                            {{mg.getText(mgc.Edit10)}}
+                                        </label></h3>
                                     <input class="form-control-ent" [formControlName]="mgc.Case__Carton_Id_v"
                                         [magic]="mgc.Case__Carton_Id_v" mgFormat />
                                     <mgError [magic]=mgc.Case__Carton_Id_v> </mgError>
@@ -65,7 +62,7 @@
                                     <mgError [magic]=mgc.Case__Carton_Weight_v> </mgError>
                                 </div>
                             </div>
-                              <div class="col-lg-3" *ngIf="mg.getVisible(mgc.CC_Carton_Id_v)==='visible'">
+                            <div class="col-lg-3" *ngIf="mg.getVisible(mgc.CC_Carton_Id_v)==='visible'">
                                 <div class="form-group">
                                     <label>Carton</label>
                                     <input class="form-control-ent" [formControlName]="mgc.CC_Carton_Id_v"
@@ -73,13 +70,12 @@
                                     <mgError [magic]=mgc.CC_Carton_Id_v> </mgError>
                                 </div>
                             </div>
-                              <div *ngIf="mg.getVisible(mgc.SKID_v)==='visible'" class="col-lg-4">
+                            <div *ngIf="mg.getVisible(mgc.SKID_v)==='visible'" class="col-lg-4">
                                 <div class="form-group">
                                     <label>SKID No</label>
-                                     <div class="input-group">
-                                        <input type="text" [formControlName]="mgc.SKID_v"
-                                            [magic]="mgc.SKID_v" class="form-control"
-                                            placeholder="SELECT SKID NO" mgFormat />
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.SKID_v" [magic]="mgc.SKID_v"
+                                            class="form-control" placeholder="SELECT SKID NO" mgFormat />
                                         <div class="input-group-append">
                                             <button type="button" class="btn btn-loanlist btn-icon"
                                                 [magic]="mgc.SKID_v">
@@ -102,13 +98,12 @@
                                     </div>
                                 </div>
                             </div>
-                               <div  *ngIf="mg.getVisible(mgc.PC_No_v)==='visible'" class="col-lg-2">
+                            <div *ngIf="mg.getVisible(mgc.PC_No_v)==='visible'" class="col-lg-2">
                                 <div class="form-group">
                                     <label>PC No</label>
                                     <div class="input-group">
-                                        <input type="text" [formControlName]="mgc.PC_No_v"
-                                            [magic]="mgc.PC_No_v" class="form-control"
-                                            placeholder="SELECT PC NO" mgFormat />
+                                        <input type="text" [formControlName]="mgc.PC_No_v" [magic]="mgc.PC_No_v"
+                                            class="form-control" placeholder="SELECT PC NO" mgFormat />
                                         <div class="input-group-append">
                                             <button type="button" class="btn btn-loanlist btn-icon"
                                                 [magic]="mgc.PC_No_v">
@@ -131,13 +126,12 @@
                                     </div>
                                 </div>
                             </div>
-                               <div *ngIf="mg.getVisible(mgc.Lot_No_v)==='visible'" class="col-lg-2">
+                            <div *ngIf="mg.getVisible(mgc.Lot_No_v)==='visible'" class="col-lg-2">
                                 <div class="form-group">
                                     <label>Lot No</label>
                                     <div class="input-group">
-                                        <input type="text" [formControlName]="mgc.Lot_No_v"
-                                            [magic]="mgc.Lot_No_v" class="form-control"
-                                            placeholder="SELECT LOT NO" mgFormat />
+                                        <input type="text" [formControlName]="mgc.Lot_No_v" [magic]="mgc.Lot_No_v"
+                                            class="form-control" placeholder="SELECT LOT NO" mgFormat />
                                         <div class="input-group-append">
                                             <button type="button" class="btn btn-loanlist btn-icon"
                                                 [magic]="mgc.Lot_No_v">
@@ -160,13 +154,12 @@
                                     </div>
                                 </div>
                             </div>
-                               <div *ngIf="mg.getVisible(mgc.Cont_v)==='visible'" class="col-lg-2">
+                            <div *ngIf="mg.getVisible(mgc.Cont_v)==='visible'" class="col-lg-2">
                                 <div class="form-group">
                                     <label>Container </label>
                                     <div class="input-group">
-                                        <input type="text" [formControlName]="mgc.Cont_v"
-                                            [magic]="mgc.Cont_v" class="form-control"
-                                            placeholder="SELECT CONTAINER" mgFormat />
+                                        <input type="text" [formControlName]="mgc.Cont_v" [magic]="mgc.Cont_v"
+                                            class="form-control" placeholder="SELECT CONTAINER" mgFormat />
                                         <div class="input-group-append">
                                             <button type="button" class="btn btn-loanlist btn-icon"
                                                 [magic]="mgc.Cont_v">
@@ -189,13 +182,12 @@
                                     </div>
                                 </div>
                             </div>
-                               <div *ngIf="mg.getVisible(mgc.Case_v)==='visible'" class="col-lg-2">
+                            <div *ngIf="mg.getVisible(mgc.Case_v)==='visible'" class="col-lg-2">
                                 <div class="form-group">
                                     <label>CASE</label>
                                     <div class="input-group">
-                                        <input type="text" [formControlName]="mgc.Case_v"
-                                            [magic]="mgc.Case_v" class="form-control"
-                                            placeholder="SELECT CASE" mgFormat />
+                                        <input type="text" [formControlName]="mgc.Case_v" [magic]="mgc.Case_v"
+                                            class="form-control" placeholder="SELECT CASE" mgFormat />
                                         <div class="input-group-append">
                                             <button type="button" class="btn btn-loanlist btn-icon"
                                                 [magic]="mgc.Case_v">
@@ -218,13 +210,12 @@
                                     </div>
                                 </div>
                             </div>
-                               <div  *ngIf="mg.getVisible(mgc.Carton_v)==='visible'"  class="col-lg-2">
+                            <div *ngIf="mg.getVisible(mgc.Carton_v)==='visible'" class="col-lg-2">
                                 <div class="form-group">
                                     <label>Carton</label>
                                     <div class="input-group">
-                                        <input type="text" [formControlName]="mgc.Carton_v"
-                                            [magic]="mgc.Carton_v" class="form-control"
-                                            placeholder="SELECT CARTON" mgFormat />
+                                        <input type="text" [formControlName]="mgc.Carton_v" [magic]="mgc.Carton_v"
+                                            class="form-control" placeholder="SELECT CARTON" mgFormat />
                                         <div class="input-group-append">
                                             <button type="button" class="btn btn-loanlist btn-icon"
                                                 [magic]="mgc.Carton_v">
@@ -247,23 +238,22 @@
                                     </div>
                                 </div>
                             </div>
-                              <div *ngIf="mg.getVisible(mgc.Option_1_v)==='visible'" class="col-lg-2">
-    <div  class="form-group-sm">
-        <label>Range</label>
+                            <div *ngIf="mg.getVisible(mgc.Option_1_v)==='visible'" class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label>Range</label>
 
-        <select class="form-control-ed"
-                [magic]="mgc.Option_1_v"
-                [formControlName]="mgc.Option_1_v">
+                                    <select class="form-control-ed" [magic]="mgc.Option_1_v"
+                                        [formControlName]="mgc.Option_1_v">
 
-            <option *ngFor="let o of mg.getItemListValues(mgc.Option_1_v)"
-                    [value]="o.index">
-                {{ o.displayValue }}
-            </option>
+                                        <option *ngFor="let o of mg.getItemListValues(mgc.Option_1_v)"
+                                            [value]="o.index">
+                                            {{ o.displayValue }}
+                                        </option>
 
-        </select>
-    </div>
-</div>
-                              <div class="col-lg-2">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <label>Dist</label>
                                     <input class="form-control-ed" [formControlName]="mgc.KDPCHED_PH_DSCD"
@@ -271,7 +261,7 @@
                                     <mgError [magic]=mgc.KDPCHED_PH_DSCD> </mgError>
                                 </div>
                             </div>
-                               <div class="col-lg-4">
+                            <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>.</label>
                                     <input class="form-control-ed" [formControlName]="mgc.DSTBMST_DS_DSENAM"
@@ -279,7 +269,7 @@
                                     <mgError [magic]=mgc.DSTBMST_DS_DSENAM> </mgError>
                                 </div>
                             </div>
-          <div class="col-lg-2">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <label>Model</label>
                                     <input class="form-control-ed" [formControlName]="mgc.PKD_LTID_PKD_MDCD"
@@ -287,7 +277,7 @@
                                     <mgError [magic]=mgc.PKD_LTID_PKD_MDCD> </mgError>
                                 </div>
                             </div>
-                                <div class="col-lg-2">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <label>.</label>
                                     <input class="form-control-ed" [formControlName]="mgc.MTOCMST_MTMDN1"
@@ -295,7 +285,7 @@
                                     <mgError [magic]=mgc.MTOCMST_MTMDN1> </mgError>
                                 </div>
                             </div>
-                                <div class="col-lg-1">
+                            <div class="col-lg-1">
                                 <div class="form-group">
                                     <label>.</label>
                                     <input class="form-control-ed" [formControlName]="mgc.PKD_LTID_PKD_MDTY"
@@ -303,15 +293,15 @@
                                     <mgError [magic]=mgc.PKD_LTID_PKD_MDTY> </mgError>
                                 </div>
                             </div>
-                                <div class="col-lg-1">
+                            <div class="col-lg-1">
                                 <div class="form-group">
                                     <label>.</label>
                                     <input class="form-control-ed" [formControlName]="mgc.PKD_LTID_PKD_MDOP"
                                         [magic]="mgc.PKD_LTID_PKD_MDOP" mgFormat />
-                                    
+
                                 </div>
                             </div>
-                          
+
 
                         </div>
                     </div>

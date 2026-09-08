@@ -100,8 +100,7 @@
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input class="form-control-tbl" [formControlName]="mgc.WRK_CART_CRLW" *ngIf="mg.isRowInRowEditing(row)"
-                                            currencyMask
-                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_CART_CRLW))"
+                                            ui-money-mask
                                             [magic]="mgc.WRK_CART_CRLW" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.WRK_CART_CRLW [rowId]="row.rowId"> </mgError>
                                         <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRLW"
@@ -123,8 +122,7 @@
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input class="form-control-tbl" [formControlName]="mgc.WRK_CART_CRUW" *ngIf="mg.isRowInRowEditing(row)"
-                                            currencyMask
-                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_CART_CRUW))"
+                                            ui-money-mask
                                             [magic]="mgc.WRK_CART_CRUW" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.WRK_CART_CRUW [rowId]="row.rowId"> </mgError>
                                         <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRUW"
@@ -146,8 +144,7 @@
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input class="form-control-tbl" [formControlName]="mgc.WRK_CART_CRGW" *ngIf="mg.isRowInRowEditing(row)"
-                                            currencyMask
-                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.WRK_CART_CRGW))"
+                                            ui-money-mask
                                             [magic]="mgc.WRK_CART_CRGW" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.WRK_CART_CRGW [rowId]="row.rowId"> </mgError>
                                         <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRGW"
