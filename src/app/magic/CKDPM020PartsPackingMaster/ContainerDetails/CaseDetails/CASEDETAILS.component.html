@@ -71,14 +71,14 @@
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input style="width: 70%" [formControlName]="mgc.WRK_CASE_CSTY"
-                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CASE_CSTY"
+                                             [magic]="mgc.WRK_CASE_CSTY"
                                             [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.WRK_CASE_CSTY [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CASE_CSTY"
+                                        <!-- <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CASE_CSTY"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.WRK_CASE_CSTY, row.rowId)
                                             }}
-                                        </label>
+                                        </label> -->
                                         <button class="btn-primary" style="min-width: auto; margin: auto" [magic]="mgc.WRK_CASE_CSTY"
                                             [rowId]="row.rowId">...</button>
                                     </div>
@@ -104,12 +104,12 @@
                         <mat-header-cell *matHeaderCellDef>
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
-                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                            <!-- <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <button class="btn-tbl" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.EnterRowEditing"
                                     [rowId]="row.rowId">
                                     <i class="icon-xl far fa-edit text-info" aria-hidden="true"></i>
                                 </button>
-                            </div>
+                            </div> -->
                               <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <button class="btn-tbl" [magic]="mgc.btnDelete" 
                                  [rowId]="row.rowId">
@@ -117,18 +117,18 @@
                                 </button>
                             </div>
 
-                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                            <!-- <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.SaveRowEditing"
                                     [rowId]="row.rowId">
                                     <i class="icon-xl far fa-save text-success" aria-hidden="true"></i>
                                 </button>
-                            </div>
-                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                            </div> -->
+                            <!-- <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.CancelRowEditing"
                                     [rowId]="row.rowId">
                                     <i class="icon-xl fas fa-eraser  text-danger" aria-hidden="true"></i>
                                 </button>
-                            </div>
+                            </div> -->
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <button *ngIf="!mg.isRowInRowEditing(row)" class="btn-tbl" [magic]="mgc.btnNext"
                                     [rowId]="row.rowId">

@@ -76,16 +76,15 @@
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input style="width: 70%" [formControlName]="mgc.WRK_CART_CRTY"
-                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRTY"
-                                            [rowId]="row.rowId" mgFormat />
+                                            [magic]="mgc.WRK_CART_CRTY" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.WRK_CART_CRTY [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRTY"
+                                        <!-- <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRTY"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.WRK_CART_CRTY, row.rowId)
                                             }}
-                                        </label>
-                                        <button class="btn-primary" style="min-width: auto; margin: auto" [magic]="mgc.WRK_CART_CRTY"
-                                            [rowId]="row.rowId">...</button>
+                                        </label> -->
+                                        <button class="btn-primary" style="min-width: auto; margin: auto"
+                                            [magic]="mgc.WRK_CART_CRTY" [rowId]="row.rowId">...</button>
                                     </div>
                                 </div>
                             </div>
@@ -99,15 +98,14 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input class="form-control-tbl" [formControlName]="mgc.WRK_CART_CRLW" *ngIf="mg.isRowInRowEditing(row)"
-                                            ui-money-mask
-                                            [magic]="mgc.WRK_CART_CRLW" [rowId]="row.rowId" mgFormat />
+                                        <input class="form-control-tbl" [formControlName]="mgc.WRK_CART_CRLW"
+                                            ui-money-mask [magic]="mgc.WRK_CART_CRLW" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.WRK_CART_CRLW [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRLW"
+                                        <!-- <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRLW"
                                             [rowId]="row.rowId">
                                             {{mg.getFormattedValue(mgc.WRK_CART_CRLW, row.rowId)
                                             }}
-                                        </label>
+                                        </label> -->
                                     </div>
                                 </div>
                             </div>
@@ -121,15 +119,14 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input class="form-control-tbl" [formControlName]="mgc.WRK_CART_CRUW" *ngIf="mg.isRowInRowEditing(row)"
-                                            ui-money-mask
-                                            [magic]="mgc.WRK_CART_CRUW" [rowId]="row.rowId" mgFormat />
+                                        <input class="form-control-tbl" [formControlName]="mgc.WRK_CART_CRUW"
+                                            ui-money-mask [magic]="mgc.WRK_CART_CRUW" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.WRK_CART_CRUW [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRUW"
+                                        <!-- <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRUW"
                                             [rowId]="row.rowId">
                                             {{mg.getFormattedValue(mgc.WRK_CART_CRUW, row.rowId)
                                             }}
-                                        </label>
+                                        </label> -->
                                     </div>
                                 </div>
                             </div>
@@ -143,15 +140,14 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input class="form-control-tbl" [formControlName]="mgc.WRK_CART_CRGW" *ngIf="mg.isRowInRowEditing(row)"
-                                            ui-money-mask
-                                            [magic]="mgc.WRK_CART_CRGW" [rowId]="row.rowId" mgFormat />
+                                        <input class="form-control-tbl" [formControlName]="mgc.WRK_CART_CRGW"
+                                            ui-money-mask [magic]="mgc.WRK_CART_CRGW" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.WRK_CART_CRGW [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRGW"
+                                        <!-- <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRGW"
                                             [rowId]="row.rowId">
                                             {{mg.getFormattedValue(mgc.WRK_CART_CRGW, row.rowId)
                                             }}
-                                        </label>
+                                        </label> -->
                                     </div>
                                 </div>
                             </div>
@@ -164,35 +160,43 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                        <div class="input-group" *ngIf="mg.isRowInRowEditing(row)">
-                                            <input type="text" [formControlName]="mgc.WRK_CART_CRST"
-                                                class="form-control-sm" placeholder="Select Part"
-                                                [magic]="mgc.WRK_CART_CRST" [rowId]="row.rowId" mgFormat />
-                                            <div class="input-group-append">
-                                                <button type="button" class="btn btn-loanlist btn-icon-sm"
-                                                    [magic]="mgc.WRK_CART_CRST" [rowId]="row.rowId">
-                                                    <span class="svg-icon svg-icon-lg"><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-                                                            height="24px" viewBox="0 0 24 24" version="1.1">
-                                                            <g stroke="none" stroke-width="1" fill="none"
-                                                                fill-rule="evenodd">
-                                                                <rect x="0" y="0" width="24" height="24" />
-                                                                <path
-                                                                    d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
-                                                                    fill="#000000" fill-rule="nonzero" opacity="0.3" />
-                                                                <path
-                                                                    d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
-                                                                    fill="#000000" opacity="0.3" />
-                                                            </g>
-                                                        </svg></span></button>
-                                            </div>
+                                    <!-- <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.WRK_CART_CRST" class="form-control-sm"
+                                            placeholder="Select Part" [magic]="mgc.WRK_CART_CRST" [rowId]="row.rowId"
+                                            mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon-sm"
+                                                [magic]="mgc.WRK_CART_CRST" [rowId]="row.rowId">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
                                         </div>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRST"
+                                    </div> -->
+                                    <div>
+                                        <input style="width: 70%" [formControlName]="mgc.WRK_CART_CRST"
+                                            [magic]="mgc.WRK_CART_CRST" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.WRK_CART_CRST [rowId]="row.rowId"> </mgError>
+                                        
+                                        <button class="btn-primary" style="min-width: auto; margin: auto"
+                                            [magic]="mgc.WRK_CART_CRST" [rowId]="row.rowId">...</button>
+                                    </div>
+                                    <!-- <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.WRK_CART_CRST"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.WRK_CART_CRST, row.rowId)
                                             }}
-                                        </label>
+                                        </label> -->
                                 </div>
                             </div>
                         </mat-cell>
@@ -204,7 +208,7 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input type="checkbox" id="WRK_CART_CREG_{{row.rowId}}" 
+                                    <input type="checkbox" id="WRK_CART_CREG_{{row.rowId}}"
                                         [formControlName]="mgc.WRK_CART_CREG" [magic]="mgc.WRK_CART_CREG"
                                         [rowId]="row.rowId" />
                                 </div>
@@ -215,30 +219,29 @@
                         <mat-header-cell *matHeaderCellDef>
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
-                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                            <!-- <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <button class="btn-tbl" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.EnterRowEditing"
                                     [rowId]="row.rowId">
                                     <i class="icon-xl far fa-edit text-info" aria-hidden="true"></i>
                                 </button>
-                            </div>
-                              <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
-                                <button class="btn-tbl" [magic]="mgc.btnDelete" 
-                                 [rowId]="row.rowId">
+                            </div> -->
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <button class="btn-tbl" [magic]="mgc.btnDelete" [rowId]="row.rowId">
                                     <i class="icon-xl fas fa-trash text-danger" aria-hidden="true"></i>
                                 </button>
                             </div>
-                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                            <!-- <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.SaveRowEditing"
                                     [rowId]="row.rowId">
                                     <i class="icon-xl far fa-save text-success" aria-hidden="true"></i>
                                 </button>
-                            </div>
-                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                            </div> -->
+                            <!-- <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.CancelRowEditing"
                                     [rowId]="row.rowId">
                                     <i class="icon-xl fas fa-eraser  text-danger" aria-hidden="true"></i>
                                 </button>
-                            </div>
+                            </div> -->
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <button *ngIf="!mg.isRowInRowEditing(row)" class="btn-tbl" [magic]="mgc.btnNext"
                                     [rowId]="row.rowId">
