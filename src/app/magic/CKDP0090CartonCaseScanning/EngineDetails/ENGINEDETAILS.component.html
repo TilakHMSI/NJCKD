@@ -1,19 +1,21 @@
 
-
 <div novalidate [formGroup]="screenFormGroup">
-    <div style="display: flex; flex-direction: column" [magic]="mgc.ENGINEDETAILS">
-        <div style="display: flex; flex-direction: row">
-            <label  class="lable_overflow">
-                Engine Details
-            </label>
-      <div class="d-flex align-items-center">
-                        <button type="button" [magic]="mgc.btnexit"
-                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
-                    </div>
+
+    <div class="container-fluid-ov" [magic]="mgc.ENGINEDETAILS">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lbl-sm" class="lable_overflow mb-0">
+                            Engine Details
+                        </label></h3>
+                    <button type="button" [magic]="mgc.btnexit"
+                        class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                </div>
+            </div>
         </div>
-        <div style="display: flex; flex-direction: row">
-            <div class="example-container mat-elevation-z8 Table8TableContainerProps">
-                <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
+        <div class="m-tablewrapper pl-0 pr-0">
+            <div class="example-container mat-elevation-z8 Table2TableContainerProps">
+                 <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
                     (matSortChange)="tableService.sortData($event)">
                     <ng-container [magic]="mgc.Column2" [matColumnDef]="mgc.Column2">
                         <mat-header-cell *matHeaderCellDef>
@@ -44,16 +46,35 @@
                         (click)="row? tableService.selectRow(row.rowId) : null">
                     </mat-row>
                 </mat-table>
-                <mat-paginator #paginator [pageSize]="10"  [hidePageSize]="true"
+                <mat-paginator #paginator [pageSize]="10" [hidePageSize]="true"
                     (page)="tableService.mgOnPaginateChange($event)">
                 </mat-paginator>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-               <button type="button" [magic]="mgc.Save_v"
+
+                
+       <div class="form-group row">
+                            <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                    <button type="button" [magic]="mgc.Save_v"
                                         class="btn btn-primary font-weight-bold mr-3 btn-wdth">
                                         SAVE
                                     </button>
+                                </div>
+                            </div>
+                          
+                             <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                </div>
+                            </div>
+
+
+
+                    </div>
+           
+            </div>
         </div>
     </div>
 </div>
