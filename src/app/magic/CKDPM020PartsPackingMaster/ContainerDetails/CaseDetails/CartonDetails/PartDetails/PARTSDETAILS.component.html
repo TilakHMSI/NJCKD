@@ -179,15 +179,11 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input class="form-control-tbl" [formControlName]="mgc.CKD_PART_MAST_PRT_WGT"
-                                            ui-money-mask
-                                            [magic]="mgc.CKD_PART_MAST_PRT_WGT" [rowId]="row.rowId" mgFormat />
-                                        <mgError [magic]=mgc.CKD_PART_MAST_PRT_WGT [rowId]="row.rowId"> </mgError>
-                                        <!-- <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.CKD_PART_MAST_PRT_WGT"
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.CKD_PART_MAST_PRT_WGT"
                                             [rowId]="row.rowId">
                                             {{mg.getFormattedValue(mgc.CKD_PART_MAST_PRT_WGT, row.rowId)
                                             }}
-                                        </label> -->
+                                        </label>
                                     </div>
                                 </div>
                             </div>

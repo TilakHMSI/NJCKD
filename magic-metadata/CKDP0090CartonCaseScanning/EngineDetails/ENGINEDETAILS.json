@@ -77,8 +77,25 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line11"
+			},
+			"coordinates":	{
+				"x":	158,
+				"y":	65,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"Save_v",
-				"attribute":	"A",
+				"format":	"Save",
 				"common_line_id":	"line297"
 			},
 			"coordinates":	{

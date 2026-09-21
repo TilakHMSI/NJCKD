@@ -1,21 +1,41 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"WRK_CART_CRLW",
-		"mgformat":	"mgFormat",
-		"currency":	"currency",
-		"format":	"#######.###",
-		"attribute":	"N",
+		"id":	"Column24",
+		"column_title":	"EXTRA PCS.",
 		"is_table_child":	true,
 		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	135,
-		"y":	103,
-		"width":	60,
-		"height":	13
+		"width":	61
 	},
 	"hint":	null,
-	"controlType":	"T",
-	"children":	null
+	"controlType":	"K",
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"WRK_PART_EXPCS",
+				"modifiable":	{
+					"value":	true,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"##########",
+				"attribute":	"N",
+				"is_table_child":	true,
+				"web_style":	2,
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	511,
+				"y":	117,
+				"width":	55,
+				"height":	11
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
 }

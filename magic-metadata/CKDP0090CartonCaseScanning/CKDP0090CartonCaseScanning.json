@@ -35,6 +35,26 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Edit2",
+				"text":	{
+					"value":	"Text",
+					"has_exp":	true
+				},
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	231,
+				"y":	16,
+				"width":	23,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"Edit4",
 				"dataexp":	true,
 				"formatter":	"magicDate",
@@ -47,25 +67,6 @@
 				"x":	458,
 				"y":	20,
 				"width":	53,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Edit2",
-				"dataexp":	true,
-				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-				"modifiable":	false,
-				"common_line_id":	"line3"
-			},
-			"coordinates":	{
-				"x":	481,
-				"y":	5,
-				"width":	75,
 				"height":	13
 			},
 			"hint":	null,
@@ -114,9 +115,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"Edit6",
-				"dataexp":	true,
-				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXX",
 				"modifiable":	false,
+				"attribute":	"A",
 				"common_line_id":	"line34"
 			},
 			"coordinates":	{
@@ -139,7 +141,7 @@
 				"x":	8,
 				"y":	55,
 				"width":	571,
-				"height":	288
+				"height":	161
 			},
 			"hint":	null,
 			"controlType":	"F",
@@ -148,30 +150,91 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label7",
-				"common_line_id":	"line354"
+				"id":	"vWeightCheck",
+				"mgformat":	"mgFormat",
+				"format":	"#####",
+				"attribute":	"N",
+				"common_line_id":	"line256"
 			},
 			"coordinates":	{
-				"x":	9,
-				"y":	354,
-				"width":	543,
-				"height":	120
+				"x":	247,
+				"y":	256,
+				"width":	34,
+				"height":	20
 			},
 			"hint":	null,
-			"controlType":	"L",
+			"controlType":	"T",
 			"children":	null
 		},
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label9",
-				"common_line_id":	"line354"
+				"id":	"vBlob64base",
+				"password_edit":	false,
+				"attribute":	"O",
+				"common_line_id":	"line275"
 			},
 			"coordinates":	{
-				"x":	16,
-				"y":	364,
-				"width":	175,
+				"x":	75,
+				"y":	275,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vFileName",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line275"
+			},
+			"coordinates":	{
+				"x":	127,
+				"y":	275,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Option_v",
+				"items_list":	{
+					"value":	"Addition, Cancel, Inquiry",
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line295"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	344,
+				"width":	165,
 				"height":	36
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"common_line_id":	"line295"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	295,
+				"width":	543,
+				"height":	179
 			},
 			"hint":	null,
 			"controlType":	"L",
@@ -185,7 +248,7 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	16,
@@ -206,7 +269,7 @@
 					"has_exp":	true
 				},
 				"text":	"Dist:",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	18,
@@ -221,34 +284,13 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Option_v",
-				"items_list":	{
-					"value":	"Addition, Cancel, Inquiry",
-					"has_exp":	true
-				},
-				"attribute":	"A",
-				"common_line_id":	"line354"
-			},
-			"coordinates":	{
-				"x":	21,
-				"y":	367,
-				"width":	165,
-				"height":	28
-			},
-			"hint":	null,
-			"controlType":	"R",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Label19",
 				"visible":	{
 					"value":	null,
 					"has_exp":	true
 				},
 				"text":	"P/C No:",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	25,
@@ -264,10 +306,14 @@
 			"style":	null,
 			"props":	{
 				"id":	"KDPCHED_PH_DSCD",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	50,
@@ -288,10 +334,10 @@
 					"has_exp":	true
 				},
 				"show_zoom_button":	true,
-				"mask":	"mask",
-				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	68,
@@ -307,10 +353,14 @@
 			"style":	null,
 			"props":	{
 				"id":	"DSTBMST_DS_DSENAM",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	74,
@@ -331,7 +381,7 @@
 					"has_exp":	true
 				},
 				"text":	"Lot:",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	138,
@@ -353,10 +403,9 @@
 				},
 				"show_zoom_button":	true,
 				"mgformat":	"mgFormat",
-				"currency":	"currency",
-				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"format":	"####",
 				"attribute":	"N",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	164,
@@ -376,7 +425,7 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	196,
@@ -397,7 +446,7 @@
 					"has_exp":	true
 				},
 				"text":	"Container:",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	196,
@@ -413,23 +462,20 @@
 			"style":	null,
 			"props":	{
 				"id":	"Edit10",
-				"visible":	{
-					"value":	null,
+				"text":	{
+					"value":	"Text",
 					"has_exp":	true
 				},
-				"dataexp":	true,
-				"format":	"XXXXXXXXXX",
-				"modifiable":	false,
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
-				"x":	200,
-				"y":	367,
-				"width":	55,
-				"height":	13
+				"x":	204,
+				"y":	351,
+				"width":	23,
+				"height":	15
 			},
 			"hint":	null,
-			"controlType":	"T",
+			"controlType":	"L",
 			"children":	null
 		},
 		{
@@ -443,11 +489,11 @@
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
-				"x":	200,
-				"y":	384,
+				"x":	204,
+				"y":	382,
 				"width":	146,
 				"height":	15
 			},
@@ -465,10 +511,9 @@
 				},
 				"show_zoom_button":	true,
 				"mgformat":	"mgFormat",
-				"currency":	"currency",
-				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"format":	"#####",
 				"attribute":	"N",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	254,
@@ -489,7 +534,7 @@
 					"has_exp":	true
 				},
 				"text":	"Model:",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	284,
@@ -510,7 +555,7 @@
 					"has_exp":	true
 				},
 				"text":	"Case:",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	290,
@@ -532,10 +577,9 @@
 				},
 				"show_zoom_button":	true,
 				"mgformat":	"mgFormat",
-				"currency":	"currency",
-				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"format":	"#####",
 				"attribute":	"N",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	323,
@@ -551,10 +595,14 @@
 			"style":	null,
 			"props":	{
 				"id":	"PKD_LTID_PKD_MDCD",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	323,
@@ -575,7 +623,7 @@
 					"has_exp":	true
 				},
 				"text":	"Carton:",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	356,
@@ -598,7 +646,7 @@
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	356,
@@ -622,11 +670,11 @@
 				"currency":	"currency",
 				"format":	"#######.###",
 				"attribute":	"N",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
-				"x":	359,
-				"y":	384,
+				"x":	360,
+				"y":	400,
 				"width":	61,
 				"height":	15
 			},
@@ -643,11 +691,11 @@
 					"has_exp":	true
 				},
 				"text":	"Weight :",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
-				"x":	360,
-				"y":	367,
+				"x":	361,
+				"y":	351,
 				"width":	45,
 				"height":	13
 			},
@@ -664,7 +712,7 @@
 					"has_exp":	true
 				},
 				"text":	"Carton:",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	361,
@@ -680,10 +728,14 @@
 			"style":	null,
 			"props":	{
 				"id":	"MTOCMST_MTMDN1",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	385,
@@ -708,7 +760,7 @@
 				"currency":	"currency",
 				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
 				"attribute":	"N",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	403,
@@ -729,10 +781,9 @@
 					"has_exp":	true
 				},
 				"mgformat":	"mgFormat",
-				"currency":	"currency",
-				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"format":	"#####",
 				"attribute":	"N",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	403,
@@ -753,7 +804,7 @@
 					"has_exp":	true
 				},
 				"text":	"SKID No.",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	430,
@@ -774,10 +825,10 @@
 					"has_exp":	true
 				},
 				"show_zoom_button":	true,
-				"mask":	"mask",
-				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	430,
@@ -798,7 +849,7 @@
 					"has_exp":	true
 				},
 				"text":	"Range:",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	439,
@@ -823,7 +874,7 @@
 					"has_exp":	true
 				},
 				"attribute":	"A",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	471,
@@ -839,10 +890,14 @@
 			"style":	null,
 			"props":	{
 				"id":	"PKD_LTID_PKD_MDTY",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"format":	"XXXX",
 				"attribute":	"A",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	494,
@@ -858,10 +913,14 @@
 			"style":	null,
 			"props":	{
 				"id":	"PKD_LTID_PKD_MDOP",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"format":	"XXX",
 				"attribute":	"A",
-				"common_line_id":	"line354"
+				"common_line_id":	"line295"
 			},
 			"coordinates":	{
 				"x":	521,

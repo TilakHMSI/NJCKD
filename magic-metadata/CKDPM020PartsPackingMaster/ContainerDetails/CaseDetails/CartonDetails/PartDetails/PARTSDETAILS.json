@@ -340,7 +340,7 @@
 			},
 			"props":	{
 				"id":	"Table16",
-				"table_row_height":	78,
+				"table_row_height":	104,
 				"table_title_height":	20,
 				"common_line_id":	"line94"
 			},
@@ -371,10 +371,6 @@
 							"style":	null,
 							"props":	{
 								"id":	"WRK_PART_PART",
-								"modifiable":	{
-									"value":	false,
-									"has_exp":	true
-								},
 								"show_zoom_button":	true,
 								"mgformat":	"mgFormat",
 								"format":	"XXXXXXXXXXXXXXXXX",
@@ -800,6 +796,26 @@
 								"x":	634,
 								"y":	170,
 								"width":	43,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnDelete",
+								"format":	"Delete",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line196"
+							},
+							"coordinates":	{
+								"x":	634,
+								"y":	196,
+								"width":	41,
 								"height":	22
 							},
 							"hint":	null,

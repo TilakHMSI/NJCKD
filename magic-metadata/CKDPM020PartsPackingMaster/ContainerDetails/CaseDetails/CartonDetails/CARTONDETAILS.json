@@ -266,7 +266,7 @@
 			},
 			"props":	{
 				"id":	"Table13",
-				"table_row_height":	104,
+				"table_row_height":	130,
 				"table_title_height":	20,
 				"common_line_id":	"line80"
 			},
@@ -630,6 +630,26 @@
 							"coordinates":	{
 								"x":	481,
 								"y":	182,
+								"width":	41,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnDelete",
+								"format":	"Delete",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line208"
+							},
+							"coordinates":	{
+								"x":	481,
+								"y":	208,
 								"width":	41,
 								"height":	22
 							},
