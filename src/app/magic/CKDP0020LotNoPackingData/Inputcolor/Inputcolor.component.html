@@ -61,7 +61,7 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input [formControlName]="mgc.QTY" *ngIf="mg.isRowInRowEditing(row)"
+                                        <input class="form-control" [formControlName]="mgc.QTY" *ngIf="mg.isRowInRowEditing(row)"
                                             currencyMask [options]="mg.getNumericPicture(mg.getPicture(mgc.QTY))"
                                             [magic]="mgc.QTY" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.QTY [rowId]="row.rowId"> </mgError>
