@@ -1,29 +1,31 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./FRAMEDETAILS.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./Detail.mg.controls.g";
+import { MgDisplayedColumns } from "./Detail.mg.controls.g";
 
 
-import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
+import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
 
 
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-CKDP0090CartonCaseScanning_FrameDetail_FRAMEDETAILS',
-    providers: [...magicProviders],
+    selector: 'mga-CKDP0090CartonCaseScanning_FrameDetail_Detail_Detail',
+    providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './FRAMEDETAILS.component.html'
+    templateUrl: './Detail.component.html'
 })
-export class FRAMEDETAILS extends TaskBaseMagicComponent implements MagicModalInterface {
+export class Detail extends BaseMatTableMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
     mgfc!: MgFormControlsAccessor;
+    mgdp = MgDisplayedColumns;
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "FRAMEDETAILS";
+    private static readonly formName: string = "Detail";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -34,33 +36,34 @@ export class FRAMEDETAILS extends TaskBaseMagicComponent implements MagicModalIn
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return FRAMEDETAILS.x;
+        return Detail.x;
     }
     Y() {
-        return FRAMEDETAILS.y;
+        return Detail.y;
     }
     Width(): string {
-        return FRAMEDETAILS.width;
+        return Detail.width;
     }
     Height(): string {
-        return FRAMEDETAILS.height;
+        return Detail.height;
     }
     IsCenteredToWindow() {
-        return FRAMEDETAILS.isCenteredToWindow;
+        return Detail.isCenteredToWindow;
     }
     FormName() {
-        return FRAMEDETAILS.formName;
+        return Detail.formName;
     }
     ShowTitleBar() {
-        return FRAMEDETAILS.showTitleBar;
+        return Detail.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return FRAMEDETAILS.shouldCloseOnBackgroundClick;
+        return Detail.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return FRAMEDETAILS.isResizable;
+        return Detail.isResizable;
     }
     IsMovable() {
-        return FRAMEDETAILS.isMovable;
+        return Detail.isMovable;
     }
+    override displayedColumns = this.mgdp;
 }

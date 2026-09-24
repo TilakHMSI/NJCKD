@@ -10,75 +10,86 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	125,
+		"width":	204,
 		"height":	330
 	},
 	"hint":	null,
 	"controlType":	null,
 	"children":	[
 		{
-			"style":	{
-				"line_divider":	true
-			},
+			"style":	null,
 			"props":	{
-				"id":	"Table1",
-				"table_row_height":	21,
-				"table_title_height":	20,
-				"common_line_id":	"line11"
+				"id":	"vFrameNo",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line29"
 			},
 			"coordinates":	{
-				"x":	8,
-				"y":	11,
-				"width":	111,
-				"height":	280
+				"x":	138,
+				"y":	29,
+				"width":	34,
+				"height":	20
 			},
 			"hint":	null,
-			"controlType":	"A",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column2",
-						"column_title":	"Frame No.",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	96
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"WRK_EGNO_EGNO",
-								"mgformat":	"mgFormat",
-								"format":	"XXXXXXXXXXXXXXXXXX",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line34"
-							},
-							"coordinates":	{
-								"x":	10,
-								"y":	34,
-								"width":	95,
-								"height":	13
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				}
-			]
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line66"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	66,
+				"width":	117,
+				"height":	207
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line66"
+			},
+			"coordinates":	{
+				"x":	148,
+				"y":	93,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Btn_Add",
+				"format":	"Add",
+				"common_line_id":	"line66"
+			},
+			"coordinates":	{
+				"x":	157,
+				"y":	172,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
 		},
 		{
 			"style":	null,
 			"props":	{
 				"id":	"Save_v",
-				"attribute":	"A",
+				"format":	"Save",
 				"common_line_id":	"line299"
 			},
 			"coordinates":	{

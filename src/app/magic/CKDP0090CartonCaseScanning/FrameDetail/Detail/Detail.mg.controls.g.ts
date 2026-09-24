@@ -6,19 +6,22 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    FRAMEDETAILS = "FRAMEDETAILS",
-        vFrameNo = "vFrameNo",
-        Sub1 = "Sub1",
-        btnexit = "btnexit",
-        Btn_Add = "Btn_Add",
-        Save_v = "Save_v",
+    Detail = "Detail",
+        Table1 = "Table1",
+        Column2 = "Column2",
+        WRK_EGNO_EGNO = "WRK_EGNO_EGNO",
 }
 export enum MgCustomProperties {}
+export var
+    MgDisplayedColumns = [
+        'Column2',
+    ];
+
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get vFrameNo(): FormControl {
-        return this.fg.controls[MgControlName.vFrameNo] as FormControl;
+    get WRK_EGNO_EGNO(): FormControl {
+        return this.getTableChildFormControl(MgControlName.WRK_EGNO_EGNO);
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {
