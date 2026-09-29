@@ -2,26 +2,24 @@ import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
 import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./ENGINEDETAILS.mg.controls.g";
-import { MgDisplayedColumns } from "./ENGINEDETAILS.mg.controls.g";
 
 
-import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
+import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 
 
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
     selector: 'mga-CKDP0090CartonCaseScanning_EngineDetails_ENGINEDETAILS',
-    providers: [...matMagicProviders],
+    providers: [...magicProviders],
     standalone: false,
     templateUrl: './ENGINEDETAILS.component.html'
 })
-export class ENGINEDETAILS extends BaseMatTableMagicComponent implements MagicModalInterface {
+export class ENGINEDETAILS extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
     mgfc!: MgFormControlsAccessor;
-    mgdp = MgDisplayedColumns;
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
@@ -30,7 +28,7 @@ export class ENGINEDETAILS extends BaseMatTableMagicComponent implements MagicMo
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";
-    private static readonly height: string = "500px";
+    private static readonly height: string = "600px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
@@ -65,5 +63,4 @@ export class ENGINEDETAILS extends BaseMatTableMagicComponent implements MagicMo
     IsMovable() {
         return ENGINEDETAILS.isMovable;
     }
-    override displayedColumns = this.mgdp;
 }

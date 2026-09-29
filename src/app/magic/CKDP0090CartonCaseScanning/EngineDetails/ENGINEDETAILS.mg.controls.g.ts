@@ -7,23 +7,17 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     ENGINEDETAILS = "ENGINEDETAILS",
-        Table1 = "Table1",
-        Column2 = "Column2",
+        btnexit = "btnexit",
         WRK_EGNO_EGNO = "WRK_EGNO_EGNO",
+        Sub1 = "Sub1",
         Save_v = "Save_v",
-        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
-export var
-    MgDisplayedColumns = [
-        'Column2',
-    ];
-
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
     get WRK_EGNO_EGNO(): FormControl {
-        return this.getTableChildFormControl(MgControlName.WRK_EGNO_EGNO);
+        return this.fg.controls[MgControlName.WRK_EGNO_EGNO] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

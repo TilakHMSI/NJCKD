@@ -16,7 +16,7 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"CKDP0090CartonCaseScanning/FrameDetail/Detail/Detail"
+				"CKDP0090CartonCaseScanning/EngineDetails/Detail/Detail"
 			]
 		}
 	],

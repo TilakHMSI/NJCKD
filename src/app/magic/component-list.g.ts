@@ -197,10 +197,12 @@ import { CKDZ007BrowseBomParts as CKDZ007BrowseBomParts_CKDZ007BrowseBomParts } 
 import { PartNoList as CKDZ007BrowseBomParts_BomPartsList_PartNoList } from './CKDZ007BrowseBomParts/BomPartsList/PartNoList.component';
 import { WebClientPassDetails as WebClientPassDetails_WebClientPassDetails } from './WebClientPassDetails/WebClientPassDetails.component';
 import { Detail as CKDP0090CartonCaseScanning_FrameDetail_Detail_Detail } from './CKDP0090CartonCaseScanning/FrameDetail/Detail/Detail.component';
+import { Detail as CKDP0090CartonCaseScanning_EngineDetails_Detail_Detail } from './CKDP0090CartonCaseScanning/EngineDetails/Detail/Detail.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               CKDP0090CartonCaseScanning_FrameDetail_Detail_Detail:CKDP0090CartonCaseScanning_FrameDetail_Detail_Detail,
+export const magicGenCmpsHash = {               CKDP0090CartonCaseScanning_EngineDetails_Detail_Detail:CKDP0090CartonCaseScanning_EngineDetails_Detail_Detail,
+                      CKDP0090CartonCaseScanning_FrameDetail_Detail_Detail:CKDP0090CartonCaseScanning_FrameDetail_Detail_Detail,
                       WebClientPassDetails_WebClientPassDetails:WebClientPassDetails_WebClientPassDetails,
                       CKDZ007BrowseBomParts_CKDZ007BrowseBomParts:CKDZ007BrowseBomParts_CKDZ007BrowseBomParts,
               CKDZ007BrowseBomParts_BomPartsList_PartNoList:CKDZ007BrowseBomParts_BomPartsList_PartNoList,
@@ -404,6 +406,7 @@ export const magicGenCmpsHash = {               CKDP0090CartonCaseScanning_Frame
 };
 
 export const magicGenComponents = [
+	CKDP0090CartonCaseScanning_EngineDetails_Detail_Detail,
 	CKDP0090CartonCaseScanning_FrameDetail_Detail_Detail,
 	WebClientPassDetails_WebClientPassDetails,
 	CKDZ007BrowseBomParts_CKDZ007BrowseBomParts,

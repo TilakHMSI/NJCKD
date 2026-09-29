@@ -17,73 +17,15 @@
 	"controlType":	null,
 	"children":	[
 		{
-			"style":	{
-				"line_divider":	true
-			},
-			"props":	{
-				"id":	"Table1",
-				"table_row_height":	21,
-				"table_title_height":	20,
-				"common_line_id":	"line11"
-			},
-			"coordinates":	{
-				"x":	8,
-				"y":	11,
-				"width":	111,
-				"height":	280
-			},
-			"hint":	null,
-			"controlType":	"A",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column2",
-						"column_title":	"Engine No.",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	95
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"WRK_EGNO_EGNO",
-								"mgformat":	"mgFormat",
-								"format":	"XXXXXXXXXXXXXXXXXX",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line34"
-							},
-							"coordinates":	{
-								"x":	10,
-								"y":	34,
-								"width":	95,
-								"height":	13
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				}
-			]
-		},
-		{
 			"style":	null,
 			"props":	{
 				"id":	"btnexit",
 				"format":	"Back",
-				"common_line_id":	"line11"
+				"common_line_id":	"line29"
 			},
 			"coordinates":	{
-				"x":	158,
-				"y":	65,
+				"x":	199,
+				"y":	29,
 				"width":	41,
 				"height":	22
 			},
@@ -94,13 +36,48 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Save_v",
-				"format":	"Save",
-				"common_line_id":	"line297"
+				"id":	"WRK_EGNO_EGNO",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line44"
 			},
 			"coordinates":	{
-				"x":	12,
-				"y":	297,
+				"x":	49,
+				"y":	44,
+				"width":	132,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line78"
+			},
+			"coordinates":	{
+				"x":	36,
+				"y":	78,
+				"width":	163,
+				"height":	215
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Save_v",
+				"format":	"Save",
+				"common_line_id":	"line319"
+			},
+			"coordinates":	{
+				"x":	71,
+				"y":	319,
 				"width":	110,
 				"height":	23
 			},
