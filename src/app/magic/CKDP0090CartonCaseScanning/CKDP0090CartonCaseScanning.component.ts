@@ -147,6 +147,7 @@ export class CKDP0090CartonCaseScanning extends TaskBaseMagicComponent implement
                 this.weightValue = firstLine.slice(1); 
                 console.log('weightValue', this.weightValue);
                 this.mg.setValueToControl('Case__Carton_Weight_v', this.weightValue);
+                this.mg.simulateClick("btnCallProcess", 0);
       },
 
       error: (err: any) => {

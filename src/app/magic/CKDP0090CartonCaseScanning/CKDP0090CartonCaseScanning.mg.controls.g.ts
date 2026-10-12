@@ -51,7 +51,8 @@ export enum MgControlName {
         vBlob64base="vBlob64base",
         vFileName="vFileName",
         vWeightCheck="vWeightCheck",
-        Btn_Exe="Btn_Exe"
+        Btn_Exe="Btn_Exe",
+        btnCallProcess = "btnCallProcess",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
